@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <!-- TODO: REDO 5. 6. with key when the spec is finalised -->
+    <title>Butterfly Sample</title>
+    <section>
+        <title>Callouts to Figures</title>
+        <mediaobject>
+            <!-- if the larger or background image has smaller areas or callouts, we nest mediaobjects inside the master mediaobject to form a logical illustration group -->
+            <imageobjectco>
+                <areaspec>
+                    <!-- here we define optional coordinates for the callouts (CALS coordiantes) -->
+                    <area xml:id="ventral" coords=""/>
+                    <area xml:id="dorsal" coords=""/>
+                </areaspec>
+                <!-- the background or the master image -->
+                <imageobject>
+                    <imagedata fileref="butterfly/BB_anno_section_image_bg.jpg"/>
+                </imageobject>
+                <calloutlist>
+                    <!-- arearefs are mandatory to identify callouts even if the coordinates (areaspec) are not used -->
+                    <callout arearefs="dorsal">
+                        <!-- use figure if the callout is also graphical (an image) and has a title, informalfigure for multiple gfx with no title, mediaobject for one image and section or para for text only callouts -->
+                        <figure>
+                            <title>DORSAL</title>
+                            <!-- use formal para when you need a title for a lowest level block of text, otherwise use sidebar -->
+                            <formalpara>
+                                <title>5. The Dorsal Route</title>
+                                <para>The information from the eyes is registered by the primary
+                                    visual cortex and then sent forward along two pathways for
+                                    further processing. The dorsal route...</para>
+                            </formalpara>
+
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="dorsal1.jpg"/>
+                                </imageobject>
+                                <!-- use caption if the text is to be displayed alongside the image, for alternative text content (accessibility) use alt attribute or textobject that is not supposed to be rendered-->
+                                <caption>
+                                    <formalpara>
+                                        <title>Motion</title>
+                                        <para>Movement is processed along the dorsal pathway. It is
+                                            the essential component of any (...)</para>
+                                    </formalpara>
+
+                                </caption>
+                            </mediaobject>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="dorsal2.jpg"/>
+                                </imageobject>
+                                <caption>
+                                    <formalpara>
+                                        <title>Depth</title>
+                                        <para>In order to calculate the depth of an object
+                                            (...)</para>
+                                    </formalpara>
+
+                                </caption>
+                            </mediaobject>
+                        </figure>
+                    </callout>
+                    <callout arearefs="ventral">
+                        <figure>
+                            <title>VENTRAL</title>
+                            <formalpara>
+                                <title>6. The Ventral Route</title>
+                                <para>The ventral route carries information from the primary visual
+                                    cortex (...)</para>
+                            </formalpara>
+
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="ventral1.jpg"/>
+                                </imageobject>
+                                <caption>
+                                    <formalpara>
+                                        <title>Form</title>
+                                        <para> The brain has many ways of seeing (...)</para>
+                                    </formalpara>
+
+                                </caption>
+                            </mediaobject>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata fileref="ventral2.jpg"/>
+                                </imageobject>
+                                <caption>
+                                    <formalpara>
+                                        <title>Colour</title>
+                                        <para>Colour discrimination begins in the retinal cells
+                                            (...)</para>
+                                    </formalpara>
+
+                                </caption>
+                            </mediaobject>
+                        </figure>
+                    </callout>
+                </calloutlist>
+
+            </imageobjectco>
+
+        </mediaobject>
+    </section>
+
+</article>

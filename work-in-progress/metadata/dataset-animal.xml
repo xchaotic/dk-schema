@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-common.rnc" type="compact"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="COOEXP011MEAUND">
+    <!-- Illustrated Encyclopedia of Animals sample to illustrate dataset metadata -->
+    
+    <title>Illustrated Encyclopedia of Animals</title>
+    
+    <part xml:id="ANIMAL082-597ANIKIN">
+        <title>The Animal Kingdom</title>
+        <!-- text removed for sample purposes -->
+        <chapter xml:id="ANIMAL084-257MAMMAL">
+            <title>Mammals</title>
+            <!-- text removed for sample purposes -->
+            <section xml:id="ANIMAL086MAMMAL">
+                <title>Mammals</title>
+                
+                <para role="intro" xml:id="ANIMAL086MAMMAL_001">
+                    <phrase role="leadin">
+                        Mammals, the most familiar group</phrase> of vertebrates, all nourish their young on milk produced by the female’s mammary glands (the unique skin structures after which the class is named). Most also give birth to live young and, with only a few exceptions, have a covering of hair on their body. Mammals are most widespread and diverse on land, but they have also colonized air and water. Their success is largely due to their ability to maintain a constant internal body temperature, regardless of changing external conditions. They are also highly adaptable and often modify their behaviour to suit changing circumstances. Some mammals, especially primates (the group that includes humans), form complex societies.
+                    <simplelist role="nathist_factbox">
+                        <member metaref="phylum">Chordata</member>
+                        <member metaref="class_animal">Mammalia</member>
+                        <member metaref="orders">21</member>
+                        <member metaref="families">140</member>
+                        <member metaref="species">4,475</member>
+                    </simplelist>
+                </para>
+                
+                <section xml:id="ANIMAL086MAMMAL_003">
+                    <title>Evolution</title>
+                    <para>The ancestors of mammals were a group of reptiles known as the therapsids. ......................... faster and more agile.</para>
+                    <!-- text removed for sample purposes -->
+                </section>
+                <!-- text removed for sample purposes -->
+            </section>
+            
+            <!-- text removed for sample purposes -->
+            
+            <!-- text removed for sample purposes -->
+        </chapter>
+        <!-- text removed for sample purposes -->
+    </part>
+    
+</book>

@@ -1,0 +1,239 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="XML Refactoring Actions"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="The following refactoring actions are available while editing an XML document: Document XML Refactoring Surround with tag... (Ctrl+E) - Allows you to choose a tag that encloses a selected portion of ..."/>
+<meta name="DC.subject" content="Editing XML documents, editor specific actions, refactoring actions"/>
+<meta name="keywords" content="Editing XML documents, editor specific actions, refactoring actions"/>
+<meta name="indexterms" content="Editing XML documents, editor specific actions, refactoring actions"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/xml-editor-specific-actions.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/XML-document-actions.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/smart-editing.html"/>
+<meta name="DC.Relation" scheme="URI" content="preferences-content-completion.html#preferences-content-completion"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="XML-refactoring-actions"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>XML Refactoring Actions</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="XML-refactoring-actions">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/xml-editor-specific-actions.html" title="XML Editor Specific Actions"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">XML Editor Specific Actions</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/XML-document-actions.html" title="XML Document Actions"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">XML Document Actions</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/smart-editing.html" title="Smart Editing"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Smart Editing</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/editing-xml-documents.html" title="Editing XML Documents">Editing XML Documents</a> / <a class="navheader_parent_path" href="../topics/xml-editor-specific-actions.html" title="XML Editor Specific Actions">XML Editor Specific Actions</a></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">XML Refactoring Actions</h1>
+
+  
+  <div class="body">
+    <p class="p">The following refactoring actions are available while editing an XML document:</p>
+
+    <ul class="ul">
+      <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_surround_with_tag.png"/>Surround with tag... <span class="keyword shortcut">(Ctrl+E)</span>
+            
+            </span></span> - Allows you to choose a tag that encloses a selected portion of content. If
+        there is no selection, the start and end tags are inserted at the caret position. The caret
+        is placed:<ul class="ul">
+          <li class="li">between the start and end tag, if the <span class="ph uicontrol">Cursor position between
+              tags</span> option is set;</li>
+
+          <li class="li">at the end of the start tag, in an insert-attribute position, if the <span class="ph uicontrol">Cursor
+              position between tags</span> option is not set.</li>
+
+        </ul>
+</li>
+
+      <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_surround_with.png"/>Surround with &lt;tag&gt; <span class="keyword shortcut">(Ctrl+/)</span>
+            
+            </span></span> - Similar in behavior with the <span class="ph uicontrol">Surround with tag...</span>
+        action, except that it inserts the last tag used by the <span class="ph uicontrol">Surround with
+          tag...</span> action.</li>
+
+      <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_rename_element.png"/>Rename element
+              <span class="keyword shortcut">(Alt+Shift+R)</span>
+            </span></span> - the element from the caret position and the elements that have the same
+        name as the current element can be renamed according with the options from the
+          <span class="ph uicontrol">Rename</span> dialog.<p class="p"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_rename_prefix.png"/>Rename prefix
+                <span class="keyword shortcut">(Alt+Shift+P)</span>
+              </span></span> - the prefix of the element from the caret position and the elements that
+          have the same prefix as the current element can be renamed according with the options from
+          the <span class="ph uicontrol">Rename</span> dialog.</p>
+<p class="p">Selecting the <span class="ph uicontrol">Rename current
+            element prefix</span> option, the application will recursively traverse the current
+          element and all its children.</p>
+<p class="p">For example, to change the
+            <samp class="ph codeph">xmlns:p1="ns1"</samp> association existing in the current element to
+            <samp class="ph codeph">xmlns:p5="ns1"</samp>, just select this option and press
+            <span class="ph uicontrol">OK</span>. If the association <samp class="ph codeph">xmlns:p1="ns1"</samp> is applied
+          on the parent of the current element, then <span class="ph">Oxygen XML</span> will introduce a new
+          declaration <samp class="ph codeph">xmlns:p5="ns1"</samp> in the current element and will change the
+          prefix from <samp class="ph codeph">p1</samp> to <samp class="ph codeph">p5</samp>. If <samp class="ph codeph">p5</samp> is already
+          associated in the current element with another namespace, let's say <samp class="ph codeph">ns5</samp>,
+          then a dialog showing the conflict will be displayed. Pressing the
+            <span class="ph uicontrol">OK</span> button, the prefix will be modified from <samp class="ph codeph">p1</samp>
+          to <samp class="ph codeph">p5</samp> without inserting a new declaration
+          <samp class="ph codeph">xmlns:p5="ns1"</samp>. On <span class="ph uicontrol">Cancel</span> no modification is
+          made.</p>
+<p class="p">Selecting the <span class="ph uicontrol">Rename current prefix in all document</span>
+          option, the application will apply the change on the entire document.</p>
+<p class="p">To apply the
+          action also inside attribute values one must check the <span class="ph uicontrol">Rename also attribute
+            values that start with the same prefix</span> checkbox.</p>
+</li>
+
+      <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_split_element.png"/>Split element <span class="keyword shortcut">(Ctrl+Alt+D)</span></span></span> - Split the element from the caret position in two identical elements. The
+        caret must be inside the element.</li>
+
+      <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_join_elements.png"/>Join elements <span class="keyword shortcut">(Ctrl+Alt+J)</span>
+            
+            </span></span> - Joins the left and right elements relative to the current caret position.
+        The elements must have the same name, attributes and attributes values.</li>
+
+      <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Document</span> &gt; <span class="ph uicontrol">XML Refactoring</span> &gt; <span class="ph uicontrol"><img class="image" src="../img/bt_delete_element_tags.png"/>Delete element tags <span class="keyword shortcut">(Ctrl+Alt+X)</span>
+            
+            </span></span> - Deletes the start and end tag of the current element.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="related-links"><div class="relinfo"><strong>Related information</strong><br/>
+<div><a class="navheader_parent_path" href="preferences-content-completion.html#preferences-content-completion" title="Content Completion">Content Completion</a></div>
+</div>
+</div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/xml-editor-specific-actions.html" title="XML Editor Specific Actions"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">XML Editor Specific Actions</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/XML-document-actions.html" title="XML Document Actions"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">XML Document Actions</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/smart-editing.html" title="Smart Editing"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Smart Editing</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<address xmlns="http://docbook.org/ns/docbook">
+        <street><!-- please put the name of the street here, if available --></street>
+        <city><!-- please put the city/town here, if available --></city>
+        <postcode><!-- please put the post code here, if available --></postcode>
+        <country><!-- please put the Countryhere--></country>
+        <phone><!-- please put the phone number here, if available --></phone>
+        <uri><!-- please put the website here, if available --></uri>
+</address>

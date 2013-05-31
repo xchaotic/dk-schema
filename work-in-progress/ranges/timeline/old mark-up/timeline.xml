@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book SYSTEM "C:\DKBacklist\2008 titles\master enhancement\Eyewitness Guides\master DTDs\ewg_mas.dtd">
+<book id="EWG_GRESCI">
+	<title>EWG Great Scientists</title>
+	<article id="EWG_GRESCI064MILSCI">
+		<head>Milestones in Science</head>
+		<section id="EWG_GRESCI064MILSCI_001">
+			<head>
+				<date>781 <modifier>bce</modifier>
+				</date>
+			</head>
+			<p>Chinese astronomers make the first
+            recorded observation of a solar eclipse.</p>
+		</section>
+		<section id="EWG_GRESCI064MILSCI_002">
+			<head>
+				<date_range>
+					<date>
+						<modifier>c.</modifier>470</date>–<date>370 <modifier>bce</modifier>
+					</date>
+				</date_range>
+			</head>
+			<p>c.470–370 bce Greek philosopher Democritus puts forward an early atomic
+                theory, according to which everything consists of atoms.</p>
+		</section>
+	</article>
+</book>

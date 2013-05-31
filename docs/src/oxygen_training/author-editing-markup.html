@@ -1,0 +1,284 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Editing the XML Markup"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="One of the most useful feature in Author editor is the content completion support. The fastest way to invoke it is to press (Enter) or (Ctrl + Space) (on Mac OS X the shortcut is (Meta + Space) ) in ..."/>
+<meta name="DC.subject" content="Author editor, edit markup"/>
+<meta name="keywords" content="Author editor, edit markup"/>
+<meta name="indexterms" content="Author editor, edit markup"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/editing-xml-documents-author.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/editing-xml-documents-author.html"/>
+<meta name="DC.Relation" scheme="URI" content="../concepts/code-templates.html"/>
+<meta name="DC.Relation" scheme="URI" content="../concepts/code-templates.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="author-editing-markup"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Editing the XML Markup</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="author-editing-markup">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents in Author</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents in Author</span></a></span>  
+<span class="navnext"><a class="link" href="../concepts/code-templates.html" title="Code Templates"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Code Templates</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/author-editor.html" title="The Author Editor">The Author Editor</a> / <a class="navheader_parent_path" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author">Editing XML Documents in Author</a></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Editing the XML Markup</h1>
+
+  
+  <div class="body">
+    <p class="p">One of the most useful feature in Author editor is the content completion support. The
+      fastest way to invoke it is to press <span class="ph uicontrol">
+        <span class="keyword shortcut">(Enter)</span></span> or <span class="ph uicontrol">
+        <span class="keyword shortcut">(Ctrl + Space)</span></span> (on <em class="ph i">Mac OS X</em> the shortcut is <span class="ph uicontrol">
+        <span class="keyword shortcut">(Meta + Space)</span></span>) in the editor panel.</p>
+
+    <p class="p">Content completion window offers the following types of actions:</p>
+
+    <ul class="ul">
+      <li class="li">inserting allowed elements for the current context according to the associated schema, if
+        any;</li>
+
+      <li class="li">inserting element values if such values are specified in the schema for the current
+        context;</li>
+
+      <li class="li">inserting new undeclared elements by entering their name in the text field;</li>
+
+      <li class="li">inserting CDATA sections, comments, processing instructions;</li>
+
+      <li class="li">inserting <a class="xref" href="../concepts/code-templates.html#code-templates">code
+          templates</a>.</li>
+
+    </ul>
+
+    <div class="fig fignone">
+      
+      <img class="image" src="../img/bt_author_content_completion.png"/>
+    <p class="figcap">Content completion window</p></div>
+
+    <p class="p">If you press <span class="ph uicontrol">
+        <span class="keyword shortcut">(Enter)</span></span> the displayed content completion window will
+      contain as first entries the <span class="ph uicontrol">Split &lt;Element name&gt;</span> items. Usually
+      you can only split the closest block element to the caret position but if it is inside a list
+      item, the list item will also be proposed for split. Selecting <span class="ph uicontrol">Split &lt;Element
+        name&gt;</span> splits the content of the specified element around the caret position.
+      Thus, if the caret is positioned at the beginning or at the end of the element, the newly
+      created sibling will be empty.</p>
+
+    <p class="p">If the caret is positioned inside a space preserve element the first choice in the content
+      completion window is <span class="ph uicontrol">Enter</span> which inserts a new line in the content of
+      the element. If there is a selection in the editor and you invoke content completion, a
+        <span class="ph uicontrol">Surround with</span> operation can be performed. The tag used will be the
+      selected item from the content completion window.</p>
+
+    <div class="p">By default you are not allowed to insert element names which are not considered by the
+      associated schema as valid proposals in the current context. This can be changed by unchecking
+      the <span class="ph uicontrol">Allow only insertion of valid elements and attributes</span> check box
+      from the <a class="xref" href="preferences-schema-aware.html">Schema aware preferences
+        page</a>.<div class="note note"><span class="notetitle">Note:</span> The content completion list of proposals contains elements depending on
+        the elements inserted both before and after the caret position. </div>
+</div>
+
+    <p class="p"><strong class="ph b">Joining two elements</strong> - You can choose to join the content of two sibling elements with
+      the same name by using the <span class="ph menucascade"><span class="ph uicontrol">contextual menu</span> &gt; <span class="ph uicontrol">Join elements</span></span> action.</p>
+
+    <div class="p">The same action can be triggered also in the next situations:<ul class="ul">
+        <li class="li">The caret is located before the end position of the first element and <span class="ph uicontrol">
+            <span class="keyword shortcut">(Delete)</span></span> key is pressed.</li>
+
+        <li class="li">The caret is located after the end position of the first element and <span class="ph uicontrol">
+            <span class="keyword shortcut">(Backspace)</span></span> key is pressed.</li>
+
+        <li class="li">The caret is located before the start position of the second element and <span class="ph uicontrol">
+            <span class="keyword shortcut">(Delete)</span></span> key is pressed.</li>
+
+        <li class="li">The caret is located after the start position of the second element and <span class="ph uicontrol">
+            <span class="keyword shortcut">(Backspace)</span></span> key is pressed.</li>
+
+      </ul>
+</div>
+
+    <p class="p">In either of the described cases, if the element has no sibling or the sibling element has a
+      different name, <span class="ph uicontrol">Unwrap</span> operation will be performed automatically.</p>
+
+    <p class="p"><strong class="ph b">Unwrapping the content of an element</strong> - You can unwrap the content of an element by
+      deleting its tags using the <span class="ph menucascade"><span class="ph uicontrol">Delete element tags</span></span> action from the editor contextual menu.</p>
+
+    <p class="p">The same action can be triggered in the next situations: </p>
+
+    <ul class="ul">
+      <li class="li">The caret is located before the start position of the element and <span class="ph uicontrol">
+          <span class="keyword shortcut">(Delete)</span></span> key is pressed.</li>
+
+      <li class="li">The caret is located after the start position of the element and <span class="ph uicontrol">
+          <span class="keyword shortcut">(Backspace)</span></span> key is pressed.</li>
+
+      <li class="li">The caret is located before the end position of the element and <span class="ph uicontrol">
+          <span class="keyword shortcut">(Delete)</span></span> key is pressed.</li>
+
+      <li class="li">The caret is located after the end position of the element and <span class="ph uicontrol">
+          <span class="keyword shortcut">(Backspace)</span></span> key is pressed.</li>
+
+    </ul>
+
+    <p class="p"><strong class="ph b">Removing all the markup of an element</strong> - You can remove the markup of the current
+      element and keep only the text content with the action <span class="ph uicontrol">
+        <img class="image" src="../img/bt_remove_all_markup.png"/>Remove All Markup </span> available on
+      the submenu <span class="ph uicontrol">Refactoring</span> of the contextual menu and on the toolbar
+        <span class="ph uicontrol">XML Refactoring</span>.</p>
+
+    <p class="p">When you press <span class="ph uicontrol">
+        <span class="keyword shortcut">(Delete)</span></span> or <span class="ph uicontrol">
+        <span class="keyword shortcut">(Backspace)</span></span> in the presented cases the element is unwrapped
+      or it is joined with its sibling. If the current element is empty, the element tags will be
+      deleted.</p>
+
+    <p class="p">When you click on a marker representing the start or end tag of an element, the entire
+      element will be selected. The contextual menu displayed when you right-click on the marker
+      representing the start or end tag of an element contains <span class="ph uicontrol">Append child</span>,
+        <span class="ph uicontrol">Insert Before</span> and <span class="ph uicontrol">Insert After</span> submenus as
+      first entries.</p>
+
+  </div>
+
+<div class="related-links">
+<ol class="olchildlinks">
+<li class="link olchildlink"><a href="../concepts/code-templates.html">Code Templates</a>
+</li>
+</ol>
+</div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents in Author</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents in Author</span></a></span>  
+<span class="navnext"><a class="link" href="../concepts/code-templates.html" title="Code Templates"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Code Templates</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

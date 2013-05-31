@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: Your Toddler Month by Month -->
+<!-- The titleabbrev text, i.e. 'Language development' can be used if an alternative version is needed for some processing (for example assembling a toc).
+xreflable can be used for alternative xref link text -->
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0" xml:id="YOUTOD212COMTOD">
+    <title>Communication with your Toddler</title>
+    <section xml:id="YOUTOD212COMTOD_011" xreflabel="the section on Language devlopment">
+        <title>Language development – taught or caught?</title>
+        <titleabbrev xml:id="YOUTOD212COMTOD_012">Language development</titleabbrev>
+        <para>Until the late 1950s .....rules, such as making plurals.</para>
+    </section>
+    <!-- text removed -->
+    <section xml:id="YOUTOD256WHATOD_004">
+        <title>Tuning in to others</title>
+        <para>Your child starts to understand ...... direction and pointing (see <phrase
+                condition="dig" cref="YOUTOD256WHATOD_004CREF001">
+                <xref linkend="YOUTOD212COMTOD_011"/></phrase>
+            <phrase condition="prt" cref="YOUTOD256WHATOD_004CREF001">page 217</phrase>).</para>
+    </section>
+</article>

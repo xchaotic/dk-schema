@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<address xmlns="http://docbook.org/ns/docbook">
+        <street><!-- please put the street of the POI here, if available --></street>
+        <city><!-- please put the city/town of the POI here, if available --></city>
+        <postcode><!-- please put the post code of the POI here, if available --></postcode>
+        <country><!-- please put the Country of the POI here--></country>
+        
+</address>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="ANIMPROC_0001">
+    <!-- procedure -->
+
+    <title>Procedure sample</title>
+
+    <procedure xml:id="ANIMPROC_0003">
+        <title>Catching Prey from the air</title>
+        <step xml:id="ANIMPROC_0004">
+            <title>Closing in on the prey</title>
+            <para><phrase role="stepnum">1</phrase>Using echolocation (...) </para>
+            <mediaobject xml:id="ANIMPROC_0005">
+                <imageobject>
+                    <imagedata fileref="step1.png"/>
+                </imageobject>
+            </mediaobject>
+        </step>
+        <step xml:id="ANIMPROC_0006">
+            <title>Capture</title>
+            <para><phrase role="stepnum">2</phrase>In one swift movement (...) </para>
+            <mediaobject xml:id="ANIMPROC_0007">
+                <imageobject>
+                    <imagedata fileref="step1.png"/>
+                </imageobject>
+            </mediaobject>
+        </step>
+        <step xml:id="ANIMPROC_0008">
+            <title>Holding on</title>
+            <para><phrase role="stepnum">3</phrase> The bat quickly transfers (...) </para>
+            <mediaobject xml:id="ANIMPROC_0009">
+                <imageobject>
+                    <imagedata fileref="step1.png"/>
+                </imageobject>
+            </mediaobject>
+        </step>
+        <step xml:id="ANIMPROC_0010">
+            <title>Finding a place to feed</title>
+            <para><phrase role="stepnum">4</phrase> In order to eat the fish (...) </para>
+            <mediaobject xml:id="ANIMPROC_00010">
+                <imageobject>
+                    <imagedata fileref="step1.png"/>
+                </imageobject>
+            </mediaobject>
+        </step>
+    </procedure>
+
+</article>

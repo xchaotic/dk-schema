@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:saxon="http://saxon.sf.net/"
+                        xmlns:db="http://docbook.org/ns/docbook"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                        title="Test xml files that are of type dk-extension.rnc "
+                        schemaVersion="ISO19757-3"><!--   
+		   
+		   
+		 --><svrl:ns-prefix-in-attribute-values uri="http://docbook.org/ns/docbook" prefix="db"/>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="condition.checks"
+                        name="Whenever condition attribute is used the element should have have an xml:id or cref&#xA;            attribute"/>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="cref.checks"
+                        name="cref points to element with matching xml:id"/>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="component.checks"
+                        name="components have xml:id"/>
+   <svrl:fired-rule context="db:book | db:part | db:preface | db:chapter | db:appendix | db:glossary |              db:bibliography | db:article"/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every component should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="section.checks"
+                        name="sections have xml:id"/>
+   <svrl:fired-rule context="db:sect1 | db:sect2 | db:sect3 | db:sect4 | db:sect5 | db:section |              db:simplesect | db:bridgehead | db:refsect1 | db:refsect2 | db:refsect3 | db:dlossdiv |             db:bibliodiv | db:indexdiv"/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every section should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:sect1 | db:sect2 | db:sect3 | db:sect4 | db:sect5 | db:section |              db:simplesect | db:bridgehead | db:refsect1 | db:refsect2 | db:refsect3 | db:dlossdiv |             db:bibliodiv | db:indexdiv"/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][2]">
+      <svrl:text>every section should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="block-level.checks"
+                        name="Block Level has xml:id"/>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:variablelist[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:varlistentry[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:listitem[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:variablelist[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:varlistentry[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:listitem[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:variablelist[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:varlistentry[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:listitem[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:para[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:caption[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:para[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][2]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:caption[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:para[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:para[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:calloutlist | db:itemizedlist | db:orderedlist | db:segmentedlist |                         db:simplelist | db:variablelist | db:caution |  db:important | db:note | db:tip |              db:warning | db:address | db:literallayout | db:programlisting | db:creen |              db:screenshot | db:synopsis | db:example | db:informalexample | db:figure |              db:informalfigure | db:table | db:informaltable | db:para | db:simpara | db:formalpara |              db:equation | db:informalequation | db:figure | db:screenshot | db:graphic | db:mediaobject |              db:qandaset | db:blockquote | db:cmdsynopsis | db:epigraph | db:funcsynopsis | db:highlights |             db:msgset | db:procedure | db:sidebar                          "/>
+   <svrl:failed-assert test="exists(@xml:id)"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:section[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:mediaobject[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:caption[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:para[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>every block-level element should have an xml:id</svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="range.checks"
+                        name="Range Checks"/>
+   <svrl:active-pattern document="file:/home/alex/UTSWEBClientWork/Lech/005%20-%20DK%20Schema/code2/hg/automation/schematron/in/key_fishbrain.xml"
+                        id="keys.checks"
+                        name="Keys Checks"/>
+   <svrl:fired-rule context="db:variablelist"/>
+   <svrl:fired-rule context="db:varlistentry[exists(parent::db:variablelist[exists(@role) and matches(@role,'^key$')])]"/>
+   <svrl:fired-rule context="db:varlistentry[exists(parent::db:variablelist[exists(@role) and matches(@role,'^key$')])]"/>
+   <svrl:fired-rule context="db:variablelist"/>
+   <svrl:failed-assert test="exists(@role) and matches(@role,'^key$')"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:variablelist[namespace-uri()='http://docbook.org/ns/docbook'][2]">
+      <svrl:text>for every variable list there should be an role = key</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="db:varlistentry[exists(parent::db:variablelist[not(exists(@role) and matches(@role,'^key$'))])]"/>
+   <svrl:failed-assert test="not(exists(@xml:id))"
+                       location="/*:article[namespace-uri()='http://docbook.org/ns/docbook'][1]/*:variablelist[namespace-uri()='http://docbook.org/ns/docbook'][2]/*:varlistentry[namespace-uri()='http://docbook.org/ns/docbook'][1]">
+      <svrl:text>varlistentry within variablelist without role key should have xml:id</svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>

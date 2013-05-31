@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group xml:id="MILHIS_Fields">
+   <name>Fields</name>
+   <group xml:id="MILHIS_Title">
+      <name>Title</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Chapter">
+      <name>Chapter</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Period">
+      <name>Period</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Spread">
+      <name>Spread</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Page">
+      <name>Page</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Name">
+      <name>Name</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Profile">
+      <name>Profile</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Infrastructure"/>
+      <ref idref="MILHIS_Insignia"/>
+      <ref idref="MILHIS_Medals"/>
+      <ref idref="MILHIS_Technology"/>
+      <ref idref="MILHIS_Troops"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Annotations">
+      <name>Annotations</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Clothing__Kit"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Date">
+      <name>Date</name>
+      <ref idref="MILHIS_Ammunition"/>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Origin">
+      <name>Origin</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Type">
+      <name>Type</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Length">
+      <name>Length</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Barrel_Length">
+      <name>Barrel Length</name>
+      <ref idref="MILHIS_Firearms"/>
+   </group>
+   <group xml:id="MILHIS_Calibre">
+      <name>Calibre</name>
+      <ref idref="MILHIS_Firearms"/>
+   </group>
+   <group xml:id="MILHIS_Width">
+      <name>Width</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+   </group>
+   <group xml:id="MILHIS_Diameter">
+      <name>Diameter</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Rotor_Diameter">
+      <name>Rotor Diameter</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Wingspan">
+      <name>Wingspan</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Height">
+      <name>Height</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+   </group>
+   <group xml:id="MILHIS_Weight">
+      <name>Weight</name>
+      <ref idref="MILHIS_Armour"/>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Tonnage">
+      <name>Tonnage</name>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Displacement">
+      <name>Displacement</name>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Load">
+      <name>Load</name>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Span">
+      <name>Span</name>
+      <ref idref="MILHIS_Weapons"/>
+   </group>
+   <group xml:id="MILHIS_Range">
+      <name>Range</name>
+      <ref idref="MILHIS_Firearms"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+   </group>
+   <group xml:id="MILHIS_Thickness">
+      <name>Thickness</name>
+      <ref idref="MILHIS_Vehicles_Land"/>
+   </group>
+   <group xml:id="MILHIS_Penetration">
+      <name>Penetration</name>
+      <ref idref="MILHIS_Vehicles_Land"/>
+   </group>
+   <group xml:id="MILHIS_Engine">
+      <name>Engine</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Capacity">
+      <name>Capacity</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Payload">
+      <name>Payload</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Top_Speed">
+      <name>Top Speed</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Average_Speed">
+      <name>Average Speed</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Cruising_Speed">
+      <name>Cruising Speed</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+   </group>
+   <group xml:id="MILHIS_Crew">
+      <name>Crew</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Passengers">
+      <name>Passengers</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Aircraft">
+      <name>Aircraft</name>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Armament">
+      <name>Armament</name>
+      <ref idref="MILHIS_Vehicles_Air"/>
+      <ref idref="MILHIS_Vehicles_Land"/>
+      <ref idref="MILHIS_Vehicles_Sea"/>
+   </group>
+   <group xml:id="MILHIS_Grenade">
+      <name>Grenade</name>
+      <ref idref="MILHIS_Firearms"/>
+   </group>
+   <group xml:id="MILHIS_Projectile">
+      <name>Projectile</name>
+      <ref idref="MILHIS_Firearms"/>
+   </group>
+</group>

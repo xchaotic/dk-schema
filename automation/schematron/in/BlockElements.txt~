@@ -1,0 +1,54 @@
+Sections:
+Sect1 | Sect2 | Sect3 | Sect4 | Sect5 | Section | SimpleSect | BridgeHead | RefSect1 | RefSect2 | RefSect3 | GlossDiv | BiblioDiv | IndexDiv
+
+
+Block Elements:
+CalloutList | ItemizedList | OrderedList | SegmentedList | SimpleList | VariableList | Caution | Important |  Note | Tip | Warning | Address | LiteralLayout | ProgramListing | Screen | ScreenShot | Synopsis | Example | InformalExample | Figure | InformalFigure | Table | InformalTable 
+
+Examples, Figures, and Tables are common block-level elements: Example, InformalExample, Figure, InformalFigure, Table, and InformalTable.
+
+The distinction between formal and informal elements is that formal elements have titles while informal ones do not. The InformalFigure element was introduced in DocBook V3.1. In prior versions of DocBook, you could only achieve the effect of an informal figure by placing its content, unwrapped, at the location where the informal figure was desired.
+Paragraphs
+
+There are three paragraph elements: Para, SimPara (simple paragraphs may not contain other block-level elements), and FormalPara (formal paragraphs have titles).
+Equations
+
+There are two block-equation elements, Equation and InformalEquation (for inline equations, use InlineEquation).
+
+Informal equations don't have titles. For reasons of backward-compatibility, Equations are not required to have titles. However, it may be more difficult for some stylesheet languages to properly enumerate Equations if they lack titles.
+Graphics
+
+Graphics occur most frequently in Figures and ScreenShots, but they can also occur without a wrapper. DocBook considers a Graphic a block element, even if it appears to occur inline. For graphics that you want to be represented inline, use InlineGraphic.
+
+DocBook V3.1 introduced a new element to contain graphics and other media types: MediaObject and its inline cousin, InlineMediaObject. These elements may contain video, audio, image, and text data. A single media object can contain several alternative forms from which the presentation system can select the most appropriate object.
+Questions and answers
+
+DocBook V3.1 introduced the QandASet element, which is suitable for FAQs (Frequently Asked Questions) and other similar collections of Questions and Answers.
+Miscellaneous block elements
+
+The following block elements are also available:
+
+BlockQuote
+
+    A block quotation. Block quotations may have Attributions.
+CmdSynopsis
+
+    An environment for marking up all the parameters and options of a command. 
+Epigraph
+
+    A short introduction, typically a quotation, at the beginning of a document. Epigraphs may have Attributions. 
+FuncSynopsis
+
+    An environment for marking up the return value and arguments of a function. 
+Highlights
+
+    A summary of the main points discussed in a book component (chapter, section, and so on). 
+MsgSet
+
+    A set of related error messages.
+Procedure
+
+    A procedure. Procedures contain Steps, which may contain SubSteps.
+Sidebar
+
+

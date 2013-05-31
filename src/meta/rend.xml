@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="group.rnc" type="compact"?>
+<group xmlns="http://dk.com/dk-schema" xml:id="rend_values">
+    <name>DK rend attribute values</name>
+    <description>This group contains all the possible values for the rend attribute</description>
+    <item xml:id="i">
+        <name>Italic</name>
+        <description>To indicate italic text</description>
+    </item>
+    <item xml:id="b">
+        <name>Bold</name>
+        <description>To indicate bold text</description>
+    </item>
+    <item xml:id="u">
+        <name>Underlined</name>
+        <description>To indicate underlined text</description>
+    </item>
+    <item xml:id="bi">
+        <name>Bold-Italic</name>
+        <description>To indicate bold-italic text</description>
+    </item>
+    <item xml:id="leadin">
+        <name>Lead in</name>
+        <description>To indicate lead in text at the beginning of a chapter or a section</description>
+    </item>
+    <group xml:id="level_H1">
+        <name>Heading 1</name>
+        <description>to override rendering back to Heading level 1</description>
+        <group xml:id="level_H2">
+            <name>Heading 2</name>
+            <description>to override rendering back to Heading level 3</description>
+            <group xml:id="level_H3">
+                <name>Heading 3</name>
+                <description>to override rendering back to Heading level 3</description>
+                <group xml:id="level_H4">
+                    <name>Heading 4</name>
+                    <description>to override rendering back to Heading level 4</description>
+                    <group xml:id="level_H5">
+                        <name>Heading 5</name>
+                        <description>to override rendering back to Heading level 5</description>
+                        <item xml:id="level_H6">
+                            <name>Heading 6</name>
+                            <description>to override rendering back to Heading level 6</description>
+                        </item>
+                    </group>
+                </group>
+            </group>
+        </group>
+    </group>
+</group>

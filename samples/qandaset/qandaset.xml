@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="FQA">
+    <title>Your Feeding Questions Answered</title>
+    <article xml:id="FQA030ALLABO">
+        <title>All about Bottle-Feeding</title>
+        <!-- The defaultlabel attribute generates the labels like 'Q', and 'A' etc. before the question and answers -->
+        <qandaset xml:id="FQA030ALLABO_001" defaultlabel="qanda">
+            <qandaentry xml:id="FQA030ALLABO_002">
+                <question>
+                    <para>Does my baby need extra water if he is drinking his formula?</para>
+                </question>
+                <answer>
+                    <para>Neither breast- nor bottle-fed babies ...... weight gain to suffer.</para>
+                </answer>
+            </qandaentry>
+            <qandaentry xml:id="FQA030ALLABO_003">
+                <question>
+                    <para>Do I really have to sterilize everything I use to prepare formula?</para>
+                </question>
+                <answer>
+                    <para>It is important to sterilize .......... particularly in warm milk.</para>
+                </answer>
+            </qandaentry>
+            <!-- text removed -->
+        </qandaset>
+    </article>
+</book>

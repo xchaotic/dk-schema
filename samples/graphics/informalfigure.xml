@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title>Informal Figure Sample</title>
+    <section>
+        <title>BB Ilust Group</title>
+
+        <informalfigure>
+            <!-- To logically group media objects such as illustrations use figure. -->
+            <!-- If the logical group does not have a title, use informalfigure. -->
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="informalfigure/axon1.png"/>
+                </imageobject>
+                <caption>
+                    <para>Axon is polarized at rest.</para>
+                </caption>
+            </mediaobject>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="informalfigure/axon2.png"/>
+                </imageobject>
+                <caption>
+                    <para>Axon depolarizes as impulse passes.</para>
+                </caption>
+            </mediaobject>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="informalfigure/axon3.png"/>
+                </imageobject>
+                <caption>
+                    <para>Impulse arrives at synapse.</para>
+                </caption>
+            </mediaobject>
+            <para><phrase role="title">Changing
+                form</phrase><!-- this indicates that it is a title of the caption para rather than an illustration group. Otherwise use figure. -->
+                A nerve impulse is always based on chemical particles. (...) shape of the chemical
+                neurotransmitter. </para>
+        </informalfigure>
+    </section>
+
+</article>

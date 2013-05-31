@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="animal"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title xml:id="opus_vino_000">Label terminology</title>
+    <glossary xml:id="opus_vino_001">
+        <glossdiv>
+            <title>FRANCE</title>
+            <glossentry xml:id="opus_vino_002">
+                <glossterm>Appellation d'Origine Controlee</glossterm>
+                <glossdef>
+                    <para>AOC or AC. A named and clearly defined region or locality. If this apears
+                        on a label, the wine legally must be fron the designated place nad made
+                        according to the local rules</para>
+                </glossdef>
+            </glossentry>
+            <glossentry xml:id="opus_vino_003">
+                <glossterm>AOP. Appelation d'Origine Protegee</glossterm>
+                <glossdef>
+                    <para>PDO. Protected Designation of Origin</para>
+                </glossdef>
+            </glossentry>
+            <glossentry xml:id="opus_vino_004">
+                <glossterm>VDQS</glossterm>
+                <glossdef>
+                    <para>A quality designation now being phased out.</para>
+                </glossdef>
+            </glossentry>
+        </glossdiv>
+        <glossdiv>
+            <title>SPAIN</title>
+            <glossentry>
+                <glossterm>...</glossterm>
+                <glossdef>
+                    <para>....</para>
+                </glossdef>
+            </glossentry>
+        </glossdiv>
+
+        <!-- text removed for brevity -->
+    </glossary>
+    <glossary xml:id="america_vino_001">
+        <title>AMERICA</title>
+        <glossdiv>
+            <title>USA</title>
+            <glossentry xml:id="america_vino_002">
+                <glossterm>Appellation d'Origine Controlee</glossterm>
+                <glossdef>
+                    <para>AOC or AC. A named and clearly defined region or locality. If this apears
+                        on a label, the wine legally must be fron the designated place nad made
+                        according to the local rules</para>
+                </glossdef>
+            </glossentry>
+        </glossdiv>
+        <glossdiv>
+            <title>MEXICO</title>
+            <glossentry>
+                <glossterm>...</glossterm>
+                <glossdef>
+                    <para>....</para>
+                </glossdef>
+            </glossentry>
+        </glossdiv>
+
+        <!-- text removed for brevity -->
+    </glossary>
+
+</book>

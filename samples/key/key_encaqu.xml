@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title : Encyclopedia for Aquarium and Pond Fish -->
+<!-- Sample mark-up to show how the keys (like key to symbols etc.) can be captured and the IDs can be used as linkends 
+    in the related blocks in the DB model -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ENCAQU">
+    <article xml:id="ENCAQU011HOWUSE">
+        <title>How to Use This Book</title>
+        <section xml:id="ENCAQU011HOWUSE_005">
+            <title>Symbols and data</title>
+            <section xml:id="ENCAQU011HOWUSE_006">
+                <title>Fish</title>
+                <para>Core facts in each directory ......... symbols for quick reference.</para>
+                <!-- The keys at the beginning of the book should be makred up as variablelists, and the specific IDs 
+                    can be called inside the entry dataset with xrefs-->
+                <variablelist xml:id="ENCAQU011HOWUSE_007" role="key" xreflabel="Definitions">
+                    <varlistentry xml:id="ENCAQU011HOWUSE_007_001">
+                        <term>Origins</term>
+                        <listitem>
+                            <mediaobject xml:id="ENCAQU011HOWUSE_007_002">
+                                <imageobject>
+                                    <imagedata fileref="small_globe.gif"/>
+                                </imageobject>
+                            </mediaobject>
+                            <para>the natural ..... in the wild.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry xml:id="ENCAQU011HOWUSE_007_010">
+                        <term>Size</term>
+                        <listitem>
+
+                            <para>the typical adult size in ....... this is very different.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </section>
+        </section>
+        <!-- text removed -->
+    </article>
+    <article xml:id="ENCAQU074CYPRIN">
+        <title>Cyprinids</title>
+        <section xml:id="ENCAQU074SILSHA" role="entry">
+            <title>Silver Shark</title>
+
+            <simplelist xml:id="ENCAQU074SILSHA_001" role="dataset">
+                <member role="scientific_name">Balantiocheilos melanopterus</member>
+                <member role="origins"><xref role="key_include" linkend="ENCAQU011HOWUSE_007_001"
+                    />South-east Asia, .... and Borneo.</member>
+                <!-- use key_include to include and render the the key, otherwise use keyref and the key will be linked to -->
+                <member role="size"><xref role="key_include" linkend="ENCAQU011HOWUSE_007_002"/>30
+                    cm (12 in).</member>
+            </simplelist>
+            <para>A silvery body and a deeply forked ........... may prey on smaller
+                companions.</para>
+            <!-- content removed for brevity -->
+        </section>
+    </article>
+</book>

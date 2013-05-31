@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: RG to iPod, pg. 81 -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="RG_IPOD">
+    <title>The Rough Guide to iPods &amp; iTunes</title>
+    <chapter xml:id="RG_IPOD078-081IMPPHO">
+        <title>Importing Photos</title>
+        <subtitle>Pictures in your pocket</subtitle>
+        <!-- text removed -->
+        <itemizedlist xml:id="RG_IPOD078IMPPHO_001">
+            <listitem>
+                <formalpara>
+                    <title>On a click-wheel iPod</title>
+
+                    <para>Choose ...... To kick-start a slideshow, use the <phrase role="ui"
+                                ><inlinemediaobject xml:id="RG_IPOD078IMPPHO_002">
+                                <imageobject><imagedata fileref="rg_ipod078imppho_002.jpg"/>
+                                </imageobject></inlinemediaobject></phrase> button (if you have an
+                        album selected) or the <phrase role="ui">Select</phrase> button (if you’re
+                        already viewing a single image). For playback options, explore the <phrase
+                            role="ui">Photos</phrase>
+                        <phrase role="ui">Settings</phrase> menu</para>
+                </formalpara>
+            </listitem>
+            <listitem>
+                <formalpara>
+                    <title>On an iPod touch</title>
+                    <para>Tap the sunflower icon on the Home screen and you’re away. Tapping the
+                        image you are currently viewing toggles the control strips on and off and
+                        you simply swipe to move between shots. To start a slideshow, tap the
+                            <phrase role="ui"><inlinemediaobject xml:id="RG_IPOD078IMPPHO_003">
+                                <imageobject><imagedata fileref="rg_ipod078imppho_002.jpg"/>
+                                </imageobject></inlinemediaobject></phrase> icon on the lower
+                        control strip; slideshow preferences can be found within <phrase role="ui"
+                            >Settings</phrase>
+                        <phrase role="ui">Photos</phrase>. Also, take a moment to tap the icon. This
+                        lets you do things such as set an image as your iPod’s wallpaper or email a
+                        photo to a friend. </para>
+                </formalpara>
+            </listitem>
+            <!-- text removed -->
+        </itemizedlist>
+    </chapter>
+</book>

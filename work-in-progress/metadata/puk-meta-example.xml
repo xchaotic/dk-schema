@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xml:id="jac0000001" version="PBL1.0" revision="1" xmlns="http://docbook.org/ns/docbook"
+    xmlns:pbl="http://www.penguingroup.com/ns/standard">
+    <info xml:id="jac0000002">
+        <title xml:id="jac0000003">Jack Sheppard</title>
+        <author>
+            <personname><firstname>William Harrison</firstname>
+                <surname>Ainsworth</surname></personname>
+            <personblurb xml:id="jac0000005">
+                <para xml:id="jac0000008" role="center"><emphasis role="italic"></emphasis></para>
+                <para xml:id="jac0000009" role="noindent">William Ainsworth was born in Manchester
+                    on 4 February 1805. He followed his father in training as a solicitor, moving to
+                    London to complete his studies at the Inner Temple. In London he established a
+                    friendship with the essayist Charles Lamb and collaborated with a fellow clerk
+                    in his father’s office on a romance called <emphasis role="italic">Sir John
+                        Chiverton</emphasis> in 1826. The work was a popular success, attracting the
+                    interest of Sir Walter Scott. In the same year Ainsworth married Fanny Ebers,
+                    the daughter of his publisher. After his own brief foray into publishing he
+                    turned to literary and journalistic writing as a career. His most famous work,
+                        <emphasis role="italic">Rookwood</emphasis>, was published in 1834 and is
+                    notable for the popularised minor character of highwayman Dick Turpin. He became
+                    well known as a literary host in London, moving in the circles of Thackeray and
+                    Carlyle, and mentoring the young Dickens. He edited several magazines, including
+                        <emphasis role="italic">Bentley’s Miscellany</emphasis> and the <emphasis
+                        role="italic">New Monthly Magazine</emphasis>, whilst steadily continuing to
+                    publish his own historical romances. He continued his literary activity until
+                    his death at Reigate on the 3 January 1882 and was buried at Kensal
+                    Green.</para>
+            </personblurb>
+        </author>
+
+
+        <publisher xml:id="jac0000016">
+            <publishername>Penguin Books Ltd,</publishername>
+            <address xml:id="jac0000017"><street>80 Strand</street>, <city>London</city> <postcode>WC2R 0RL</postcode>, <country>England</country></address>
+        </publisher>
+
+        <biblioset xml:id="jac0000035" role="publicationhistory">
+            <pubdate>First published 1839</pubdate>
+            <pubdate>Published as a Pocket Penguin Classic 2010</pubdate>
+            <bibliomisc xml:id="jac0000036" role="reprint">1</bibliomisc>
+        </biblioset>
+        <legalnotice xml:id="jac0000037">
+            <para xml:id="jac0000038">All rights reserved</para>
+        </legalnotice>
+        <biblioset xml:id="jac0000039" role="printhistory">
+            <biblioset xml:id="jac0000040" role="typeface">
+                <bibliomisc xml:id="jac0000041" role="name">PostScript Monotype Dante</bibliomisc>
+                <bibliomisc xml:id="jac0000042" role="size">10.5/12.5pt</bibliomisc>
+            </biblioset>
+            <org role="typesetter">
+                <orgname>Rowland Phototypesetting Ltd,</orgname>
+                <address xml:id="jac0000043">Bury St Edmunds, Suffolk</address>
+            </org>
+            <org role="printer">
+                <orgname>Clays Ltd,</orgname>
+                <address><city>St Ives plc</city></address>
+            </org>
+        </biblioset>
+        <legalnotice xml:id="jac0000044">
+            <para xml:id="jac0000045">Except in the United States of America, this book is sold
+                subject to the condition that it shall not, by way of trade or otherwise, be lent,
+                re-sold, hired out, or otherwise circulated without the publisher’s prior consent in
+                any form of binding or cover other than that in which it is published and without a
+                similar condition including this condition being imposed on the subsequent
+                purchaser</para>
+
+        </legalnotice>
+        <biblioid class="isbn" role="isbn-13">9780141191003</biblioid>
+        <bibliomisc xml:id="jac0000050" role="specification">2009-11-24</bibliomisc>
+        <bibliomisc xml:id="jac0000051" role="converted">Jouve</bibliomisc>
+    </info>   
+</book>

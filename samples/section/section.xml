@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?oxygen RNGSchema="../../dk-schema/common/dk-extensions.rnc" type="compact"?> - for offline testing-->
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: Animal, part 'Animal Kingdom'-->
+<!-- Please note that the IDs for sections have been derived from their own heads, since they serve as divisioning 
+    elements in the Docbook model (except for the last level, which map to the regular sections 
+    appearing inside an article as per the old model  )-->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ANIMAL">
+    <title>Animal</title>
+    <!-- text removed for brevity -->
+    <part xml:id="ANIMAL082-597ANIKIN">
+        <title>The Animal Kingdom</title>
+        <chapter xml:id="ANIMAL084-257MAMMAL">
+            <title>Mammals</title>
+            <!-- text removed for brevity -->
+            <!-- sections used for creating divisions inside the parent component (chapter) -->
+            <section xml:id="ANIMAL090EGGMAM">
+                <title>Egg-laying Mammals</title>
+                <para>Dummy.....</para>
+                <!-- text removed for brevity -->
+            </section>
+            <section xml:id="ANIMAL091MARSUP">
+                <title>Marsupials</title>
+                <para>Dummy.....</para>
+                <!-- text removed for brevity -->
+            </section>
+            <!-- text removed -->
+            <section xml:id="ANIMAL116PRIMAT">
+                <title>Primates</title>
+                <para>Dummy.....</para>
+                <!-- text removed for brevity -->
+                <section xml:id="ANIMAL118PROSIM">
+                    <title>PROSIMIANS</title>
+                    <para>Dummy.....</para>
+                </section>
+                <!-- section described along with its child/constituent components -->
+                <section xml:id="ANIMAL122MONKEY">
+                    <title>Monkeys</title>
+                    <para role="intro"><phrase role="leadin">THIS LARGE</phrase>, diverse ......
+                        research.</para>
+                    <section xml:id="ANIMAL122MONKEY_001">
+                        <title>Anatomy</title>
+                        <para>Monkeys are ...... social gestures.</para>
+                        <!-- text removed -->
+                    </section>
+                    <!-- text removed -->
+                    <section xml:id="ANIMAL123GRYWOL" role="entry">
+                        <title>Grey woolly monkey</title>
+                        <simplelist xml:id="ANIMAL123GRYWOL_001" role="dataset">
+                            <member role="length" remap="data">50–65cm (20– 26 in)</member>
+                            <!-- text removed -->
+                        </simplelist>
+                        <para>Woolly monkeys have thick....... when mature.</para>
+                        <!-- content removed -->
+                        <sidebar xml:id="ANIMAL123CONSER" remap="feature">
+                            <title>Conservation</title>
+                            <para>Monkeys such as ........ is prized.</para>
+                            <!-- text removed -->
+                            <mediaobject xml:id="ANIMAL123CONSER_001">
+                                <imageobject>
+                                    <imagedata fileref="animal123conser_001.jpg"/>
+                                </imageobject>
+                            </mediaobject>
+                        </sidebar>
+                    </section>
+                    <!-- text removed -->
+                </section>
+            </section>
+        </chapter>
+        <!-- text removed for brevity -->
+    </part>
+</book>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.kode1100.co.uk/dk/dk-schema/common/dk-extensions.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="BIRD">
+    <title>Bird</title>
+    <subtitle>The Definitive Visual Guide</subtitle>
+    <!-- Text removed for sample purposes -->
+    <chapter xml:id="BIRD098-487BIRSPE">
+		<title xml:id="BIRD098BIRSPE">Bird Species</title>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD100CLASSI" role="article">
+			<title xml:id="BIRD100CLASSI_001">Classification</title>
+			<!-- Text removed for sample purposes -->			
+			<section xml:id="BIRD100BIRORD" role="feature">
+				<title xml:id="BIRD100BIRORD_001">Bird orders</title>
+				<para xml:id="BIRD100BIRORD_002">This section of the <phrase role="prt"
+						cref="BIRD100BIRORD_COND1">book</phrase><phrase role="dig"
+						cref="BIRD100BIRORD_COND1">guide</phrase> follows the names and
+					classification sequence used in <emphasis role="italic">The Howard and Moore
+						Complete Checklist of Birds of the World</emphasis> (2003) – one of the most
+					comprehensive and authoritative sources in bird classification. In this
+					sequence, a total of 9,721 bird species are recognized, belonging to a total of
+					204 families. In this book, these families have been grouped into the following
+					29 orders.</para>
+				<!-- DMD: A basic taxonomy portraying the 'Order' of birds (Refer to screenshot Bird_Order, Pg 101) has currently been capturted as a key. -->				
+				<variablelist xml:id="BIRD100BIRORD_003" role="key" xreflabel="Bird Orders" metaref="DK_Bird_Orders">
+					<varlistentry xml:id="BIRD100BIRORD_004" xreflabel="Tinamous" metaref="DK_Tinamiformes">
+						<term>Tinamous</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis><phrase>Tinamiformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 1</para>
+							<para><emphasis role="bold">Species</emphasis> 46</para>
+						</listitem>
+					</varlistentry>
+					<!-- DMD: In the alternative mark-up of key item the text string 'Order' is part of the listitem, at the same level as that of the families and species. -->
+					<varlistentry xml:id="BIRD100BIRORD_005" xreflabel="Ostriches" metaref="DK_Struthioniformes">
+						<term>Ostriches</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase>Struthioniformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 1</para>
+							<para><emphasis role="bold">Species</emphasis> 2</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_006" xreflabel="Cassowaries and Emus" metaref="DK_Casuariiformes">
+						<term>Cassowaries and Emus</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase>Casuariiformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 2</para>
+							<para><emphasis role="bold">Species</emphasis> 4</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_007" xreflabel="Kiwis" metaref="DK_Dinornithiformes">
+						<term>Kiwis</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase role="DK_Scientific_Name">Dinornithiformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 1</para>
+							<para><emphasis role="bold">Species</emphasis> 3–6</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_008" xreflabel="Gamebirds" metaref="DK_Galliformes">
+						<term>Gamebirds</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase role="DK_Scientific_Name">Galliformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> <phrase role="number_of_families">5</phrase></para>
+							<para><emphasis role="bold">Species</emphasis> 289</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_009" xreflabel="Waterfowl" metaref="DK_Anseriformes">
+						<term>Waterfowl</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase>Anseriformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 3</para>
+							<para><emphasis role="bold">Species</emphasis> 157</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+					<varlistentry xml:id="BIRD100BIRORD_010" xreflabel="Birds of Prey" metaref="DK_Falconiformes">
+						<term>Birds of Prey</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase>Falconiformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 3</para>
+							<para><emphasis role="bold">Species</emphasis> 304</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+					<varlistentry xml:id="BIRD100BIRORD_011" xreflabel="Passerines" metaref="DK_Passeriformes">
+						<term>Passerines</term>
+						<listitem>
+							<para><emphasis role="bold">Order</emphasis> <phrase>Passeriformes</phrase></para>
+							<para><emphasis role="bold">Families</emphasis> 92</para>
+							<para><emphasis role="bold">Species</emphasis> 5,200</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+				</variablelist>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD111WILTUR" role="entry">
+			<title xml:id="BIRD111WILTUR_001">Wild Turkey</title>
+			<para/>
+		</section>
+		<section xml:id="BIRD159SADSTO" role="entry">
+			<title xml:id="BIRD159SADSTO_001">Saddle-billed Stork</title>
+			<para/>
+		</section>
+		<!-- Text removed for sample purposes -->		
+    	<section xml:id="BIRD180BIRPRE" role="article" metaref="DK_Falconiformes"> <!-- Lech: Note the latin metaref -->
+			<title xml:id="BIRD180BIRPRE_001">Birds of Prey</title>
+			<para role="intro" xml:id="BIRD180BIRPRE_002">
+				<phrase role="leadin" xml:id="BIRD180BIRPRE_003">With some species</phrase> having
+				enormous wingspans, birds of prey include the world’s largest flying carnivores.
+				Also known as raptors, most of them catch their food with their talons – something
+				that requires superb eyesight and fast reactions, particularly when catching prey in
+				mid-air. This large order contains eagles, hawks, kites, and falcons, together with
+				carrion-eating vultures. As a group, they live throughout the world except in
+				Antarctica.</para>			
+			<!-- DMD: Reference to key (Bird order on pg 101) has been captured in a simplelist using role="key_include" and xlink:href. Please check if this is the correct treatment, as the referenced link will render the same information as that mentioned in the dataset (id="BIRD180BIRPRE_004") here. Refer to screenshot "p180_dataset" -->
+			<variablelist role="dataset">
+				<xref role="key_include" linkend="BIRD100BIRORD_010"/>
+			</variablelist>
+			<section xml:id="BIRD180BIRPRE_008">
+				<title xml:id="BIRD180BIRPRE_009">Anatomy</title>
+				<para xml:id="BIRD180BIRPRE_010">Birds of prey vary hugely in size. Some eagles have
+					a wingspan of nearly 3m (10ft), compared to just 20cm (8in) for the smallest
+					falconets from southeast Asia. Despite this huge difference in size, all birds
+					of prey share a similar body plan, although with markedly different proportions,
+					particularly in the shape of their wings. Birds of prey have powerful feet armed
+					with sharp claws or talons, and their legs are often feathered as far as the
+					ankle joint. All of them have strongly hooked bills, which they use for tearing
+					up their food, rather than for catching their prey. They also have
+					forward-facing eyes – a vital adaptation for judging distances accurately when
+					they move in to make a kill. Owls have a similar anatomy, but unlike them,
+					almost all birds of prey hunt by day.</para>
+			</section>
+			<section xml:id="BIRD180BIRPRE_011">
+				<title xml:id="BIRD180BIRPRE_012">Wings and flight</title>
+				<para xml:id="BIRD180BIRPRE_013">Even from the far distance, their distinctive wing
+					shape and flight path help to identify different birds of prey. Eagles,
+					buzzards, and vultures typically fly high in the sky, soaring effortlessly on
+					their broad, outstretched wings. One species of African vulture – Rüppell’s
+					Vulture – is on record as the highest flier of this order of birds, after
+					colliding with an aircraft at over 11,000m (36,000ft). However, such high-flying
+					birds are an exception, because most birds of prey operate much closer to the
+					ground. Kites and harriers criss-cross open country and woodland, flying at a
+					leisurely pace relatively near the ground as they watch for potential prey
+					below. Birds of the kestrel family are instantly recognizable, because they are
+					among the few birds of prey that hover while they watch for food. Other birds of
+					prey, such as peregrines and sparrowhawks, are pursuit hunters. These have a
+					flight pattern more like that of a fighter plane: they burst through the air at
+					high speed, diving or swooping on other birds, which are their main prey, and
+					move on straight away if they fail to make a kill.</para>
+				<figure xml:id="BIRD180BIRPRE_014">
+					<title xml:id="BIRD180BIRPRE_015">Wing shapes</title>
+					<para xml:id="BIRD180BIRPRE_016">With its widely spaced primary flight feathers,
+						the Wedge-tailed Eagle is a typical soaring bird of prey. The Red Kite’s
+						kinked wings make it agile in the air, while the Peregrine Falcon’s slender
+						wings are shaped for speed.</para>
+					<mediaobject xml:id="BIRD180BIRPRE_017">
+						<imageobject xml:id="BIRD180BIRPRE_018">
+							<imagedata fileref="bird180birpre_017.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD180BIRPRE_019">
+							<para>Wedge-tailed Eagle</para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD180BIRPRE_020">
+						<imageobject xml:id="BIRD180BIRPRE_021">
+							<imagedata fileref="bird180birpre_020.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD180BIRPRE_022">
+							<para>Red Kite</para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD180BIRPRE_023">
+						<imageobject xml:id="BIRD180BIRPRE_024">
+							<imagedata fileref="bird180birpre_023.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD180BIRPRE_025">
+							<para>Peregrine Falcon</para>
+						</caption>
+					</mediaobject>
+				</figure>
+			</section>
+			<section xml:id="BIRD180BIRPRE_026">
+				<title xml:id="BIRD180BIRPRE_027">Hunting and diet</title>
+				<para xml:id="BIRD180BIRPRE_028">Despite their reputation as heavyweight hunters,
+					some birds of prey have unusual and surprising diets. The Snail Kite, for
+					example, lives entirely on freshwater snails, while the Palm-nut Vulture from
+					Africa feeds on the fruit of oil and raffia palms. Small falcons often prey on
+					dragonflies, while some large raptors – such as the Common Buzzard – will stoop
+					to eating earthworms if the weather is too cold or wet for soaring. But given
+					good conditions, most raptors are specialists, concentrating on particular kinds
+					of prey. The fish-eating Osprey has spiny toes which help it to grip its catch,
+					while snake eagles grip their prey just behind the head, preventing it from
+					striking back. In tropical forests, Harpy Eagles snatch monkeys and sloths out
+					of the treetops, carrying prey weighing up to 6kg (13lb) – about two-thirds of
+					their own body weight. Aerial hunters, such as Peregrine Falcons and
+					sparrowhawks, can kill birds substantially bigger than themselves. The latter
+					grip their prey with their talons, but Peregrine Falcons slash it as they dive
+					past, leaving the stricken bird to fall tumbling to the ground, where it is
+					retrieved bythe successful hunter.</para>
+				<mediaobject xml:id="BIRD180BIRPRE_029">
+					<imageobject xml:id="BIRD180BIRPRE_030">
+						<imagedata fileref="bird180birpre_029.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_031">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_032">Bird eats bird</title>
+							<para xml:id="BIRD180BIRPRE_033">The Eurasian Sparrowhawk flies low over
+								hedges and woodland, preying on other birds. This adult female is
+								feeding on a Grey Partridge. It plucks its victim’s breast, eats the
+								flight muscles, but leaves the rest.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD180BIRPRE_034">
+					<imageobject xml:id="BIRD180BIRPRE_035">
+						<imagedata fileref="bird180birpre_034.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_036">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_037">Successful catch</title>
+							<para xml:id="BIRD180BIRPRE_038">The Osprey is one of the most
+								widespread birds of prey. It fishes on lakes, reservoirs, and
+								coasts, flying back to a favourite perch after making a
+								catch.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD180BIRPRE_039">
+					<imageobject xml:id="BIRD180BIRPRE_040">
+						<imagedata fileref="bird180birpre_039.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_041">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_042">Nature’s recyclers</title>
+							<para xml:id="BIRD180BIRPRE_043">Vultures are most common in dry, open
+								habitats where columns of rising air make it easy to soar. These
+								White-backed Vultures in Namibia have gathered around a zebra
+								carcass.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+			</section>
+			<section xml:id="BIRD180BIRPRE_044">
+				<title xml:id="BIRD180BIRPRE_045">Nesting and parenting</title>
+				<para xml:id="BIRD180BIRPRE_046">Birds of prey rarely build elaborate nests, and
+					falcons often take over the disused nests of other birds. However, many species
+					show great site tenacity, using the same nest year after year. These birds often
+					add new nesting material each time they breed, creating enormous structures that
+					can weigh over a tonne. Compared to other birds, birds of prey produce
+					relatively few eggs, and they begin incubation as soon as the first is laid. In
+					large eagles, the incubation period can be as long as seven weeks, but in all
+					cases, it starts as soon as the first egg has been laid. Once the eggs have
+					hatched, the chicks can take over two months to fledge. If food runs short
+					during this period, the largest chick frequently eats its smaller
+					siblings.</para>
+				<mediaobject xml:id="BIRD180BIRPRE_047">
+					<imageobject xml:id="BIRD180BIRPRE_048">
+						<imagedata fileref="bird180birpre_047.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_049">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_050">Swooping for the kill</title>
+							<para xml:id="BIRD180BIRPRE_051">With its wings, talons, and tail
+								outstretched, a Golden Eagle swoops down onto its prey. Birds of
+								prey instinctively attack mammals from behind, minimizing their
+								chances of being seen until it is too late for their prey to
+								escape.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD180BIRPRE_052">
+					<imageobject xml:id="BIRD180BIRPRE_053">
+						<imagedata fileref="bird180birpre_052.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_054">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_055">Growing family</title>
+							<para xml:id="BIRD180BIRPRE_056">High in a pine tree, an adult Northern
+								Goshawk tends its three chicks. As with most birds of prey, the
+								parents bring food back to the nest, and tear it up into pieces that
+								are small enough for their chicks to swallow.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+			</section>
+			<section xml:id="BIRD180CLASSI" role="feature">
+				<title xml:id="BIRD180CLASSI_001">Classification</title>
+				<para xml:id="BIRD180CLASSI_002">Birds of prey are classified in a single order.
+					However, DNA and anatomical studies suggest that American vultures are not
+					closely related to vultures from the Old World, and may be closer to storks.
+					Their outward similarity to Old World vultures is probably the result of
+					convergent evolution, creating similar body forms for similar ways of
+					life.</para>
+				<figure xml:id="BIRD180CLASSI_003">
+					<title xml:id="BIRD180CLASSI_004">A case of convergence</title>
+					<para xml:id="BIRD180CLASSI_005">Like other American vultures, the King Vulture
+							(<phrase condition="dig" cref="BIRD180CLASSI_003_COND1">see <link
+								linkend="BIRD180CLASSI_006">image</link>
+						</phrase>
+						<phrase condition="prt" cref="BIRD180CLASSI_003_COND1">
+							<link linkend="BIRD180CLASSI_006">right</link>
+						</phrase>) has long legs and weak feet, without strongly curved toes. The
+						Griffon Vulture (<phrase condition="dig" cref="BIRD180CLASSI_003_COND2">see
+								<link linkend="BIRD180CLASSI_008">image</link>
+						</phrase>
+						<phrase condition="prt" cref="BIRD180CLASSI_003_COND2">
+							<link linkend="BIRD180CLASSI_008">far right</link>
+						</phrase>) is a typical Old World vulture, with grasping feet that are much
+						more like those of eagles and buzzards.</para>
+					<mediaobject xml:id="BIRD180CLASSI_006">
+						<imageobject xml:id="BIRD180CLASSI_007">
+							<imagedata fileref="bird180classi_006.jpg"/>
+						</imageobject>
+					</mediaobject>
+					<mediaobject xml:id="BIRD180CLASSI_008">
+						<imageobject xml:id="BIRD180CLASSI_009">
+							<imagedata fileref="bird180classi_008.jpg"/>
+						</imageobject>
+					</mediaobject>
+				</figure>
+			</section>
+			<section xml:id="BIRD181THRCON" remap="feature" role="human_impact">
+				<title xml:id="BIRD181THRCON_001">Threats and conservation</title>
+				<para xml:id="BIRD181THRCON_002">A quarter of all birds of prey are currently listed
+					as vulnerable, threatened, or endangered. In southern Asia, some vultures have
+					declined by over 95 per cent in less than a decade. Birds of prey are also
+					threatened by habitat destruction – something that particularly affects large,
+					tropical forest species.</para>
+				<mediaobject xml:id="BIRD181THRCON_003">
+					<imageobject xml:id="BIRD181THRCON_004">
+						<imagedata fileref="bird181thrcon_003.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD181THRCON_005">
+						<formalpara>
+							<title xml:id="BIRD181THRCON_006">Checking up</title>
+							<para xml:id="BIRD181THRCON_007">A biologist fits a leg band to a
+								Peregrine Falcon chick, so that its movements can be followed once
+								it leaves the nest.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+			</section>
+			<section xml:id="BIRD182TURVUL" role="entry">
+				<!-- 1. DMD: Should the name of the bird 'Turkey Vulture' be captured in the dataset as well to correlate with it's corresponding latin name? -->
+				<title xml:id="BIRD182TURVUL_001" role="common_name">Turkey Vulture</title>
+				<simplelist xml:id="BIRD182TURVUL_002" role="dataset">
+					<!-- DMD: 2. Should we use role="latin_name" or role="scientific_name"?-->
+					<member xml:id="BIRD182TURVUL_003" role="latin_name">Cathartes aura</member>
+					<!-- DMD: 3. The role attributes such as 'length', 'weight', 'order', 'family' etc. have not been captured as part of the text in the xml, should we capture it?  -->
+					<!-- DMD: 4. Here, the metric and imperial units of measure have been captured as phrases within a single member element. -->
+					<member xml:id="BIRD182TURVUL_004" role="length">
+						<phrase role="length" condition="metric" cref="BIRD182TURVUL_002_COND1"
+							>76</phrase>
+						<phrase role="unit" condition="metric">cm</phrase> ( <phrase role="length"
+							condition="imperial" cref="BIRD182TURVUL_002_COND1">30</phrase>
+						<phrase role="unit" condition="imperial">in</phrase>) </member>
+					<!-- DMD: 5. As an alternative to 4, the metric and imperial units of weight have been treated as two seperate members with cref="BIRD182TURVUL_002_COND2" linking the two (as per the mark-up in Military History). -->
+					<member xml:id="BIRD182TURVUL_006" role="weight" condition="metric"
+						cref="BIRD182TURVUL_002_COND2">1.4kg</member>
+					<member xml:id="BIRD182TURVUL_007" role="weight" condition="imperial"
+						cref="BIRD182TURVUL_002_COND2"> (3<phrase role="fraction">1/4</phrase>lb)</member>
+					<member xml:id="BIRD182TURVUL_008" role="migration">Partial migrant</member>
+					<member xml:id="BIRD182TURVUL_009" role="habitat">Open or semi-open areas, often
+						nesting on open ground where there are few other nests</member>
+				</simplelist>
+				<para xml:id="BIRD182TURVUL_010" role="description">A common bird of North and South
+					America, the Turkey Vulture is so named because its bare-skinned head is similar
+					to that of a <link linkend="BIRD111WILTUR">Wild Turkey</link>
+					<phrase condition="prt"> (see <link linkend="BIRD111WILTUR"
+						>p.109</link>)</phrase>. Its grey-brown plumage with two-tone wings contrast
+					with its bright red to pink head and neck, and it has a hooked white bill. This
+					vulture has a keen sense of smell, enabling it to locate prey even in thick
+					jungle.</para>
+				<mediaobject xml:id="BIRD182TURVUL_011">
+					<imageobject xml:id="BIRD182TURVUL_012">
+						<imagedata fileref="bird182turvul_011.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD182TURVUL_013">
+						<para>Adult Turkey vulture</para>
+					</caption>
+				</mediaobject>
+				<!-- DMD: 6. The key to the distribution map (id="BIRD007DISMAP_003") has been called here using xref.  -->
+				<mediaobject xml:id="BIRD182TURVUL_014" role="locator">
+					<imageobject xml:id="BIRD182TURVUL_015">
+						<imagedata fileref="bird182turvul_014.jpg"/>
+					</imageobject>
+					<caption>
+						<para>
+							<xref xlink:href="BIRD007DISMAP_003"/>
+						</para>
+					</caption>
+				</mediaobject>
+				<section xml:id="BIRD182ROASCA" role="feature">
+					<title xml:id="BIRD182ROASCA_001">Roadside scavengers</title>
+					<para xml:id="BIRD182ROASCA_002">Well known for its habit of feeding on
+						carcasses, the Turkey Vulture is a common roadside scavenger in its range,
+						often seen feeding on roadkill. Its fondness for carrion probably accounts
+						for its increase in populated areas.</para>
+					<mediaobject xml:id="BIRD182ROASCA_003">
+						<imageobject xml:id="BIRD182ROASCA_004">
+							<imagedata fileref="bird182roasca_003.jpg"/>
+						</imageobject>
+					</mediaobject>
+				</section>
+			</section>
+			<!-- Text removed for sample purposes -->
+			<!-- DMD: If we wish to retain the information that the box on great sites is actually a feature, 
+				then is it appropriate to use remap="feature"? Refer to screenshot "Feature_p205" -->
+			<section xml:id="BIRD205KRUNAT" remap="feature" role="great_sites">
+				<title xml:id="BIRD205KRUNAT_001">Kruger national park</title>
+				
+				<para xml:id="BIRD205KRUNAT_002">One of Africa’s oldest game reserves, Kruger was
+					established as long ago as 1898, and in 1926 it became a national park that
+					today covers almost 19,000 square km (7,350 square miles). The reserve lies
+					within an enormous zone of grassland and scrub, which stretches across the
+					highland plateau of northeastern South Africa and reaches into neighbouring
+					Mozambique and Zimbabwe. This varied subtropical landscape, called bushveld, is
+					a patchwork of open grassy areas and impenetrable thorny thickets, strewn with
+					boulders, rocky outcrops, and stunted trees.</para>
+				<mediaobject xml:id="BIRD205KRUNAT_003" role="map">
+					<imageobject xml:id="BIRD205KRUNAT_004">
+						<imagedata fileref="bird205krunat_003.jpg"/>
+					</imageobject>
+				</mediaobject>
+				<mediaobject xml:id="BIRD205KRUNAT_005" role="locator">
+					<imageobject xml:id="BIRD205KRUNAT_006">
+						<imagedata fileref="bird205krunat_005.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD205KRUNAT_007">
+						<formalpara>
+							<title xml:id="BIRD205KRUNAT_008">Location</title>
+							<para xml:id="BIRD205KRUNAT_009">In northeastern South Africa, bordered
+								by Mozambique to the east and by Zimbabwe to the north.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<figure xml:id="BIRD205KRUNAT_020" role="what_to_spot">
+					<title xml:id="BIRD205KRUNAT_021">What to spot</title>
+					<mediaobject xml:id="BIRD205KRUNAT_022">
+						<imageobject xml:id="BIRD205KRUNAT_023">
+							<imagedata fileref="bird205krunat_022.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_024">
+							<para xml:id="BIRD205KRUNAT_025">White-fronted bee-eater <emphasis
+									role="latin_name">Merops bullockoides</emphasis></para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD205KRUNAT_026">
+						<imageobject xml:id="BIRD205KRUNAT_027">
+							<imagedata fileref="bird205krunat_026.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_028">
+							<para xml:id="BIRD205KRUNAT_029"><link linkend="BIRD273PURTUR"
+									>Purple-crested Turaco </link><emphasis role="latin_name"
+									>Tauraco porphyreolophus</emphasis> (see <phrase condition="prt">
+									<link linkend="BIRD273PURTUR">p.273</link>
+								</phrase>)</para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD205KRUNAT_030">
+						<imageobject xml:id="BIRD205KRUNAT_031">
+							<imagedata fileref="bird205krunat_030.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_032">
+							<para xml:id="BIRD205KRUNAT_033">Natal Spurfowl <emphasis
+									role="latin_name">Pternistis natalensis</emphasis></para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD205KRUNAT_034">
+						<imageobject xml:id="BIRD205KRUNAT_035">
+							<imagedata fileref="bird205krunat_034.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_036">
+							<para xml:id="BIRD205KRUNAT_037"><link linkend="BIRD159SADSTO"
+									>Saddle-billed Stork </link><emphasis role="latin_name"
+									>Ephippiorhynchus senegalensis</emphasis> (see <phrase
+									condition="prt">
+									<link linkend="BIRD159SADSTO">p.159</link>
+								</phrase>)</para>
+						</caption>
+					</mediaobject>
+				</figure>
+				<section xml:id="BIRD205KRUNAT_010">
+					<title xml:id="BIRD205KRUNAT_011">Migration destination</title>
+					<para xml:id="BIRD205KRUNAT_012">Kruger National Park is best known for its
+						herds of grazing animals and for the carnivores that hunt them, but it also
+						supports an extraordinary diversity of bird life, so can rank among the most
+						exciting birdwatching destinations in Africa. More than 520 species of bird
+						have been recorded in the reserve, including around 250 species that occur
+						year-round, together with a similar number of migratory species or nomadic
+						wanderers. The majority of the area’s seasonal visitors arrive in summer
+						(October to March) along with the rains. They include many long-distance
+						migrants from Europe and Central Asia, such as the Barn Swallow, European
+						Roller, and Willow Warbler. Several European and Asian birds of prey also
+						migrate to Kruger, such as the Eurasian Hobby and Red-footed Falcon.</para>
+					<para xml:id="BIRD205KRUNAT_013">A host of open-country African birds are found
+						in Kruger all year, from the Secretarybird, which stamps on snakes and other
+						prey with its extremely long legs, to a wide range of bee-eaters, shrikes,
+						pipits, larks, and francolins. The wooded areas are home to species such as
+						wood hoopoes, mousebirds, starlings, and the massive-beaked Southern Ground
+						Hornbill. However, one of the main highlights of the reserve is its
+						impressive variety of birds of prey.</para>
+					<para xml:id="BIRD205KRUNAT_014">During the winter dry season (April to
+						September), birds concentrate at waterholes, rivers, and artificial dams.
+						But in summer, birds are spread throughout the reserve and many species
+						raise young.</para>
+					<mediaobject xml:id="BIRD205KRUNAT_015">
+						<imageobject xml:id="BIRD205KRUNAT_016">
+							<imagedata fileref="bird205krunat_015.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_017">
+							<formalpara>
+								<title xml:id="BIRD205KRUNAT_018">Martial combat</title>
+								<para xml:id="BIRD205KRUNAT_019">A female Warthog defends its piglet
+									from an attacking Martial Eagle. Kruger has one of the highest
+									breeding densities of this powerful bird of prey anywhere in
+									Africa.</para>
+							</formalpara>
+						</caption>
+					</mediaobject>
+				</section>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD273PURTUR" role="entry">
+			<title xml:id="BIRD273PURTUR_001">Purple-crested Turaco</title>
+			<para/>
+		</section>
+		<!-- Text removed for sample purposes -->
+	</chapter>
+</book>

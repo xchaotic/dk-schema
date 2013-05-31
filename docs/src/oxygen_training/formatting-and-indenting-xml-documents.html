@@ -1,0 +1,249 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Formatting and Indenting Documents (Pretty Print)"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="In structured markup languages, the whitespace between elements that is created using the Space bar , Tab or multiple line breaks is not recognized by the parsing tools. Often this means that when ..."/>
+<meta name="DC.subject" content="Editing XML documents, formatting and indenting documents (pretty print)"/>
+<meta name="keywords" content="Editing XML documents, formatting and indenting documents (pretty print)"/>
+<meta name="indexterms" content="Editing XML documents, formatting and indenting documents (pretty print)"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/editing-xml-documents.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/editing-XML-tree-nodes.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/how-to-use-zero-size-indent.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/how-to-use-zero-size-indent.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="formatting-and-indenting-xml-documents"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Formatting and Indenting Documents (Pretty Print)</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="formatting-and-indenting-xml-documents">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/editing-xml-documents.html" title="Editing XML Documents"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/editing-XML-tree-nodes.html" title="Editing XML Tree Nodes"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Tree Nodes</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/how-to-use-zero-size-indent.html" title="How to use zero size indent"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">How to use zero size indent</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/editing-documents.html" title="Editing Documents">Editing Documents</a> / <a class="navheader_parent_path" href="../topics/editing-xml-documents.html" title="Editing XML Documents">Editing XML Documents</a></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Formatting and Indenting Documents (Pretty Print)</h1>
+
+  <div class="body">
+    <p class="p">In structured markup languages, the whitespace between elements that is created using the
+        <em class="ph i">Space bar</em>, <em class="ph i">Tab</em> or multiple line breaks is not recognized by the parsing tools.
+      Often this means that when structured markup documents are opened, they are arranged as one
+      long, unbroken line, that seems to be a single paragraph.</p>
+
+    <p class="p">While this is a perfectly acceptable practice, it makes editing difficult and increases the
+      likelihood of errors being introduced. It also makes the identification of exact error
+      positions difficult. Formatting and Indenting, also called <span class="ph uicontrol">Pretty
+      Print</span>, enables such documents to be neatly arranged, in a manner that is
+      consistent and promotes easier reading on screen and in print output.</p>
+
+    <p class="p">Pretty print is in no way associated with the layout or formatting that will be used in the
+      transformed document. This layout and formatting is supplied by the XSL stylesheet specified
+      at the time of transformation.</p>
+
+    <p class="p">
+      <span class="ph">To change the formatting of just one XML element see the action
+          <a class="xref" href="source-actions.html">
+          <span class="ph uicontrol">Pretty print element</span>
+        </a>.</span> To change the indenting of the current selected text see the <a class="xref" href="source-actions.html">
+        <span class="ph uicontrol">Indent selection</span></a> action.</p>
+
+    <p class="p">For user preferences related to formatting and indenting like <span class="ph uicontrol">Detect indent on
+        open</span> and <span class="ph uicontrol">Indent on paste</span> see <a class="xref" href="preferences-editor-format.html">the corresponding Preferences panel.</a>
+    </p>
+
+    <p class="p">XML elements can be excepted from the reformatting performed by the pretty-print operation by
+      including them in the <em class="ph i">Preserve space elements (XPath)</em> list. That means that when the
+        <em class="ph i">Format and Indent</em> (pretty-print) action encounters in the document an element with
+      the name contained in this list, the whitespace is preserved inside that element. This is
+      useful when most of the elements must be reformatted with the exception of a few ones which
+      are listed here.</p>
+
+    <p class="p">For the situation when whitespace should be preserved in most elements with the exception of
+      a few elements, the names of these elements must be added to the <em class="ph i">Strip space elements
+        (XPath)</em> list.</p>
+
+    <p class="p">In addition to simple element names, both the <em class="ph i">Preserve space elements (XPath)</em> list and
+      the <em class="ph i">Strip space elements (XPath)</em> one accept a restricted set of XPath expressions to
+      cover a pattern of XML elements with only one expression. The allowed types of expressions
+      are:</p>
+
+    <dl class="dl">
+      
+        <dt class="dt dlterm">//xs:documentation</dt>
+
+        <dd class="dd">
+          <p class="p">the XPath descendant axis can be used only at the beginning of the expression; the
+            namespace prefix can be attached to any namespace, no namespace binding check is
+            performed when applying the pretty-print operation</p>
+
+        </dd>
+
+      
+      
+        <dt class="dt dlterm">/chapter/abstract/title</dt>
+
+        <dd class="dd">
+          <p class="p">note the use of the XPath child axis</p>
+
+        </dd>
+
+      
+      
+        <dt class="dt dlterm">//section/title</dt>
+
+        <dd class="dd">
+          <p class="p">the descendant axis can be followed by the child axis</p>
+
+        </dd>
+
+      
+    </dl>
+
+    <p class="p">The value of an <em class="ph i">xml:space</em> attribute present in the XML document on which the
+      pretty-print operation is applied always takes precedence over the <em class="ph i">Preserve space elements
+        (XPath)</em> and the <em class="ph i">Strip space elements (XPath)</em> lists.</p>
+
+  </div>
+
+<div class="related-links">
+<ol class="olchildlinks">
+<li class="link olchildlink"><a href="../topics/how-to-use-zero-size-indent.html">How to use zero size indent</a>
+</li>
+</ol>
+</div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/editing-xml-documents.html" title="Editing XML Documents"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/editing-XML-tree-nodes.html" title="Editing XML Tree Nodes"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Tree Nodes</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/how-to-use-zero-size-indent.html" title="How to use zero size indent"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">How to use zero size indent</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

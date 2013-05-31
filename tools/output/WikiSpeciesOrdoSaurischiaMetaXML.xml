@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group xml:id="concat('WikiSpecies_',replace($description,' ','_'))">
+   <name>WikiSpecies Order Saurischia</name>
+   <description>The meta data reflects the Order Saurischia available on
+      http://species.wikimedia.org</description>
+   <item xml:id="DK_Abelisauridae">
+      <name>Abelisauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Abelisauridae</source>
+   </item>
+   <item xml:id="DK_Abelisauroidea">
+      <name>Abelisauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Abelisauroidea</source>
+   </item>
+   <item xml:id="DK_Abelisaurus">
+      <name>Abelisaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Abelisaurus</source>
+   </item>
+   <item xml:id="DK_Abydosaurus">
+      <name>Abydosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Abydosaurus</source>
+   </item>
+   <item xml:id="DK_Abydosaurus_mcintoshi">
+      <name>Abydosaurus mcintoshi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Abydosaurus_mcintoshi</source>
+   </item>
+   <item xml:id="DK_Acrocanthosaurus">
+      <name>Acrocanthosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Acrocanthosaurus</source>
+   </item>
+   <item xml:id="DK_Adamantisaurus">
+      <name>Adamantisaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Adamantisaurus</source>
+   </item>
+   <item xml:id="DK_Adeopapposaurus">
+      <name>Adeopapposaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Adeopapposaurus</source>
+   </item>
+   <item xml:id="DK_Adeopapposaurus_mognai">
+      <name>Adeopapposaurus mognai</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Adeopapposaurus_mognai</source>
+   </item>
+   <item xml:id="DK_Aerosteon">
+      <name>Aerosteon</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Aerosteon</source>
+   </item>
+   <item xml:id="DK_Aerosteon_riocoloradensis">
+      <name>Aerosteon riocoloradensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Aerosteon_riocoloradensis</source>
+   </item>
+   <item xml:id="DK_Afrovenator">
+      <name>Afrovenator</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Afrovenator</source>
+   </item>
+   <item xml:id="DK_Agustinia">
+      <name>Agustinia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Agustinia</source>
+   </item>
+   <item xml:id="DK_Alamosaurus">
+      <name>Alamosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alamosaurus</source>
+   </item>
+   <item xml:id="DK_Albertosaurus">
+      <name>Albertosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Albertosaurus</source>
+   </item>
+   <item xml:id="DK_Albinykus">
+      <name>Albinykus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Albinykus</source>
+   </item>
+   <item xml:id="DK_Alioramus">
+      <name>Alioramus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alioramus</source>
+   </item>
+   <item xml:id="DK_Alioramus_altai">
+      <name>Alioramus altai</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alioramus_altai</source>
+   </item>
+   <item xml:id="DK_Allosauridae">
+      <name>Allosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Allosauridae</source>
+   </item>
+   <item xml:id="DK_Allosaurus">
+      <name>Allosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Allosaurus</source>
+   </item>
+   <item xml:id="DK_Allosaurus_fragilis">
+      <name>Allosaurus fragilis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Allosaurus_fragilis</source>
+   </item>
+   <item xml:id="DK_Alvarezsauridae">
+      <name>Alvarezsauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alvarezsauridae</source>
+   </item>
+   <item xml:id="DK_Alxasauridae">
+      <name>Alxasauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alxasauridae</source>
+   </item>
+   <item xml:id="DK_Alxasaurus">
+      <name>Alxasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alxasaurus</source>
+   </item>
+   <item xml:id="DK_Alxasaurus_elesitaiensis">
+      <name>Alxasaurus elesitaiensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Alxasaurus_elesitaiensis</source>
+   </item>
+   <item xml:id="DK_Amargasaurus">
+      <name>Amargasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Amargasaurus</source>
+   </item>
+   <item xml:id="DK_Amazonsaurus">
+      <name>Amazonsaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Amazonsaurus</source>
+   </item>
+   <item xml:id="DK_Anchiornis">
+      <name>Anchiornis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Anchiornis</source>
+   </item>
+   <item xml:id="DK_Anchiornis_huxleyi">
+      <name>Anchiornis huxleyi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Anchiornis_huxleyi</source>
+   </item>
+   <item xml:id="DK_Anchisauridae">
+      <name>Anchisauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Anchisauridae</source>
+   </item>
+   <item xml:id="DK_Angaturama">
+      <name>Angaturama</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Angaturama</source>
+   </item>
+   <item xml:id="DK_Apatosaurinae">
+      <name>Apatosaurinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Apatosaurinae</source>
+   </item>
+   <item xml:id="DK_Apatosaurus">
+      <name>Apatosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Apatosaurus</source>
+   </item>
+   <item xml:id="DK_Argentinosaurus_huiculensis">
+      <name>Argentinosaurus huiculensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Argentinosaurus_huiculensis</source>
+   </item>
+   <item xml:id="DK_Argyrosaurus">
+      <name>Argyrosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Argyrosaurus</source>
+   </item>
+   <item xml:id="DK_Atacamatitan">
+      <name>Atacamatitan</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Atacamatitan</source>
+   </item>
+   <item xml:id="DK_Aublysodontinae">
+      <name>Aublysodontinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Aublysodontinae</source>
+   </item>
+   <item xml:id="DK_Austrocheirus">
+      <name>Austrocheirus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Austrocheirus</source>
+   </item>
+   <item xml:id="DK_Austrocheirus_isasii">
+      <name>Austrocheirus isasii</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Austrocheirus_isasii</source>
+   </item>
+   <item xml:id="DK_Austroraptor">
+      <name>Austroraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Austroraptor</source>
+   </item>
+   <item xml:id="DK_Austroraptor_cabazai">
+      <name>Austroraptor cabazai</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Austroraptor_cabazai</source>
+   </item>
+   <item xml:id="DK_Avetheropoda">
+      <name>Avetheropoda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Avetheropoda</source>
+   </item>
+   <item xml:id="DK_Avialae">
+      <name>Avialae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Avialae</source>
+   </item>
+   <item xml:id="DK_Avimimidae">
+      <name>Avimimidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Avimimidae</source>
+   </item>
+   <item xml:id="DK_Banji">
+      <name>Banji</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Banji</source>
+   </item>
+   <item xml:id="DK_Banji_long">
+      <name>Banji long</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Banji_long</source>
+   </item>
+   <item xml:id="DK_Barapasaurus">
+      <name>Barapasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Barapasaurus</source>
+   </item>
+   <item xml:id="DK_Barrosasaurus">
+      <name>Barrosasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Barrosasaurus</source>
+   </item>
+   <item xml:id="DK_Barrosasaurus_casamiquelai">
+      <name>Barrosasaurus casamiquelai</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Barrosasaurus_casamiquelai</source>
+   </item>
+   <item xml:id="DK_Baryonyx">
+      <name>Baryonyx</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Baryonyx</source>
+   </item>
+   <item xml:id="DK_Becklespinax">
+      <name>Becklespinax</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Becklespinax</source>
+   </item>
+   <item xml:id="DK_Beipiaosaurus">
+      <name>Beipiaosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Beipiaosaurus</source>
+   </item>
+   <item xml:id="DK_Brachiosauridae">
+      <name>Brachiosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Brachiosauridae</source>
+   </item>
+   <item xml:id="DK_Brachiosaurus">
+      <name>Brachiosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Brachiosaurus</source>
+   </item>
+   <item xml:id="DK_Brontomerus">
+      <name>Brontomerus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Brontomerus</source>
+   </item>
+   <item xml:id="DK_Brontomerus_mcintoshi">
+      <name>Brontomerus mcintoshi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Brontomerus_mcintoshi</source>
+   </item>
+   <item xml:id="DK_Buitreraptor">
+      <name>Buitreraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Buitreraptor</source>
+   </item>
+   <item xml:id="DK_Buitreraptor_gonzalezorum">
+      <name>Buitreraptor gonzalezorum</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Buitreraptor_gonzalezorum</source>
+   </item>
+   <item xml:id="DK_Caenagnathidae">
+      <name>Caenagnathidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Caenagnathidae</source>
+   </item>
+   <item xml:id="DK_Camarasauridae">
+      <name>Camarasauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Camarasauridae</source>
+   </item>
+   <item xml:id="DK_Camarasauromorpha">
+      <name>Camarasauromorpha</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Camarasauromorpha</source>
+   </item>
+   <item xml:id="DK_Carcharodontosauria">
+      <name>Carcharodontosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Carcharodontosauria</source>
+   </item>
+   <item xml:id="DK_Carcharodontosauridae">
+      <name>Carcharodontosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Carcharodontosauridae</source>
+   </item>
+   <item xml:id="DK_Carcharodontosaurus">
+      <name>Carcharodontosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Carcharodontosaurus</source>
+   </item>
+   <item xml:id="DK_Carnosauria">
+      <name>Carnosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Carnosauria</source>
+   </item>
+   <item xml:id="DK_Cathartesaura">
+      <name>Cathartesaura</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Cathartesaura</source>
+   </item>
+   <item xml:id="DK_Caudipterygidae">
+      <name>Caudipterygidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Caudipterygidae</source>
+   </item>
+   <item xml:id="DK_Cedarosaurus">
+      <name>Cedarosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Cedarosaurus</source>
+   </item>
+   <item xml:id="DK_Ceratosauria">
+      <name>Ceratosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ceratosauria</source>
+   </item>
+   <item xml:id="DK_Ceratosaurus">
+      <name>Ceratosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ceratosaurus</source>
+   </item>
+   <item xml:id="DK_Ceratosaurus_dentisulcatus">
+      <name>Ceratosaurus dentisulcatus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ceratosaurus_dentisulcatus</source>
+   </item>
+   <item xml:id="DK_Ceratosaurus_magnicornis">
+      <name>Ceratosaurus magnicornis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ceratosaurus_magnicornis</source>
+   </item>
+   <item xml:id="DK_Citipati">
+      <name>Citipati</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Citipati</source>
+   </item>
+   <item xml:id="DK_Coelophysis">
+      <name>Coelophysis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Coelophysis</source>
+   </item>
+   <item xml:id="DK_Coelophysis_bauri">
+      <name>Coelophysis bauri</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Coelophysis_bauri</source>
+   </item>
+   <item xml:id="DK_Coelophysoidea">
+      <name>Coelophysoidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Coelophysoidea</source>
+   </item>
+   <item xml:id="DK_Coloradisaurus">
+      <name>Coloradisaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Coloradisaurus</source>
+   </item>
+   <item xml:id="DK_Compsognathidae">
+      <name>Compsognathidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Compsognathidae</source>
+   </item>
+   <item xml:id="DK_Cristatusaurus">
+      <name>Cristatusaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Cristatusaurus</source>
+   </item>
+   <item xml:id="DK_Cryolophosaurus">
+      <name>Cryolophosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Cryolophosaurus</source>
+   </item>
+   <item xml:id="DK_Daemonosaurus">
+      <name>Daemonosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Daemonosaurus</source>
+   </item>
+   <item xml:id="DK_Daemonosaurus_chauliodus">
+      <name>Daemonosaurus chauliodus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Daemonosaurus_chauliodus</source>
+   </item>
+   <item xml:id="DK_Deinocheiridae">
+      <name>Deinocheiridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Deinocheiridae</source>
+   </item>
+   <item xml:id="DK_Deinocheirus">
+      <name>Deinocheirus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Deinocheirus</source>
+   </item>
+   <item xml:id="DK_Deinonychosauria">
+      <name>Deinonychosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Deinonychosauria</source>
+   </item>
+   <item xml:id="DK_Deinonychus">
+      <name>Deinonychus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Deinonychus</source>
+   </item>
+   <item xml:id="DK_Dicraeosaurus">
+      <name>Dicraeosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dicraeosaurus</source>
+   </item>
+   <item xml:id="DK_Dilophosauridae">
+      <name>Dilophosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dilophosauridae</source>
+   </item>
+   <item xml:id="DK_Dilophosaurus_wetherilli">
+      <name>Dilophosaurus wetherilli</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dilophosaurus_wetherilli</source>
+   </item>
+   <item xml:id="DK_Diplodocinae">
+      <name>Diplodocinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Diplodocinae</source>
+   </item>
+   <item xml:id="DK_Diplodocoidea">
+      <name>Diplodocoidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Diplodocoidea</source>
+   </item>
+   <item xml:id="DK_Diplodocus">
+      <name>Diplodocus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Diplodocus</source>
+   </item>
+   <item xml:id="DK_Dromaeosauridae">
+      <name>Dromaeosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dromaeosauridae</source>
+   </item>
+   <item xml:id="DK_Dromaeosaurinae">
+      <name>Dromaeosaurinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dromaeosaurinae</source>
+   </item>
+   <item xml:id="DK_Dromaeosauroidea">
+      <name>Dromaeosauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dromaeosauroidea</source>
+   </item>
+   <item xml:id="DK_Dromaeosaurus">
+      <name>Dromaeosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dromaeosaurus</source>
+   </item>
+   <item xml:id="DK_Dromiceiomimus">
+      <name>Dromiceiomimus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Dromiceiomimus</source>
+   </item>
+   <item xml:id="DK_Drusilasaura">
+      <name>Drusilasaura</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Drusilasaura</source>
+   </item>
+   <item xml:id="DK_Drusilasaura_deseadensis">
+      <name>Drusilasaura deseadensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Drusilasaura_deseadensis</source>
+   </item>
+   <item xml:id="DK_Eobrontosaurus">
+      <name>Eobrontosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Eobrontosaurus</source>
+   </item>
+   <item xml:id="DK_Eodromaeus">
+      <name>Eodromaeus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Eodromaeus</source>
+   </item>
+   <item xml:id="DK_Eodromaeus_murphi">
+      <name>Eodromaeus murphi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Eodromaeus_murphi</source>
+   </item>
+   <item xml:id="DK_Eoraptor">
+      <name>Eoraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Eoraptor</source>
+   </item>
+   <item xml:id="DK_Eoraptor_lunensis">
+      <name>Eoraptor lunensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Eoraptor_lunensis</source>
+   </item>
+   <item xml:id="DK_Epidexipteryx">
+      <name>Epidexipteryx</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Epidexipteryx</source>
+   </item>
+   <item xml:id="DK_Epidexipteryx_hui">
+      <name>Epidexipteryx hui</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Epidexipteryx_hui</source>
+   </item>
+   <item xml:id="DK_Euhelopididae">
+      <name>Euhelopididae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Euhelopididae</source>
+   </item>
+   <item xml:id="DK_Euhelopus">
+      <name>Euhelopus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Euhelopus</source>
+   </item>
+   <item xml:id="DK_Eusaurischia">
+      <name>Eusaurischia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Eusaurischia</source>
+   </item>
+   <item xml:id="DK_Falcarius">
+      <name>Falcarius</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Falcarius</source>
+   </item>
+   <item xml:id="DK_Giganotosaurus">
+      <name>Giganotosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Giganotosaurus</source>
+   </item>
+   <item xml:id="DK_Giganotosaurus_carolinii">
+      <name>Giganotosaurus carolinii</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Giganotosaurus_carolinii</source>
+   </item>
+   <item xml:id="DK_Gigantoraptor">
+      <name>Gigantoraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Gigantoraptor</source>
+   </item>
+   <item xml:id="DK_Gigantoraptor_erlianensis">
+      <name>Gigantoraptor erlianensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Gigantoraptor_erlianensis</source>
+   </item>
+   <item xml:id="DK_Guaibasaurus">
+      <name>Guaibasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Guaibasaurus</source>
+   </item>
+   <item xml:id="DK_Guanlong">
+      <name>Guanlong</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Guanlong</source>
+   </item>
+   <item xml:id="DK_Guanlong_wucaii">
+      <name>Guanlong wucaii</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Guanlong_wucaii</source>
+   </item>
+   <item xml:id="DK_Herrerasauria">
+      <name>Herrerasauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Herrerasauria</source>
+   </item>
+   <item xml:id="DK_Herrerasauridae">
+      <name>Herrerasauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Herrerasauridae</source>
+   </item>
+   <item xml:id="DK_Herrerasaurus_ischigualastensis">
+      <name>Herrerasaurus ischigualastensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Herrerasaurus_ischigualastensis</source>
+   </item>
+   <item xml:id="DK_Hollanda">
+      <name>Hollanda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Hollanda</source>
+   </item>
+   <item xml:id="DK_Hulsanpes">
+      <name>Hulsanpes</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Hulsanpes</source>
+   </item>
+   <item xml:id="DK_Ilokelesia">
+      <name>Ilokelesia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ilokelesia</source>
+   </item>
+   <item xml:id="DK_Incertae_cedis_Ceratosauria">
+      <name>Incertae cedis Ceratosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_cedis_Ceratosauria</source>
+   </item>
+   <item xml:id="DK_Incertae_cedis_Coelophysoidea">
+      <name>Incertae cedis Coelophysoidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_cedis_Coelophysoidea</source>
+   </item>
+   <item xml:id="DK_Incertae_cedis_Neoceratosauria">
+      <name>Incertae cedis Neoceratosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_cedis_Neoceratosauria</source>
+   </item>
+   <item xml:id="DK_Incertae_Sedis_(Avetheropoda)">
+      <name>Incertae Sedis (Avetheropoda)</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_Sedis_(Avetheropoda)</source>
+   </item>
+   <item xml:id="DK_Incertae_sedis_(Titanosauriformes)">
+      <name>Incertae sedis (Titanosauriformes)</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_sedis_(Titanosauriformes)</source>
+   </item>
+   <item xml:id="DK_Incertae_Sedis_Macronaria">
+      <name>Incertae Sedis Macronaria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_Sedis_Macronaria</source>
+   </item>
+   <item xml:id="DK_Incertae_sedis_Plateosauria">
+      <name>Incertae sedis Plateosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_sedis_Plateosauria</source>
+   </item>
+   <item xml:id="DK_Incertae_sedis_Tetanurae">
+      <name>Incertae sedis Tetanurae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_sedis_Tetanurae</source>
+   </item>
+   <item xml:id="DK_Incertae_sedis_Therizinosauroidea">
+      <name>Incertae sedis Therizinosauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Incertae_sedis_Therizinosauroidea</source>
+   </item>
+   <item xml:id="DK_Insertae_sedis_Eusauropoda">
+      <name>Insertae sedis Eusauropoda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Insertae_sedis_Eusauropoda</source>
+   </item>
+   <item xml:id="DK_Insertae_sedis_Ornithomimosauria">
+      <name>Insertae sedis Ornithomimosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Insertae_sedis_Ornithomimosauria</source>
+   </item>
+   <item xml:id="DK_Insertae_sedis_Sauropoda">
+      <name>Insertae sedis Sauropoda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Insertae_sedis_Sauropoda</source>
+   </item>
+   <item xml:id="DK_Insertae_sedis_Tyrannosauroidea">
+      <name>Insertae sedis Tyrannosauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Insertae_sedis_Tyrannosauroidea</source>
+   </item>
+   <item xml:id="DK_Jobaria">
+      <name>Jobaria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Jobaria</source>
+   </item>
+   <item xml:id="DK_Jobaria_tiguidensis">
+      <name>Jobaria tiguidensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Jobaria_tiguidensis</source>
+   </item>
+   <item xml:id="DK_Lacertastatium">
+      <name>Lacertastatium</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Lacertastatium</source>
+   </item>
+   <item xml:id="DK_Ligabuesaurus">
+      <name>Ligabuesaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ligabuesaurus</source>
+   </item>
+   <item xml:id="DK_Liliensternus">
+      <name>Liliensternus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Liliensternus</source>
+   </item>
+   <item xml:id="DK_Linhenykus_monodactylus">
+      <name>Linhenykus monodactylus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Linhenykus_monodactylus</source>
+   </item>
+   <item xml:id="DK_Linheraptor">
+      <name>Linheraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Linheraptor</source>
+   </item>
+   <item xml:id="DK_Linheraptor_exquisitus">
+      <name>Linheraptor exquisitus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Linheraptor_exquisitus</source>
+   </item>
+   <item xml:id="DK_Lithostrotia">
+      <name>Lithostrotia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Lithostrotia</source>
+   </item>
+   <item xml:id="DK_Liubangosaurus">
+      <name>Liubangosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Liubangosaurus</source>
+   </item>
+   <item xml:id="DK_Liubangosaurus_hei">
+      <name>Liubangosaurus hei</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Liubangosaurus_hei</source>
+   </item>
+   <item xml:id="DK_Macronaria_">
+      <name>Macronaria </name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Macronaria_</source>
+   </item>
+   <item xml:id="DK_Mapusaurus">
+      <name>Mapusaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Mapusaurus</source>
+   </item>
+   <item xml:id="DK_Mapusaurus_roseae">
+      <name>Mapusaurus roseae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Mapusaurus_roseae</source>
+   </item>
+   <item xml:id="DK_Massospondylidae">
+      <name>Massospondylidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Massospondylidae</source>
+   </item>
+   <item xml:id="DK_Megalosaurinae">
+      <name>Megalosaurinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Megalosaurinae</source>
+   </item>
+   <item xml:id="DK_Megalosaurus">
+      <name>Megalosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Megalosaurus</source>
+   </item>
+   <item xml:id="DK_Megapnosaurus">
+      <name>Megapnosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Megapnosaurus</source>
+   </item>
+   <item xml:id="DK_Megapnosaurus_kayentakatae">
+      <name>Megapnosaurus kayentakatae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Megapnosaurus_kayentakatae</source>
+   </item>
+   <item xml:id="DK_Megapnosaurus_rhodesiensis">
+      <name>Megapnosaurus rhodesiensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Megapnosaurus_rhodesiensis</source>
+   </item>
+   <item xml:id="DK_Megaraptor">
+      <name>Megaraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Megaraptor</source>
+   </item>
+   <item xml:id="DK_Melanorosauridae">
+      <name>Melanorosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Melanorosauridae</source>
+   </item>
+   <item xml:id="DK_Microraptor">
+      <name>Microraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Microraptor</source>
+   </item>
+   <item xml:id="DK_Mussaurus">
+      <name>Mussaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Mussaurus</source>
+   </item>
+   <item xml:id="DK_Nanotyrannus">
+      <name>Nanotyrannus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Nanotyrannus</source>
+   </item>
+   <item xml:id="DK_Nemegtomaia">
+      <name>Nemegtomaia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Nemegtomaia</source>
+   </item>
+   <item xml:id="DK_Nemegtosauridae">
+      <name>Nemegtosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Nemegtosauridae</source>
+   </item>
+   <item xml:id="DK_Neoceratosauria">
+      <name>Neoceratosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Neoceratosauria</source>
+   </item>
+   <item xml:id="DK_Neovenator">
+      <name>Neovenator</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Neovenator</source>
+   </item>
+   <item xml:id="DK_Neuquenraptor">
+      <name>Neuquenraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Neuquenraptor</source>
+   </item>
+   <item xml:id="DK_Neuquenraptor_argentinus">
+      <name>Neuquenraptor argentinus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Neuquenraptor_argentinus</source>
+   </item>
+   <item xml:id="DK_Nigersaurus">
+      <name>Nigersaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Nigersaurus</source>
+   </item>
+   <item xml:id="DK_Noasauridae">
+      <name>Noasauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Noasauridae</source>
+   </item>
+   <item xml:id="DK_Nothronychus">
+      <name>Nothronychus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Nothronychus</source>
+   </item>
+   <item xml:id="DK_Ornithomimosauria">
+      <name>Ornithomimosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ornithomimosauria</source>
+   </item>
+   <item xml:id="DK_Ornithomimus">
+      <name>Ornithomimus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ornithomimus</source>
+   </item>
+   <item xml:id="DK_Ornithuromorpha">
+      <name>Ornithuromorpha</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Ornithuromorpha</source>
+   </item>
+   <item xml:id="DK_Oviraptor">
+      <name>Oviraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Oviraptor</source>
+   </item>
+   <item xml:id="DK_Oviraptoridae">
+      <name>Oviraptoridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Oviraptoridae</source>
+   </item>
+   <item xml:id="DK_Oviraptorinae">
+      <name>Oviraptorinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Oviraptorinae</source>
+   </item>
+   <item xml:id="DK_Oviraptorosauria">
+      <name>Oviraptorosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Oviraptorosauria</source>
+   </item>
+   <item xml:id="DK_Oxalaia">
+      <name>Oxalaia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Oxalaia</source>
+   </item>
+   <item xml:id="DK_Panamericansaurus_schroederi">
+      <name>Panamericansaurus schroederi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Panamericansaurus_schroederi</source>
+   </item>
+   <item xml:id="DK_Panphagia">
+      <name>Panphagia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Panphagia</source>
+   </item>
+   <item xml:id="DK_Panphagia_protos">
+      <name>Panphagia protos</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Panphagia_protos</source>
+   </item>
+   <item xml:id="DK_Petrobrasaurus">
+      <name>Petrobrasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Petrobrasaurus</source>
+   </item>
+   <item xml:id="DK_Petrobrasaurus_puestohernandezi">
+      <name>Petrobrasaurus puestohernandezi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Petrobrasaurus_puestohernandezi</source>
+   </item>
+   <item xml:id="DK_Plateosauria">
+      <name>Plateosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Plateosauria</source>
+   </item>
+   <item xml:id="DK_Podokesaurus">
+      <name>Podokesaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Podokesaurus</source>
+   </item>
+   <item xml:id="DK_Podokesaurus_holyokensis">
+      <name>Podokesaurus holyokensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Podokesaurus_holyokensis</source>
+   </item>
+   <item xml:id="DK_Proceratosauridae">
+      <name>Proceratosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Proceratosauridae</source>
+   </item>
+   <item xml:id="DK_Procompsognathus">
+      <name>Procompsognathus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Procompsognathus</source>
+   </item>
+   <item xml:id="DK_Prosauropoda">
+      <name>Prosauropoda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Prosauropoda</source>
+   </item>
+   <item xml:id="DK_Pyroraptor">
+      <name>Pyroraptor</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Pyroraptor</source>
+   </item>
+   <item xml:id="DK_Pyroraptor_olympius">
+      <name>Pyroraptor olympius</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Pyroraptor_olympius</source>
+   </item>
+   <item xml:id="DK_Rahonavis">
+      <name>Rahonavis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Rahonavis</source>
+   </item>
+   <item xml:id="DK_Rahonavis_ostromi">
+      <name>Rahonavis ostromi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Rahonavis_ostromi</source>
+   </item>
+   <item xml:id="DK_Rayososaurus">
+      <name>Rayososaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Rayososaurus</source>
+   </item>
+   <item xml:id="DK_Rebbachisauridae">
+      <name>Rebbachisauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Rebbachisauridae</source>
+   </item>
+   <item xml:id="DK_Rebbachisaurus">
+      <name>Rebbachisaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Rebbachisaurus</source>
+   </item>
+   <item xml:id="DK_Riojasaurus">
+      <name>Riojasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Riojasaurus</source>
+   </item>
+   <item xml:id="DK_Saltasauridae">
+      <name>Saltasauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saltasauridae</source>
+   </item>
+   <item xml:id="DK_Saltasaurus">
+      <name>Saltasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saltasaurus</source>
+   </item>
+   <item xml:id="DK_Saltopodidae">
+      <name>Saltopodidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saltopodidae</source>
+   </item>
+   <item xml:id="DK_Sanjuansaurus">
+      <name>Sanjuansaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sanjuansaurus</source>
+   </item>
+   <item xml:id="DK_Sanjuansaurus_gordilloi">
+      <name>Sanjuansaurus gordilloi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sanjuansaurus_gordilloi</source>
+   </item>
+   <item xml:id="DK_Sarahsaurus">
+      <name>Sarahsaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sarahsaurus</source>
+   </item>
+   <item xml:id="DK_Sarahsaurus_aurifontanalis">
+      <name>Sarahsaurus aurifontanalis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sarahsaurus_aurifontanalis</source>
+   </item>
+   <item xml:id="DK_Saurischia">
+      <name>Saurischia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saurischia</source>
+   </item>
+   <item xml:id="DK_Saurischia.">
+      <name>Saurischia.</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saurischia.</source>
+   </item>
+   <item xml:id="DK_Sauropoda">
+      <name>Sauropoda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sauropoda</source>
+   </item>
+   <item xml:id="DK_Sauropodomorpha">
+      <name>Sauropodomorpha</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sauropodomorpha</source>
+   </item>
+   <item xml:id="DK_Sauroposeidon">
+      <name>Sauroposeidon</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sauroposeidon</source>
+   </item>
+   <item xml:id="DK_Saurornithoides">
+      <name>Saurornithoides</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saurornithoides</source>
+   </item>
+   <item xml:id="DK_Saurornithoides_mongoliensis">
+      <name>Saurornithoides mongoliensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Saurornithoides_mongoliensis</source>
+   </item>
+   <item xml:id="DK_Scansoriopterygidae">
+      <name>Scansoriopterygidae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Scansoriopterygidae</source>
+   </item>
+   <item xml:id="DK_Segisaurus">
+      <name>Segisaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Segisaurus</source>
+   </item>
+   <item xml:id="DK_Sellosaurus">
+      <name>Sellosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sellosaurus</source>
+   </item>
+   <item xml:id="DK_Shaochilong_maortuensis">
+      <name>Shaochilong maortuensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Shaochilong_maortuensis</source>
+   </item>
+   <item xml:id="DK_Sinosauropteryx">
+      <name>Sinosauropteryx</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Sinosauropteryx</source>
+   </item>
+   <item xml:id="DK_Spinosauridae">
+      <name>Spinosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Spinosauridae</source>
+   </item>
+   <item xml:id="DK_Spinosauroidea">
+      <name>Spinosauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Spinosauroidea</source>
+   </item>
+   <item xml:id="DK_Spinosaurus_aegyptiacus">
+      <name>Spinosaurus aegyptiacus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Spinosaurus_aegyptiacus</source>
+   </item>
+   <item xml:id="DK_Staurikosaurus">
+      <name>Staurikosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Staurikosaurus</source>
+   </item>
+   <item xml:id="DK_Staurikosaurus_pricei">
+      <name>Staurikosaurus pricei</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Staurikosaurus_pricei</source>
+   </item>
+   <item xml:id="DK_Supersaurus">
+      <name>Supersaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Supersaurus</source>
+   </item>
+   <item xml:id="DK_Tapuiasaurus">
+      <name>Tapuiasaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tapuiasaurus</source>
+   </item>
+   <item xml:id="DK_Tapuiasaurus_macedoi">
+      <name>Tapuiasaurus macedoi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tapuiasaurus_macedoi</source>
+   </item>
+   <item xml:id="DK_Tawa">
+      <name>Tawa</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tawa</source>
+   </item>
+   <item xml:id="DK_Tawa_hallae">
+      <name>Tawa hallae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tawa_hallae</source>
+   </item>
+   <item xml:id="DK_Teratophoneus">
+      <name>Teratophoneus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Teratophoneus</source>
+   </item>
+   <item xml:id="DK_Teratophoneus_curriei">
+      <name>Teratophoneus curriei</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Teratophoneus_curriei</source>
+   </item>
+   <item xml:id="DK_Tetanurae">
+      <name>Tetanurae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tetanurae</source>
+   </item>
+   <item xml:id="DK_Thecodontosauridae">
+      <name>Thecodontosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Thecodontosauridae</source>
+   </item>
+   <item xml:id="DK_Therizinosauridae">
+      <name>Therizinosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Therizinosauridae</source>
+   </item>
+   <item xml:id="DK_Therizinosauroidea">
+      <name>Therizinosauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Therizinosauroidea</source>
+   </item>
+   <item xml:id="DK_Therizinosaurus_cheloniformis">
+      <name>Therizinosaurus cheloniformis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Therizinosaurus_cheloniformis</source>
+   </item>
+   <item xml:id="DK_Theropoda">
+      <name>Theropoda</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Theropoda</source>
+   </item>
+   <item xml:id="DK_Titanosauria">
+      <name>Titanosauria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Titanosauria</source>
+   </item>
+   <item xml:id="DK_Titanosauridae">
+      <name>Titanosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Titanosauridae</source>
+   </item>
+   <item xml:id="DK_Traukutitan">
+      <name>Traukutitan</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Traukutitan</source>
+   </item>
+   <item xml:id="DK_Traukutitan_eocaudata">
+      <name>Traukutitan eocaudata</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Traukutitan_eocaudata</source>
+   </item>
+   <item xml:id="DK_Troodontinae">
+      <name>Troodontinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Troodontinae</source>
+   </item>
+   <item xml:id="DK_Troodontoidea">
+      <name>Troodontoidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Troodontoidea</source>
+   </item>
+   <item xml:id="DK_Tyrannosauridae">
+      <name>Tyrannosauridae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tyrannosauridae</source>
+   </item>
+   <item xml:id="DK_Tyrannosaurinae">
+      <name>Tyrannosaurinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tyrannosaurinae</source>
+   </item>
+   <item xml:id="DK_Tyrannosauroidea">
+      <name>Tyrannosauroidea</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tyrannosauroidea</source>
+   </item>
+   <item xml:id="DK_Tyrannosaurus">
+      <name>Tyrannosaurus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tyrannosaurus</source>
+   </item>
+   <item xml:id="DK_Tyrannosaurus_rex">
+      <name>Tyrannosaurus rex</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Tyrannosaurus_rex</source>
+   </item>
+   <item xml:id="DK_Uberabatitan">
+      <name>Uberabatitan</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Uberabatitan</source>
+   </item>
+   <item xml:id="DK_Uberabatitan_ribeiroi">
+      <name>Uberabatitan ribeiroi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Uberabatitan_ribeiroi</source>
+   </item>
+   <item xml:id="DK_Unenlagia">
+      <name>Unenlagia</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unenlagia</source>
+   </item>
+   <item xml:id="DK_Unenlagia_comahuensis">
+      <name>Unenlagia comahuensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unenlagia_comahuensis</source>
+   </item>
+   <item xml:id="DK_Unenlagia_paynemili">
+      <name>Unenlagia paynemili</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unenlagia_paynemili</source>
+   </item>
+   <item xml:id="DK_Unenlagiinae">
+      <name>Unenlagiinae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unenlagiinae</source>
+   </item>
+   <item xml:id="DK_Unspecified_Camarasauromorpha_Group">
+      <name>Unspecified Camarasauromorpha Group</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Camarasauromorpha_Group</source>
+   </item>
+   <item xml:id="DK_Unspecified_Eusaurischia_Suborder">
+      <name>Unspecified Eusaurischia Suborder</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Eusaurischia_Suborder</source>
+   </item>
+   <item xml:id="DK_Unspecified_Macronaria_Superfamily">
+      <name>Unspecified Macronaria Superfamily</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Macronaria_Superfamily</source>
+   </item>
+   <item xml:id="DK_Unspecified_Neosauropoda_Group">
+      <name>Unspecified Neosauropoda Group</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Neosauropoda_Group</source>
+   </item>
+   <item xml:id="DK_Unspecified_Prosauropoda_Family">
+      <name>Unspecified Prosauropoda Family</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Prosauropoda_Family</source>
+   </item>
+   <item xml:id="DK_Unspecified_Prosauropoda_Superfamily">
+      <name>Unspecified Prosauropoda Superfamily</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Prosauropoda_Superfamily</source>
+   </item>
+   <item xml:id="DK_Unspecified_Saurischia_Family">
+      <name>Unspecified Saurischia Family</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Saurischia_Family</source>
+   </item>
+   <item xml:id="DK_Unspecified_Saurischia_Group">
+      <name>Unspecified Saurischia Group</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Saurischia_Group</source>
+   </item>
+   <item xml:id="DK_Unspecified_Titanosauria_Group">
+      <name>Unspecified Titanosauria Group</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Unspecified_Titanosauria_Group</source>
+   </item>
+   <item xml:id="DK_Variraptor_mechinorum">
+      <name>Variraptor mechinorum</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Variraptor_mechinorum</source>
+   </item>
+   <item xml:id="DK_Velociraptor_mongoliensis">
+      <name>Velociraptor mongoliensis</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Velociraptor_mongoliensis</source>
+   </item>
+   <item xml:id="DK_Velociraptor_osmolskae">
+      <name>Velociraptor osmolskae</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Velociraptor_osmolskae</source>
+   </item>
+   <item xml:id="DK_Volkheimeria">
+      <name>Volkheimeria</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Volkheimeria</source>
+   </item>
+   <item xml:id="DK_Xenoposeidon">
+      <name>Xenoposeidon</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Xenoposeidon</source>
+   </item>
+   <item xml:id="DK_Xenoposeidon_proneneukos">
+      <name>Xenoposeidon proneneukos</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Xenoposeidon_proneneukos</source>
+   </item>
+   <item xml:id="DK_Xixianykus">
+      <name>Xixianykus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Xixianykus</source>
+   </item>
+   <item xml:id="DK_Xixianykus_zhangi">
+      <name>Xixianykus zhangi</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Xixianykus_zhangi</source>
+   </item>
+   <item xml:id="DK_Zhuchengtyrannus">
+      <name>Zhuchengtyrannus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Zhuchengtyrannus</source>
+   </item>
+   <item xml:id="DK_Zhuchengtyrannus_magnus">
+      <name>Zhuchengtyrannus magnus</name>
+      <description>Order Saurischia</description>
+      <source>http://species.wikimedia.org/wiki/Zhuchengtyrannus_magnus</source>
+   </item>
+</group>

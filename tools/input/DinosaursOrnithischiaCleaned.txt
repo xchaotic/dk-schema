@@ -1,0 +1,247 @@
+Achelousaurus
+Agujaceratops
+Agujaceratops mariscalensis
+Albertaceratops
+Albertaceratops nesmoi
+Anatotitan
+Anchiceratops
+Anchiceratops ornatus
+Ankylopollexia
+Ankylosauria
+Ankylosauridae
+Ankylosaurinae
+Ankylosaurus
+Ankylosaurus
+Arrhinoceratops
+Arrhinoceratops brachyops
+Atlascopcosaurus
+Avaceratops
+Avaceratops lammersi
+Bagaceratops
+Bagaceratops rozhdestvenskyi
+Barilium
+Barilium dawsoni
+Brachyceratops
+Brachylophosaurus
+Breviceratops
+Camptosauridae
+Camptosaurus
+Camptosaurus dispar
+Centrosaurinae
+Centrosaurini
+Centrosaurus
+Centrosaurus apertus
+Cerapoda (Dinosauria)
+Cerapoda(dinosauria)
+Ceratopsia
+Ceratopsidae
+Ceratopsoidea
+Chaoyangsauridae
+Chaoyangsaurus
+Chaoyangsaurus youngi
+Charonosaurus
+Chasmosaurinae
+Chasmosaurus
+Chasmosaurus belli
+Chasmosaurus russelli
+Chialingosaurus
+Chungkingosaurus
+Claosaurus
+Coahuilaceratops
+Coahuilaceratops magnacuerna
+Corythosaurus
+Craterosaurus
+Cumnoria
+Cumnoria prestwichii
+Dacentrurus
+Dacentrurus armatus
+Dakotadon
+Dakotadon lakotaensis
+Draconyx
+Draconyx loureiroi
+Dracorex
+Dracorex hogwartsia
+Dravidosaurus
+Drinker
+Dryomorpha
+Dryosauridae
+Edmontosaurini
+Edmontosaurus
+Edmontosaurus  
+Einiosaurus
+Emausaurus
+Eotriceratops
+Eotriceratops xerinsularis
+Euhadrosauria
+Euoplocephalus
+Euornithopoda
+Eurypoda
+Fulgurotherium
+Glishades
+Glishades ericksoni
+Goyocephala
+Graciliceratops
+Gryposaurus
+Hadrosauridae
+Hadrosaurinae
+Hadrosaurini
+Hadrosauroidea
+Hadrosaurus
+Hadrosaurus foulkii
+Hesperosaurus
+Heterodontosauridae
+Homalocephale
+Homalocephaloidea
+Huayangosauridae
+Huayangosaurus
+Hungarosaurus
+Hypacrosaurus
+Hypselospinus
+Hypselospinus fittoni
+Hypsilophodon
+Hypsilophodontia
+Hypsilophodontidae
+Iguanodon
+Iguanodon bernissartensis
+Iguanodontia
+Iguanodontidae
+Iguanodontoidea
+Incertae sedis (Ankylopollexia)
+Incertae sedis (Hadrosauridae)
+Incertae sedis (Hadrosauroidea)
+Incertae Sedis (Iguanodontia)
+Incertae sedis (Lambeosaurinae)
+Incertae sedis (Ornithopoda)
+Incertae sedis Anklyosauridae
+Incertae sedis Ankylosauria
+Incertae sedis Centrosaurinae
+Incertae sedis Ceratopsia
+Incertae sedis Ceratopsoidea
+Incertae sedis Eurypoda
+Incertae sedis Homalocephaloidea
+Incertae sedis Ornithischia
+Incertae sedis Pachycephalosauria
+Incertae sedis Stegosauria
+Incertae sedis Thyreophora
+Jeholosaurus
+Jeyawati
+Jeyawati rugoculus
+Kentrosaurus
+Kosmoceratops
+Kosmoceratops richardsoni
+Kritosaurus
+Kukufeldia
+Kukufeldia tilgatensis
+Lamaceratops
+Lambeosaurinae
+Lambeosaurini
+Lambeosaurus
+Leaellynasaura
+Leptoceratops
+Leptoceratopsidae
+Lesothosaurus
+Lexovisaurus
+Lexovisaurus durobrivensis
+Magnirostris
+Maiasaura
+Maiasaurini
+Marginocephalia
+Medusaceratops
+Medusaceratops lokii
+Microceratus
+Micropachycephalosaurus
+Minotaurasaurus
+Mojoceratops
+Mojoceratops perifania
+Monoclonius
+Monoclonius crassus
+Montanoceratops
+Montanoceratops cerorhynchos
+Nedoceratops
+Nedoceratops hatcheri
+Neoceratopsia
+Nipponosaurus
+Nodosauridae
+Ojoceratops
+Ojoceratops fowleri
+Ornithischia
+Ornithopoda
+Orodromeus
+Osmakasaurus
+Osmakasaurus depressus
+Othnielia
+Pachycephalosauria
+Pachycephalosauridae
+Pachycephalosaurus
+Pachycephalosaurus wyomingensis
+Pachyrhinosaurini
+Pachyrhinosaurus
+Paranthodon
+Paranthodon africanus
+Parasaurolophus
+Parksosaurus
+Pentaceratops
+Pentaceratops sternbergii
+Platyceratops
+Polacanthinae
+Prenocephale
+Prenoceratops
+Prosaurolophus
+Protoceratops
+Protoceratops andrewsi
+Protoceratopsidae
+Psittacosauridae
+Psittacosaurus
+Rhabdodontidae
+Saichania
+Saurolophus
+Scelidosauridae
+Scelidosaurus
+Scutellosauridae
+Scutellosaurus
+Stegoceras
+Stegosauria
+Stegosauridae
+Stegosaurus
+Stegosaurus armatus
+Stegosaurus longispinus
+Stegosaurus stenops
+Stygimoloch
+Styracosaurus
+Styracosaurus albertensis
+Styracosaurus ovatus
+Styracosterna
+Tatankacephalus
+Tatankaceratops
+Tatankaceratops sacrisonorum
+Texacephale
+Thescelosaurus
+Thyreophora Nopcsa
+Tianyulong
+Tianyulong confuciusi
+Tianzhenosaurus
+Titanoceratops
+Titanoceratops ouranous
+Torosaurus
+Torosaurus latus
+Torosaurus utahensis
+Triceratops
+Triceratops horridus
+Triceratops prorsus
+Tsintaosaurus
+Tuojiangosaurus
+Tuojiangosaurus multispinus
+Utahceratops
+Utahceratops gettyi
+Uteodon
+Uteodon aphanoecetes
+Vagaceratops
+Vagaceratops irvinensis
+Wuerhosaurus
+Xuanhuaceratops
+Xuwulong
+Zephyrosaurus
+Zhuchengceratops
+Zhuchengceratops inexpectus
+Zuniceratops
+Zuniceratops christopheri

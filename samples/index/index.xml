@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: EWC Tree -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="EWC_TREE">
+    <title>EWC Tree</title>
+    <index xml:id="EWC_TREE350INDEX">
+        <indexdiv xml:id="EWC_TREE350INDEX_001">
+            <title>A</title>
+            <indexentry>
+                <primaryie>Abiu 320</primaryie>
+            </indexentry>
+            <indexentry>
+                <primaryie>Abies</primaryie>
+                <secondaryie>alba 76</secondaryie>
+                <secondaryie>grandis 76</secondaryie>
+            </indexentry>
+        </indexdiv>
+    </index>
+</book>

@@ -1,0 +1,301 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Contextual Menu"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="More powerful support for editing the XML markup is offered via actions included in the contextual menu. Two types of actions are available: generic actions (actions that not depends on a specific ..."/>
+<meta name="DC.subject" content="Author editor, contextual menu"/>
+<meta name="keywords" content="Author editor, contextual menu"/>
+<meta name="indexterms" content="Author editor, contextual menu"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-editor.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-finding-and-replacing-text.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/editing-xml-documents-author.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="author-contextual-menu"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Contextual Menu</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="author-contextual-menu">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/author-editor.html" title="The Author Editor"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">The Author Editor</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/author-finding-and-replacing-text.html" title="Finding and Replacing Text"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Finding and Replacing Text</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents in Author</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/content-author-role.html" title="General Author Presentation">General Author Presentation</a> / <a class="navheader_parent_path" href="../topics/author-editor.html" title="The Author Editor">The Author Editor</a></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Contextual Menu</h1>
+
+  
+  <div class="body">
+    <p class="p">More powerful support for editing the XML markup is offered via actions included in the
+      contextual menu. Two types of actions are available: <strong class="ph b">generic actions</strong> (actions that not
+      depends on a specific document type) and <strong class="ph b">document type actions</strong> (actions that are
+      configured for a specific document type).</p>
+
+    <div class="fig fignone">
+      
+      <img class="image" src="../img/sa_author_contextual_menu_generic.png"/>
+    <p class="figcap">Contextual menu</p></div>
+
+    
+    <p class="p">The generic actions are:</p>
+
+    <ul class="ul">
+      <li class="li"><span class="ph uicontrol">Edit Attributes</span> - A pop-up window is displayed allowing you to
+        manage the element attributes;</li>
+
+      <li class="li"><span class="ph uicontrol">Rename</span> - The element from the caret position can be renamed quickly
+        using the content completion window. If the <a class="xref" href="preferences-schema-aware.html">Allow
+          only insertion of valid elements and attributes</a> schema aware option is enabled only
+        the proposals from the content completion list are allowed, otherwise a custom element name
+        can also be provided;</li>
+
+      <li class="li"><span class="ph uicontrol">Cut</span>, <span class="ph uicontrol">Copy</span>, <span class="ph uicontrol">Paste</span> -
+        Common edit actions with the same functionality as those found in the text editor;</li>
+
+      <li class="li"><span class="ph uicontrol">Paste As XML</span> - Similar to <span class="ph uicontrol">Paste</span> operation,
+        except that the clipboard's content is considered to be XML;</li>
+
+      <li class="li" id="author-contextual-menu__edit_profiling_attributes"><span class="ph uicontrol">Edit Profiling Attributes</span> - Allows
+        you to select the profiling attributes;</li>
+
+      <li class="li"><span class="ph uicontrol">Select</span> - Contains the following actions:<ul class="ul">
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Select</span> &gt; <span class="ph uicontrol">Select Element</span></span> - Selects the entire element at the current caret position;</li>
+
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Select</span> &gt; <span class="ph uicontrol">Select Content</span></span> - Selects the entire content of the element at the current caret
+            position, excluding the start and end tag. Performing this action repeatedly will result
+            in the selection of the content of the ancestor of the currently selected element
+            content;</li>
+
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Select</span> &gt; <span class="ph uicontrol">Select Parent</span></span> - Selects the parent of the element at the current caret position;</li>
+
+        </ul>
+<div class="note note"><span class="notetitle">Note:</span> You can select an element by triple clicking inside its content. If the element
+          is empty you can select it by double clicking it.</div>
+</li>
+
+      <li class="li"><span class="ph uicontrol">Text</span> - Contains the following actions:<ul class="ul" id="author-contextual-menu__ul_ckk_ftc_gd">
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Text</span> &gt; <span class="ph uicontrol">To Lower Case</span></span> - Converts the selection content to lower case characters;</li>
+
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Text</span> &gt; <span class="ph uicontrol">To Upper Case</span></span> - Converts the selection content to upper case characters;</li>
+
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Text</span> &gt; <span class="ph uicontrol">Capitalize Sentences</span></span> - Converts to upper case the first character of every selected
+            sentence;</li>
+
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Text</span> &gt; <span class="ph uicontrol">Capitalize Words</span></span> - Converts to upper case the first character of every selected word;</li>
+
+          <li class="li"><span class="ph menucascade"><span class="ph uicontrol">Text</span> &gt; <span class="ph uicontrol">Count Words</span></span> - Counts the number of words and characters (no spaces) in the entire
+            document or in the selection for regular content and read-only content;<div class="note note"><span class="notetitle">Note:</span> The content
+              marked as deleted with track changes is ignored when counting words.</div>
+</li>
+
+        </ul>
+</li>
+
+      <li class="li"><span class="ph uicontrol">Refactoring</span> - Contains a series of actions designed to alter the
+        document's structure:<ul class="ul">
+          <li class="li"><span class="ph uicontrol">Toggle Comment</span> - Encloses the currently selected text in an XML
+            comment, or removes the comment if it is commented;</li>
+
+          <li class="li"><span class="ph uicontrol">Split Element</span> - Splits the content of the closest element that
+            contains the caret's position. Thus, if the caret is positioned at the beginning or at
+            the end of the element, the newly created sibling will be empty;</li>
+
+          <li class="li"><span class="ph uicontrol">Join Elements</span> - Joins two adjacent elements that have the same
+            name. The action is available only when the caret position is between the two adjacent
+            elements. Also, joining two elements can be done by pressing the Delete or Backspace
+            keys and the caret is positioned between the boundaries of these two elements;</li>
+
+          <li class="li"><span class="ph uicontrol">Surround with Tag...</span> - Selected text in the editor is marked
+            with the specified start and end tags;</li>
+
+          <li class="li"><span class="ph uicontrol">Surround with '&lt;Tag name&gt;'</span> - Selected text in the editor
+            is marked with start and end tags used by the last '<span class="ph uicontrol">Surround with
+              Tag...</span>' action;</li>
+
+          <li class="li"><span class="ph uicontrol">Rename Element</span> - The element from the caret position and the
+            elements that have the same name as the current element can be renamed according with
+            the options from the <span class="ph uicontrol">Rename</span> dialog;</li>
+
+          <li class="li"><span class="ph uicontrol">Delete Element Tags</span> - Deletes the tags of the closest element
+            that contains the caret's position. This operation is also executed if the start or end
+            tags of an element are deleted by pressing the <span class="ph uicontrol">
+              <span class="keyword shortcut">(Delete)</span></span> or <span class="ph uicontrol">
+              <span class="keyword shortcut">(Backspace)</span></span> keys;</li>
+
+        </ul>
+</li>
+
+      <li class="li"><span class="ph uicontrol">Review</span> - Provides access to <a class="xref" href="author-managing-changes.html#author-managing-changes">Track
+          Changes</a> and Manage Comments actions;</li>
+
+      <li class="li"><span class="ph uicontrol">Insert Entity</span> - Allows the user to insert a predefined entity or a
+        character entity. Surrogate character entities (range #x10000 to #x10FFFF) are also
+        accepted. Character entities can be entered in one of the following forms:<ul class="ul">
+          <li class="li">#<em class="ph i">&lt;decimal value&gt;</em> - e. g. #65;</li>
+
+          <li class="li">&amp;#<em class="ph i">&lt;decimal value&gt;</em>; - e. g. &amp;#65;</li>
+
+          <li class="li">#x<em class="ph i">&lt;hexadecimal value&gt;</em> - e. g. #x41;</li>
+
+          <li class="li">&amp;#x<em class="ph i">&lt;hexadecimal value&gt;</em>; - e. g. &amp;#x41;</li>
+
+        </ul>
+</li>
+
+      <li class="li"><span class="ph uicontrol">Open File at Caret</span> - Opens in a new editor panel the file with the
+        path under the caret position. If the path represents a directory path, it will be opened in
+        system file browser. If the file does not exist at the specified location, the error dialog
+        that is displayed contains a <span class="ph uicontrol">Create new file</span> action which displays
+        the <span class="ph uicontrol">New</span> file dialog. This allows you to choose the type or the
+        template for the file. If the action succeeds, the file is created with the referred
+        location and name and is opened in a new editor panel. This is useful when you decide first
+        on the file name and after that you want to create it in the exact location specified at the
+        current cursor position;</li>
+
+      <li class="li"><span class="ph uicontrol">Options</span> - Opens
+        the <a class="xref" href="preferences-author.html#preferences-author">Author options
+          page</a>.</li>
+
+    </ul>
+
+    <p class="p">Document type actions are specific to some document type. Examples of such actions can be
+      found in the <a class="xref" href="../concepts/doc-type.html">Predefined document types</a> section. </p>
+
+  </div>
+
+<div class="related-links"/>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/author-editor.html" title="The Author Editor"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">The Author Editor</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/author-finding-and-replacing-text.html" title="Finding and Replacing Text"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Finding and Replacing Text</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/editing-xml-documents-author.html" title="Editing XML Documents in Author"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Editing XML Documents in Author</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

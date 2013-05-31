@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="animal"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title xml:id="animal_000">Musical</title>
+
+    <glossary xml:id="tree_001">
+
+        <title>MUSICAL</title>
+        <sidebar>
+            <title>Survey of musical styles</title>
+            <formalpara>
+                <title>BAROQUE</title>
+                <para>Defined by ornate and extravagant arrangements and melodies, Baroque style
+                    held sway in Europe from about 1600 to 1750. First applied in this context
+                    during the nineteenth century, the term comes from portugese Barroco....</para>
+            </formalpara>
+            <formalpara>
+                <title>CLASSICISM</title>
+                <para>A reaction against Baroque exuberance, the Classical era (1750-1820) was about
+                    balance, reason and finish ... </para>
+            </formalpara>
+            <formalpara>
+                <title>ROMANTICISM</title>
+                <para>Summed up by the poet Goethe in his phrase 'feeling is everything', the
+                    romatic movement dominated the nineteenth century ... </para>
+            </formalpara>
+        </sidebar>
+
+        <glossentry xml:id="piano_001">
+            <glossterm>PIANO</glossterm>
+            <glossdef>
+                <para>Located on or to the side of an axis.</para>
+            </glossdef>
+        </glossentry>
+        <glossentry xml:id="piano_002">
+            <glossterm>PITCH</glossterm>
+            <glossdef>
+                <para>Single division of a a compound leaf. Also known as a pina.</para>
+            </glossdef>
+        </glossentry>
+
+        <glossentry xml:id="piano_003">
+            <glossterm>PRESTO</glossterm>
+            <glossdef>
+                <para>Fast. Prestissimo means extremely fast</para>
+            </glossdef>
+        </glossentry>
+        <glossentry xml:id="piano_004">
+            <glossterm>QUARTET</glossterm>
+            <glossdef>
+                <para>Composition for four musicians; group of four musicians.</para>
+            </glossdef>
+        </glossentry>
+
+
+        <!-- text removed for brevity -->
+    </glossary>
+
+</book>

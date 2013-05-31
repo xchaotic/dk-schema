@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>DK-Schema 2.0 Developer Guidelines</title>
+        <author>
+            <personname>Lech Rzedzicki</personname>
+            <email>lech@kode1100.com</email>
+        </author>
+    </info>
+    <section>
+        <title>Introduction</title>
+        <para>DK Schema 2.0 is based on Docbook 5.x, with customisations to cater for DK specific requirements.</para>
+        <para>This document describes how these customisations are done and how are they automated, whenever possible.</para>
+        
+    </section>
+    <section>
+        <title>Getting the DK-Schema and Documentation</title>
+        <para>For basic instructions about using DK-Schema, please refer to: <link
+                xlink:href="http://www.kode1100.co.uk/dk/docs/dk-GettingStarted.html">DK-Schema Getting Started Guide</link></para>
+    </section>
+    <section>
+        <title>DK-Schema Architecture</title>
+        <para>DK-Schema 2.0 uses a manually created Docbook Publishers SC 1.0 Schema file
+                (<filename>src/db-publishers-sc.rnc)</filename>as a starting point.</para>
+        <para>At the time when DK-Schema was first authored there was no official Docbook Publishers
+            SC 1.0 Schema file, only a specification. Therefore the file in the DK-Schema repository
+            may be physically slightly different to the one currently found on Docbook Publishers SC
+            page, but the content model is almost identical.</para>
+        <para>In a few, very specific cases, where Publishers SC schema prohibits constructs that
+            DK-Schema requires, for simplicity, the change is done directly in the
+                <filename>db-publishers-sc.rnc)</filename> file and the changes are clearly
+            commented.</para>
+        <para>On an abstract, conceptual level, the DK-Schema is designed like that:</para>
+        <para>Docbook 5 -> Docbook Simplified -> Docbook Publishers -> DK-Schema -> variant </para>
+        <para>In practical terms the follwing files are of importance:<variablelist>
+                <varlistentry>
+                    <term><filename>dk-schema.rnc</filename></term>
+                    <listitem>
+                        <para>The generated, final schema that you should point your users to. That
+                            file is standalone, has no external dependencies and tehrefore can be
+                            easily used offline, or sent to a 3rd party.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><filename>src/dk-extenstions.rnc</filename></term>
+                    <listitem>
+                        <para>This is where most of the modifications should reside. </para>
+                        <para>Please observe the existing conventions in the file and comment all
+                            the changes.</para>
+                        <para>For debugging or internal use, you can simply validate against this
+                            file as this is the same schema as
+                            <filename>dk-schema.rnc</filename></para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><filename>src/db-publishers-sc.rnc)</filename></term>
+                    <listitem>
+                        <para>This is the Docbook Publishers SC schema file that DK-Schema is based
+                            on. In some cases it is more simple to modify this file directly so that
+                            the <filename>src/dk-extenstions.rnc</filename> can be kept
+                            concise.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist></para>
+    </section>
+    <section>
+        <title>Versioning of the Schema and the Repository.</title>
+        <para>For general information about versioning DK-Schema, please refer to: <link xlink:href="http://www.kode1100.com/dk/dk-schema/docs/versioning.html">DK-Schema Versioning</link></para>
+        <para>DK-Schema relies on Version Control System to track past changes.</para>
+        <para>Specificaly it uses Mercurial (often refreed to as Hg) as the software, command line
+            and GUI clients are available for every major OS here:
+                <uri>http://mercurial.selenic.com/</uri></para>
+        <para>The architecture of Mercurial is such that it allows creating multiple repositories
+            and synchronising them.</para>
+        <para>There is no concept of 'master' repository, but currently the two main places where
+            most up-to-date versions of DK-Schema are kept are: <simplelist>
+                <member><uri>code.google.com/p/dk-schema</uri></member>
+                <member><uri>kode1100.com/dk</uri></member>
+            </simplelist></para>
+        <para>The scripts on kode1100.com automaticially synchronise the two so they are both up-to
+            date.</para>
+        <section>
+            <title>Updating or adding new files to the repository</title>
+            <para>If you want to make any changes to the files in the repository, clone the
+                repository to your local machine, make the changes and skynchronise it back to
+                    <uri>code.google.com/p/dk-schema</uri>. For more detailed instruction on using
+                Mercurial, follow it's documentation at
+                <uri>http://mercurial.selenic.com/</uri></para>
+            <para>For small changes a viable and a very simple alternative is to use the web
+                interface provided by Google, in that case:<procedure>
+                    <step>
+                        <para>Go to the source tab of the project:
+                                <uri>http://code.google.com/p/dk-schema/source/list</uri></para>
+                    </step>
+                    <step>
+                        <para>Navigate to the file that you wish to modify</para>
+                    </step>
+                    <step>
+                        <para>Click <guibutton>Edit file</guibutton>, for example this link would
+                            take you to editing the DK Schema specification source file:
+                            <link xlink:href="http://code.google.com/p/dk-schema/source/browse/docs/src/dk-schema-spec.xml?edit=1">dk-schema-spec.xml</link></para>
+                    </step>
+                </procedure></para>
+        </section>
+    </section>
+    <section>
+        <title>Modyfing DK-Schema</title>
+        <para>The basic premise of DK-Schema is being based on as standards-based Docbook (<uri>docbook.org</uri>) schema . Therefore it is always necessary to check whether an appropriate solution can be achieved using standard Docbook elements and attributes.</para>
+        <section>
+            <title>Modyfing Common schema</title>
+            <para>The core customisations are kept in <filename>src/dk-extensions.rnc</filename>. you should always modify this file first and generate or copy the changes to the <filename>dk-schema.rnc</filename></para>
+            <para>When modyfing <filename>dk-extensions.rnc</filename>, there are genrally two main
+                patterns: creating a new content model (ideally by reusing a similar Docbook
+                structure) and specifying where in the schema, is the content allowed.</para>
+            <para>Please observe the existing conventions in the file and comment all the
+                changes.</para>
+            <para>When adding new elements, consider adding standard Docbook common attributes for
+                example.</para>
+        </section>
+        <section>
+            <title>Modyfing a Variant</title>
+            <para>Whenever possible, consider using common schema for specific types of content - this reduces the amount of maintenance.</para>
+            <para>When the content model is very different so that it requires a separate module (travel, cookery etc), the variant is then included as optional content in the common <filename>dk-schema.rnc</filename>. That way there is no need ot point to another schema for a varaint.</para>
+            <para>For any given variant there are two files
+                    <filename>dk-schema/variant-name/variant-name.rnc</filename> and
+                    <filename>dk-schema/variant-name/variant-name.inc</filename>. </para>
+            <para>The rnc file imports <filename>src/dk-extensions.rnc</filename>, so that one can
+                point to a specific, standalone variant schema.</para>
+            <para>The inc file is a module that is imported in the build processs of
+                    <filename>dk-schema.rnc</filename>  so that the final
+                    <filename>dk-schema.rnc</filename> allows all variant modules as optional and
+                can mix for example travel and cookery content.</para>
+            <para>When modifying varaint content models, it is therefore necessary to modify both
+                files, curently the tools have not been developed to generate variant
+                    <filename>*.rnc</filename> or <filename>*.inc</filename> .</para>
+        </section>
+        <section>
+            <title>Modyfing Schematron rules</title>
+            <para>Currently all schematron rules are kept in a single file
+                    <filename>dk-schema.sch</filename> . To modify them, simply edit the file and
+                add a pattern.</para>
+            <para>There is also a script at <filename>automation/CombineSchematron.sh</filename>
+                that will extract all schematron rules, including the embedded ones (for example
+                ones that come with standard Docbook Publishers SC Schema. Currently the
+                    <filename>src/*.rnc</filename> are not up to date as often there is no clear
+                split as to where a given rule should reside.</para>
+        </section>
+        <section>
+            <title>Modyfing meta enumerations</title>
+            <para>TODO</para>
+        </section>
+    </section>
+    
+    <section>
+        <title>Tools and automation</title>
+        <para></para>
+        <section>
+            <title>Generating documentation (dk-schema-spec-with samples)</title>
+            <para>To better undardstand DK-Schema, users often wish to refer to some examples of a
+                content model in a book or in XML.</para>
+            <para>To facilitate that, the canonical version of the DK-Schema specification is called
+                    <filename>dk-schema-spec-with samples</filename> and is availalable in two
+                formats: PDF and HTML</para>
+            <para>If you update samples, screenshots or the specification itself, it is therefore
+                necessary to also re-generate <filename>docs/dk-schema-spec-with
+                    samples.html</filename> and <filename>docs/dk-schema-spec-with
+                    samples.pdf</filename></para>
+            <para>In order to do that, simply run
+                    <filename>automation/Generate-DK-Schema-Spec-With-Samples.sh</filename> this
+                will overwrite the <filename>docs/dk-schema-spec-with samples.html</filename></para>
+        </section>
+        <section>
+            <title>Generating standalone schema (dk-schema.rnc)</title>
+            <para>In order to generate the standalone <filename>dk-schema.rnc</filename> file you
+                need to run <filename>automation/Generate-DK-Schema-rnc.sh</filename></para>
+            <para>It requires several open source tools which are bundled in the repository:<simplelist>
+                    <member>jing</member>
+                    <member>trang</member>
+                    <member>calabash</member>
+                    <member>saxon</member>
+                </simplelist>If you have any problems running the script, you may need to look at
+                pathnames foor those tools as well as documentation of the script itself.</para>
+            <para>As an alternative, it is possible to copy small changes to existing DK-Schema
+                manually by simply editing the <filename>dk-schema.rnc</filename></para>
+            <section>
+                <title>Generating attribute enumerations (metaref. role, rend)</title>
+            <para>Attribute enumerations for meta, role and rend are maintained externally to the
+                    schema.</para>
+                <para>To have <filename>dk-schema.rnc</filename> validate them, you need to run
+                        <filename>tools/generate-schema-enumerations-from-presets-rnc.xsl</filename>
+                    which will output a list of enumerations in RelaxNG compact form, which you tehn
+                    need to paste in <filename>src/dk-extenstions.rnc</filename> and generate
+                        <filename>dk-schema.rnc</filename> again.</para>
+            </section>
+        </section>
+        <section>
+            <title>Automated validation using Xproc pipelines</title>
+            <para>A proof-of-concept can be found here
+                    <uri>automation/xproc/SampleValidationReport.xpl</uri></para>
+            <para>When run with a paramter that pipeline will run the schematron rules and report
+                all errors and warnings.</para>
+            <para>Currently (at the time of writing) error-checking with OxygenXML editor works much
+                better so the pipeline is not used, but can be useful for batch-processing or
+                sending error reports to vendors.</para>
+        </section>
+        <section>
+            <title>Auxillary validation with XProc and XSL</title>
+            <para>Currently the two main forms of DK-Schema validation are the RNC schema file and
+                the Schematron rules.</para>
+            <para>In some instances it may be useful to validate beyond what those tools are capable
+                of. In such cases it is possible to use Xproc to run additional tests.</para>
+            <para>One example of this is generating the specification file,
+                    <filename>docs/dk-schema-spec-with samples.html</filename> In the process, the
+                pipeline also check for missing screenshots and samples using
+                    <filename>automation/xproc/FileMissingDetectionReport.xpl</filename> - a
+                filesystem check that RNC, Schmatron nor XSL can not do.</para>
+        </section>
+    </section>
+    <section>
+        <title>Getting Help and submitting issues</title>
+        <para>if you get stuck and can not find the answer to your question in Docbook or DK-Schema documentation or community help (Google, mailing-lists such as docbook-apps), don't hesitate to contact the authors of the schema or to submit an issue to a bug tracking system.</para>
+        <procedure>
+            <title>Submitting a bug / new feature request</title>
+            <para>We are using Google Code to keep track of of the issues</para>
+            <step><para>Get a <link xlink:href="https://accounts.google.com/NewAccount">Google Account</link> and log in.</para></step>
+            <step><para>Go to <link xlink:href="http://code.google.com/p/dk-schema/issues/list">Issues List</link> and verify that your issue is not in the list already.</para></step>
+            <step><para>Submit a new issue <link xlink:href="http://code.google.com/p/dk-schema/issues/entry">here</link>. Ensure that you have described and clasified the issue properly and if possible attach screenshots and markup examples.</para></step>
+        </procedure>
+        <procedure>
+            <title>Getting in touch</title>
+            <step><para>Send us an email to <email>dk-schema@kode1100.com</email></para></step>
+            <step><para>Give us a call at <address><phone>00442081337477</phone></address></para></step>
+        </procedure>
+    </section>
+    
+</article>

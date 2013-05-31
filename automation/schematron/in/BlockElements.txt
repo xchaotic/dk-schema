@@ -1,0 +1,13 @@
+sections:
+db:sect1 | db:sect2 | db:sect3 | db:sect4 | db:sect5 | db:section | db:simplesect | db:bridgeHead | db:refsect1 | db:refsect2 | db:refsect3 | db:dlossdiv | db:bibliodiv | db:Indexdiv
+
+
+block Elements:
+CalloutList | db:ItemizedList | db:OrderedList | db:segmentedList | db:simpleList | db:VariableList | db:Caution | db:Important | db: Note | db:Tip | db:Warning | db:Address | db:LiteralLayout | db:ProgramListing | db:screen | db:screenshot | db:synopsis | db:Example | db:InformalExample | db:Figure | db:InformalFigure | db:Table | db:InformalTable | db:Para | db:simPara | db:FormalPara | db:Equation | db:InformalEquation | db:Figure | db:screenshot | db:Graphic | db:MediaObject | db:QandAset | db:blockQuote | db:Cmdsynopsis | db:Epigraph | db:Funcsynopsis | db:Highlights | db:Msgset | db:Procedure | db:sidebar
+
+
+
+Component:
+db:part | db:preface | db:chapter | db:appendix | db:glossary | db:bibliography | db:article
+
+

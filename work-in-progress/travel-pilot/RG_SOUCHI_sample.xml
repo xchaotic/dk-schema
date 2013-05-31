@@ -1,0 +1,2168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/dk-schema.rnc" type="compact"?> 
+<!-- DK Schema example of content from The Rough Guide to Southwest China -->
+<!-- DMD: Section role="article" should be assigned wherever required. -->
+<book xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://docbook.org/ns/docbook" version="5.0"
+    xml:id="RG_SOUCHI0001">
+    <title>The Rough Guide To Southwest China</title>
+    
+
+
+
+
+    <!-- 
+   CHANGES TAKEN IN FROM SCHEMA TEAM MEETINGS 
+   changes to v2, from 15/02/12:
+        <section role="box-out"> changed to <section role="feature">
+        <phrase role="poiRef"> changed to <phrase role="poiRef">    
+    
+    
+    
+    
+    -->
+
+    <!-- DMD: Following changes have been made (21st feb 2012): 
+    1. emphasis rend="bold" changed to phrase rend="bold"
+    2. emphasis changed to phrase rend="italic"
+    3. Added role="pic", role="locator" and role="map" for mediaobjects
+    4. Removed xml:id from imagedata
+    5. role="tabCaption" changed to rend="tabCaption"
+    6. Added preface to capture front cover info
+    7. Front cover map - with callouts
+    8. rend="intro" changed to role="intro"
+    9. rend="intro" removed from feature boxes
+
+    
+    
+    Changed made (after 22nd feb 2012):
+    10. simplelist in preface changed to formalpara
+    11. For directories, changed simplelists and its members into section role="dir_entry"
+    12. Removed phrases for symbols (t) and (w)
+    13. Changes made in POIs and their corresponding info. However, no change made in the title. Unsure whether role to be used or xml:lang
+    14. Structure changed - intro and basics have become "chapters". The guide is "part", while Sichuan (pg. 54) is a "chapter".
+    15. Removed role="pic" from mediaobjects.
+      
+    
+    Changes made (on 28 Feb 2012)
+    16. End matter added to content from RG_SOUCHI_sample_v6_DMD_270212.xml
+    
+    -->
+
+
+
+    <preface xml:id="">
+        <title>Inside this <phrase xml:id="" condition="prt">Book</phrase><phrase cref=""
+                condition="dig">Guide</phrase></title>
+        <formalpara xml:id="">
+            <title>Introduction</title>
+            <para>What to see, when to go, what not to miss, itineraries and more – everything you
+                need to get started</para>
+        </formalpara>
+        <formalpara xml:id="">
+            <title>Basics</title>
+            <para>Pre-departure tips and practical information</para>
+        </formalpara>
+        <formalpara xml:id="">
+            <title>The Guide</title>
+            <para>Comprehensive, in-depth guide to the region, with area highlights and full-colour
+                maps throughout</para>
+        </formalpara>
+        <formalpara xml:id="">
+            <title>Contexts</title>
+            <para>History, beliefs, Traditional Chinese Medicine, art, music and the best books
+                covering Southwest China, plus a detailed language section</para>
+        </formalpara>
+
+        <!-- DMD: Not removed xml:id from this para since it is kind of a note, which can be pulled out, if required. -->
+        <para role="boxpara" xml:id="RG_SOUCHI0042">We’ve flagged up our favourite establishments
+            throughout the guide with the <inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="007.jpg"/>
+                </imageobject>
+            </inlinemediaobject> symbol, from chic hotels to mist-shrouded temple dormitories and
+            buzzing hotpot restaurants</para>
+
+        <!-- DMD: Front cover map -->
+        <mediaobject xml:id="RG_SOUCHI0002_map">
+            
+            <imageobjectco>
+                <areaspec>
+                    <area xml:id="RG_SOUCHI0002_map_1" coords=""/>
+                    <area xml:id="RG_SOUCHI0002_map_2" coords=""/>
+                    <area xml:id="RG_SOUCHI0002_map_3" coords=""/>
+                    <area xml:id="RG_SOUCHI0002_map_4" coords=""/>
+                    <area xml:id="RG_SOUCHI0002_map_5" coords=""/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="RG_SOUCHI0002_map.png"/>
+                </imageobject>
+                <!-- Lech: we're not defining callouts here, instead we will link to image's areas from the the list -->
+            </imageobjectco>
+            
+        </mediaobject>
+        
+        <variablelist xml:id="RG_SOUCHI0003" role="key" xreflabel="Southern China Map Key">
+            <!-- DMD: xreflabel has been included for every varlistentry. -->
+            <varlistentry xml:id="RG_SOUCHI0003_1" xreflabel="Sichuan">
+                <term>Sichuan</term>
+                <listitem>
+                    <para>
+                        <xref linkend="RG_SOUCHI0002_map_1" role="map_callout"/>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="1_round.gif"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry xml:id="RG_SOUCHI0003_2" xreflabel="Chongqing">
+                <term>Chongqing</term>
+                <listitem>
+                    <para>
+                        <xref linkend="RG_SOUCHI0002_map_2" role="map_callout"/>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="2_round.gif"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry xml:id="RG_SOUCHI0003_3" xreflabel="Yunnan">
+                <term>Yunnan</term>
+                <listitem>
+                    <para>
+                        <xref linkend="RG_SOUCHI0002_map_3" role="map_callout"/>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="3_round.gif"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry xml:id="RG_SOUCHI0003_4" xreflabel="Guizhou">
+                <term>Guizhou</term>
+                <listitem>
+                    <para>
+                        <xref linkend="RG_SOUCHI0002_map_4" role="map_callout"/>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="4_round.gif"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry xml:id="RG_SOUCHI0003_5" xreflabel="Guangxi">
+                <term>Guangxi</term>
+                <listitem>
+                    <para>
+                        <xref linkend="RG_SOUCHI0002_map_5" role="map_callout"/>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata fileref="5_round.gif"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                </listitem>
+            </varlistentry>
+        </variablelist>       
+
+        <para>Make the Most of Your Time on Earth at <phrase rend="b">
+                <uri>roughguides.com</uri>
+            </phrase></para>
+        <para>This first edition published January 2012</para>
+
+    </preface>
+
+
+    <chapter xml:id="RG_SOUCHI0002">
+        <!-- p.4-->
+        <title>Introduction</title>
+
+        <!-- top level section "Introduction" -->
+        <section xml:id="RG_SOUCHI0003" role="article">
+            <title>Introduction to <phrase rend="b">Southwest China</phrase></title>
+            <!-- Q. Is there a need for role="runningHead"? Also, there could be times when there is an actual subtitle. Mark-up to be discussed in such cases. -->
+            <!-- Ans. Wherever, there is already a subtitle, the mark-up would be as: <para role="runningHead"> -->
+            <subtitle role="runningHead">Introduction</subtitle>
+            <!-- appears as main heading on page -->
+
+            <!-- Q. An attribute role="pic"/role="map" can be assigned to mediaobject. -->
+            <!-- Ans. This can be done wherever required -->
+            <!-- Q. Images should be ideally nested with associated content wherever possible. Decided where to place the generic images and maps. -->
+            <!-- Ans. Images would be placed wherever they appear in the book. Attempt to be made to keep the xml as close to the book -->
+
+            <!-- Q. For this intro para, we should assign a role="intro" attribute. Also, in some instances, it has been incorrectly marked up as rend="intro" -->
+            <!-- Ans. Yes, rend="intro" is incorrect. Use role attribute.  -->
+            <!-- Q. Acc. to the schematron, xml:ids are required for paras. Would it be required at all levels (eg: para within a formalpara)? -->
+            <!-- Ans. It is not necessary to have xml:id for para since individual paragraphs will never be pulled out.  -->
+            <para role="intro">Cut off by mountains from the eastern Chinese heartlands and the
+                national capital in Beijing, Southwest China – the provinces of Sichuan, Chongqing,
+                Yunnan, Guizhou and Guangxi – has always stood alone. With half of its borders
+                butting up against neighbouring nations and its landmass reaching from a tropical
+                coastline to the frosted peaks of the Tibetan Plateau, the Southwest’s isolation has
+                long preserved great stretches of wilderness and fostered unique cultures, from Dong
+                with their drum towers and indigo jackets to yak-herding, plateau-dwelling Khampa
+                Tibetans. Civilizations rose and fell here for over two thousand years before the
+                thirteenth-century Mongol armies made the first serious attempts to bring the entire
+                Southwest under centralized control. Initial resistance and revolts over the
+                centuries that followed cemented the region’s rugged image in the Chinese mind, with
+                the Southwest as a romanticized frontier whose archaic customs, grand landscapes and
+                wooden villages have somehow survived the frenetic modernizations sweeping the rest
+                of the country.</para>
+            <!-- map image (p.6-7) -->
+            <mediaobject xml:id="" role="map">
+                <imageobject xml:id="">
+                    <imagedata fileref=""/>
+                </imageobject>
+            </mediaobject>
+            <!-- locator separated out from the map -->
+            <mediaobject xml:id="" role="locator">
+                <imageobject xml:id="">
+                    <imagedata fileref=""/>
+                </imageobject>
+            </mediaobject>
+            <mediaobject xml:id="RG_SOUCHI0004">
+                <!-- mountain image -->
+                <imageobject xml:id="RG_SOUCHI0005">
+                    <!-- xml:id not required for the imagedata element. We didn't assign an xml:id to imagedata in Bird Sample -->
+                    <!-- The filref value would be the same as the mediaobject xml:id i.e rg_souchi005.jpg -->
+                    <imagedata fileref="001.jpg"/>
+                </imageobject>
+                <!-- DMD: What is the use of adding a condition="prt" since this needs to be displayed -->
+                <!-- DMD: To maintain consistency, the pairs of condition elements in profiling should ideally be placed together -->
+                <!-- DMD: There is no need for condition="prt" in the caption and also separating the positional references from the caption can be confusing.-->
+                <!-- DMD: Condition="prt" was consistently used in a phrase tag for the Bird sample. In this sample, it has been added to just any element -->
+                <caption xml:id="RG_SOUCHI0007">
+                    <para xml:id="RG_SOUCHI0008"><phrase condition="prt">Above </phrase>Yanzigou, below Gongga Shan, Sichuan</para>
+                </caption>
+            </mediaobject>
+            <para>Yet whether you’re arriving from elsewhere in China or crossing one of the many
+                international borders direct into the Southwest, the pace of change here is
+                tangible. Modern skylines dominate the provincial capitals, motorbikes and tractors
+                are replacing horses and buffalo, satellite dishes decorate remote homesteads, and
+                youngsters are leaving the countryside to find work and wealth in the cities. New
+                roads, rail lines and airports are bringing formerly remote outposts within
+                relatively easy reach, encouraging visitors and heralding change. Travelling can
+                still be an exhausting business, but it’s an exciting time to explore: little-known
+                backwaters can become much-hyped tourist stops almost overnight, while adventurous
+                travellers can still get away from it all on epic bus rides to giant sinkholes,
+                riotous festivals and national parks that weren’t even mapped a decade ago. </para>
+            <!-- print-specific content, referring to page layout - use XREF to pull text from captions-->
+            <!-- Q. In order to maintain consistency, could we use emphasis role="bold" instead of role="strong". Should we use emphasis role="bold" or rend="bold"? -->
+            <!-- Ans. Use <phrase rend="bold">, <phrase rend="italic">. Rather use, <phrase rend="b"> and <phrase rend="i" -->           
+            <!-- where to go section, a top-level section -->
+            <section xml:id="RG_SOUCHI0010">
+                <title>Where to go</title>
+                <!-- Q. In top tens and EWTGs, the place names are followed by xrefs. How should the mark-up be in such instances. -->
+                <!-- Ans. This would be done in consultation with the creative team. Also, the POIs would be done with their help. -->
+                <para>There are dozens of entry points into Southwest China. You might overland from
+                    Laos or Vietnam, take a backroads route from Hunan or fly to one of the regional
+                    centres, with <phrase role="POI_ref">Chengdu</phrase>, the enjoyable capital of
+                    vast <phrase role="POI_ref">Sichuan</phrase> province, a popularfirst port of
+                    call, with its mellow teahouses and locally bred pandas. East are a string of
+                    low-key temples and a whole district of historic buildings at <phrase
+                        role="POI_ref">Langzhong</phrase>, while quirky <phrase role="POI_ref"
+                        >Zigong</phrase> boasts salt mines and a dinosaur museum. Save energy for
+                        <phrase role="POI_ref">Leshan</phrase>’s renowned Big Buddha, the largest
+                    such sculpture in the world, and the magnificent scenery and temples at the holy
+                    Buddhist mountain of <phrase role="POI_ref">Emei Shan</phrase>.</para>
+                <para>In contrast, western Sichuan occupies the edge of the arid, mountainous
+                    Tibetan plateau, a region of yak pastures, backbreaking bus journeys, dusty
+                    monastery towns and the reek of butter tea. There are abundant opportunities for
+                    horse trekking at <phrase role="POI_ref">Songpan</phrase>, <phrase role="POI_ref"
+                        >Langmusi</phrase> and <phrase role="POI_ref">Tagong</phrase> – and stunning
+                    scenery at <phrase role="POI_ref">Jiuzhaigou</phrase> – but the real attraction
+                    here is in simply hanging out among <phrase role="POI_ref">Khampa</phrase>
+                    cowboys and monks. Don’t miss hamlets around <phrase role="POI_ref"
+                        >Danba</phrase>, the incredible printing hall at <phrase role="POI_ref"
+                        >Dêgê</phrase>, or <phrase role="POI_ref">Litang</phrase>’s August horse
+                    races – or the exhilarating bus ride from here into Yunnan.</para>
+                <para>To the east lies thin and largely rural <phrase role="POI_ref"
+                        >Chongqing</phrase>. Its capital, <phrase role="POI_ref">Chongqing
+                        City</phrase>, is hot, polluted and overcrowded, but – for a few days at
+                    least – a strangely likeable place whose position on the Yangzi makes it a
+                    terminus for cruises east through the <phrase role="POI_ref">Three
+                        Gorges</phrase> into the rest of China. Outside the city, the gem-like
+                    Buddhist rock art at <phrase role="POI_ref">Dazu</phrase> provides glimpses of
+                    daily life in medieval China, while newly accessible sites along the Yangzi
+                    include massive limestone “bridges” at <phrase role="POI_ref">Wulong</phrase> and
+                    an exciting whitewater ride on public ferries down the Little Three
+                    Gorges.</para>
+                <para>Jammed up against the borders with Tibet, Burma, Laos and Vietnam, <phrase
+                        role="POI_ref">Yunnan</phrase> enjoys the Southwest’s biggest mix of
+                    landscapes and peoples, and the most streamlined tourist industry. The
+                    easy-going capital, <phrase role="POI_ref">Kunming</phrase>, has temples, parks,
+                    pagodas and the renowned Stone Forest; southeast, via classical Chinese gardens
+                    at <phrase role="POI_ref">Jianshui</phrase>, are spectacular rice terraces around
+                        <phrase role="POI_ref">Yuanyang</phrase>. For most, though, Yunnan’s
+                    northwest exerts the greatest pull: there are the picturesque, heavily touristed
+                    towns of <phrase role="POI_ref">Dali</phrase>, <phrase role="POI_ref"
+                        >Lijiang</phrase> and <phrase role="POI_ref">Shangri-La</phrase> to explore,
+                    each with its own ethnic groups and cultures; forgotten old tea-horse-road
+                    staging posts like <phrase role="POI_ref">Shaxi</phrase>; and superlative
+                    trekking through <phrase role="POI_ref">Tiger Leaping Gorge</phrase>. There’s
+                    less obvious appeal to Yunnan’s far west – though the Burmese border town of
+                        <phrase role="POI_ref">Ruili</phrase> has its surreal moments – but southerly
+                        <phrase role="POI_ref">Xishuangbanna</phrase> offers more trekking and
+                    contact with ethnic minorities, this time in the jungles abutting Laos.</para>
+                <para><phrase role="POI_ref">Guizhou</phrase> is the southwest’s poor cousin, full of
+                    ugly mining towns and rugged limestone landscapes. Central <phrase role="POI_ref"
+                        >Guiyang</phrase> is a hub for wider exploration, though there’s an
+                    interesting route north into Sichuan from here via <phrase role="POI_ref"
+                        >Zunyi</phrase>’s Communist history and remote bamboo forests at <phrase
+                        role="POI_ref">Chishui</phrase>. Southeast, you can hop on local buses
+                    through the <phrase role="POI_ref">Qiandongnan</phrase> region via wooden Miao
+                    and Dong villages, lively markets and wild festivals; near the Hunan border, the
+                    beautiful old town of <phrase role="POI_ref">Zhenyuan</phrase> sits below the
+                    cryptic Southern Great Wall, only recently discovered. Western Guizhou’s
+                    highlights include incredible caves at <phrase role="POI_ref">Longgong</phrase>
+                    and <phrase role="POI_ref">ZhijinF</phrase>, plus stone Bouyei villages around
+                        <phrase role="POI_ref">Anshun</phrase>.</para>
+                <para>Less than a day by train from Hong Kong, <phrase role="POI_ref"
+                        >Guangxi</phrase> still feels undeveloped, though the fabled karst pinnacles
+                    flanking the <phrase role="POI_ref">Li River</phrase> between <phrase
+                        role="POI_ref">Guilin</phrase> and <phrase role="POI_ref">Yangshuo</phrase>
+                    have been pulling in tourists for centuries, and there’s easy access north from
+                    here to more rice terracing at <phrase role="POI_ref">Longji Titian</phrase> and
+                    Dong hamlets such as <phrase role="POI_ref">Chengyang</phrase> along the
+                    Hunan-Guizhou border. The provincial capital, <phrase role="POI_ref"
+                        >Nanning</phrase>, sits far to the southwest near the Vietnamese border,
+                    where a string of unusual attractions includes rare monkeys, 2000-year-old cliff
+                    art and the enormous limestone sinkhole of <phrase role="POI_ref">Dashiwei
+                        Tiankeng</phrase>.</para>
+
+                <mediaobject xml:id="RG_SOUCHI0011">
+                    <!-- lama image -->
+                    <imageobject xml:id="RG_SOUCHI0012">
+                        <imagedata fileref="002.jpg"/>
+                    </imageobject>
+                    <caption xml:id="RG_SOUCHI0014" condition="prt">
+                        <para xml:id="RG_SOUCHI0015">Red-hat sect lama playing a shawm</para>
+                    </caption>
+                </mediaobject>
+
+                <mediaobject xml:id="RG_SOUCHI0016">
+                    <!-- bike image -->
+                    <imageobject xml:id="RG_SOUCHI0017">
+                        <imagedata fileref="003.jpg"/>
+                    </imageobject>
+                </mediaobject>
+
+                <mediaobject xml:id="RG_SOUCHI0019">
+                    <!-- valley image -->
+                    <imageobject xml:id="RG_SOUCHI0020">
+                        <imagedata fileref="004.jpg"/>
+                    </imageobject>
+                </mediaobject>
+            </section>
+            <!-- end of "Where to go section" -->
+
+            <!-- Fact file feature nested between sections "where to go" and "when to go" -->
+            <section role="feature" xml:id="RG_SOUCHI0022">
+                <title>fact file</title>
+                <itemizedlist xml:id="RG_SOUCHI0023">
+                    <!-- Q. Should each item/entry of an itemizedlist be assigned an xml:id? Here, the listitem would have an xml:id. But there are listitems within varlistentry, which don't have ids. -->
+                    <!-- And. Listitems need not have xml:ids -->
+                    <listitem>
+                        <para>Covering 1.4 million square kilometres (equivalent to Germany, France
+                            and Italy combined), Southwest China occupies around 15% of China’s
+                                <phrase rend="b">area</phrase>, with a <phrase rend="b"
+                                >population</phrase> of over 246 million – about a fifth of the
+                            national total. Almost three-quarters are Han, with the remainder
+                            comprising over fifty minorities including Yi, Zhuang, Tibetans and Hui.
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>China’s <phrase rend="b">media</phrase> is tightly controlled:
+                            Facebook, YouTube and Twitter are often blocked, and in 2011 the
+                            government banned films and TV series featuring time travel, probably
+                            because they didn’t want people imagining alternate – and possibly
+                            better – versions of history. </para>
+                    </listitem>
+                    <listitem>
+                        <para>China’s main <phrase rend="b">religions</phrase> are Buddhism and
+                            Taoism, overlaid – especially in the Southwest – with local folk
+                            beliefs, alongside fair numbers of Christians and Muslims. The moralcode
+                            of Confucianism is less a religion than part of the Chinese
+                            psyche.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Southwest China’s <phrase rend="b">geography</phrase> includes karst
+                            landforms, deep river valleys, high plateaus, mountain ranges and a few
+                            flat, fertile basins. The longest river is the Yangzi (6275km), and the
+                            highest peak is Gongga Shan (7556m) in western Sichuan.</para>
+                    </listitem>
+                    <listitem>
+                        <para>People plot all sorts of strategies to claim the honour of <phrase
+                                rend="b">paying restaurant bills</phrase> in China – pretending to
+                            nip off to the toilet while others are still eating is a good
+                            ruse.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+
+            <!-- "When to go" not included in ToC - is it the same level as "When to go?" -->
+            <section xml:id="RG_SOUCHI0024">
+                <title>when to go</title>
+                <para>Stretching from the coastal tropics to the Himalayan plateau, Southwest
+                    China’s climate (see <phrase condition="prt">p.45</phrase>) is extremely
+                    diverse. <phrase rend="b">Summers</phrase> (June–Aug) are stiflingly humid with
+                    torrential rains, especially in southern Guangxi, Xishuangbanna and Chongqing
+                    City (rated as one of China’s “three summer furnaces”). Wet weather also causes
+                    landslides, leading to road closures in rural areas. Southern <phrase rend="b"
+                        >winters</phrase> are moderate – it’s the best time to appreciate
+                    Xishuangbanna’s tropical climate – though Yunnan and Sichuan’s Tibetan regions
+                    will likely be under snow between December and March. In bad years, snow can
+                    spread right through Guizhou (otherwise better known for its rain) as far south
+                    as Guangxi.</para>
+                <para>Broadly speaking, <phrase rend="b">spring</phrase> (April–May) and <phrase
+                        rend="b">autumn</phrase> (Sept–Nov) are the best times for a visit, when the
+                    weather is generally warm and dry throughout the region and the landscape looks
+                    its best. Note that for political reasons, Tibetan areas of Sichuan and Yunnan
+                    are <phrase rend="b">closed</phrase> through March (see <phrase condition="prt"
+                        >p.64</phrase>).</para>
+            </section>
+
+            <!-- Feature rare wildlife outside section "when to go" -->
+
+            <section role="feature" xml:id="RG_SOUCHI0025">
+                <title>rare wildlife</title>
+                <para>Southwest China’s wealth of habitats are the last refuge for some
+                    frighteningly rare <phrase rend="b">animals</phrase>. The most famous is the
+                        <phrase rend="b">giant panda</phrase>, which survives in pockets of
+                    high-altitude bamboo forests in western Sichuan. The world’s highest-living
+                    primate, the golden or snub-nosed monkey, feeds on lichen and leaves in alpine
+                    forests through Yunnan and Guizhou, while the white-headed langur lives among
+                    Guangxi’s tropical karst formations. Less-endangered species include <phrase
+                        rend="b">black-necked cranes</phrase>, mandarin ducks, lammergeyers and blue
+                    eared pheasants. </para>
+                <mediaobject xml:id="RG_SOUCHI0026">
+                    <!-- bird image -->
+                    <imageobject xml:id="RG_SOUCHI0027">
+                        <imagedata fileref="005.jpg"/>
+                    </imageobject>
+                </mediaobject>
+            </section>
+
+            <section xml:id="RG_SOUCHI0029">
+                <title>Author Picks</title>
+                <mediaobject xml:id="RG_SOUCHI0030">
+                    <!-- food image -->
+                    <imageobject xml:id="RG_SOUCHI0031">
+                        <imagedata fileref="006.jpg"/>
+                    </imageobject>
+                    <!-- Q. What is the necessity of role="tabCaption" and rend="intro"? -->
+                    <!-- And. Ignore rend="intro". tabCaption has been used to mark out the difference between a normal caption and a caption in a tab (see page 11)  -->
+                    <caption xml:id="RG_SOUCHI0033" rend="tabCaption" role="intro">
+                        <para>spicy ribs, rabbit and potatoes, sichuan-style</para>
+                    </caption>
+                </mediaobject>
+                <para>In six months crisscrossing Southwest China, our author wore out two pairs of
+                    hiking shoes, learned to love butter tea and enjoyed his first sight of
+                    snub-nosed monkeys in the wild. He also found these out-of-the way
+                    favourites.</para>
+
+
+                <formalpara xml:id="RG_SOUCHI0035">
+                    <title>Best ancient towns</title>
+                    <para>For an atmospheric overnight stay, try Langzhong<phrase condition="prt"
+                            xml:id="RG_SOUCHI0074"> (p.90)</phrase> or less-touristed
+                            Zhongshan<phrase condition="prt" xml:id="RG_SOUCHI0075">
+                            (p.160)</phrase> or Nuodeng<phrase condition="prt"
+                            xml:id="RG_SOUCHI0076"> (p.206)</phrase>.</para>
+                </formalpara>
+
+                <formalpara xml:id="RG_SOUCHI0036">
+                    <title>Heaviest night out</title>
+                    <para>Chengdu’s <phrase rend="i">Music House</phrase><phrase condition="prt"
+                            xml:id="RG_SOUCHI0077"> (p.76)</phrase> is the place to indulge in – or
+                        observe – record-breaking whisky consumption.</para>
+                </formalpara>
+
+                <formalpara xml:id="RG_SOUCHI0037">
+                    <title>Killer views</title>
+                    <para>Tolkienesque peaks from the top of Moon Hill<phrase condition="prt"
+                            xml:id="RG_SOUCHI0078"> (<link linkend="">p.334</link>)</phrase> and
+                        Gongga Shan’s distant snows from Emei Shan’s summit (p.105).</para>
+                </formalpara>
+
+                <formalpara xml:id="RG_SOUCHI0038">
+                    <title>Spiciest meal</title>
+                    <para>There are plenty to try, including Guizhou’s <phrase rend="i">lazi
+                            ji</phrase> (with an equal volume of meat and chillies) and the infamous
+                        Sichuan hotpot, a bubbling broth into which you dip meat or veg.</para>
+                </formalpara>
+
+                <formalpara xml:id="RG_SOUCHI0039">
+                    <title>Historic remains</title>
+                    <para>Ponder the soulful remnants of the Southern Great Wall<phrase
+                            condition="prt" xml:id="RG_SOUCHI0079"> (p.300)</phrase>, the forgotten
+                        city of Jinsha<phrase condition="prt" xml:id="RG_SOUCHI0080">
+                            (p.69)</phrase>, and the Wulong Temple in Guizhou<phrase condition="prt"
+                            xml:id="RG_SOUCHI0081"> (p.306)</phrase>.</para>
+                </formalpara>
+
+                <formalpara xml:id="RG_SOUCHI0040">
+                    <title>Oldest hotel</title>
+                    <para>The <phrase rend="i">Dujia Kezhan</phrase> in Langzhong<phrase
+                            condition="prt" xml:id="RG_SOUCHI0082"> (p.92)</phrase>, claims to have
+                        been in business since the tenth-century Tang dynasty.</para>
+                </formalpara>
+
+                <formalpara xml:id="RG_SOUCHI0041">
+                    <title>Toughest trek</title>
+                    <para>The fifteen-day Kora Circuit around 6700m-high Kawa Karpo (Meili Xue
+                        Shan), Yunnan<phrase condition="prt" xml:id="RG_SOUCHI0083">
+                            (p.244)</phrase>.</para>
+                </formalpara>
+                <!-- DMD: Can the boxpara be tagged as note. Also, the star POIs will have to be referred back to this note. Eg: Pg 72, Loft. -->
+                <para role="boxpara" xml:id="RG_SOUCHI0042">Our author recommendations don’t end
+                    here. We’ve flagged up our favourite places – a perfectly sited hotel, an
+                    atmospheric café, a special restaurant – throughout the guide with the <inlinemediaobject>
+                        <imageobject>
+                            <imagedata fileref="007.jpg"/>
+                        </imageobject>
+                    </inlinemediaobject> symbol. </para>
+            </section>
+            <!-- "Introduction" top-level section ends -->
+        </section>
+
+        <!-- "21 things not to miss" top-level section -->
+        <!-- only things 1-6 included for this sample -->
+        <section xml:id="RG_SOUCHI0043" role="article">
+            <title><phrase rend="b">21</phrase> things not to miss</title>
+            <para>It’s not possible to see everything that Southwest China has to offer in one trip
+                – and we don’t suggest you try. What follows, in no particular order, is a selective
+                taste of the region’s highlights, including beautiful beaches, outstanding national
+                parks, fascinating wildlife encounters and unforgettable urban experiences. All
+                highlights have a page reference to take you straight into the guide, where you can
+                find out more.</para>
+            <section xml:id="RG_SOUCHI0053" role="TNTM">
+                <title rend="sichuan"><link linkend="RG_SOUCHI0002_map_1">1 </link><link
+                    linkend="RG_SOUCHI118" role="POI_ref">Jiuzhaigou</link> and <link
+                        linkend="RG_SOUCHI117" role="POI_ref">Huanglong</link></title>         
+                
+                <!-- Lech: an xref/link would generate a hyperlink for electronic formats and a pagenumber for PDF - this markup may have to change slightly depnding on the outcome with InDesign/Acrobat processing -->
+                
+                <para><phrase condition="prt" xml:id="RG_SOUCHI0059">Pages <link
+                    linkend="RG_SOUCHI117">177</link> &amp; <link linkend="RG_SOUCHI118"
+                        >118</link></phrase> These reserves in northern Sichuan hold dazzling strings
+                    of kingfisher-blue lakes, ponds and calcified waterfalls and stunning alpine peaks. </para>
+                <mediaobject xml:id="RG_SOUCHI0044">
+                    <!-- Lech: @role="pic" removed -->
+                    <!-- forest image -->
+                    <imageobject>
+                        <!-- Lech:xml:id removed - no need to refer to it -->
+                        
+                        <imagedata fileref="RG_SOUCHI0044.jpg"/>
+                        <!-- Lech: updated fileref to follow convention -->
+                    </imageobject>               
+                </mediaobject>
+            </section>        
+            
+            <section xml:id="RG_SOUCHI0056" role="TNTM">
+                <title rend="yunnan"><link linkend="RG_SOUCHI0002_map_3">3 </link>Tibetan monasteries</title>            
+                <para><phrase condition="prt" xml:id="RG_SOUCHI0058">Pages <link
+                    linkend="RG_SOUCHI136">136</link>, <link
+                        linkend="RG_SOUCHI134">134</link> &amp; <link linkend="RG_SOUCHI238"
+                            >238</link></phrase> The rambling monasteries at <link linkend="RG_SOUCHI136" role="POI_ref"
+                                >Dêgê</link>, <link linkend="RG_SOUCHI134" role="POI_ref">Ganzi</link> and <link
+                                    linkend="RG_SOUCHI238" role="POI_ref">Shangri-La</link> rear up like fortresses,
+                    their golden prayer wheels and russet walls stark against the blue Tibetan
+                    skies.</para>
+                <mediaobject xml:id="RG_SOUCHI0057">
+                    <!-- monastery image -->
+                    <imageobject>
+                        <imagedata fileref="RG_SOUCHI0057.jpg"/>
+                    </imageobject>
+                </mediaobject>
+            </section>     
+
+
+            <!-- content removed for this sample -->
+            <!-- end of "21 things not to miss" sub-section -->
+        </section>
+
+        <!-- "Itineraries" section -->
+        <section xml:id="RG_SOUCHI0056" role="article">
+            <title>itineraries</title>
+            <mediaobject xml:id="RG_SOUCHI0057" role="map">
+                <!-- map image -->
+                <imageobject xml:id="RG_SOUCHI0058">
+                    <imagedata fileref="011.jpg"/>
+                </imageobject>
+                <!-- DMD: Possible mark-up for the map index -->
+                <!-- <caption>
+                    <variablelist>
+                        <varlistentry>
+                            <term>people</term>
+                            <listitem> -->
+                <!-- Blue for people -->
+                <!-- <mediaobject>
+                                    <imageobject>
+                                        <imagedata filref="f"></imagedata>
+                                    </imageobject>
+                                </mediaobject>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry>
+                            <term>epic eating experience</term>
+                            <listitem> -->
+                <!-- Purple for epic eating -->
+                <!-- <mediaobject>
+                                <imageobject>
+                                    <imagedata filref="g"></imagedata>
+                                </imageobject>
+                            </mediaobject>
+                           </listitem>
+                        </varlistentry>
+                        <varlistentry>
+                            <term>small towns</term>
+                            <listitem> -->
+                <!-- Green for small towns -->
+                <!-- <mediaobject>
+                                    <imageobject>
+                                        <imagedata filref="h"></imagedata>
+                                    </imageobject>
+                                </mediaobject>
+                            </listitem>
+                        </varlistentry>
+                    </variablelist>
+                </caption> -->
+            </mediaobject>
+
+            <para role="intro">The following itineraries will take you right across the region,
+                taking in less-visited sights as well as classic attractions, from small ethnic
+                villages on the Guangxi border to Sichuan’s busy historic towns and the heights of
+                the Tibetan plateau. Given the scale of the region, don’t worry if you can’t
+                complete the list – clocking up a handful will give you a feel for the themes. </para>
+
+            <section xml:id="RG_SOUCHI0060" role="highlights">
+                <title>peoples</title>
+
+                <para>Half of China's 56 <phrase rend="b">ethnic groups</phrase> live in the
+                    Southwest, where they sometimes outnumber mainstream (Han) Chinese. You'd need a
+                    month to visit all these.</para>
+
+                <!-- DMD: The numbers need to be linked to the map either as linkend in the title or as a separate xref tag with key_include -->
+                <formalpara xml:id="RG_SOUCHI0061">
+                    <title><phrase role="titleNumber">1</phrase><link linkend="RG_SOUCHI284"> Miao, Kaili</link></title>
+                    <para>Centred around Kaili in Guizhou, and famed for their spectacular, riotous
+                        festivals where women dress in splendid silver and embroidery assemblages.
+                        <phrase condition="prt" xml:id="RG_SOUCHI284">See
+                            p.284</phrase></para>
+                </formalpara>
+
+                
+                
+
+                
+
+                
+
+                <formalpara xml:id="RG_SOUCHI0062">
+                    <title><phrase role="titleNumber">2</phrase>Dong, Chengyang</title>
+                    <para>Spend the night in wooden Dong villages on the Guangxi-Guizhou border,
+                        dotted with distinctive drum towers and shady wind-and-rain bridges. <phrase
+                            condition="prt" xml:id="RG_SOUCHI0088">See
+                            p.341</phrase></para>
+                </formalpara>
+
+
+                <!-- only first 2 itinary items included in sample -->
+            </section>
+
+        </section>
+
+    </chapter>
+
+
+    <chapter xml:id="RG_SOUCHI0063" role="basics">
+        <title>Basics</title>
+        <!-- <toc not in current Schema, left in pending confirmation from Schema team as to correct mark-up -->
+        <toc role="miniToc">
+            <!-- this toc will have @linkend to relevant sections -->
+            <tocentry pagenum="23">Getting there</tocentry>
+            <tocentry pagenum="26">Getting around</tocentry>
+            <tocentry pagenum="31">Accommodation</tocentry>
+            <tocentry pagenum="34">Food and drink</tocentry>
+            <tocentry pagenum="38">The media</tocentry>
+            <tocentry pagenum="40">Health</tocentry>
+            <tocentry pagenum="42">Culture and etiquette</tocentry>
+            <tocentry pagenum="43">Shopping</tocentry>
+            <tocentry pagenum="44">Sports and outdoor activities</tocentry>
+            <tocentry pagenum="44">Travel essentials</tocentry>
+        </toc>
+
+        <mediaobject xml:id="RG_SOUCHI0064">
+            <!-- traffic image -->
+            <imageobject xml:id="RG_SOUCHI0065">
+                <imagedata fileref="012.jpg"/>
+            </imageobject>
+            <caption rend="tabCaption" role="basics" xml:id="RG_SOUCHI0067">
+                <para xml:id="RG_SOUCHI0068">traffic intersection, Chengdu</para>
+            </caption>
+        </mediaobject>
+
+        <section xml:id="RG_SOUCHI0069" role="article">
+            <title>Getting there</title>
+            <para role="intro">China’s busiest international gateways are Beijing, Shanghai and Hong
+                Kong, from where it’s easy to catch connecting flights, trains or even buses into
+                Southwest China. It’s also possible to fly from adjacent Southeast Asian countries
+                direct to Chengdu and Kunming, and there are well-established overland routes into
+                Southwest China from Vietnam, Laos, Thailand and – with restrictions – Burma
+                (Myanmar).</para>
+
+            <para>Airfares are at their highest during the fortnight before Christmas, the fortnight
+                before Chinese New Year<phrase condition="prt"
+                    xml:id="RG_SOUCHI0089"> (see p.39)</phrase> and from mid-June to early October.
+                The cheapest times to fly are in February (after Chinese New Year), May and
+                November. Airfares are at their highest during the fortnight before Christmas, the
+                fortnight before Chinese New Year<phrase condition="prt"
+                    xml:id="RG_SOUCHI0090"> (see p.39)</phrase> and from mid-June to early October.
+                The cheapest times to fly are in February (after Chinese New Year), May and
+                November. Airfares are at their highest during the fortnight before Christmas, the
+                fortnight before Chinese New Year<phrase condition="prt"
+                    xml:id="RG_SOUCHI0091"> (see p.39)</phrase> and from mid-June to early October.
+                The cheapest times to fly are in February (after Chinese New Year), May and
+                November. </para>
+
+            <para>Stock operators such as STA, Trailfinders and Flight Centres are good places to
+                get a feel for fares, before checking discount websites such as <uri
+                    xlink:href="http://www.lastminute.com">lastminute.com</uri> , and even airline
+                websites themselves for special deals – and, often, a lot more flexibility with
+                refunds and changing dates. </para>
+
+            <!-- nested sub-section: only 1 included from this section -->
+            <section xml:id="RG_SOUCHI0073">
+                <title>Flights from the UK and Ireland</title>
+                <para>You can fly direct from <phrase rend="b">London Heathrow</phrase> to Beijing
+                    (10hr), Shanghai (11hr) or Hong Kong (12hr) with Air China, Virgin Atlantic,
+                    British Airways, China Eastern and Cathay Pacific. Other airlines flying via a
+                    change of planes in a hub city include Aeroflot, Air France, BMI, Emirates, KLM,
+                    Lufthansa, Malaysian, Singapore and Thai. Flying to China from other UK airports
+                    or from the Republic of Ireland involves either catching a connecting flight to
+                    London or flying via the airline’s hub city.</para>
+                <para>From the UK, the lowest available return fares to Beijing, or Shanghai start
+                    from £500 in low season or £800 in high season; flights to Hong Kong are
+                    slightly cheaper. The best deals are likely to be by finding a discount fare to
+                    Beijing or Shanghai, and a separate internal flight to the Southwest<phrase
+                        condition="prt" xml:id="RG_SOUCHI0092"> (see
+                        p.24)</phrase>; the same applies to travel via Hong Kong, as long as you
+                    don’t fly into China from Hong Kong itself, but fly out of Shenzhen<phrase
+                        condition="prt" xml:id="RG_SOUCHI0093"> (see
+                        p.25)</phrase>.</para>
+            </section>
+
+            <!-- "agents amd operators": semi-structured data in directory-style layout; see also p.34 "youth hostels" in print -->
+            <!-- only first three entries included in this sample -->
+            <!-- individual telephone numbers/ website urls marked-up for possible app/ ebook functionality use case -->
+
+            <!-- Mark-up for directory -->
+            <section xml:id="RG_SOUCHI0094" role="directory">
+                <title>Agents and operators</title>
+                <section xml:id="" role="dir_entry">
+                    <title>Absolute Asia</title>
+                    <address>
+                        <!-- We are not capturing the symbols (t) and (w) in xml, since they can be rendered through an xslt -->
+                        <phrase>South Africa <phone>076 802 1640</phone></phrase>        
+                        <phrase>US <phone>800 736 8187</phone></phrase>
+                        <uri xlink:href="www.absoluteasia.com">absoluteasia.com</uri>
+                    </address>
+                    <para role="description">Numerous 6- to 16-day luxury tours of China, including
+                        a “Yunnan Highlights”, and trips to Guilin, Yangshuo and the Yangzi.</para>
+                </section>
+                <section xml:id="" role="dir_entry">
+                    <title>Adventure Center</title>
+                    <address>
+                        <phrase>US <phone>800 228 8747</phone> or <phone>510 654 1879</phone></phrase>
+                        <uri xlink:href="www.adventure-center.com">adventure-center.com</uri>
+                    </address>
+                    <para role="description">Dozens of tours in China, including Southwest and
+                        Yunnan-specific trips, from a week-long whizz around highlights to extended
+                        hiking and biking expeditions.</para>
+                </section>
+                <section xml:id="" role="dir_entry">
+                    <title>Adventures Abroad</title>
+                    <address>
+                        <phrase>US <phone>800 665 3998</phone> or <phone>360 775 9926</phone></phrase>
+                        <uri xlink:href="http://www.adventuresabroad.com/index.jsp">adventures-abroad.com</uri>
+                    </address>
+                    <para role="description">mall-group specialist “for the mature traveller”, whose
+                        China-wide tours often touch on Yunnan; also offers 16- to 32-day packages
+                        roaming the Southwest.</para>
+                </section>
+                <!-- Text removed for sample purposes -->
+            </section>
+
+            <!-- box-out containing different types of Mandarin writing (pinyin/ pictograms); both styles written as glyphs rather than character entity references -->
+            
+
+
+            <section role="feature">
+                <!-- Removed rend="basics" from here -->
+                <title>transport From Within China</title>
+                <para>Flying from Beijing or Shanghai to one of the southwest’s provincial capitals
+                    takes around three hours and costs ¥1500, much less through a Chinese online
+                    agent like <uri xlink:href="http://www.elong.com/">elong.com</uri><phrase
+                        condition="prt" xml:id="RG_SOUCHI0098"> (see
+                        p.29)</phrase>.</para>
+                <para>Flights into China from Hong Kong are extremely expensive; it’s far cheaper to
+                    take a bus over the border to Shenzhen Airport (2hr; HK$100) and fly from there
+                    instead. Fares from Shenzhen to Guilin, Nanning or Guiyang (1hr; under ¥1000)
+                    are cheaper than those to Chongqing, Chengdu or Kunming (2hr 30min; ¥1500). Hong
+                    Kong agents such as CTS (wctshk.com) can arrange everything for you, including
+                    China visas<phrase condition="prt" xml:id="RG_SOUCHI0099">
+                        (see p.47)</phrase>.</para>
+                <para>Taking the train from arrival points is slower but also feasible. From Beijing
+                    or Shanghai, you’re looking at from 28 hours to Guilin or Chengdu (¥250–800
+                    depending on seat and train type) to two days to reach Kunming (¥320–900). From
+                    Hong Kong, you again need to first cross into China; catch the express to
+                    Guangzhou East train station (2hr 30min; HK$300), from where you can reach
+                    Nanning (12hr; ¥95–285), Kunming and Guiyang (24hr; ¥175–530), and Chengdu or
+                    Chongqing (35hr; ¥250–790).</para>
+                <para>Hong Kong is about the only place close enough to consider catching a bus into
+                    Southwest China; once more, you need to get to Shenzhen first. Your best bet
+                    here is to catch Hong Kong’s MTR commuter train to Lok Ma Chau (HK$45), cross
+                    the Chinese border on foot, then catch a taxi (¥15–20) to Shenzhen’s huge Futian
+                    bus station (<phrase role="mandarinPictogram" xml:lang="zh">深圳福田汽车站</phrase>, <phrase
+                        role="mandarinPinyin" xml:lang="zh">shēnzhèn fútián qìchēzhàn</phrase>). Buses run all
+                    over China from here, but the most useful destinations for those travelling in
+                    Southwest China are Guilin or Nanning (12hr; ¥180).</para>
+                <para>There is more information on transport in “Getting around”<phrase
+                        condition="prt" xml:id="RG_SOUCHI0100"> (see
+                        p.26)</phrase>.</para>
+            </section>
+
+            <!--  end of "getting there" section    -->
+        </section>
+
+        <!-- sub-sections cut for sample purposes -->
+
+        <!-- "Getting around" section  -->
+        <section xml:id="RG_SOUCHI0101" role="article">
+            <title>Getting around</title>
+            <para role="intro">Southwest China’s public transport is extensive and good value: you
+                can fly to all provincial capitals and many cities, the rail network is useful, if
+                not tremendously comprehensive, and you can reach the remotest corners on local
+                buses. Sichuan and Yunnan’s Tibetan regions are the sole areas where there are
+                frequent restrictions on independent travel<phrase condition="prt"
+                    xml:id="RG_SOUCHI0102"> (see p.64)</phrase>.</para>
+            <!-- XML cut for sample purposes -->
+
+
+
+            <!-- box-out containing tabular data -->
+            <section xml:id="RG_SOUCHI0103" role="feature">
+                <title>sample train fares</title>
+                <para>As there can be up to four prices for any one train, depending on seat or
+                    berth type, <phrase rend="b">rail fares</phrase> are not given through the
+                    guide. The fares below, for one-way travel, illustrate costs between Southwest
+                    China’s provincial capitals, and should help to give an idea of the prices
+                    involved within the region. Note, however, that high-speed services will be more
+                    expensive.</para>
+                <!-- CALS tables are preferred in DK Schema rather than HTML tables-->
+                <!-- CALS XML is part of DK Schema, so the elements aren't in a differet namespace -->
+                <!-- in this example, I'm using CALS <thead> element rather than <emphasis> for subheadings -->
+                <table frame="none" xml:id="RG_SOUCHI0104">
+                    <title/>
+                    <tgroup cols="4" align="left" colsep="0" rowsep="0">
+                        <colspec colname="1" colnum="1" colwidth="40.00*"/>
+                        <colspec colname="2" colnum="2" colwidth="20.00*"/>
+                        <colspec colname="3" colnum="3" colwidth="20.00*"/>
+                        <colspec colname="4" colnum="4" colwidth="20.00*"/>
+                        <thead>
+                            <row>
+                                <entry/>
+                                <entry>Hard seat</entry>
+                                <entry>Hard sleeper</entry>
+                                <entry>Soft sleeper</entry>
+                            </row>
+                            <row>
+                                <entry namest="1" nameend="4">From Chengdu</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Chongqing</entry>
+                                <entry>¥120</entry>
+                                <entry>&#2013;</entry>
+                                <entry>&#2013;</entry>
+                            </row>
+                            <row>
+                                <entry>Nanning</entry>
+                                <entry>¥215</entry>
+                                <entry>¥595</entry>
+                                <entry>¥925</entry>
+                            </row>
+                            <row>
+                                <entry>Kunming</entry>
+                                <entry>¥125</entry>
+                                <entry>¥420</entry>
+                                <entry>¥615</entry>
+                            </row>
+                            <row>
+                                <entry>Guiyang</entry>
+                                <entry>¥75</entry>
+                                <entry>¥365</entry>
+                                <entry>¥500</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                    <tgroup cols="4" align="left" colsep="0" rowsep="0">
+                        <colspec colname="1" colnum="1" colwidth="40.00*"/>
+                        <colspec colname="2" colnum="2" colwidth="20.00*"/>
+                        <colspec colname="3" colnum="3" colwidth="20.00*"/>
+                        <colspec colname="4" colnum="4" colwidth="20.00*"/>
+                        <thead>
+                            <row>
+                                <entry namest="1" nameend="4">From Chongqing</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Nanning</entry>
+                                <entry>¥145</entry>
+                                <entry>¥440</entry>
+                                <entry>¥750</entry>
+                            </row>
+                            <row>
+                                <entry>Kunming</entry>
+                                <entry>¥145</entry>
+                                <entry>¥430</entry>
+                                <entry>¥745</entry>
+                            </row>
+                            <row>
+                                <entry>Guiyang</entry>
+                                <entry>¥62</entry>
+                                <entry>¥195</entry>
+                                <entry>¥330</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                    <tgroup cols="4" align="left" colsep="0" rowsep="0">
+                        <colspec colname="1" colnum="1" colwidth="40.00*"/>
+                        <colspec colname="2" colnum="2" colwidth="20.00*"/>
+                        <colspec colname="3" colnum="3" colwidth="20.00*"/>
+                        <colspec colname="4" colnum="4" colwidth="20.00*"/>
+                        <thead>
+                            <row>
+                                <entry namest="1" nameend="4">From Nanning</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Kunming</entry>
+                                <entry>¥95</entry>
+                                <entry>¥305</entry>
+                                <entry>¥525</entry>
+                            </row>
+                            <row>
+                                <entry>Guiyang</entry>
+                                <entry>¥115</entry>
+                                <entry>¥325</entry>
+                                <entry>¥530</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                    <tgroup cols="4" align="left" colsep="0" rowsep="0">
+                        <colspec colname="1" colnum="1" colwidth="40.00*"/>
+                        <colspec colname="2" colnum="2" colwidth="20.00*"/>
+                        <colspec colname="3" colnum="3" colwidth="20.00*"/>
+                        <colspec colname="4" colnum="4" colwidth="20.00*"/>
+                        <thead>
+                            <row>
+                                <entry namest="1" nameend="4">From Kunming</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Guiyang</entry>
+                                <entry>¥95</entry>
+                                <entry>¥265</entry>
+                                <entry>¥530</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+
+            <!-- end of "getting around" section -->
+        </section>
+
+
+        <!-- "accomodation" section -->
+        <section xml:id="RG_SOUCHI0105" role="article">
+            <title>Accommodation</title>
+            <para role="intro">Chinese hotel rooms generally follow the same functional design,
+                irrespective of age or expense: a rectangular space with a bed, TV and bedside
+                phone, and an en suite to the left or right of the entrance. But the range of
+                establishments is increasing, from foreigner-friendly hostels to guesthouses in
+                antique buildings, budget business accommodation, upmarket international chains and
+                even trendy boutique-style hotels.</para>
+            <!-- XML removed for sample purposes -->
+
+            <!-- Feature "Accommodation Prices" would come here -->
+
+            <!-- Next would be the section "Finding a room" -->
+
+            <!-- The feature with the table "Registration form for temp. Residence" would come next. -->
+
+
+            <!-- XML remove for sample purposes -->
+            <section role="feature" xml:id="RG_SOUCHI0107">
+                <!-- Removed rend="basics" from here -->
+                <title/>
+                <!-- these paras not part of table to avoid @style in CALS <entry> element -->
+                <para rend="centered">临时住宿登记表</para>
+                <para rend="centered">REGISTRATION FORM FOR TEMPORARY RESIDENCE</para>
+                <para rend="centered">请用正楷填写 Please write in block letters</para>
+                <!-- rowseps not rendering properly in oXygen author, separator should appear below row, only -->
+                <table frame="none" xml:id="RG_SOUCHI0108">
+                    <title/>
+                    <tgroup cols="3" align="left" colsep="0">
+                        <colspec colname="1" colnum="1" colwidth="33.33*"/>
+                        <colspec colname="2" colnum="2" colwidth="33.33*"/>
+                        <colspec colname="3" colnum="3" colwidth="33.33*"/>
+                        <tbody>
+                            <row rowsep="0">
+                                <entry>英文姓</entry>
+                                <entry>英文名</entry>
+                                <entry>性别</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry>Surname</entry>
+                                <entry>First name</entry>
+                                <entry>Sex</entry>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>中文姓名</entry>
+                                <entry>国籍</entry>
+                                <entry>出生日期</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry>Name in Chinese</entry>
+                                <entry>Nationality</entry>
+                                <entry>Date of birth</entry>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>证件种类</entry>
+                                <entry>证件号码</entry>
+                                <entry>签证种类</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry>Type of certificate (eg ”Passport”)</entry>
+                                <entry>Certificate no.</entry>
+                                <entry>Type of visa</entry>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>签证有效期</entry>
+                                <entry>抵店日期</entry>
+                                <entry>离店日期</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry>Valid date of visa</entry>
+                                <entry>Date of arrival</entry>
+                                <entry>Date of departure</entry>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>由何处来</entry>
+                                <entry>交通工具</entry>
+                                <entry>往何处</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry>From</entry>
+                                <entry>Carrier</entry>
+                                <entry>To</entry>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>永久地址</entry>
+                                <entry/>
+                                <entry>停留事由</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry>Permanent address</entry>
+                                <entry/>
+                                <entry>Object of stay</entry>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>职业</entry>
+                                <entry/>
+                                <entry/>
+                            </row>
+                            <row rowsep="1">
+                                <entry>Occupation</entry>
+                                <entry/>
+                                <entry/>
+                            </row>
+
+                            <row rowsep="0">
+                                <entry>接待单位</entry>
+                                <entry/>
+                                <entry>房号</entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry>Received by</entry>
+                                <entry/>
+                                <entry>Room no.</entry>
+                            </row>
+
+
+                        </tbody>
+                    </tgroup>
+                </table>
+            </section>
+
+
+            <!-- XML removed for sample purposes -->
+
+            <!-- end of "accommodation" section -->
+        </section>
+
+
+        <section role="article">
+            <title>Travel Essentials</title>
+            <section>
+                <title>Entry requirements</title>
+                <para>All foreign nationals require...Visas are <phrase rend="b">not available on
+                        arrival</phrase>.</para>
+                <!-- XML removed for sample purposes -->
+                <!-- Feature on "Import regulations" -->
+
+                <section role="directory">
+                    <title>Chinese embassies and consulates</title>
+                    <para role="introduction">A fairly up-to-date list of Chinese embassies
+                        worldwide can be found at <uri xlink:href="www.china-embassay.info"
+                            >china-embassy.info</uri>.</para>
+                    <section xml:id="" role="dir_entry">
+                        <title/>
+                        <address>
+                        <otheraddr><phrase rend="b">Australia</phrase> 15 Coronation Drive, Yarralumla, Canberra, ACT 2600</otheraddr>
+                        <uri xlink:href="au.china-embassy.org">au.china-embassy.org</uri>
+                    </address>
+                    </section>
+                    <section xml:id="" role="dir_entry">
+                        <title/>
+                        <address>
+                        <otheraddr><phrase rend="b">Burma</phrase> 1 Pyidaungsu Yeiktha Rd, Yangon</otheraddr>
+                        <phone>009 522 1926</phone>
+                    </address>
+                    </section>
+                    <section xml:id="" role="dir_entry">
+                        <title/>
+                        <address>
+                        <otheraddr><phrase rend="b">Canada</phrase> 515 St Patrick St, Ottawa, Ontario, K1N 5H3</otheraddr>
+                        <uri xlink:href="ca.chineseembassy.org">ca.chineseembassy.org</uri>
+                    </address>
+                    </section>
+                    <!-- other embassies removed for sample purposes -->
+                </section>
+                <section xml:id="">
+                    <title>Visa extensions</title>
+                    <!-- Text removed for sample purposes -->
+                </section>
+
+                <!-- end of "Entry requirements" section -->
+            </section>
+            <!-- sections removed for sample purposes -->
+
+
+
+
+            <!-- "Phones" section -->
+            <section>
+                <title>phones</title>
+                <!-- XML removed for sample purposes -->
+
+                <section role="feature">
+                    <title>calling home from abroad</title>
+                    <para>Note that the initial zero is omitted from the area code when dialling the
+                        UK, Ireland, Australia and New Zeland from abroad.</para>
+                    <simplelist>
+                        <member><phrase rend="b">Australia</phrase> international code + 61</member>
+                        <member><phrase rend="b">Ireland</phrase> international access code +
+                            353</member>
+                        <member><phrase rend="b">New Zealand</phrase> international access code +
+                            64</member>
+                        <member><phrase rend="b">South Africa</phrase> international access code +
+                            27</member>
+                        <member><phrase rend="b">UK</phrase> international access code + 44</member>
+                        <member><phrase rend="b">US and Canada</phrase> international access code +
+                            1</member>
+                    </simplelist>
+                </section>
+                <!-- XML removed for sample purposes -->
+                <!-- end of "Phones" section -->
+            </section>
+
+            <!-- "tourist information" section -->
+            <section>
+                <title>tourist information</title>
+                <!-- XML removed for sample purposes -->
+
+                <section role="directory">
+                    <title>Chinese tourist offices abroad</title>
+                    <section xml:id="" role="dir_entry">
+                        <title/>
+                        <address>
+                        <otheraddr><phrase rend="b"/>Australia and New Zealand</otheraddr>
+                        <uri xlink:href="www.cnto.org.au">cnto.org.au</uri>
+                    </address>
+                    </section>
+                </section>
+                <!-- XML removed for sample purposes -->
+
+                <!-- end of "tourist information" section -->
+            </section>
+
+        </section>
+
+        <!-- "Entry requirements" section -->
+
+        <!-- end of "basics" chapter -->
+    </chapter>
+
+    <!-- first region chapter, "Sichuan" -->
+    <chapter>
+        <title>Sichuan</title>
+        <!-- illustration -->
+        <!-- candles image -->
+
+        <!-- mini ToC -->
+        <toc role="miniToc">
+            <!-- this toc will have @linkend to relevant sections -->
+            <tocentry pagenum="61">Chengdu</tocentry>
+            <tocentry pagenum="76">Central Sichuan</tocentry>
+            <tocentry pagenum="84">Northeast Sichuan</tocentry>
+            <tocentry pagenum="93">Southeast Sichuan</tocentry>
+            <tocentry pagenum="99">Southern Sichuan</tocentry>
+            <tocentry pagenum="111">Northern Sichuan</tocentry>
+            <tocentry pagenum="123">Western Sichuan</tocentry>
+        </toc>
+
+
+
+        <mediaobject role="chapter_opener">
+            <imageobject>
+                <imagedata fileref="candles.jpg"/>
+            </imageobject>
+            <caption>
+                <para>Wannian Temple, Emei Shan</para>
+            </caption>
+        </mediaobject>
+        <!-- locator image would come here -->
+        <!-- intro content -->
+        <para role="intro">According to the Tang poet Li Bai, the journey to his populous homeland
+            of Sichuan (<phrase role="mandarinPictogram" xml:lang="zh">四川</phrase>, <phrase role="mandarinPinyin" xml:lang="zh"
+                >sìchuān</phrase>) was “harder than the road to heaven”. Mountains ring the province
+            and until recently the only way here was to make the dangerous trip up the Yangzi via
+            the Three Gorges or follow bandit-ridden roads through gaps in the ranges to the north
+            and south. Westwards – well, westwards was Tibet, which, despite centuries of trade in
+            tea, horses and wool, China only had nominal control of until the 1950s. Remote, though
+            cosmopolitan and never entirely isolated, Sichuan developed its own food, politics and
+            lifestyle, inaccessible enough to ignore central authority and to provide sanctuary for
+            those fleeing it.</para>
+
+        <para>Sichuan splits into very different halves, cut by a diagonal range of hills that slant
+            southwest across the province – and which, as the terrible <phrase rend="b">2008
+                earthquake</phrase> proved, follow a tectonic fault. <phrase rend="b">East</phrase>
+            of this line, the subtropical Red Basin is one of China’s most densely settled areas, an
+            engaging mosaic of unusual historic sites, lively cities and rural scenery whose fertile
+            soil produces three harvests a year; hit the region in spring, and hills are covered in
+            a sea of brilliant yellow rape flowers. Among all this bounty sits <phrase role="POI_ref"
+                >Chengdu</phrase>, Sichuan’s relaxed but overcrowded capital, whose teahouse culture
+            and panda breeding centre make for an enjoyable few days’ stopover. Packed with antique
+            buildings and cobbled lanes, attractive <phrase role="POI_ref">Pingle</phrase> and larger
+                <phrase role="POI_ref">Langzhong</phrase> are the pick of the old towns nearby,
+            though quirky <phrase role="POI_ref">Zigong</phrase> not only sports impressive
+            architecture, but also salt mines and a dinosaur museum. Imperial patronage of Buddhism
+            saw religious sites flourish over a thousand years ago during the Tang dynasty, best
+            experienced at the hulking, aptly named Big Buddha at <phrase role="POI_ref"
+                >Leshan</phrase>, and Emei Shan, a forested holy mountain with over 65km of hiking
+            tracks linking dozens of temples, in which visitors and pilgrims can stay overnight. </para>
+        <!-- XML removed for sample purposes -->
+
+        <section role="feature">
+            <title/>
+            <simplelist role="highlightIndex">
+                <member>
+                    <phrase role="highlight">
+                        <link linkend="xxx">Hot stuff: Sichuanese cooking</link>
+                    </phrase>
+                    <phrase condition="prt">p.61</phrase>
+                </member>
+                <member>
+                    <phrase role="highlight">
+                        <link linkend="xxx">Teahouses</link>
+                    </phrase>
+                    <phrase condition="prt">p.66</phrase>
+                </member>
+                <member>
+                    <phrase role="highlight">
+                        <link linkend="xxx">Palaces, huts and compassion: Du Fu</link>
+                    </phrase>
+                    <phrase condition="prt">p.68</phrase>
+                </member>
+                <!-- XML removed for sample purposes -->
+            </simplelist>
+        </section>
+        
+<!-- DMD: Highlights marked up-->
+
+        <section xml:id="RG_SOUCHI0060" role="highlights">
+            <title>Highlights</title>
+            <mediaobject>
+                <!-- Khampa image -->
+                <imageobject>
+                    <imagedata fileref="xxx.jpg"/>
+                </imageobject>
+                <caption rend="tabCaption">
+                    <para>Khampa cowboys at Litang’s horse festival</para>
+                </caption>
+            </mediaobject>
+
+            <section xml:id="RG_SOUCHI0060">
+                <title><link linkend="RG_SOUCHI0062_map_1">1 </link><link linkend="RG_SOUCHI066"
+                    >Teahouses</link></title>
+                <para>Participate in a great Sichuanese institution by kicking back in a bamboo
+                    chair with a bottomless cup of tea at your side to watch the world go by.<phrase
+                        role="prt"> See <link linkend="RG_SOUCHI066">p.66</link></phrase></para>
+
+            </section>
+
+            <section xml:id="RG_SOUCHI0061">
+                <title><link linkend="RG_SOUCHI0062_map_2">2 </link><link linkend="RG_SOUCHI066">Pandas</link></title>
+                <para>Enjoy great views of these charismatic beasts chewing through mountains of
+                    bamboo at <link linkend="RG_SOUCHI070">Chengdu’s breeding centre</link>, or chance your luck at seeing one in the
+                    wild at remote <link linkend="RG_SOUCHI111">Wanglang Reserve</link>.<phrase role="prt"> See <link
+                            linkend="RG_SOUCHI070">p.70</link> &amp; <link linkend="RG_SOUCHI111"
+                            >111</link></phrase></para>
+            </section>
+            <!-- Text removed for sample purposes -->
+            <!--DMD: Region map of Sichuan nested in the section 'Highlights'. -->
+            <mediaobject xml:id="RG_SOUCHI0062_map">
+                <imageobjectco>
+                    <areaspec>
+                        <area xml:id="RG_SOUCHI0062_map_1" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_2" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_3" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_4" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_5" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_6" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_7" coords=""/>
+                        <area xml:id="RG_SOUCHI0062_map_8" coords=""/>
+                    </areaspec>
+                    <imageobject>
+                        <imagedata fileref="RG_SOUCHI0062_map.png"/>
+                    </imageobject>                    
+                </imageobjectco>
+            </mediaobject>
+            <variablelist xml:id="RG_SOUCHI0063" role="key" xreflabel="Highlights">                
+                <varlistentry xml:id="RG_SOUCHI0063_1" xreflabel="Teahouses">
+                    <term>1 Teahouses</term>
+                    <listitem>
+                        <para>
+                            <xref linkend="RG_SOUCHI0062_map_1" role="map_callout"/>
+                            <inlinemediaobject>
+                                <imageobject>
+                                    <imagedata fileref="6_round.gif"/>
+                                </imageobject>
+                            </inlinemediaobject>
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry xml:id="RG_SOUCHI0063_2" xreflabel="Pandas">
+                    <term>2 Pandas</term>
+                    <listitem>
+                        <para>
+                            <xref linkend="RG_SOUCHI0062_map_2" role="map_callout"/>
+                            <inlinemediaobject>
+                                <imageobject>
+                                    <imagedata fileref="7_round.gif"/>
+                                </imageobject>
+                            </inlinemediaobject>
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <!-- Text removed for sample purposes -->
+            </variablelist>
+        </section>  
+       
+        <!-- end of Sichuan intro content -->
+        <!-- DMD: Ideally Brief History should be marked up as H4 and Chengdu as H2, but structurally they are at the same level.   -->
+        <section role="history">
+            <title>Brief History</title>
+            <!-- It was decided that the following bit would be made into a formalpara. However, a formalpara does not allow more than one para, therefore, it has been made into a section -->
+            <section>
+                <title>Early conquests</title>
+                <para>Irrigation works at <phrase rend="b">Dujiangyan</phrase> in 256 BC opened up
+                    the Chengdu plains to intensive farming, soon drawing the attention of the
+                    vigorous Qin armies from easterly Shaanxi province, who used Sichuan (or <phrase
+                        rend="b">Shu</phrase>, as the province is still sometimes known) as a
+                    strategic base to conquer all of China in 221 BC. Their example was repeated
+                    four centuries later by the <phrase rend="b">Three Kingdoms</phrase> warlord Liu
+                    Bei – who failed, however, to reunify the country after the collapse of the
+                        <link linkend="">Han</link><phrase condition="prt" xml:id=""> (see p.69)</phrase>
+                     – and around 617 AD by the peasant general Li Shimin, who became the
+                    great Tang-dynasty emperor <phrase rend="b">Taizong</phrase>.</para>
+            </section>
+        </section>
+
+        <!-- sub-areas -->
+        <!-- print heading levels described to indicate print structure -->
+        <!-- CHENGDU -->
+        <section role="article">
+            <title>
+                <!-- DMD: This treatment would be done for all those titles which have a chinese variant as well -->
+                <phrase xml:lang="en">Chengdu</phrase>
+                <phrase role="mandarinPictogram" xml:lang="zh">成都</phrase>
+                <phrase role="mandarinPinyin" xml:lang="zh">chéngdū</phrase>
+            </title>
+
+            <!-- Chengdu intro, this <section> implied by print typography. I.E, "Chengdu" is H2 and "Brief history" is H4 -->
+            <section>
+                <title/>
+                <!-- possible links to other sections included below; e.g., 'parks' and 'pandas' -->
+                <para>
+                    <phrase role="leadin">Chengdu</phrase> is a determinedly modern city, full of
+                    traffic, high-rise department stores, ever-increasing numbers of ring roads and
+                    mushrooming residential development. But it’s also a cheerful place; seasonal
+                    floral displays and ubiquitous ginkgo trees lend colour to its many excellent
+                        <link linkend="xxx">parks</link>, and the population is self-consciously
+                    laidback, enjoying its <link linkend="xxx">teahouse culture</link> at every
+                    opportunity and unfazed by this being interpreted as laziness by other
+                    Chinese.</para>
+                <para>There are downsides too – the city’s traffic congestion and smog are atrocious
+                    – but get past these and Chengdu is Southwest China’s most culturally rewarding
+                    city, whose elegant Buddhist and Daoist <link linkend="">temples</link>, busy
+                    monuments to warlords and poets, Bronze-Age relics at the <link linkend=""
+                        >Jinsha Museum</link> and local opera style are rich testament to three
+                    thousand years of history. There’s also one of China’s most outstanding cuisines
+                    to spike your taste buds on, and the chance to get close-up views of locally
+                    bred <link linkend="">pandas</link>. Most visitors spend at least a few days
+                    here, enjoying the sights and exploiting its role at the centre of Sichuan’s
+                        <link linkend="">transport network</link> to plan trips through western
+                    Sichan to Yunnan or Tibet.</para>
+
+                <!-- map  not included in this sample -->
+
+
+                <!-- brief history subsection -->
+                <section role="history">
+                    <title>brief history</title>
+                    <!-- H4 -->
+                    <para>Eastern Sichuan had already been settled by the Neolithic <phrase rend="b"
+                            >Baodun culture</phrase> as early as 2700 BC, though its first flowering
+                        came over a thousand years later at <phrase role="POI_ref">Jinsha</phrase> (see
+                            <phrase condition="prt">p.69</phrase><xref condition="dig" cref="xxx"
+                            linkend=""/>). Chengdu itself became a regional capital during the
+                        fourth century BC, and by Han times it was known as <phrase role="POI_ref">Brocade
+                            City</phrase>, its silk travelling as far as imperial Rome. Two
+                        Tang-dynasty emperors sought sanctuary here after fleeing down the “Sichuan
+                        Road” from neighbouring Shanxi province, as did the great eighth-century
+                        poet Du Fu (see <phrase condition="prt">p.68</phrase><xref condition="dig"
+                            cref="xxx" linkend=""/>).</para>
+                    <para>Sacked in 1279 by the Mongols, who slaughtered the entire population,
+                        Chengdu had somehow recovered enough within the next decade to impress
+                            <phrase rend="b">Marco Polo</phrase> with its handsome bridges (and
+                        profitable customs duties), though the surrounding countryside was still
+                        devastated. The Ming and Qing eras saw Chengdu suffer similar cycles of
+                        destruction and restoration: after a massacre by Zhang Xianzhong during the
+                        1640s (see <phrase role="prt">p.151</phrase><xref condition="dig" cref="xxx"
+                            linkend=""/>), migrants from central China were deliberately settled
+                        here to repopulate the city.</para>
+
+                    <!-- end of brief history subsection -->
+                </section>
+
+
+
+
+
+                <section role="feature">
+                    <title>to Western Sichuan and Tibet</title>
+                    <!-- BH1 -->
+                    <para><phrase role="POI_ref">Tibet</phrase>, along with northern and western
+                        Sichuan – including everywhere west of <phrase role="POI_ref">Ya’an</phrase>,
+                        and also towns like <phrase role="POI_ref">Zöigê</phrase> and <phrase
+                            role="POI_ref">Langmusi</phrase> – is periodically <phrase rend="b"
+                            >closed to foreigners</phrase>, usually because of unrest, or fears of
+                        unrest, among the population. At present, the whole region is off-limits
+                        every <phrase rend="b">March</phrase>, when tempers run high during the
+                        anniversary of the Dalai Lama fleeing Tibet in 1959; violent anti-Chinese
+                        riots in <phrase role="POI_ref">Lhasa</phrase> during March 2008 spilled
+                        across into Sichuan, where trouble flared again in 2011. </para>
+                </section>
+
+                <!-- end of Chengdu intro section-->
+            </section>
+
+
+
+            <!-- POIs  -->
+            <!-- Tianfu Square POI - has minimal "POI information"  -->
+            <!-- how to associate document section with POI? Here, metaref at section-level maps to POI id and POI attributes added at para level -->
+            <!-- add lat/ long at section level? -->
+            <!-- in other sections, there are nested POIs, e.g., on page 213 -->
+            <section role="POI">
+                <title>
+                    <phrase xml:lang="en">Tianfu Square</phrase>
+                    <phrase xml:lang="zh" role="mandarinPictogram">天府广场</phrase>
+                    <phrase xml:lang="zh" role="mandarinPinyin">tiānfǔ guǎngchǎng</phrase>
+                </title>                
+                <para>
+                    <phrase role="POI_ref">Tianfu Square</phrase>, at
+                    Chengdu’s centre, is a granite plaza with a subterranean metro stop, prettied up
+                    at night by dancing fountains illuminated by coloured lights. To the north, a
+                    beatific <phrase role="POI_ref">statue of Chairman Mao</phrase>, his raised arm
+                    seemingly hailing a cab, was built over the site of the former governor’s
+                    palace, demolished in the 1950s. West is Chengdu’s main <phrase role="POI_ref"
+                        >mosque</phrase> (<phrase role="mandarinPictogram" xml:lang="zh">皇城清真寺</phrase>, <phrase
+                            role="mandarinPinyin" xml:lang="zh">huángchéng qīngzhēn sì</phrase>), last survivor of the
+                    city’s old Islamic quarter; Muslims first appeared in Sichuan during the Tang
+                    dynasty, though – as in much of Southwest China – most arrived with the Mongols
+                    during the thirteenth century. Tianfu Square is due for a major facelift in the
+                    near future; the new <phrase role="POI_ref">Chengdu Museum</phrase> is already
+                    under construction near to the mosque. </para>
+            </section>
+
+
+            <!-- Renmin Park POI - more extensive "POI information" and a nested feature -->
+            <section role="POI">
+                <title>
+                    <phrase xml:lang="en">Renmin Park</phrase>
+                    <phrase role="mandarinPictogram" xml:lang="zh">人民公园</phrase>
+                    <phrase role="mandarinPinyin" xml:lang="zh">rénmín gōngyuán</phrase>
+                </title>
+                <para role="rg_POI_info">
+                    <phrase metaref="rg__price">Free except during local festivals</phrase>
+                    <phrase metaref="rg_additional_info">Tianfu Square metro</phrase>
+                </para>                
+                <para>A ten-minute walk west of Tianfu Square, <phrase
+                        role="POI_ref">Renmin Park</phrase> houses a few acres of trees, paved paths,
+                    ponds, lawns and bright ornamental gardens, providing an introduction to
+                    Chengdu’s relatively mellow pace of life. Just inside the north entrance, the
+                    ever-busy <phrase role="POI_ref">Heming teahouse</phrase> (<phrase
+                        role="mandarinPictogram" xml:lang="zh">鹤鸣茶馆</phrase>, <phrase role="mandarinPinyin" xml:lang="zh">hèmíng
+                        cháguǎn</phrase>) is shaded by wisteria and marked by a large bronze teapot
+                    at the gate; it overlooks a pond and the surrounding vines attract plenty of
+                    wild birds. Nearby, the tall <phrase role="POI_ref">Monument to the
+                        Martyrs</phrase> is an obelisk commemorating the 1911 rail disputes that
+                    marked the beginning of the end for China’s Qing dynasty. Otherwise, the park is
+                    a good place to stroll or watch martial artists training at dawn; look for
+                    vendors with little burners and a slab of marble along the paths who “draw”
+                    skilful designs of Chinese zodiac animals with molten <phrase rend="b"
+                        >toffee</phrase>. There’s a food festival here in spring, and a <phrase
+                        rend="b">canteen</phrase> next to the teahouse serving Sichuanese snacks.
+                </para>
+            </section>
+
+<!-- Lech's sample for POI. This would be followed. -->
+
+            <section role="POI">
+                <!-- Lech: see article id="idh781205218_0067" for original XML -->
+                <title>
+                    <phrase xml:lang="en">Yong Ling</phrase>
+                    <phrase xml:lang="zh" role="mandarinPictogram">永陵博物馆,</phrase>
+                    <phrase xml:lang="zh" role="mandarinPinyin">yǒng líng bówùguǎn</phrase>
+                </title>
+                <!-- Added info meta for capturing one/multiple metarefs -->
+                <info>
+                    <meta metaref=""/>
+                </info>
+                <!-- Lech: xml:lang may not be appropriate to differentiate between different transcriptions of the same dialect, so use role as per stuart's recommendation -->
+                <para role="rg_POI_info">
+                    <phrase role="rg_opening_time">Daily 9am–5pm</phrase>
+                    <!-- DMD: Could role be used instead of metaref? Should rg_price be used consistently for admission charge/transportation charge/accommodation? -->
+                    <phrase metaref="rg__price">¥20</phrase>
+                    <phrase metaref="rg_additional_info">Bus #48 from Xinnanmen bus station via
+                        Xi Yu Long Jie, near the Luo Ma Shi metro station</phrase>
+                    
+                </para>
+                <para>
+                    <phrase role="POI_ref">Yong Ling</phrase> is the tomb of Wang Jian, a
+                    Tang-dynasty general who seized power in Sichuan in 907 AD and set himself
+                    up as Emperor of Shu. He was succeeded in 918 by his inept son Wang Yan, who
+                    lost the kingdom to a resurrected Tang in 925, but not before he’d concealed
+                    his father’s tomb under a 15m-high conical hill, which was discovered and
+                    excavated in 1942. The three barrel-vaulted brick chambers had been robbed
+                    in antiquity, but a jade belt, gold seal and a small, placid <phrase
+                        rend="b">statue</phrase> – believed to be the only contemporary
+                    sculpture of an emperor – remained, as did the immoveable <phrase
+                        rend="b">sarcophagus platform</phrase>, a 6m-long stone plinth
+                    beautifully carved in relief with flowers and female musicians. The platform
+                    is supported by twelve life-sized warrior busts sunk up to their waists in
+                    the floor; with their curly hair, big noses and generous beards, these
+                    pall-bearers are clearly not Chinese – the Tang dynasty was known for its
+                    close links with central Asia.</para>
+                
+            </section>
+
+            <!-- feature at same level as POIs -->
+            <section role="feature">
+                <title>teahouses</title>
+                <para/>
+                <!-- XML removed for sample purposes -->
+            </section>
+
+           <!-- Qingyang Gong POI - has extensive "POI information"  -->
+            <section role="POI">
+                <title>
+                    <phrase xml:lang="en">Qingyang Gong</phrase>
+                    <phrase role="mandarinPictogram" xml:lang="zh">青羊宫</phrase>
+                    <phrase role="mandarinPinyin" xml:lang="zh">qīngyáng gōng</phrase>
+                </title>
+                <!-- H3 -->
+                <para role="POI_name_variation"></para>
+                <para role="rg_POI_info">
+                    <phrase role="rg_opening_time">Daily 8am–5pm</phrase>
+                    <phrase metaref="rg__price">¥10</phrase>
+                    <phrase metaref="rg_additional_info">Tourist bus #901 or bus #82 from Binjiang Lu</phrase>
+                </para>
+                <para>
+                    <phrase role="POI_ref">Qingyang Gong</phrase> is Chengdu’s largest Taoist
+                    monastery, whose odd name – it means “Green Goat Temple” – relates to the
+                    cryptic last words of the Taoist sage <phrase rend="i">Laozi</phrase> as he rode
+                    his buffalo off into the sunset: “Look for a green ram once you have practised
+                    Taoism for a thousand days”. His disciple Yinxi followed these instructions and
+                    duly encountered the goat on the spot that Qingyang Gong was later
+                    founded.</para>
+                <para>The legend is echoed at the 20m-high <phrase role="POI_ref">Bagua
+                        Pavilion</phrase>, an octagonal structure wrapped in gold dragons, where a
+                    life-sized statue of Laozi sits astride his buffalo. There’s more outside the
+                        <phrase role="POI_ref">Three Purities Hall</phrase>, where worshippers rub
+                    two oversized <phrase rend="b">bronze goats</phrase> for luck – though on closer
+                    inspection, the right-hand “goat” turns out to be the simultaneous incarnation
+                    of all twelve Chinese zodiac animals, with deer’s antlers, lion’s paws and so
+                    on. The open-fronted hall itself was built in 1669 and contains giant gilded
+                    statues of the Three Purities along with smaller representations of Taoist
+                    Immortals and sacred animals.</para>
+            </section>
+
+
+            <!-- do we need a container to group the listings? they're currently on the same level as POIs -->
+            <!-- "arrival and departure" section -->
+            <!-- use @metaref = "recommended" for recommended listing entries? -->
+            <!-- do we need to group arrivalAndDeparture, information, accommodation etc., sections as being in the same "class" of section? I.E, they're all "listings"? -->
+            <!-- DMD: Added role="practical_info" to distinguish the same level of sections -->
+            <section role="practical_info">
+                <title>arrival and departure</title>
+                <subtitle>Chengdu</subtitle>
+                <para>Chengdu has multiple <link linkend="xxx">train</link> and <link linkend="xxx"
+                        >bus</link> stations, the most important of which are covered below. There’s
+                    also a <link linkend="xxx">second airport</link> under construction 55km east,
+                    due to open in 2012, which will be linked to the city by a light railway. If
+                    travelling through western Sichuan or to <phrase role="POI_ref">Tibet</phrase>,
+                    read <phrase condition="prt">the box on p.64 first</phrase>
+                    <xref condition="dig" cref="xxx"/>. For adventurous trips to <phrase
+                        role="POI_ref">Yunnan</phrase>, you can reach Lugu Hu and Lijiang via Xichang
+                        <phrase condition="prt">(p.109)</phrase>
+                    <phrase condition="dig">(see <xref condition="dig" cref="xxx"/>)</phrase> and –
+                    assuming the region is open – <phrase role="POI_ref">Shangri-la</phrase> via
+                        <phrase role="POI_ref">Litang</phrase>
+                    <phrase condition="prt">(p.140)</phrase>
+                    <phrase condition="dig" cref="xxx">(see <xref condition="dig" cref="xxx"
+                        />)</phrase>. Heading east, <phrase role="POI_ref">Chongqing City</phrase> is
+                    best reached in just two hours aboard the high-speed, D-class train.</para>
+
+                <para role="boxpara">Note that in Chengdu’s listings and throughout the guide, where
+                    buses are <phrase rend="b">frequent</phrase> throughout the day (every 30min or
+                    more), we have not flagged departure frequencies.</para>
+
+                <!-- "by plane" section -->
+                <!-- are airports POIs? -->
+                <section>
+                    <title>by plane</title>
+
+
+                    <section>
+                        <title>Shuangliu airport</title>
+                        <para>(<phrase role="mandarinPictogram" xml:lang="zh">双流机场</phrase>, <phrase
+                            role="mandarinPinyin" xml:lang="zh">shuāngliú jīchăng</phrase>) is 16km southwest
+                            of town, connected by an airport bus (approx every 30min; 30min; ¥10) to
+                            Yandao Lu, off Renmin Nan Lu opposite the <phrase rend="i"
+                                >Jinjiang</phrase> hotel; a taxi costs around ¥50. Buy plane tickets
+                            through accommodation or at China Eastern, corner of Jinli Dong Lu and
+                            Xia Nan Dajie <phrase role="symbol">t</phrase><phrase role="telephone"
+                                >028 8615 5233</phrase>, <phrase role="symbol">w</phrase><phrase
+                                role="url">ce-air.com</phrase>.</para>
+                        <formalpara>
+                            <title>destinations</title>
+                            <para>Beijing (6 daily; 2hr 30min); Chongqing City (1 daily; 45min);
+                                Guangzhou (4 daily; 2hr); Guilin (2 daily; 1hr 30min); Guiyang (5
+                                daily; 1hr 10min); Jinghong (2 daily; 1hr 45min); Jiuzhaigou (5
+                                daily; 55min); Kunming (5 daily; 1hr 20min); Lhasa (6 daily; 2hr);
+                                Lijiang (5 daily; 1hr 25min); Nanning (4 daily; 2hr 55min); Shanghai
+                                (6 daily; 2hr 30min); Shenzhen (6 daily; 2hr 20min); Tengchong (2
+                                daily; 1hr 40min); Xichang (6 daily; 1hr).</para>
+                        </formalpara>
+                    </section>
+
+
+                </section>
+                <!-- end of "by plane" section -->
+
+                <!-- "by bus" section not included in this sample -->
+                <!-- "by train" section not included in this sample-->
+
+
+                <!-- end of "arrival and departure" section -->
+            </section>
+
+            <!-- "getting around" not included in this sample -->
+
+
+            <!-- section in section used to replicate print information structure/ typogrpahy -->
+            <section role="information">
+                <title>information</title>
+
+                    <section>
+                        <title>tourist information</title>
+                        <para>For current information on every aspect of the city, plus background
+                            articles about Chengdu, Sichuan and China, log on to <uri xlink:href="www.gochengdoo.com"
+                                >wgochengdoo.com</uri>. Chengdu’s hostels, with their
+                            English-speaking staff, internet access and travellers’ notice boards
+                            are useful on the ground; you can also chat to foreign residents at the
+                                <phrase rend="i">Bookworm</phrase> (see <phrase condition="prt"
+                                >p.74</phrase>
+                            <xref condition="dig" cref="xxx"/>) or the backpacker-oriented <phrase
+                                rend="i">Dave’s Oasis</phrase> on Binjiang Lu (<uri xlink:href="www.davesoasis.com"
+                                >davesoasis.com</uri>).</para>
+                    </section>
+
+                    <!-- other sections (Dragon Expeditions and Western Sichuan Tours) not included in this sample -->
+
+            </section>
+
+            <!-- sections here should be given different @role to enable INDD/ print typography to be output 
+                <section role="accommodation">
+                <section role="eating">
+                <section role="nightlife">
+              -->
+
+            <!-- "accommodation" not included in this sample -->
+            <!-- "eating" not included in this sample -->
+            <!-- "nightlife" not included in this sample -->
+
+            <!-- DMD: Could we do away with the role="accommodation", role="eating", etc since these are not consistent across the title. For eg: Section "Arrival and Departure" may vary as "Arrival and Getting Around" or could be two separate sections "Arrival" and "Departure"-->
+
+            <!-- end of "Chengdu" sub-area -->
+        </section>
+        <!-- end of "Sichuan" chapter -->
+    </chapter>
+    <!-- other area chapters not included in this sample -->
+
+
+    <chapter>
+        <title>contexts</title>
+
+
+
+        <!-- XML removed for sample purposes -->
+        <section role="timeline">
+            <title/>
+            <!-- timeline -->
+            <simplelist>
+
+                <!-- associated with "Prehistory and the Three Dynasties section -->
+                <member linkend="xxx">
+                    <phrase role="timeline_date">4800 BC</phrase>
+                    <phrase role="timeline_description">First evidence of human settlement along the
+                        Yellow River basin in eastern China.</phrase>
+                </member>
+                <!-- associated with "Prehistory and the Three Dynasties section -->
+                <member linkend="xxx">
+                    <phrase role="timeline_date">2100 BC-771 BC</phrase>
+                    <phrase role="timeline_description">The Three Dynasties rule eastern
+                        China.</phrase>
+                </member>
+                <!-- associated with "Prehistory and the Three Dynasties section -->
+                <member linkend="xxx">
+                    <phrase role="timeline_date">1600BC</phrase>
+                    <phrase role="timeline_description">Bronze-working Shu culture appears at
+                        Sanxingdui, Chengdu</phrase>
+                </member>
+                <!-- associated with "From the Zhou to the Qin" section -->
+                <member linkend="xxx">
+                    <phrase role="timeline_date">770 BC-476 BC</phrase>
+                    <phrase role="timeline_description">Spring and Autumn period. Jinsha replaces
+                        Sanxingdui; Ba appear at Chongquing; Dian Kingdom founded in
+                        Yunnan.</phrase>
+                </member>
+                <!-- other dates not included in this sample -->
+            </simplelist>
+            <!-- end of timeline -->
+        </section>
+
+
+
+        <section role="article">
+            <title>language</title>
+            <para>Used by over a billion people, China’s national language, Mandarin, has more
+                native speakers than English and Spanish combined. While Southwest China is also
+                rife with heavy accents and regional dialects, Mandarin, the language of education,
+                is the default everywhere – indeed, its Chinese name, putonghua, translates as
+                “common language” – and a grasp of even the basics will massively enhance your trip.
+                Be aware, however, that some Chinese peoples, such as Miao, Yi and Tibetans, speak
+                their own entirely different languages, though you’d be very unlucky to wind up
+                somewhere Mandarin isn’t understood at all. Foreign languages – primarily English –
+                are spoken to some extent by many students, and at upmarket hotels and places where
+                Western tourists are common; elsewhere you’ll need at least a phrasebook.</para>
+
+            <!-- "Speaking Mandarin" section -->
+            <!-- used quote marks for "words as words" rather than <wordasword> -->
+            <section>
+                <title>Speaking Mandarin</title>
+                <para>Despite Chinese being seen as difficult for Western students to learn, in many
+                    ways spoken Mandarin is relatively easy, as <phrase rend="b">grammatical
+                        rules</phrase> are straightforward: there are no plurals, no agreements, no
+                    declensions, no genders and no tenses. Instead, <phrase rend="b"
+                        >context</phrase> and fairly rigid rules about <phrase rend="b">word
+                        order</phrase> are key, along with words such as “some”, “many”, “yesterday”
+                    or “tomorrow”.</para>
+                <para>For English-speakers, Chinese word order follows the familiar
+                    subject-verb-object pattern, and you’ll find that by simply stringing words
+                    together you’ll be producing comprehensible basic Chinese. Just note that
+                    adjectives, as well as all qualifying and describing phrases, <phrase rend="b"
+                        >precede nouns</phrase>.</para>
+                <!-- "Pinyin" and "Pronunciation" sub-sections not included in this sample -->
+                <!-- "The tones" section -->
+                <section>
+                    <title>the tones</title>
+                    <para>There are <phrase rend="b">four tones</phrase> in Mandarin, and almost
+                        every syllable is characterized by one of them. While often seen as a major
+                        issue, actually pronouncing these tones is not difficult, as they are also
+                        used in English. The difference is that English uses tone for <phrase
+                            rend="b">effect</phrase> – emphasis, questioning, listing, rebuking -
+                        while in Mandarin, using a different tone changes the word’s actual <phrase
+                            rend="b">meaning</phrase>, rather like vowels in English (think of
+                        saying “wall” instead of “well”). The wrong tone used with
+                            <foreignphrase>ma</foreignphrase>, for example, can turn “mother” into
+                        “horse” or “hemp”. </para>
+                    <!-- XML removed for sample purposes -->
+
+                    <section role="language_entry">
+                        <title/>
+                        <para><phrase role="leadin">First</phrase>or “High” <phrase rend="b">ā ē ī ō
+                                ū</phrase>. In English this level tone is used when mimicking
+                            robotic or very boring, flat voices. </para>
+                        <para><phrase role="leadin">Second</phrase>or “Rising” <phrase rend="b">á é
+                                í ó ú</phrase>. Used in English when asking a question showing
+                            surprise, for example “eh?” </para>
+                        <para><phrase role="leadin">Third</phrase>or “Falling-rising” <phrase
+                                rend="b">ă ĕ ĭ ŏ ŭ</phrase>. Used in English when echoing someone’s
+                            words with a measure of incredulity. For example, “John’s dead.”
+                            “De-ad?!” </para>
+                        <para><phrase role="leadin">Fourth</phrase>or “Falling” <phrase rend="b">à è
+                                ì ò ù</phrase>. Often used in English when counting in a brusque
+                            manner – “One! Two! Three! Four!” </para>
+                        <para><phrase role="leadin">Toneless</phrase>A few syllables do not have a
+                            tone accent. These are pronounced without emphasis, such as in the
+                            English upon. </para>
+                    </section>
+
+
+                    <!-- XML removed for sample purposes -->
+                    <!-- end of "The tones" section -->
+                </section>
+
+
+
+
+
+
+
+                <section role="feature">
+                    <title>Travellers' Tibetan</title>
+                    <para>Most rural <phrase rend="b">Tibetans</phrase> speak only their native
+                        tongue, with perhaps a smattering of Mandarin, so the following few phrases
+                        might be useful – and should at least get you a friendly smile – if you’re
+                        planning to spend much time in the Tibetan regions of Yunnan and
+                        Sichuan.</para>
+                    <!-- XML removed for sample purposes -->
+
+                    <!-- "orth" used rather than "pron", because I think the Tibetan is anglisized here, rather than rendered phonetically -->
+                    <section role="phrases">
+                        <title>basic phrases</title>
+                        <phrase_entry>
+                            <sense>
+                                <def>Hello</def>
+                            </sense>
+                            <form>
+                                <orth>tashi delay</orth>
+                            </form>
+                        </phrase_entry>
+                        <phrase_entry>
+                            <sense>
+                                <def>Goodbye, to someone staying</def>
+                            </sense>
+                            <form>
+                                <orth>kalay shu</orth>
+                            </form>
+                        </phrase_entry>
+                        <phrase_entry>
+                            <sense>
+                                <def>Goodbye, to someone going</def>
+                            </sense>
+                            <form>
+                                <orth>kalay pay</orth>
+                            </form>
+                        </phrase_entry>
+                        <!-- XML removed for sample purposes -->
+                        <!-- end of "basic phrases" section -->
+                    </section>
+
+
+                    <!-- XML removed for sample purposes -->
+                    <!-- end of "Travellers' Tibetan" section -->
+                </section>
+                <!-- XML removed for sample purposes -->
+
+                <!-- end of "Speaking Mandarin" section -->
+            </section>
+            <!-- end of "Language" section-->
+        </section>
+        <!-- end of "contexts" chapter -->
+    </chapter>
+
+
+    <glossary>
+        <title>glossary</title>
+        <glossentry>
+            <glossterm>Arhat</glossterm>
+            <glossdef>
+                <para>Buddhist saint</para>
+            </glossdef>
+        </glossentry>
+        <glossentry>
+            <glossterm>Baozi</glossterm>
+            <glossdef>
+                <para>Steamed bun, usually filled with mincemeat</para>
+            </glossdef>
+        </glossentry>
+        <glossentry>
+            <glossterm>Bei</glossterm>
+            <glossdef>
+                <para>North</para>
+            </glossdef>
+        </glossentry>
+        <!-- XML removed for sample purposes -->
+        <glossentry>
+            <glossterm>Chorten</glossterm>
+            <glossdef>
+                <para>see <link linkend="xxx">Stupa</link></para>
+            </glossdef>
+        </glossentry>
+        <!-- XML removed for sample purposes -->
+        <glossentry>
+            <glossterm>Stupa</glossterm>
+            <glossdef>
+                <para>Multi-tiered tower associated with Buddhist temples that usually containes
+                    sacred objects</para>
+            </glossdef>
+        </glossentry>
+    </glossary>
+
+
+
+
+
+    <chapter>
+        <title>index and small print</title>
+        <toc role="miniToc">
+            <tocentry pagenum="422">Small print</tocentry>
+            <tocentry pagenum="423">About the author</tocentry>
+            <tocentry pagenum="424">Index</tocentry>
+            <tocentry pagenum="432">Map symbols</tocentry>
+        </toc>
+        <section role="feature">
+            <title>a rough guide to Rough Guides</title>
+            <para>Published in 1982, the first Rough Guide – to Greece – was a student scheme that became a publishing phenomenon. Mark Ellingham, a recent graduate in English from Bristol University, had been travelling in Greece the previous summer and couldn’t find the right guidebook. With a small group of friends he wrote his own guide, combining a highly contemporary, journalistic style with a thoroughly practical approach to travellers’ needs.</para>
+            <para>The immediate success of the book spawned a series that rapidly covered dozens of destinations. And, in addition to impecunious backpackers, Rough Guides soon acquired a much broader readership that relished the guides’ wit and inquisitiveness as much as their enthusiastic, critical approach and value-for-money ethos.</para>
+            <para>These days, Rough Guides include recommendations from budget to luxury and cover more than 200 destinations around the globe, as well as producing an ever-growing range of eBooks and apps.</para>
+            <para role="note"> Visit <phrase role="url" xlink:href="www.roughguides.com">roughguides.com</phrase> to see our latest publication</para>
+        </section>
+        <section role="article">
+            <title/>
+            <section>
+                <title>Rough Guide credits</title>
+                <variablelist>
+                    <varlistentry>
+                        <term>Editor</term>
+                        <listitem>
+                            <para>James Smart</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Layout</term>
+                        <listitem>
+                            <para>Dan May</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Cartography</term>
+                        <listitem>
+                            <para>Katie Lloyd-Jones and Ed Wright</para>
+                        </listitem>
+                    </varlistentry>
+                    <!-- other entries removed for this sample --></variablelist>
+            </section>
+            <section>
+                <title>Publishing information</title>
+                <para>This first edition published January 2012 by</para>
+                <para>
+                    <address>
+                  <orgname rend="b">Rough Guides Ltd</orgname>,
+                        <street>80 Strand</street>,
+                        <city>London</city>
+                  <postcode>WC2R 0RL</postcode>
+               </address>
+                </para>
+                <!-- XML removed for sample purposes -->
+            </section>
+            <section>
+                <title>Help us udpate</title>
+                <para>We’ve gone to a lot of effort to ensure that the first edition of The Rough Guide to Southwest China is accurate and up-to-date. However, things change – places get “discovered”, opening hours are notoriously fickle, restaurants and rooms raise prices or lower standards. If you feel we’ve got it wrong or left something out, we’d like to know, and if you can remember the address, the price, the hours, the phone number, so much the better. </para>
+                <!-- XML removed for sample purposes -->
+            </section>
+            <section role="feature">
+                <title>about the author</title>
+                <para>
+                    <phrase role="leadin">David Leffman</phrase> first visited China in 1985 and seems to have spent most of his life since contributing to books on the place, struggling with Mandarin and getting beaten around by martial artists. If he had spare time he’d go scuba diving.</para>
+            </section>
+            <section>
+                <title>Acknowledgements</title>
+                <para>
+                    <phrase role="leadin">David Leffman</phrase> For Narrell, with love. Immense thanks to the following for information, company, conversation and hand-to-hand combat: Kirsten Allen, Heather Bacon, Dr Sarah Bexell, Terry Bolger and Noi, Kim Dallas, Lobsang Dolma, Dwight, Kieran Fitzgerald, John Gardener, Peter Goff, Michelle Haynes, Chris Horton and Matthew, Jay, </para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="authorPicture.jpg"/>
+                    </imageobject>
+                </mediaobject>
+                <!-- XML removed for sample purposes --></section>
+            <section>
+                <title>photo credits</title>
+                <para>All photos © Rough Guides except the following: (Key: t-top; b-bottom; c-centre; l-left; r-right;)</para>
+                <variablelist>
+                    <varlistentry>
+                        <term>p.1</term>
+                        <listitem>
+                            <para>National Geographic/Getty, Michael S. Yamashita</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>p.2</term>
+                        <listitem>
+                            <para>AWL, James Montgomery</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>p.4</term>
+                        <listitem>
+                            <para>Superstock, Tao Images</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+                <!-- XML removed for sample purposes --></section>
+        </section>
+        <index>
+            <title>Index</title>
+            <para>Maps are marked in <phrase rend="grey">grey</phrase>.</para>
+            <!-- index numbers marked up in phrases so they can be styled separately in INDD, i.e., right-justification applied and fullpoints before them -->
+            <!-- page numbers out, reference to a term -->
+            <indexdiv>
+                <title>A</title>
+                <indexentry>
+                    <primaryie>Aba grasslands <phrase role="pagenumber">121</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>
+                        <phrase rend="b">accommodation <phrase role="pagenumber">31-34</phrase>
+                        </phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>acupuncture <phrase role="pagenumber">384</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>Aini <phrase role="pagenumber">266</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>airfares <phrase role="pagenumber">30</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>airlines, domestic <phrase role="pagenumber">29</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>alcohol <phrase role="pagenumber">37</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>Anshun <phrase role="pagenumber">303-306</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>
+                        <phrase rend="grey">Anshun <phrase role="pagenumber">304</phrase>
+                        </phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>
+                        <phrase rend="b">art <phrase role="pagenumber">386-389</phrase>
+                        </phrase>
+                    </primaryie>
+                    <secondaryie>bronzes <phrase role="pagenumber">386</phrase>
+                    </secondaryie>
+                    <secondaryie>calligraphy <phrase role="pagenumber">389</phrase>
+                    </secondaryie>
+                    <secondaryie>ceramics <phrase role="pagenumber">387</phrase>
+                    </secondaryie>
+                    <secondaryie>contemporary art <phrase role="pagenumber">389</phrase>
+                    </secondaryie>
+                    <secondaryie>painting <phrase role="pagenumber">388</phrase>
+                    </secondaryie>
+                    <secondaryie>pottery <phrase role="pagenumber">386</phrase>
+                    </secondaryie>
+                    <secondaryie>sculpture <phrase role="pagenumber">386</phrase>
+                    </secondaryie>
+                    <secondaryie>silver <phrase role="pagenumber">387</phrase>
+                    </secondaryie>
+                    <secondaryie>textiles <phrase role="pagenumber">387</phrase>
+                    </secondaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>ATMs <phrase role="pagenumber">50</phrase>
+                    </primaryie>
+                </indexentry>
+                <indexentry>
+                    <primaryie>Axu grasslands <phrase role="pagenumber">137</phrase>
+                    </primaryie>
+                </indexentry>
+            </indexdiv>
+            <!-- other <indexdiv>s not included in this sample --></index>
+    </chapter>
+
+    <!-- dummy section for internal links to point to -->
+
+
+
+
+
+
+</book>

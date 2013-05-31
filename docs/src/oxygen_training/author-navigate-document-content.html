@@ -1,0 +1,297 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Navigating the Document Content"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="Using the Keyboard Oxygen XML allows you to quickly navigate through a document using (Tab) to go to the next XML node and (Shift + Tab) to go to the previous one. The caret is moved to the next / ..."/>
+<meta name="DC.subject" content="Author editor, navigation, breadcrumb, bread crumb"/>
+<meta name="keywords" content="Author editor, navigation, breadcrumb, bread crumb"/>
+<meta name="indexterms" content="Author editor, navigation, breadcrumb, bread crumb"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-editor.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-editor.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-display-markup.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-display-markup.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-bookmarks.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="author-navigate-document-content"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Navigating the Document Content</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="author-navigate-document-content">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/author-editor.html" title="The Author Editor"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">The Author Editor</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/author-editor.html" title="The Author Editor"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">The Author Editor</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/author-display-markup.html" title="Displaying the Markup"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Displaying the Markup</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/content-author-role.html" title="General Author Presentation">General Author Presentation</a> / <a class="navheader_parent_path" href="../topics/author-editor.html" title="The Author Editor">The Author Editor</a></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Navigating the Document Content</h1>
+
+  
+  <div class="body">
+    <div class="section"><h2 class="title sectiontitle">Using the Keyboard</h2>
+      
+      <p class="p"><span class="ph">Oxygen XML</span> allows you to quickly
+        navigate through a document using <span class="ph uicontrol"><span class="keyword shortcut">(Tab)</span></span> to go to
+        the next XML node and <span class="ph uicontrol"><span class="keyword shortcut">(Shift + Tab)</span></span> to go to the
+        previous one. The caret is moved to the next / previous editable position. When your caret
+        is positioned in a space preserve element, press a key on your keyboard and then use
+            <span class="ph uicontrol"><span class="keyword shortcut">(Tab)</span></span> to arrange the text. You can also
+        arrange the text using <span class="ph uicontrol"><span class="keyword shortcut">(Tab)</span></span> if you position the
+        cursor in a space preserve element using your mouse. In case you encounter a space preserve
+        element when you navigate through a document and you press no other key, the next
+            <span class="ph uicontrol"><span class="keyword shortcut">(Tab)</span></span> continues the navigation. </p>
+
+      <p class="p">To navigate one word forward or backwards, use <span class="ph uicontrol">Ctrl + Right Arrow</span>,
+        and <span class="ph uicontrol">Ctrl + Left Arrow</span>, respectively. Entities and hidden elements are
+        skipped.</p>
+
+    </div>
+
+    <div class="section"><h2 class="title sectiontitle">Using the Navigation Toolbar</h2>The locations of selected text are stored in
+      an internal list which allows you to navigate between them with the <span class="ph uicontrol"><img class="image" src="../img/bt_go_back.png"/><span class="keyword shortcut">Ctrl+Alt+[</span> Back</span> and
+          <span class="ph uicontrol"><img class="image" src="../img/bt_go_forward.png"/><span class="keyword shortcut">Ctrl+Alt+]</span>
+        Forward</span> buttons from the <span class="ph uicontrol">Navigation</span> toolbar. The
+          <span class="ph uicontrol"><img class="image" src="../img/bt_go_to_last_modification.png"/><span class="keyword shortcut">Ctrl+Alt+G</span> Last Modification</span> button automatically takes
+      you to the latest edited text.</div>
+
+    <div class="section"><h2 class="title sectiontitle">Using the Breadcrumb Helpers </h2>
+      
+      <p class="p">A left-hand side stripe paints a vertical thin light blue bar indicating the span of the
+        element found at caret position. Also a top stripe called <em class="ph i">breadcrumb</em> indicates the
+        path from document root to the current element.</p>
+
+      <div class="fig fignone">
+        
+        <img class="image" src="../img/bt_author_top_stripe.png"/>
+      <p class="figcap">The breadcrumb in Editor view</p></div>
+
+      <p class="p">The last element is also highlighted by a thin light blue bar for easier identification.
+        Clicking one element from the top stripe selects the entire element in the editor view.</p>
+
+      <p class="p">The tag names displayed in the breadcrumb can be customized with an Author extension class
+        that implements <span class="keyword apiname">AuthorBreadCrumbCustomizer</span>. See the <a class="xref" href="http://www.oxygenxml.com/developer.html" target="_blank">Author
+          SDK</a> for details about using it.</p>
+
+      <p class="p">The <span class="ph uicontrol">Append child</span>, <span class="ph uicontrol">Insert before</span> and
+          <span class="ph uicontrol">Insert after</span> submenus of the top stripe popup menu allow you to
+        insert new tags in the document at the place of the selected element. The <span class="ph uicontrol">Append
+          child</span> submenu lists the names of all the elements which are allowed by the
+        schema associated with the current document as child of the current element. The effect is
+        the same as typing the '&lt;' character and selecting an element name from the popup menu
+        offered by <a class="xref" href="streamline-with-content-completion.html">the content completion
+          assistant.</a> The <span class="ph uicontrol">Insert before</span> and <span class="ph uicontrol">Insert
+          after</span> submenus list the elements which are allowed by the schema associated
+        with the current document as siblings of the current element inserted immediately before
+        respectively after the current element.</p>
+
+      <p class="p">The <span class="ph uicontrol">Cut</span>, <span class="ph uicontrol">Copy</span>, <span class="ph uicontrol">Paste</span>
+        and <span class="ph uicontrol">Delete</span> items of the popup menu execute <span class="ph">
+          <a class="xref" href="copying-and-pasting-text.html">the same actions as the
+              <span class="ph uicontrol">Edit</span> menu items with the same name</a> on the elements
+          currently selected in the stripe.</span>
+         The <span class="ph uicontrol">Cut</span> and
+          <span class="ph uicontrol">Copy</span> operations (like the <samp class="ph codeph">display:block</samp> property
+        or the tabular format of the data from a set of table cells) preserve the styles of the
+        copied content. The <span class="ph uicontrol">Paste before</span>, <span class="ph uicontrol">Paste after</span>
+        and <span class="ph uicontrol">Paste as Child</span> actions allow the user to insert an well-formed
+        element before, after or as a child of the currently selected element.</p>
+
+      <p class="p">The <span class="ph uicontrol">Toggle Comment</span> item of the <span class="ph uicontrol">Outline</span> tree
+        popup menu encloses the currently selected element of the top stripe in an XML comment, if
+        the element is not commented, or removes the comment if it is commented.</p>
+
+      <p class="p">Using the <span class="ph uicontrol">Rename Element</span> action the selected element and the
+        elements that have the same name as the current element can be renamed according with the
+        options from the <span class="ph uicontrol">Rename</span> dialog.</p>
+
+    </div>
+
+    <div class="section"><h2 class="title sectiontitle">Using the Folding Support</h2>When working on a large document, the
+        <strong class="ph b">folding support</strong> can be used to collapse some elements content leaving in focus only
+      the ones you need to edit. Foldable elements are marked with a small triangle painted in the
+      upper left corner. Hovering with the mouse pointer over that marker, the entire content of the
+      element is highlighted by a dotted border for quick identification of the foldable area. The
+      following actions are available in the contextual menu, <span class="ph uicontrol">Folding</span> sub-menu:<ul class="ul">
+        <li class="li"><span class="ph"><span class="ph uicontrol"><img class="image" src="../img/bt_toggle_fold.png"/> Toggle Fold</span> -
+            toggles the state of the current fold</span>;</li>
+
+        <li class="li"><span class="ph"><span class="ph uicontrol"><img class="image" src="../img/bt_close_other_folds.png"/> Close Other Folds
+                <span class="keyword shortcut">(Ctrl+NumPad /)</span></span> - folds all the elements except the
+            current element</span>;</li>
+
+        <li class="li"><span class="ph"><span class="ph uicontrol"><img class="image" src="../img/bt_collapse_child_folds.png"/> Collapse Child Folds
+                <span class="keyword shortcut">(Ctrl+NumPad .)</span></span> - folds the elements indented with
+            one level inside the current element</span>; </li>
+
+        <li class="li"><span class="ph"><span class="ph uicontrol"><img class="image" src="../img/bt_expand_child_folds.png"/> Expand Child
+              Folds</span>- unfolds all child elements of the currently selected element</span>; </li>
+
+        <li class="li"><span class="ph"><span class="ph uicontrol"><img class="image" src="../img/ExpandAll16.png"/> Expand All <span class="keyword shortcut">(Ctrl+NumPad
+                *)</span></span> - unfolds all elements in the current document</span>.</li>
+
+      </ul>
+</div>
+
+    <div class="section"><h2 class="title sectiontitle">Using the Linking Support</h2>
+      
+      <p class="p">When working on a suite of documents that refer to one another (references, external
+        entities, XInclude, DITA conref, etc), the <strong class="ph b">linking support</strong> is useful for navigating
+        between the documents. In the predefined customizations that are bundled with <span class="ph">Oxygen XML</span> links are marked with an
+        icon representing a chain link: <img class="image" src="../img/author_link.png"/>. When hovering with
+        the mouse pointer over the marker, the mouse pointer changes its shape to indicate that the
+        link can be followed and a tooltip presents the destination location. Click a followable
+        link to open the referred resource in an editor. The same effect can be obtained by using
+        the action <span class="ph uicontrol">Open file at caret</span> when the caret is in a followable link
+        element.</p>
+
+      <p class="p">To position the cursor at the beginning or at the end of the document you can use <span class="ph uicontrol">
+          <span class="keyword shortcut">(Ctrl+Home)</span></span> and <span class="ph uicontrol">
+          <span class="keyword shortcut">(Ctrl+End)</span></span>, respectively.</p>
+
+    </div>
+
+  </div>
+
+<div class="related-links">
+<ol class="olchildlinks">
+<li class="link olchildlink"><a href="../topics/author-display-markup.html">Displaying the Markup</a>
+</li>
+<li class="link olchildlink"><a href="../topics/author-bookmarks.html">Bookmarks</a>
+</li>
+</ol>
+</div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/author-editor.html" title="The Author Editor"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">The Author Editor</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/author-editor.html" title="The Author Editor"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">The Author Editor</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/author-display-markup.html" title="Displaying the Markup"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Displaying the Markup</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

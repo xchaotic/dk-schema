@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="meta.rnc" type="compact"?>
+<metapresets xmlns="http://dk.com/dk-schema">
+    <!-- groups for samples -->
+
+    <group xml:id="DK_Natural_History">
+        <name>DK Natural History</name>
+        <description>An overarching group classifying all animals, plants and
+            minerals.</description>
+        <group xml:id="DK_Animal_Kindgom">
+            <name>Animal Kingdom</name>
+            <description>A group containing the whole Animal Kingdom</description>
+            <group xml:id="DK_Mammals">
+                <name>Mammals</name>
+                <description>Mammal class.</description>
+                <group xml:id="DK_Egg_Laying_Mammals">
+                    <name>Egg Laying Mammals</name>
+                    <description/>
+                    <item xml:id="DK_Short_Nosed_echidna">
+                        <name>Short Nosed Echidna</name>
+                        <description>Also known as: The Short-beaked Echidna (Tachyglossus
+                            aculeatus), also known as the Spiny Anteater</description>
+                        <source>DK Animal book</source>
+                    </item>
+                </group>
+            </group>
+            <source>Based on Linnaean taxonomy with familiar-sounding English names rather than
+                original latin ones.</source>
+        </group>
+        <source>Based on Linnaean taxonomy with familiar-sounding English names rather than original
+            latin ones.</source>
+    </group>
+    <group xml:id="MILHIS_Fields">
+        <name>Fields</name>
+        <group xml:id="MILHIS_Title">
+            <name>Title</name>
+            <item xml:id="MILHIS_Ammunition">
+                <name>Ammunition</name>
+            </item>
+            <item xml:id="MILHIS_Armour"/>
+            <item xml:id="MILHIS_Ammunition"/>
+        </group>
+    </group>
+    <group xml:id="DK_Natural_History_identifiers">
+        <name>DK Natural History Identifiers</name>
+        <description>Identfiers such as species name, chemical formula etc.</description>
+        <item xml:id="DK_Common_Name">
+            <name>Common Name</name>
+            <description>The species' common name</description>
+            <source>DK</source>
+        </item>
+        <item xml:id="DK_Latin_Name">
+            <name>Latin Name</name>
+            <description>The species' latin name</description>
+            <source>DK</source>
+        </item>
+        <source>DK</source>
+    </group>
+
+    <group xml:id="DK_habitat">
+        <name>Habitat</name>
+        <item xml:id="habitat_temperate_forest">
+            <name>Temperate Forest</name>
+            <description>Temperate Forest Including Woodland</description>
+            <source>DK Animal</source>
+        </item>
+        <item xml:id="habitat_desert">
+            <name>Desert</name>
+            <description>Desert and semi-desert</description>
+            <source>DK Animal</source>
+        </item>
+        <item xml:id="habitat_open">
+            <name>Open Habitats</name>
+            <description>Open habitats including grassland, morr, heath, savanna, fields,
+                scrub</description>
+            <source>DK Animal</source>
+        </item>
+        <source>DK Natural History</source>
+    </group>
+
+    <group xml:id="DK_Natural_History_measurements">
+        <name>Measurements</name>
+        <description>Measurements</description>
+        <item xml:id="DK_animal_length">
+            <name>Length</name>
+            <description>A length measurement of a mammal</description>
+            <source>DK Animal</source>
+        </item>
+        <item xml:id="DK_tail_length">
+            <name>Tail</name>
+            <description>A tail measurement of a mammal</description>
+            <source>DK Animal</source>
+        </item>
+        <source>DK Animal</source>
+    </group>
+
+    <group xml:id="DK_Countries_and_Teritories">
+        <name>DK Countries, Regions and Teritories</name>
+        <description>A list more loose than ISO which can also include parts of countries and
+            continents and other geographcial regions.</description>
+        <group xml:id="DK_Australia_and_Oceania">
+            <name>Australia and Oceania</name>
+            <ref idref="AUSTRALIA"/>
+
+            <item xml:id="DK_East_Australia" >
+                <name>East Australia</name>
+                <source>DK Animal</source>
+            </item>
+            <item xml:id="DK_New_Guinea">
+                <name>New Guinea</name>
+                <description>The island as opposed to the the country</description>
+                <source>DK Animal</source>
+            </item>
+            <item xml:id="DK_Tasmania">
+                <name>Tasmania</name>
+                <description>The island of Tasmania</description>
+                <source>DK Animal</source>
+            </item>
+        </group>
+        <source>DK</source>
+    </group>
+
+
+    <group xml:id="ISO_Country_Codes">
+        <name>ISO Country Codes</name>
+        <description>ISO Country codes</description>
+        <item xml:id="AU">
+            <name>AUSTRALIA</name>
+            <source>ISO</source>
+        </item>
+        <item xml:id="PG">
+            <name>PAPUA NEW GUINEA</name>
+            <source>ISO</source>
+        </item>
+        <item xml:id="GB">
+            <name>UNITED KINGDOM</name>
+            <source>ISO</source>
+        </item>
+        <item xml:id="FI">
+            <name>Finland</name>
+            <source>ISO</source>
+        </item>
+        <source>ISO</source>
+    </group>
+
+    <group xml:id="ISO_Countries">
+        <name>ISO Country Codes</name>
+        <description>ISO Country codes</description>
+        <item xml:id="AUSTRALIA">
+            <name>AUSTRALIA</name>
+            <source>ISO</source>
+        </item>
+    </group>
+
+    <group xml:id="SI_units">
+        <name>SI Units</name>
+        <description>International System of Units as defined by International Committee for Weights
+            and Measures.</description>
+        <item xml:id="SI_meter">
+            <name>Meter</name>
+            <source>CGPM</source>
+        </item>
+    </group>
+
+    <group xml:id="SI_derived_units">
+        <name>SI derived units</name>
+        <item xml:id="SI_centimeter">
+            <name>Centimeter</name>
+            <description>1/100th of a meter.</description>
+            <source>CGPM</source>
+        </item>
+    </group>
+
+    <group xml:id="imperial_units">
+        <name>Imperial Units</name>
+        <item xml:id="imperial_inch">
+            <name>Imperial Inch</name>
+            <source>Weights and Measures Act 1959</source>
+        </item>
+    </group>
+
+
+    <group xml:id="test_001">
+        <name>Test group for samples</name>
+        <group xml:id="Paris_001">
+            <name>Paris</name>
+            <description>All the worthwhile attractions in Paris</description>
+            <item xml:id="Versaiile_001">
+                <name>Versaille</name>
+                <source>Rough Guides</source>
+            </item>
+            <item xml:id="Eiffel_001">
+                <name>Eiffel Tower</name>
+                <source>Rough Guides</source>
+            </item>
+
+        </group>
+        <group xml:id="Children_001">
+            <name>Children’s Attractions</name>
+            <ref idref="Eiffel_001"/>
+
+        </group>
+        <group xml:id="Museums_001">
+            <name>Museums</name>
+            <ref idref="Versaiile_001"/>
+            <source>Top Ten</source>
+        </group>
+        <group xml:id="Children_Paris_001">
+            <name>Paris for Children</name>
+            <ref idref="Eiffel_001"/>
+        </group>
+
+        <group xml:id="COOKEXP_001">
+            <name>Cook Express</name>
+            <description>Cook Express Classifications</description>
+            <item xml:id="a_15minutes_cook">
+                <name>15 minutes cooking time</name>
+                <description>Meals that take less than 15 minutes to cook.</description>
+                <source>Cook Express</source>
+            </item>
+            <item xml:id="healthy_001">
+                <name>Healthy meal</name>
+                <description>A meal that doesn't contain a lot of unsaturated fat acids, is not too
+                    high in carbohydrates and not too salty.</description>
+                <source>Cook Express</source>
+            </item>
+            <item xml:id="serves4">
+                <name>Meal for 4</name>
+                <description>A meal that serves at least four people</description>
+                <source>Cook Express</source>
+            </item>
+
+
+        </group>
+        <group xml:id="Ingredients_001">
+            <name>Cookery Ingredients</name>
+            <description>a list of all ingredients</description>
+            <item xml:id="roastbeef_001">
+                <name>Roast Beef</name>
+                <source>Cook Express</source>
+            </item>
+            <item xml:id="spinach_001">
+                <name>fresh spinach leaves</name>
+                <source>Cook Express</source>
+            </item>
+
+
+        </group>
+        <group xml:id="dataset_001">
+            <name>Dataset Items</name>
+            <group xml:id="NaturalHistory_001">
+                <name>Natural History artifacts</name>
+                <group xml:id="animal_categories_001">
+                    <name>Animal Kingdom Classification Categories</name>
+                    <item xml:id="phylum">
+                        <name>phylum</name>
+                        <source>Illustrated Encyclopedia of Animals</source>
+                    </item>
+                    <item xml:id="class_animal">
+                        <name>class</name>
+                        <source>Illustrated Encyclopedia of Animals</source>
+                    </item>
+                    <item xml:id="orders">
+                        <name>orders</name>
+                        <source>Illustrated Encyclopedia of Animals</source>
+                    </item>
+                    <item xml:id="families">
+                        <name>families</name>
+                        <source>Illustrated Encyclopedia of Animals</source>
+                    </item>
+                    <item xml:id="species">
+                        <name>species</name>
+                        <source>Illustrated Encyclopedia of Animals</source>
+                    </item>
+                </group>
+            </group>
+
+
+
+
+        </group>
+
+
+
+    </group>
+
+
+
+
+
+
+
+
+
+</metapresets>

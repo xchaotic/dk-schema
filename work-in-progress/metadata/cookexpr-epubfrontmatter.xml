@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-common.rnc" type="compact"?>
+<book xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="COOEXP">
+    <info>
+        <title>Cook Express</title>
+        <author>
+            <orgname>Dorling kindersley Limited</orgname>
+            <address>
+                <city>London</city>
+                <street>80 Strand</street>
+                <postcode>WC2R 0RL</postcode>
+                <country>United Kingdom</country>
+            </address>
+            <uri>www.dk.com</uri>
+        </author>
+        <titleabbrev>COOEXP</titleabbrev> <!-- not really used for anything epub related yet -->
+        <volumenum></volumenum> <!-- one of the options to indicate ISBN -->
+    </info>
+    <chapter xml:id="COOEXP006INTROD">
+        <title>Introduction</title>
+        <para>
+            <phrase role="leadin">My obsession started many years ago</phrase> – cookery books by the side of bed, and stacked high on heaving shelves. I constantly daydreamed about the next meal, and the need to be stirring a big pot of something on the hob. I’m not sure this constitutes being a “foodie” or whether it just means I am plain greedy! However, it certainly filled me with enough enthusiasm, 20 years ago, to embark upon a career in food.</para>
+    </chapter>
+    <chapter xml:id="COOEXP008USEINF">
+        <title>Useful Information</title>
+        <para>These charts and guidelines are here to help you in the kitchen, with measurements, ingredients information, and equipment tips, and guide to the symbols that accompany every recipe in the book. All the recipes have been tested on a gas ring hob and an electric oven (for a fan oven, reduce the temperature by at least 10°C). If in doubt about how accurate your oven is, it may be wise to invest in an oven thermometer.</para>
+    </chapter>
+    <chapter xml:id="COOEXP010RECCHO">
+        <title>Recipe Choosers</title>
+        <para>An instant visual reference to a selection of super-fast recipes for meat, fish, vegetarian dishes, and desserts – 15 minutes from start to finish, or 30 minutes from start to finish, including both preparation and cooking time.</para>
+    </chapter>
+    <chapter xml:id="COOEXP030TECCHO">
+        <title>Technique Chooser</title>
+        <para><!-- skipped --></para>
+    </chapter>
+    <part xml:id="COOEXP032-281EVERYD">
+        <title>Everyday</title>
+        
+        <chapter xml:id="COOEXP034-053NOCOO">
+            <title>No cook</title>
+            <para>Instant food – no heat required.</para>
+            
+        </chapter>
+        <!-- skipped some chapters -->
+        <chapter xml:id="COOEXP216-245GETMOS">
+            <title>Get the most from your roast</title>
+            <para role="intro" xml:id="COOEXP217GETMOS_001">Recipes for roast meat, poultry, and fish, and how to use the leftovers.</para>
+            <section role="recipe" xml:id="COOEXP241BEEBEE"> <!-- from metadata/cook-express.xml -->
+                <title>Beef with Beetroot and Spinach</title>
+                <info>
+                    <meta metaref="a_15minutes_cook"/>
+                    <meta metaref="healthy_001"/>
+                    <meta metaref="serves4"/>
+                </info>
+                <variablelist role="ingredients" xml:id="COOEXP241BEEBEE_004">
+                    <varlistentry role="ingredient" xml:id="COOEXP241BEEBEE_005"><!-- xml:id skipped later for brvity -->
+                        <term role="weight">350g</term>
+                        <listitem><para>leftover <phrase role="ingredient" metaref="roastbeef_001">roast beef</phrase>, sliced</para></listitem>
+                        
+                    </varlistentry>
+                    <varlistentry role="ingredient">
+                        <term role="weight">250g</term>
+                        <listitem><para><phrase role="ingredient" metaref="spinach_001">fresh spinach leaves</phrase>, rinsed</para></listitem>
+                    </varlistentry>
+                    
+                </variablelist>
+                <procedure role="method" xml:id="COOEXP241BEEBEE_013">
+                    <step xml:id="COOEXP241BEEBEE_014">
+                        <!-- stepnum in unnecessary in this case and is hre only for illustration, no need to use it -->
+                        <para><phrase role="stepnum">1</phrase>In a large bowl, gently toss together the leftover beef, spinach, and beetroot. In a small bowl or jug, whisk together the olive oil, balsamic vinegar, and citrus juice. Season with salt and black pepper.</para>
+                    </step>
+                    <step xml:id="COOEXP241BEEBEE_015">
+                        <para><phrase role="stepnum">2</phrase>When ready to serve, drizzle the dressing over the beef and beetroot salad, and scatter over the thyme leaves.</para>
+                    </step>
+                </procedure>
+                <mediaobject condition="prt" xml:id="COOEXP241BEEBEE_018"><imageobject><imagedata fileref="cooexp241beebee_018.jpg"/></imageobject></mediaobject>  
+            </section>
+        </chapter>
+    </part>
+</book>

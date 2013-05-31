@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="animal"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title xml:id="animal_000">Animal Encyclopedia</title>
+    <glossary xml:id="animal_001">
+        <title>Glossary</title>
+        <glossentry xml:id="animal_002">
+            <glossterm>Aerial</glossterm>
+            <glossdef>
+                <para>Relating to air.</para>
+            </glossdef>
+        </glossentry>
+        <glossentry xml:id="animal_003">
+            <glossterm>Agile</glossterm>
+            <glossdef>
+                <para>Able to move quickly and easily.</para>
+            </glossdef>
+        </glossentry>
+
+        <glossentry xml:id="animal_004">
+            <glossterm>Anal</glossterm>
+            <glossdef>
+                <para>of fins, near the tail.</para>
+            </glossdef>
+        </glossentry>
+
+        <!-- text removed for brevity -->
+    </glossary>
+
+</book>

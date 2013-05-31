@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ENCHOM">
+    <!-- Sample mark-for directory articles as per the Docbook schema -->
+    <!-- Reference title: Encyclopedia of Homeopathy, pg. 312   -->
+    <title>Encyclopedia of Homeopathy</title>
+    <chapter>
+        <title>Introduction</title>
+        <section xml:id="ENCHOM312HOWFIN_001" role="directory">
+            <title>Useful Addresses</title>
+            <section xml:id="ENCHOM312HOWFIN_002" role="dir_section">
+                <title>United States</title>
+                <section xml:id="ENCHOM312HOWFIN_003" role="dir_section">
+                    <title>Organizations</title>
+                    <para>The following organizations can help you find a homeopathic practitioner
+                        in a particular area:</para>
+                    <section xml:id="ENCHOM312HOWFIN_004" role="dir_entry">
+                        <title>Council for Homeopathic Certification</title>
+                        <address>
+                        <otheraddr>PMB 187</otheraddr>
+                        <street>16915 SE 272nd Street, Ste. #100</street>
+                        <city>Covington</city>
+                        <postcode>WA 98042</postcode>
+                        <phone>(866) 242-3399</phone>
+                        <uri>http://www.homeopathicdirectory.com</uri>
+                    </address>
+                        <para>Dummy dummy.</para>
+                    </section>
+                </section>
+                <!-- text removed -->
+            </section>
+        </section>
+    </chapter>
+</book>

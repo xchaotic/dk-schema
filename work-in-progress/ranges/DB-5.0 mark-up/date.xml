@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-extensions.rnc" type="compact"?>
+<!-- date and ranges in general as per the Docbook DTD -->
+<!-- Reference title: EWG Aztec (Screenshot not available, please refere to the book)-->
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="EWG_AZTEC066TIMELI" remap="timeline">
+    <title>Timeline</title>
+    <!-- An example to show how dates would be marked-up according to the DK-Schema 2.0 (based on Docbook 5.0) -->
+    <section xml:id="EWG_AZTEC066TIMEL1_001">
+        <title><date>c. 13,000 B.C.</date></title>
+        <para>Asian hunter-gatherers probably make the first crossings into Alaska and the Yukon 
+            in North America over the Bering Strait; by c. <date>11,000 B.C.</date> there are people in Chile.</para>
+    </section>
+    
+    <section xml:id="EWG_AZTEC066TIMEL1_006">
+        <title><range class="startofrange" xml:id="EWG_AZTEC066TIMEL1_007"/>
+            <date>1500 B.C.</date> – <date>300 A.D.</date>
+            <range xml:id="EWG_AZTEC066TIMEL1_008" class="endofrange" startref="EWG_AZTEC066TIMEL1_006"/></title>
+        <para>The extent of the Preclassic Period; the Olmecs dominate.</para>
+        
+        
+    </section>
+</article>

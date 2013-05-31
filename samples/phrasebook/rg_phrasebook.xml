@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/phrasebook/phrasebook.rnc" type="compact"?>
+<book xml:id="RGPB_GERMAN_test" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <chapter xml:id="RGPB_GERMAN_letterB">
+        <title>B</title>
+        <!-- different usages of a certain work or phrase should be captured using separate phrase entry elements and grouped using standard Docbook elements -->
+        <section xml:id="RGPB_GERMAN041BUS">
+            <title xml:id="RGPB_GERMAN041BUS_title">busy</title>
+            <!-- busy usage1: restaurant etc. -->
+            <phrase_entry xml:id="RGPB_GERMAN041BUS1_1">
+                <sense>
+                    <xref condition="dig" xlink:href="#RGPB_GERMAN041BUS_title"
+                        role="phrase_entry_ref"/>
+                    <!-- optionally indicate more clearly that this sense applies to "busy" -->
+                    <usg>(restaurant etc.)</usg>
+                </sense>
+                <form>
+                    <orth>voll</orth>
+                    <pron>[foll]</pron>
+                </form>
+                <!-- busy usage2: restaurant etc. -->
+            </phrase_entry>
+
+            <phrase_entry xml:id="RGPB_GERMAN041BUS1_2">
+                <!-- optionally an attribute can be used to further link the blocks together, for example cref="RGPB_GERMAN041BUS1_1" -->
+                <sense>
+                    <xref condition="dig" xlink:href="#RGPB_GERMAN041BUS_title"
+                        role="phrase_entry_ref"/>
+                    <usg>(telephone)</usg>
+                </sense>
+                <form>
+                    <orth>besetzt</orth>
+                    <pron>[bezetst]</pron>
+                </form>
+                <!-- busy usage3: busy tomorrow -->
+            </phrase_entry>
+            <phrase_entry xml:id="RGPB_GERMAN041BUS1_3">
+                <sense>
+                    <def>I’m busy tomorrow</def>
+                </sense>
+                <form>
+                    <orth>morgen bin ich beschäftigt</orth>
+                    <pron>[besheftisht]</pron>
+                </form>
+            </phrase_entry>
+        </section>
+        <!-- illustrates detailed parts of speech syntax -->
+        <section xml:id="RGPB_GERMAN041CALL">
+            <title xml:id="RGPB_GERMAN041CALL_title">call</title>
+
+            <phrase_entry xml:id="RGPB_GERMAN041CALL1_3">
+                <sense>
+                    <xref condition="dig" xlink:href="#RGPB_GERMAN041CALL_title"
+                        role="phrase_entry_ref"/>
+                </sense>
+                <gramGrp> (<partofspeech>verb</partofspeech>) </gramGrp>
+                <form>
+                    <orth>rufen</orth>
+                    <pron>[r00fen]</pron>
+                </form>
+
+
+            </phrase_entry>
+        </section>
+
+
+
+    </chapter>
+</book>

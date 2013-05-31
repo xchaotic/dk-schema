@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-extensions.rnc"?>
+<!-- this sample is not valid against the current DK Schema -->
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="FAM001SEQUEN_001">
+    <title>Sequences of AED instructions</title>
+    <subtitle role="chapterTitle">how to use an AED</subtitle>
+    <para>The AED will start to give you a series of visual and verbal prompts as soon as it is switched on. There are several difference AED models available, seach of which has different voice prompts. You should always follow the prompts given by the aED that you are using until advanced emergency care is available.
+    </para>
+    <section role="flowchart" xml:id="FAM001FLOWCH_001">
+        <title/>
+        <info>
+            <extendedlink>
+                <locator xlink:href="FAM001FLOWCH_004" xlink:label="AED_switch_on"/>
+                <locator xlink:href="FAM001FLOWCH_005" xlink:label="AED_ready_analyze"/>
+                <locator xlink:href="FAM001FLOWCH_006" xlink:label="AED_shock_needed"/>
+                <locator xlink:href="FAM001FLOWCH_007" xlink:label="AED_shock_deliver"/>
+                <locator xlink:href="FAM001FLOWCH_008" xlink:label="AED_chest_compression"/>
+                <locator xlink:href="FAM001FLOWCH_009" xlink:label="AED_recovery_position"/>
+                <locator xlink:href="FAM001FLOWCH_010" xlink:label="AED_shock_notneeded"/>
+                <locator xlink:href="FAM001FLOWCH_011" xlink:label="AED_rescue_breath"/>
+                <locator xlink:href="FAM001FLOWCH_012" xlink:label="AED_reanalyze_rhythm"/>
+                
+                <arc xlink:from="AED_switch_on" xlink:to="AED_ready_analyze"/>
+                <arc xlink:from="AED_ready_analyze" xlink:to="AED_shock_needed" xlink:title="yes"/>
+                <arc xlink:from="AED_ready_analyze" xlink:to="AED_shock_notneeded" xlink:title="no"/>
+                <arc xlink:from="AED_shock_needed" xlink:to="AED_shock_deliver"/>
+                <arc xlink:from="AED_shock_deliver" xlink:to="AED_chest_compression"/>
+                <arc xlink:from="AED_chest_compression" xlink:to="AED_reanalyze_rhythm"/>
+                <arc xlink:from="AED_reanalyze_rhythm" xlink:to="AED_ready_analyze"/>
+                <arc xlink:from="AED_shock_notneeded" xlink:to="AED_rescue_breath"/>
+                <arc xlink:from="AED_rescue_breath" xlink:to="AED_reanalyze_rhythm"/>
+                <arc xlink:from="AED_reanalyze_rhythm" xlink:to="AED_ready_analyze"/> 
+            </extendedlink>
+        </info>
+        <mediaobject xml:id="FAM001FLOWCH_002">
+            <imageobject xml:id="FAM001FLOWCH_003">
+                <imagedata fileref="AEDflowchart.jpg"/>
+            </imageobject>
+        </mediaobject>
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_004">
+          <title/>
+            <itemizedlist mark="bullet">
+                <listitem>
+                    <para>Switch AED on.</para>
+                </listitem>
+                <listitem>
+                    <para>Attach pads to casualty's chest.</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_005">
+            <title/>
+            <para>AED gets ready to analyse the casualty's heart rhythm. It may state "Stand clear, analysing now" or "Analysing". Make sure that no-one is touching the casualty.</para>
+            <para role="flowchart_question">Is a shock advised?</para>
+       </section>
+
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_006">
+        <title/>
+           <para>AED advised that a shock is needed.</para>
+           <para>The machines charges up.</para>
+        </section>
+
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_007">
+            <title/>
+            <para>AED instructs you to deliver the shock.</para>
+            <itemizedlist mark="bullet">
+                <listitem>
+                    <para>Make sure that everyone is clear of the casualty.</para>
+                </listitem>
+                <listitem>
+                    <para>Push the shock button.</para>
+                </listitem>
+            </itemizedlist>
+            <para>AED delivers the shock. The casualty will appear to "jump" with each shock. This is quite normal.</para>
+        </section>
+
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_008">
+            <title/>
+            <para>AED instructs you to carry out chest compressions and rescue breath (CPR) 30:2 for two minutes before it re-analyses.</para>
+         </section>
+
+
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_009">
+            <title/>
+        <para>The AED re-analyses heart rhythm.</para>
+        <itemizedlist mark="bullet">
+            <listitem>
+                <para>If at any time the casualty starts breathing normally, place him in the recovery position (pp 64-65). Leave the AED attached to the casualty.</para>
+            </listitem>
+        </itemizedlist>
+        </section>
+        
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_010">
+            <title/>
+            <para>AED advises that no shock is needed.</para>
+        </section>   
+        
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_011">
+            <title/>
+            <para>AED instructs you to carry out chest compressions and rescue breath (CPR) 30:2 for two minutes before it re-analyses heart rhythm.</para>
+        </section>
+        
+        <section role="flowchart_step" xml:id="FAM001FLOWCH_012">
+            <title/>
+            <para>The AED re-analyses heart rhythm.</para>
+        </section>
+
+    </section>   
+</section>
+
+
+
+
+
+

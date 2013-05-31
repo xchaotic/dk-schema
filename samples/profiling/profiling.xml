@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-meta-enumerations.rnc" type="compact"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="5.0" xml:id="ID">
+	<title>Profiling variants</title>
+	<!-- Examples to show Profiling of inline text and full element blocks. Please use profiling at the lowest possible level. The condition attributes need to be accompanied by cref attributes everywhere, except for the cases where there is only one condition, i.e. "prt". In such cases cref is not required. -->
+	<section xml:id="ID_001">
+		<title>section 1</title>
+		<!-- DUMMY examples to show conditional formatting of 'inline text' -->
+		<!-- Case I: inline conditioning. This is an ideal case scenario. Profiling has been done at the lowest possible level (condition assigned to the link and xref elements) and no additional tags, like pharse, have been used-->
+		<para>para text (See <link linkend="ID_003" condition="prt" cref="ID_001_COND2">page
+				16</link>
+			<xref linkend="ID_003" condition="dig" cref="ID_001_COND2"/>) para text.</para>
+		<!-- Case II: use of phrase. Phrases should be used only where text needs to be modified/added to suit the digital format -->
+		<para>para text (See <phrase condition="prt" cref="ID_001_COND3">
+				<link linkend="ID_002">box</link> on the left</phrase>
+			<phrase condition="dig" cref="ID_001_COND3">section <xref linkend="ID_002"/>
+			</phrase>) para text.</para>
+		<!-- Case III: entire block repeated. This should be avoided in order to prevent verbosity in the XML. However, it provides an alternative in cases where multiple phrase tags are required and which could lead to confusion and errors regarding extra spaces etc. -->
+		<para condition="prt" cref="ID_001_COND1">para text (See <link linkend="ID_003">page
+				16</link>). An example has been shown on the <link linkend="ID_002"
+			>left</link>.</para>
+		<para condition="dig" cref="ID_001_COND1">para text (See <xref linkend="ID_003"/>). An
+			example has been shown under <xref linkend="ID_002"/>.</para>
+	</section>
+	<section xml:id="ID_002">
+		<title>section 2 (box)</title>
+		<para>para text para text.</para>
+	</section>
+	<!-- Pg. 16 -->
+	<section xml:id="ID_003">
+		<title>section 3</title>
+		<para>para text para text.</para>
+	</section>
+	<!-- Actual examples to show conditional formatting of 'inline text'. -->
+	<!-- Example 1: Title: The Diabetes Cookbook, Pg 08 (Please refer to screenshot: 'profiling1.jpg')-->
+	<section xml:id="DIACOO008DIADIE_001">
+		<title>Diabetes and the Diet</title>
+		<mediaobject xml:id="DIACOO008DIADIE_002">
+			<imageobject>
+				<imagedata fileref="../../screenshots/profiling/diacoo008diadie_002.jpg"/>
+			</imageobject>
+			<caption>
+				<para>
+					<phrase condition="prt">LEFT: </phrase>
+					<link linkend="DIACOO081HERPAS">HERBED PASTA SALAD</link>
+					<phrase condition="prt"> (see <link linkend="DIACOO081HERPAS">page
+						81</link>)</phrase>
+				</para>
+			</caption>
+		</mediaobject>
+		<!-- text removed for sample purposes -->
+		<section xml:id="DIACOO081HERPAS">
+			<title>HERBED PASTA SALAD</title>
+			<para>para text</para>
+		</section>
+		<!--Example 2: Title: The Diabetes Cookbook, Pg 60 (Please refer to screenshot: 'profiling2.gif')-->
+		<section xml:id="DIACOO060PAELLA">
+			<title>Star Ingredient</title>
+			<para>.....does not cause cholesterol levels (see <phrase condition="dig"
+					cref="DIACOO060PAELLA_COND1">
+					<xref linkend="DIACOO012CONDIA"/> and <xref linkend="DIACOO018DIADIE"/>
+				</phrase>
+				<phrase condition="prt" cref="DIACOO060PAELLA_COND1">pages 12 and 18</phrase>) to
+				rise as much as saturated fat or other factors, such as being overweight.</para>
+		</section>
+		<!-- text removed for sample purposes -->
+		<section xml:id="DIACOO012CONDIA">
+			<title>Controlling Diabetes</title>
+			<para>para text para text.</para>
+		</section>
+		<section xml:id="DIACOO018DIADIE">
+			<title>Diabetes and the Diet</title>
+			<para>para text para text.</para>
+		</section>
+	</section>
+
+	<!-- Example 4: Table changed into image -->
+	<section xml:id="ID_004">
+		<title>section 4</title>
+		<mediaobject xml:id="ID_005" condition="dig" cref="ID_005_COND1">
+			<imageobject>
+				<imagedata fileref="../../screenshots/profiling/ePub - EM_MOTPEO.gif"/>
+			</imageobject>
+		</mediaobject>
+		<table frame="all" condition="prt" cref="ID_005_COND1">
+			<title>Methods of linking pay and performance</title>
+			<tgroup cols="3">
+
+				<thead>
+					<row>
+						<entry>Method</entry>
+						<entry>Positive impact</entry>
+						<entry>Negative impact</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Directly linking bonus to achieve specific targets</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Makes the reward mechanism very clear</para>
+								</listitem>
+								<listitem>
+									<para>Encourages very specific behaviour</para>
+								</listitem>
+							</itemizedlist>
+						</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Can become very rigid and therefore irrelevant if
+										circumstances at the workplace change</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+					</row>
+					<row>
+						<entry>Indirectly linking bonus and pay to performance</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Allows managers to exercise their judgement</para>
+								</listitem>
+								<listitem>
+									<para>Allows a more rounded view of performance</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Makes the reward mechanism less clear</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+					</row>
+					<row>
+						<entry>Setting targets through consultation</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Motivates people through engagement in the target setting
+										process</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Can become a negotiation</para>
+
+
+								</listitem>
+								<listitem>
+									<para>Will encourage people to set easy targets</para>
+								</listitem>
+								<listitem>
+									<para>Will encourage people to hoard (rather than share)
+										information</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+					</row>
+					<row>
+						<entry>Linking size of incentive to goals</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Large incentives will be acted upon</para>
+								</listitem>
+								<listitem>
+									<para>Small incentives help communication of goals</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+						<entry>
+							<itemizedlist>
+								<listitem>
+									<para>Large incentives may encourage cheating</para>
+								</listitem>
+								<listitem>
+									<para>Small incentives may fail to motivate people</para>
+								</listitem>
+
+							</itemizedlist>
+						</entry>
+					</row>
+
+				</tbody>
+			</tgroup>
+		</table>
+
+		<!-- Example 5: Entire block removed (Just add condition "prt") -->
+		<!-- see EM_DIGREV.jpg for how it looks in the book -->
+		<mediaobject xml:id="ID_007" condition="prt">
+			<imageobject>
+				<imagedata fileref="../../screenshots/profiling/EM_DIGREV.jpg"/>
+			</imageobject>
+		</mediaobject>
+	</section>
+	<!-- Example 6: Imperial vs metric, source: PN Mushrooms -->
+	<section>
+		<title>PN Mushrooms</title>
+		<para>
+			<phrase xml:id="ANIMAL090SHOECH_002_metric" condition="metric"
+				cref="ANIMAL090SHOECH_002_imperial">
+				<!--<range class="startofrange" xml:id="ANIMAL090SHOECH_002_range"/>-->
+				<phrase metaref="SI_centimeter">30</phrase>-<phrase metaref="SI_centimeter"
+					>45</phrase>
+				<!--<range class="endofrange" startref="ANIMAL090SHOECH_002_range"/>-->
+				<phrase role="unit"> cm</phrase>
+			</phrase>
+			<phrase xml:id="ANIMAL090SHOECH_002_imperial" condition="imperial"
+				cref="ANIMAL090SHOECH_002_metric"> (<phrase metaref="imperial_inch"
+					>15</phrase>-<phrase metaref="imperial_inch">18</phrase><phrase role="unit">
+					in</phrase>) </phrase>
+		</para>
+	</section>
+</article>

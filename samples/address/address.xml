@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- This is how an address would be marked up as per Docbook 5.0 -->
+<!-- Reference title: Children's Medical Guide, pg. 344, USEFUL ADDRESSES (Screenshot not avaialable, please refer to the book)-->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+	xml:id="CHIMED">
+	<title>Children's Medical Guide</title>
+	<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+		version="5.0" remap="directory" xml:id="CHIMED344USEADD" role="directory">
+		<title>USEFUL ADDRESSES</title>
+		<section xml:id="CHIMED344USEADD_001" role="dir_section">
+			<title>Allergies</title>
+			<section xml:id="CHIMED344USEADD_002" role="dir_entry">
+				<title>Allergy UK</title>
+				<address xml:id="address">
+					<otheraddr>Deepdene House</otheraddr><!-- use otheraddr to indicate auxillary information about the address, such as the house name, or "last house on the left" -->
+					<street>30 Bellegrove Road</street><!-- put street name and number together, the way it should be displayed in a given country -->
+					<city metaref="town">Welling</city><!-- use city element to indicate city, town, village, settlement etc -->
+					<state>Kent</state><!-- use state element to indicate state, region, county, province, canton, territory and similar geographical distinctions  -->
+					<postcode>DA16 3PY</postcode>
+					<country metaref="GB">UK</country><!-- illustrates the usage of ISO-3166 alpha 2 - proposed for country classification -->
+					<phone metaref="GB">020 8303 8525</phone><!-- avoid using country code - they can be generated from the ISO country code attribute -->
+					<uri>www.allergyuk.org</uri><!-- don't include the protocol prefix (http://) in the address and avoid using www. where possible -->
+					<email>info@www.allergyuk.org</email>
+				</address>
+			</section>
+		</section>
+		<section xml:id="CHIMED344USEADD_003" role="dir_section">
+			<title>Breastfeeding</title>
+			<section xml:id="CHIMED344USEADD_004" role="dir_entry">
+				<title>La Leche League</title>
+				<address>
+					<pob>PO Box 29</pob>
+					<otheraddr>West Bridgford</otheraddr>
+					<city>Nottingham</city> <!-- use city element to indicate city, town, village, settlement etc -->
+					<postcode>NG2 7NP</postcode>
+					<country metaref="GB">UK</country> -->
+					<phone metaref="GB">020 7242 1278</phone>
+					<uri>www.laleche.org.uk</uri>
+					<email>lllgb@wsds.co.uk</email>
+				</address>
+			</section>
+			<!-- text removed for sample purposes -->
+		</section>
+	</article>
+	<!-- Reference title: RG to Lost Symbol, pg. 171 (Screenshot included) -->
+	<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+		version="5.0" xml:id="RG_LOSSYM171SCORIT">
+		<title>Scottish Rite Temple</title>
+		<para>John Russell Pope’s .... Shaw district
+			(<address>
+		<street>1733 16th St NW</street></address>; Mon– Thurs: library and museum
+			10am–4.30pm, tours on the hour 10am–4pm; <address><phone>202/232-3579</phone></address>
+			, <uri>www.srmason-sj.org</uri>). ....... and truth.</para>
+		<!-- text removed for sample purposes -->
+	</article>
+	<article>
+		<info>
+			<title>DK Schema Specification</title>
+			<author>
+				<orgname>Penguin Group UK</orgname>
+				<address>
+                <city>London</city>
+                <street>80 Strand</street>
+                <postcode>WC2 0RL</postcode>
+                <country metaref="GB">United Kingdom</country> <!-- The country element can be used twice, if the ISO-3166 country coude is insufficient -->
+				<country>UK</country>
+            </address>
+				<email>dk-schema@dk.com</email>
+			</author>
+		</info>
+		<para>Another example with non-standard address, plase avoid whenever possible</para>
+		<address><otheraddr>Route 5 outside Florence</otheraddr></address>
+	</article>
+</book>

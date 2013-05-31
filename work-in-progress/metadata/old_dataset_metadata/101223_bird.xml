@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample mark-up for the title Animal -->
+<!-- This sample contains dummy destination IDs for the cross references to enable validation of the file. Please assign correct destination ids where required. -->
+<!--Dummy usuage value 'print' has been assigned to illustrations for sample purposes. Pleadse provide correct usuage values in the master XML. Also, correct image extension -".gif" or ".jpg" as per the correct format -->
+<!-- "role" attribute is to be used where semantic value of the content needs to be defined, while "type" should be used where print copy needs to be followed. For instance, paras should carry a "role="leadin" in case the initial bit needs to be highlighted as leadin or the illustrations should carry "role=locator" in case these are small locator kind of maps. On the other hand, the features with the top head 'Human Impact' will carry a "type="human_impact" since in this case the string 'Human Impact' is present in/has been derived from the print and might need to be rendered verbatim in the output as well -->
+<book id="BIRD">
+	<title>Bird <hi role="subtitle">The Definitive Visual Guide</hi>
+	</title>
+	<toc>
+		<head>Contents</head>
+		<toc_entry>
+			<toc_name>About this Book</toc_name>
+			<page_ref>6</page_ref>
+		</toc_entry>
+		<toc_entry>
+			<toc_name>Foreword by Dr Michael Rands, Birdlife International</toc_name>
+			<page_ref>9</page_ref>
+data		<toc_section>
+			<toc_entry>
+				<toc_name>Bird Anatomy</toc_name>
+				<page_ref>24</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Senses</toc_name>
+				<page_ref>26</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Feathers</toc_name>
+				<page_ref>28</page_ref>
+			</toc_entry>
+			<!-- text removed for sample purposes -->
+		</toc_section>
+		<!-- text removed for sample purposes -->
+	</toc>
+	<!-- text removed for sample purposes -->
+	<article id="BIRD006ABOBOO">
+		<head>About this <deftext>content</deftext>
+			<alttext_group>
+				<alttext>Book</alttext>
+			</alttext_group>
+		</head>
+		<intro id="BIRD006ABOBOO_001">
+			<p>
+				<hi role="leadin">This <deftext>content</deftext>
+					<alttext_group>
+						<alttext>book</alttext>
+					</alttext_group> is divided into three <deftext>sections</deftext>
+					<alttext_group>
+						<alttext>chapters</alttext>
+					</alttext_group>.</hi> An overview of the physiology and behaviour of birds is given in the <xref destinationid="BIRD">INTRODUCTION</xref>; the <deftext>section</deftext>
+				<alttext_group>
+					<alttext>chapter</alttext>
+				</alttext_group> on ................................. on orders, families, and individual species of bird.</p>
+		</intro>
+		<section id="BIRD006ABOBOO_002">
+			<head>Introduction</head>
+			<p>This opening <deftext>section</deftext>
+				<alttext_group>
+					<alttext>chapter</alttext>
+				</alttext_group> provides information on the physical characteristics of birds, focusing on the aspects of their physiology that differentiate birds from the rest ............ are also discussed in the closing pages of this chapter.</p>
+			<illustration id="BIRD006ABOBOO_003" sequence="print">
+				<image src="bird006aboboo_003.jpg"/>
+				<caption>
+					<head>Anatomy and physiology</head>
+					<p>These <deftext>sections</deftext>
+						<alttext_group>
+							<alttext>pages</alttext>
+						</alttext_group> include detailed descriptions of the physical characteristics of birds and the ways in which these have evolved to serve the needs of different types of bird in a variety of environments.</p>
+				</caption>
+			</illustration>
+		</section>
+		<!-- text removed for sample purposes -->
+	</article>
+	<!-- text removed for sample purposes -->
+	<chapter id="BIRD022-067INTROD">
+		<head>Introduction</head>
+		<illustration id="BIRD022INTROD_001" usage="print">
+			<image src="bird022introd_001.jpg"/>
+		</illustration>
+		<article id="BIRD024BIRANA">
+			<head>Bird Anatomy</head>
+			<intro id="BIRD024BIRANA_001">
+				<p>
+					<hi role="leadin">some groups of animals</hi> are easily confused, but there are no such problems with birds. They are the only animals that have feathers, and ............................. spend years on the wing before finally landing to breed.</p>
+			</intro>
+			<section id="BIRD024BIRANA_002">
+				<head>Skeleton and muscles</head>
+				<p>All birds have evolved from the same distant ancestors and, as a result, they share the same underlying body plan. Their skeletons contain fewer bones than .....................which averages 40–42ºC (104–107ºF).</p>
+				<illustration id="BIRD024BIRANA_003" usage="print">
+					<image src="bird024birana_003.jpg"/>
+					<caption>
+						<head>Internal organs</head>
+						<p>Birds have similar body systems to mammals, but their organs differ. Most have a crop and a gizzard in the digestive system, and a single opening called the cloaca for excretion and reproduction.</p>
+					</caption>
+					<annotation>
+						<p>oesophagus</p>
+					</annotation>
+					<annotation>
+						<p>crop</p>
+					</annotation>
+					<annotation>
+						<p>liver</p>
+					</annotation>
+					<!-- text removed for sample purposes -->
+				</illustration>
+				<!-- text removed for sample purposes -->
+			</section>
+			<!-- text removed for sample purposes -->
+		</article>
+	</chapter>
+	<chapter id="BIRD098-487BIRSPE">
+		<head>Bird Species</head>
+		<!-- text removed for sample purposes -->
+		<article id="BIRD100CLASSI">
+			<head>Classification</head>
+			<intro id="BIRD100CLASSI_001">
+				<p>
+					<hi role="leadin">Classification is the science</hi> of identifying and categorizing living things and, among ornithologists, few topics generate as much debate. This is because ..................... such as internal processes or behaviour. But in recent years, the advances in molecular biology have allowed ornithologists to go to the very source of bird evolution, by studying DNA itself.</p>
+			</intro>
+			<!-- text removed for sample purposes -->
+		</article>
+		<article id="BIRD102TINAMO">
+			<head>Tinamous</head>
+			<intro id="BIRD102TINAMO_001">
+				<p>
+					<hi role="leadin">Found only in</hi> Central and South America, tinamous superficially resemble <xref destinationid="BIRD">gamebirds</xref>
+					<alttext_group>
+						<alttext> (see <xref destinationid="BIRD">p.107</xref>)</alttext>
+					</alttext_group>, with small heads, plump bodies, and short legs. However, although they can fly, their skeletons show .........................., fast-beating wings but, if threatened, their first instinct is to run away.</p>
+			</intro>
+			<dataset id="BIRD102TINAMO_002" role="classification">
+				<data type="order">Tinamiformes</data>
+				<data type="family">1</data>
+				<data type="species">46</data>
+			</dataset>
+			<!-- text removed for sample purposes -->
+			<entry id="BIRD102GRETIN">
+				<head role="common_name">Great Tinamou</head>
+				<!-- "role" will define the semantic value of the data or the broad data category which could encompass further categories (for eg. size could cover length, height, wingspan etc.), while "type" will always follow the print value. For instance, the "role" for length would be "size", though the "type" would be "length" as it needs to follow the print. For all the other instances, role and type values would be the same.  -->
+				<dataset id="BIRD102GRETIN_002">
+					<data role="taxonomic_info" type="latin_name">Tinamus major</data>
+					<data role="taxonomic_info" type="common_name">Great Tinamo</data>
+					<data role="size" type="length">
+						<data_value>42<unit>cm</unit>
+						</data_value> (<data_value>16<fraction>
+								<numerator>1</numerator>
+								<separator>/</separator>
+								<denominator>2</denominator>
+							</fraction>
+							<unit>in</unit>
+						</data_value>)</data>
+					<data role="weight" type="weight">
+						<data_value>1<unit>kg</unit>
+						</data_value> (<data_value>2<fraction>
+								<numerator>1</numerator>
+								<separator>/</separator>
+								<denominator>4</denominator>
+							</fraction>
+							<unit>lb</unit>
+						</data_value>)</data>
+					<data role="migration" type="migration">Non-migrant</data>
+					<data role="habitat" type="habitat">Primary and secondary rainforest, with an open forest floor</data>
+					<!-- an additional data which appears under some entries in the book -->
+					<data role="conservation_status" type="red_list_category">Vulnerable</data>
+				</dataset>
+				<section id="BIRD102GRETIN_003" role="description">
+					<p>The haunting song of the Great Tinamou, consisting of up to seven tremulous, whistled notes, is one of the most evocative of Neotropical bird sounds, cutting through the forest before dawn and around dusk. It is a large, brown bird that wanders on the forest floor, eating insects, frogs, berries, fruit, and seeds.</p>
+					<illustration id="BIRD102GRETIN_004" usage="print">
+						<image src="bird102gretin_004.jpg"/>
+						<caption>
+							<p>Adult Great Tinamou</p>
+						</caption>
+					</illustration>
+				</section>
+				<illustration id="BIRD102GRETIN_005" role="locator" usage="print">
+					<image src="bird102gretin_005.jpg"/>
+				</illustration>
+			</entry>
+			<!-- text removed for sample purposes -->
+		</article>
+		<!-- text removed for sample purposes -->
+		<article id="BIRD106KIWIS">
+			<head>Kiwis</head>
+			<intro id="BIRD106KIWIS_001">
+				<p>
+					<hi role="leadin">with humpbacked bodies and long</hi>, decurved bills, kiwis are unmistakable, and recognized the world over as New Zealand’s national bird.................... earthworms and other small animals.</p>
+			</intro>
+			<!-- text removed for sample purposes -->
+			<feature id="BIRD106CONVAT" type="human_impact">
+				<head>Conservation</head>
+				<p>Like many of New Zealand’s native birds, kiwis have been decimated by introduced mammals. A nationwide conservation programme is aimed at reversing a decline of upto 5 per cent a year. Conservation measures include setting <xref destinationid="BIRD106CONVAT_001">traps</xref>
+					<alttext_group>
+						<alttext> (right)</alttext>
+					</alttext_group> for rats and stoats, which prey on kiwi chicks.</p>
+				<illustration id="BIRD106CONVAT_001" usage="print">
+					<image src="bird106convat_001.jpg"/>
+				</illustration>
+			</feature>
+			<!-- text removed for sample purposes -->
+			<entry id="BIRD106BROKIW">
+				<head role="common_name">Brown Kiwi</head>
+				<!-- text removed for sample purposes -->
+				<feature id="BIRD106STEISL" type="great_sites">
+					<head>Stewart Island</head>
+					<p>Brown Kiwis are relatively common on New Zealand’s Stewart Island. The island is rich in other bird species including the Yellow-eyed Penguin (the world’s rarest penguin). Predator-free islands around Stewart are home to some of the world’s rarest birds, such as the Kakapo.</p>
+					<illustration id="BIRD106STEISL_001" usage="print">
+						<image src="bird106steisl_001.jpg"/>
+					</illustration>
+				</feature>
+			</entry>
+		</article>
+	</chapter>
+	<!-- text removed for sample purposes -->
+	<glossary id="ANIMAL598GLOSSA">
+		<head>Glossary</head>
+		<gloss_section id="BIRD490GLOSSA_001">
+			<head>A</head>
+			<gloss_entry id="BIRD490GLOSSA_002">
+				<term>adult</term>
+				<description>A fully developed, mature bird that is able to breed. It is in its final plumage, which no longer changes pattern with age. See also <xref destinationid="BIRD">immature</xref>.</description>
+			</gloss_entry>
+			<gloss_entry id="BIRD490GLOSSA_003">
+				<term>aerofoil</term>
+				<description>A bird’s wing is based on an aerodynamic shape called an aerofoil. It is curved outwards along the entire upper surface, to produce an upward force known as lift.</description>
+			</gloss_entry>
+			<!-- text removed for sample purposes -->
+		</gloss_section>
+		<!-- text removed for sample purposes -->
+	</glossary>
+	<index id="BIRD494INDEX">
+		<head>Index</head>
+		<index_section>
+			<head>A</head>
+			<index_entry>
+				<primary_entry>Acadian Flycatcher <page_ref>346</page_ref>
+				</primary_entry>
+			</index_entry>
+			<index_entry>
+				<primary_entry>
+					<hi rend="i">Acanthagenys rufogularis</hi>
+					<page_ref>365</page_ref>
+				</primary_entry>
+			</index_entry>
+			<index_entry>
+				<primary_entry>
+					<hi rend="i">Acanthisitta chloris</hi>
+					<page_ref>334</page_ref>
+				</primary_entry>
+			</index_entry>
+			<!-- text removed for sample purposes -->
+		</index_section>
+		<!-- text removed for sample purposes -->
+	</index>
+</book>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="YOUTOD">
+    <!-- The sample shows title, subtitle, para with role "intro" and emphasis rend "leadin". 
+        It shows the cases for using formalpara OR phrase with role "inline_head" -->
+    <title>Your Toddler</title>
+    <subtitle>Month by Month</subtitle>
+    <article xml:id="YOUTOD246PLALEA">
+        <title>Playing and Learning</title>
+        <para role="intro">
+            <emphasis rend="leadin">Your toddler</emphasis> is much more independent ......... with
+            another child.</para>
+        <!-- text removed -->
+        <!-- the example shows inline-headings, which run into the text. These should be marked with element 'phrase' and role "inline_head" 
+            Reference screenshot: 'list_item_phrase.bmp' -->
+        <section xml:id="YOUTOD246PLALEA_026">
+            <title>Arts and crafts</title>
+            <para>Children are much ................ help with include: <itemizedlist
+                    xml:id="YOUTOD246PLALEA_027">
+                    <listitem>
+                        <para><phrase role="inline_head">Making simple hand puppets</phrase> – then
+                            acting out a story.</para>
+                    </listitem>
+                    <!-- text removed -->
+                    <listitem>
+                        <para><phrase role="inline_head">Simple science</phrase> – such as creating
+                            .....</para>
+                    </listitem>
+                    <listitem><para><phrase role="inline_head">Cutting and sticking.</phrase></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <!-- the example shows distinct headings and associated text. These should be marked as 'fomalpara' with 'title'. 
+        Reference screenshot: 'list_item_formalpara.bmp' -->
+        <section xml:id="YOUTOD246PLALEA_024">
+            <title>Simple card and board games</title>
+            <!-- text remoed for brevity -->
+            <itemizedlist xml:id="YOUTOD246PLALEA_024_001">
+                <listitem>
+                    <formalpara>
+                        <title>Dominoes</title>
+                        <para>Teach children about numbers and matching.</para>
+                    </formalpara>
+                </listitem>
+                <!-- text removed -->
+                <listitem>
+                    <formalpara>
+                        <title>Snakes and ladders</title>
+                        <para> Help children to get used to counting as well as the concepts of “up”
+                            and “down”.</para>
+                    </formalpara>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </article>
+</book>

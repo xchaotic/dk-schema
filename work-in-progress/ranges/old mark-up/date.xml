@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="EWG_AZTEC066TIMELI">
+	<head>Timeline</head>
+	<!-- text removed for sample -->
+	<!-- An example of the date and date range mark-up as per the old DTD model -->
+<!-- Reference title: EWG Aztec (Screenshot not available, please refere to the book)-->
+	<section id="EWG_AZTEC066TIMEL1_001">
+		<head>
+			<date>
+				<modifier>c.</modifier> 13,000 <modifier>B.C.</modifier>
+			</date>
+		</head>
+		<p>Asian hunter-gatherers probably make the first crossings into Alaska and the Yukon in North America over the Bering Strait; by c. 11,000 B.C. there are people in Chile.</p>
+	</section>
+	<!-- Text removed for sample -->
+	<section id="EWG_AZTEC066TIMEL1_006">
+		<head>
+			<date_range>
+				<date>1500</date>
+				<modifier>B.C.</modifier> – <modifier>A.D.</modifier>
+				<date>300</date>
+			</date_range>
+		</head>
+		<p>The extent of the Preclassic Period; the Olmecs dominate.</p>
+	</section>
+</article>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: Animal; Chapter mark-up as per Docbook 5.0  -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ANIMAL">
+    <title>Animal Encyclopedia</title>
+    <!-- text removed -->
+    <part xml:id="ANIMAL082-597ANIKIN">
+        <title>The Animal Kingdom</title>
+        <chapter xml:id="ANIMAL084-257MAMMAL">
+            <title>Mammals</title>
+            <section role="article" xml:id="ANIMAL086MAMMAL">
+                <title>Mammals</title>
+                <para role="intro"><emphasis role="leadin">MAMMALS, THE MOST FAMILIAR</emphasis>
+                    group ...... complex societies.</para>
+                <!-- text removed for brevity -->
+            </section>
+            <section xml:id="ANIMAL090EGGMAM" role="article">
+                <title>Egg-laying Mammals</title>
+                <para role="intro"><emphasis rend="leadin">ALSO KNOWN AS</emphasis> monotremes, this
+                    ........ New Guinea.</para>
+                <!-- text removed for brevity -->
+                <section xml:id="ANIMAL090SHOECH" role="entry">
+                    <title>Short-nosed Echidna</title>
+                    <simplelist xml:id="ANIMAL090SHOECH_001" role="dataset">
+                        <member role="latin_name" remap="data">Tachyglossus aculeatus</member>
+                        <!-- text removed -->
+                    </simplelist>
+                    <mediaobject xml:id="ANIMAL090SHOECH_002" role="locator">
+                        <imageobject>
+                            <imagedata fileref="animal090shoech_002.jpg"/>
+                        </imageobject>
+                    </mediaobject>
+                    <para>The spines of the short-nosed ....... external neck.</para>
+                    <mediaobject xml:id="ANIMAL090SHOECH_003">
+                        <imageobject>
+                            <imagedata fileref="anima090shoech_003.jpg"/>
+                        </imageobject>
+                    </mediaobject>
+                    <!-- content removed -->
+                </section>
+            </section>
+            <!-- content removed -->
+            <section xml:id="ANIMAL116PRIMAT" role="article">
+                <title>Primates</title>
+                <para role="intro"><emphasis rend="leadin">MEMBERS OF THE ORDER PRIMATES</emphasis>
+                    – prosimians, ...... since 1990.</para>
+                <!-- text removed for brevity -->
+                <section xml:id="ANIMAL118PROSIM">
+                    <title>PROSIMIANS</title>
+                    <para role="intro"><emphasis rend="leadin">MORE PRIMITIVE</emphasis> than
+                        monkeys ....... especially the lemurs.</para>
+                    <!-- text removed for brevity -->
+                </section>
+                <section xml:id="ANIMAL122MONKEY">
+                    <title>MONKEYS</title>
+                    <para role="intro"><emphasis rend="leadin">THIS LARGE,</emphasis> diverse ......
+                        laboratory research. </para>
+                    <!-- text removed for brevity -->
+                </section>
+                <!-- content removed -->
+            </section>
+        </chapter>
+        <!-- content removed -->
+    </part>
+    <!-- content removed -->
+</book>

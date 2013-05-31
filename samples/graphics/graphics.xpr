@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="12.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns=""
+            positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="graphics.xpr">
+        <file name="../../screenshots/graphics/BB_illust_group.png"/>
+        <file name="butterfly.xml"/>
+        <file name="../../screenshots/graphics/illustration_encaqu.jpg"/>
+        <file name="informalfigure.xml"/>
+        <file name="mediaobject-encaqu.xml"/>
+    </projectTree>
+</project>

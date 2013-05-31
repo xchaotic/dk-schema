@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title>Table Sample</title>
+    <subtitle>em_mabu046procas_006</subtitle>
+    <section>
+        <title>Essential Mangers</title>
+        <subtitle>St TH</subtitle>
+        <informaltable frame="all">
+            <!-- use informaltable if there is no title, normal table with a title -->
+            <tgroup cols="4">
+                <!-- specify number of columns here -->
+                <colspec colname="c1" colnum="1" colwidth="0.3*"/>
+                <!-- colspec is optional and is used to specify the width, sequence etc of a column.
+                    It is required if you're defining column spans.
+                If you are declaring a colspec, do so for all columns and you have to provide colname for all-->
+                <colspec colname="Criteria" colnum="2" colwidth="1.0*"/>
+                <colspec colname="Customer Ideal" colnum="3" colwidth="1.0*"/>
+                <colspec colname="Priority" colnum="4" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry/>
+                        <entry>Criteria</entry>
+                        <entry>Customer Ideal</entry>
+                        <entry>Priority</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry morerows="1" rotate="1">Product</entry>
+                        <!-- Example on how to do vertical spans:
+                         morerows="1" - cell spans one more row
+                         rotate="1" - rotates the text 90° counterclockwise -->
+                        <entry>Quality</entry>
+                        <entry>Zero Faults</entry>
+                        <entry>7</entry>
+                    </row>
+                    <row>
+                        <!-- don't put an empty entry if morerows="1" has been used on the cell above -->
+                        <entry>Ease of Use</entry>
+                        <entry>No Special Training Required</entry>
+                        <entry>10</entry>
+                    </row>
+                    <row>
+                        <entry morerows="1" rotate="1">Process</entry>
+                        <entry>Ease of Ordering</entry>
+                        <entry>Fast and efficient order systems and delivery</entry>
+                        <entry>8</entry>
+                    </row>
+                    <row>
+                        <!-- don't put an empty entry if morerows="1" has been used on the cell above -->
+                        <entry>Administration</entry>
+                        <entry>Accurate invoices and statements</entry>
+                        <entry>6</entry>
+                    </row>
+                    <row>
+                        <entry morerows="1" rotate="1">People</entry>
+                        <entry>Knowledge of their product and services</entry>
+                        <entry>One person able to answer all question</entry>
+                        <entry>3</entry>
+                    </row>
+                    <row>
+                        <!-- don't put an empty entry if morerows="1" has been used on the cell above -->
+                        <entry>Customer knowledge</entry>
+                        <entry>Able to relate products to customer's needs</entry>
+                        <entry>4</entry>
+                    </row>
+                    <row>
+                        <entry morerows="1" rotate="1">Price</entry>
+                        <entry>Competitive</entry>
+                        <entry>Lowest price available</entry>
+                        <entry>7</entry>
+                    </row>
+                    <row>
+
+                        <entry>Payment terms</entry>
+                        <entry>Favourable credit terms to allow spread payments</entry>
+                        <entry>6</entry>
+                    </row>
+
+                </tbody>
+            </tgroup>
+        </informaltable>
+
+
+
+
+    </section>
+</article>

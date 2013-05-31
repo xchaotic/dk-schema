@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toc>
+		<head>Contents</head>
+		<toc_entry>
+			<toc_name>Foreword by Michael J. Benton</toc_name>
+			<page_ref>8</page_ref>
+		</toc_entry>
+		<toc_section>
+			<toc_entry>
+				<toc_name>Young Earth <hi rend="b">After the Earth’s formation 4.56 billion years ago, a unique series of events and geological processes transformed it into a planet capable of sustaining life.</hi>
+				</toc_name>
+				<page_ref>10</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Exploring Earth’s Past</toc_name>
+				<page_ref>12</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>The Origin of the Earth</toc_name>
+				<page_ref>14</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>The First 500 Million Years</toc_name>
+				<page_ref>16</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plate Tectonics</toc_name>
+				<page_ref>20</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Changing Climates</toc_name>
+				<page_ref>22</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Life and Evolution</toc_name>
+				<page_ref>26</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Classification</toc_name>
+				<page_ref>30</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Mass Extinctions</toc_name>
+				<page_ref>32</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Types of Fossils</toc_name>
+				<page_ref>34</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Information in the Fossil Record</toc_name>
+				<page_ref>38</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Key Fossil Sites</toc_name>
+				<page_ref>42</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>The Geological Timescale</toc_name>
+				<page_ref>44</page_ref>
+			</toc_entry>
+		</toc_section>
+		<toc_section>
+			<toc_entry>
+				<toc_name>Life on Earth <hi rend="b">The earliest-known form of life on Earth appeared about 3.5 billion years ago. From trilobites to tree ferns, hadrosaurs to hominids, this catalog profiles hundreds of fascinating species, as they evolved.</hi>
+				</toc_name>
+				<page_ref>48</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Archean</toc_name>
+				<page_ref>50</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Early life</toc_name>
+				<page_ref>52</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Proterozoic</toc_name>
+				<page_ref>54</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Microscopic life</toc_name>
+				<page_ref>58</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>60</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Cambrian</toc_name>
+				<page_ref>64</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Microscopic life</toc_name>
+				<page_ref>68</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>70</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>78</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Ordovician</toc_name>
+				<page_ref>80</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>84</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>92</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Silurian</toc_name>
+				<page_ref>94</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>98</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>100</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>106</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Devonian</toc_name>
+				<page_ref>108</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>112</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>122</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>128</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Carboniferous</toc_name>
+				<page_ref>140</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>144</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>154</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>162</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Permian</toc_name>
+				<page_ref>170</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>174</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>178</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>182</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Triassic</toc_name>
+				<page_ref>194</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>198</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>202</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>206</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Jurassic</toc_name>
+				<page_ref>222</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>226</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>234</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>244</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Cretaceous</toc_name>
+				<page_ref>280</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>284</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>296</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>304</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Paleogene</toc_name>
+				<page_ref>358</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>362</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>368</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>374</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Neogene</toc_name>
+				<page_ref>386</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>390</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>396</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>404</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Quaternary</toc_name>
+				<page_ref>414</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Plants</toc_name>
+				<page_ref>418</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Invertebrates</toc_name>
+				<page_ref>424</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Vertebrates</toc_name>
+				<page_ref>430</page_ref>
+			</toc_entry>
+		</toc_section>
+		<toc_section>
+			<toc_entry>
+				<toc_name>The Rise of the Humans <hi rend="b">The story of human evolution stretches back seven million years and features an array of species of which our own, Homo sapiens, is the sole survivor.</hi>
+				</toc_name>
+				<page_ref>440</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Human Relatives</toc_name>
+				<page_ref>442</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Human Ancestors</toc_name>
+				<page_ref>444</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Sahelanthropus Tchadensis</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Orrorin Tugenensis</toc_name>
+				<page_ref>446</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Bipedalism</toc_name>
+				<page_ref>447</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Ardipithecus Ramidus</toc_name>
+				<page_ref>448</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Ardipithecus Kadabba</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Australopithecus Garhi</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Australopithecus Anamensis</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Australopithecus Bahrelghazali</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Australopithecus Africanus</toc_name>
+				<page_ref>449</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Kenyanthropus Platyops</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Australopithecus Afarensis</toc_name>
+				<page_ref>450</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Paranthropus Aethiopicus</toc_name>
+				<page_ref>452</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Paranthropus Robustus</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Paranthropus Boisei</toc_name>
+				<page_ref>453</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Origins of Modern Humans</toc_name>
+				<page_ref>454</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Habilis</toc_name>
+				<page_ref>454</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Rudolfensis</toc_name>
+				<page_ref>455</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Ergaster</toc_name>
+				<page_ref>456</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>First Human Migration</toc_name>
+				<page_ref>458</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Erectus</toc_name>
+				<page_ref>460</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Antecessor</toc_name>
+				<page_ref>462</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Heidelbergensis</toc_name>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Homo Neanderthalensis</toc_name>
+				<page_ref>464</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Early Homo Sapiens</toc_name>
+				<page_ref>468</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Out of Africa</toc_name>
+				<page_ref>470</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>European Hunter Gatherers</toc_name>
+				<page_ref>474</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Paleolithic Cave Art</toc_name>
+				<page_ref>476</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>After the Ice</toc_name>
+				<page_ref>478</page_ref>
+			</toc_entry>
+		</toc_section>
+		<toc_entry>
+			<toc_name>Glossary</toc_name>
+			<page_ref>480</page_ref>
+		</toc_entry>
+		<toc_entry>
+			<toc_name>Dinosaur List</toc_name>
+			<page_ref>486</page_ref>
+		</toc_entry>
+		<toc_entry>
+			<toc_name>Index</toc_name>
+			<page_ref>498</page_ref>
+		</toc_entry>
+		<toc_entry>
+			<toc_name>Acknowledgments</toc_name>
+			<page_ref>510</page_ref>
+		</toc_entry>
+	</toc>

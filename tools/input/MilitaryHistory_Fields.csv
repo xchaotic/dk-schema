@@ -1,0 +1,40 @@
+,"Ammunition","Armour","Clothing & Kit","Firearms","Infrastructure","Insignia","Medals","Technology","Troops","Vehicles - Air","Vehicles - Land","Vehicles - Sea","Weapons"
+"Title","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Chapter","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Period","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Spread","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Page","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Name","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Profile","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y","Y"
+"Annotations",,"Y","Y","Y",,,,,,"Y","Y","Y","Y"
+"Date","Y","Y",,"Y",,,,,,,,"Y","Y"
+"Origin",,"Y",,"Y",,,,,,,,"Y","Y"
+"Type",,"Y",,"Y",,,,,,,,,"Y"
+"Length",,"Y",,"Y",,,,,,"Y","Y","Y","Y"
+"Barrel Length",,,,"Y",,,,,,,,,
+"Calibre",,,,"Y",,,,,,,,,
+"Width",,"Y",,,,,,,,"Y","Y",,
+"Diameter",,,,,,,,,,"Y",,,
+"Rotor Diameter",,,,,,,,,,"Y",,,
+"Wingspan",,,,,,,,,,"Y",,,
+"Height",,"Y",,,,,,,,"Y","Y",,
+"Weight",,"Y",,"Y",,,,,,"Y","Y",,"Y"
+"Tonnage",,,,,,,,,,,,"Y",
+"Displacement",,,,,,,,,,,,"Y",
+"Load",,,,,,,,,,,,"Y",
+"Span",,,,,,,,,,,,,"Y"
+"Range",,,,"Y",,,,,,,"Y",,
+"Thickness",,,,,,,,,,,"Y",,
+"Penetration",,,,,,,,,,,"Y",,
+"Engine",,,,,,,,,,"Y","Y","Y",
+"Capacity",,,,,,,,,,"Y",,,
+"Payload",,,,,,,,,,"Y",,,
+"Top Speed",,,,,,,,,,"Y","Y","Y",
+"Average Speed",,,,,,,,,,"Y",,,
+"Cruising Speed",,,,,,,,,,"Y",,,
+"Crew",,,,,,,,,,"Y","Y","Y",
+"Passengers",,,,,,,,,,"Y","Y","Y",
+"Aircraft",,,,,,,,,,,,"Y",
+"Armament",,,,,,,,,,"Y","Y","Y",
+"Grenade",,,,"Y",,,,,,,,,
+"Projectile",,,,"Y",,,,,,,,,

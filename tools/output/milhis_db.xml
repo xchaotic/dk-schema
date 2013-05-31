@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-extensions.rnc" type="compact"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="WEAPON">
+    <!-- Weapon sample (for the Military History Database) illustrating catalogue entry mark-up  -->
+    <title>Weapon</title>
+    <subtitle>A visual history of arms and armour</subtitle>
+    <!-- Text removed for sample purposes -->
+    <chapter xml:id="WEAPON174-273REVWOR">
+        <title xml:id="WEAPON174REVWOR_001">The Revolutionary World (<range class="startofrange" xml:id="WEAPON174REVWOR_002"/>
+            <date xml:id="WEAPON174REVWOR_003">1775</date>-<date xml:id="WEAPON174REVWOR_004">1900</date>
+            <range xml:id="WEAPON174REVWOR_005" class="endofrange" startref="WEAPON174REVWOR_002"/>)</title>
+        <!-- text removed for sample purposes -->
+        <section xml:id="WEAPON256MANREP" role="article" metaref="MILHIS_Manually_Loaded">
+            <title xml:id="WEAPON256MANREP_001">Manually Loaded Repeater Rifles 
+                <range class="startofrange" xml:id="WEAPON256MANREP_002"/>
+                <date xml:id="WEAPON256MANREP_003">1881</date> – <date xml:id="WEAPON256MANREP_004">1891</date>
+                <range xml:id="WEAPON256MANREP_005" class="endofrange" startref="WEAPON256MANREP_002"/>
+            </title>
+            <para role="intro" xml:id="WEAPON256MANREP_006">
+                <phrase role="leadin" xml:id="WEAPON256MANREP_007">The first generation of repeater</phrase> rifles were ... the prone position.</para>
+            <!-- entry would be tagged as section with role "entry", while datasets as simplelists with role "dataset" -->
+            <section xml:id="WEAPON256SCHM18" role="entry">
+                <title xml:id="WEAPON256SCHM18_001">Schmidt-Rubin M1889</title>
+                <simplelist xml:id="WEAPON256SCHM18_002" role="dataset">
+                    <member xml:id="WEAPON256SCHM18_003" metaref="MILHIS_date">1889</member>
+                    <member xml:id="WEAPON256SCHM18_004" metaref="MILHIS_origin">switzerland</member>
+                    <member xml:id="WEAPON256SCHM18_005" metaref="MILHIS_weight" condition="metric">4.45kg</member>
+                    <member xml:id="WEAPON256SCHM18_006" metaref="MILHIS_weight" condition="imperial">9.8lb</member>
+                    <member xml:id="WEAPON256SCHM18_007" metaref="MILHIS_barrel" condition="metric">78cm</member>
+                    <member xml:id="WEAPON256SCHM18_008" metaref="MILHIS_barrel" condition="imperial">30.75in</member>
+                    <member xml:id="WEAPON256SCHM18_009" metaref="MILHIS_calibre" condition="metric">7.5mm</member>
+                </simplelist>
+                <para xml:id="WEAPON256SCHM18_010" role="description">In 1889 Colonel Rudolf Schmidt ... in use until 1987.</para>
+                <mediaobject xml:id="WEAPON256SCHM18_011">
+                    <imageobjectco>
+                        <areaspec>
+                            <!-- here we define optional coordinates for the callouts (CALS coordiantes) -->
+                            <area xml:id="WEAPON256SCHM18_011_001" coords=""/>
+                            <area xml:id="WEAPON256SCHM18_011_002" coords=""/>
+                            <area xml:id="WEAPON256SCHM18_011_003" coords=""/>
+                        </areaspec>
+                        <imageobject xml:id="WEAPON256SCHM18_012">
+                            <imagedata fileref="weapon256schm18_011.jpg"/>
+                        </imageobject>
+                        <calloutlist>
+                            <callout xml:id="WEAPON256SCHM18_013" arearefs="WEAPON256SCHM18_011_001">
+                                <para>Cocking piece</para>
+                            </callout>
+                            <callout xml:id="WEAPON256SCHM18_014" arearefs="WEAPON256SCHM18_011_002">
+                                <para>Bolt handle</para>
+                            </callout>
+                            <callout xml:id="WEAPON256SCHM18_015" arearefs="WEAPON256SCHM18_011_003">
+                                <para>Rear sight</para>
+                            </callout>
+                            <!-- text removed for sample purposes -->
+                        </calloutlist>
+                    </imageobjectco>
+                </mediaobject>
+            </section>
+            <!-- text removed for sample purposes -->
+        </section>
+    </chapter>
+</book>

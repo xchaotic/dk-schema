@@ -1,0 +1,66 @@
+<project name="dkextension" default="init" basedir=".">
+	<target name="init">
+
+		<property name="lib.dir" value="../../automation/calabash/"/>
+		<property name="jing.dir" value="../jing/"/>		
+		<property name="relaxNGSchema" value="../../dk-schema/common/dk-extensions.rnc"/>
+		
+		<!--<property name="xmlFileInput" value="in/date.xml"/>
+		<property name="schematronOutput" value="out/date.svrlt"/>-->
+		
+	
+		<property name="xmlFileInput" value="in/EW_ChinesePhraseBook.xml"/>
+		<property name="schematronOutput" value="out/EW_ChinesePhraseBook.svrlt"/>
+		
+<!--		
+		<property name="xmlFileInput" value="in/key_fishbrain.xml"/>
+		<property name="schematronOutput" value="out/key_fishbrain.svrlt"/>		
+	-->
+		
+
+     
+		
+		<!-- expand inclusions -->
+		<xslt basedir="test/schematron" style="iso_dsdl_include.xsl" in="dk-extensions.sch"
+			out="dk-extensions1.sch">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon9he.jar"/>
+			</classpath>
+		</xslt>
+
+		<!-- expand abstract patterns -->
+		<xslt basedir="test/schematron" style="iso_abstract_expand.xsl" in="dk-extensions1.sch"
+			out="dk-extensions2.sch">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon9he.jar"/>
+			</classpath>
+		</xslt>
+
+
+
+		<!-- compile it -->
+		<xslt basedir="test/schematron" style="iso_svrl_for_xslt2.xsl" in="dk-extensions2.sch"
+			out="dk-extensions.xsl">
+			<classpath>
+				<pathelement location="${lib.dir}/saxon9he.jar"/>
+			</classpath>
+		</xslt>
+
+
+		<!-- validate -->
+		<xslt basedir="test/schematron" style="dk-extensions.xsl" 
+			in="${xmlFileInput}"
+			out="${schematronOutput}">
+			
+			<classpath>
+				<pathelement location="${lib.dir}/saxon9he.jar"/>
+			</classpath>
+		</xslt>
+		
+		
+		<!-- RelaxNG Validation using jing-->
+		<taskdef name="jing" classname="com.thaiopensource.relaxng.util.JingTask" classpath="${jing.dir}/jing.jar"/>
+		<jing rngfile="${relaxNGSchema}" file="${xmlFileInput}" compactsyntax="true" />
+	
+	</target>
+</project>

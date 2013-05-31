@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <!-- sample mark-up to show xref and conditional formatting (Please see the html output called 'crossref_output')-->
+    <!-- Reference title: EWG Insect, pg. 6. Please note that the content has been modified a bit for sample purposes -->
+    <article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="5.0" xml:id="EWG_INSECT006PARINS">
+        <title>The Parts of an Insect</title>
+        <section xml:id="EWG_INSECT006PARINS_014">
+            <title>Antennae</title>
+            <!-- The conditional formatting for xrefs will be done by creating two versions of the element 
+                 block where the cross-ref appears, as shown for the following para. condition="dig" 
+                is equivalent to deftext, while condition="prt" is equivalent to alttext in the old mark-up. 
+                Matching id values on cref attributes is required. -->
+            <para condition="dig" cref="EWG_INSECT006PARINS_015CREF001">The antennae of insects (See
+                    <xref linkend="EWG_INSECT016TOUSME"/>, <xref linkend="EWG_INSECT018LEGWOR"/>)
+                vary in ..... vibrations, and smells.</para>
+            <para condition="prt" cref="EWG_INSECT006PARINS_015CREF001">The antennae of insects (See
+                    <link linkend="EWG_INSECT016TOUSME">pp. 16&#x2013;19</link>) vary in .....
+                vibrations, and smells.</para>
+        </section>
+    </article>
+    <article xml:id="EWG_INSECT016TOUSME">
+        <title>Touch, Smell, and Hearing</title>
+        <section xml:id="EWG_INSECT016TOUSME_001">
+            <title>Section 1</title>
+            <para>Contents of section 1.</para>
+        </section>
+    </article>
+
+    <!-- xreflabel will be taken as the xref target text, wherever it is provided (Please see the html output called 'crossref_output') -->
+    <article xml:id="EWG_INSECT018LEGWOR" xreflabel="Legwork - alternative text for link">
+        <title>Legwork</title>
+        <section xml:id="EWG_INSECT018LEGWOR_001">
+            <title>Section 1</title>
+            <para>Contents of section 1.</para>
+        </section>
+    </article>
+
+    <!-- sample mark-up to show 'link' element (link surrounds the text that should be made “hot,” 
+        (unlike xref which must generate the text)) -->
+    <!-- Reference title: Your Toddler Month by Month -->
+    <article xml:id="YOUTOD032BEIOWN">
+        <title>Being your Own Person</title>
+        <section xml:id="YOUTOD032BEIOWN_005">
+            <title>Avoiding comparisons and choosing advice</title>
+            <para condition="dig" cref="YOUTOD032BEIOWN_006CREF001">....Unless there are <link
+                    linkend="YOUTOD292WHECHI">special needs</link> most children ...... start
+                school.</para>
+            <para condition="prt" cref="YOUTOD032BEIOWN_006CREF001">.....Unless there are special
+                needs (see <link linkend="YOUTOD292WHECHI">page 292</link>) most children ......
+                start school.</para>
+        </section>
+        <!-- text removed -->
+        <section xml:id="YOUTOD292WHECHI">
+            <title>When a Child has Special Needs</title>
+            <para>text</para>
+        </section>
+    </article>
+</book>

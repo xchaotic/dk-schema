@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-extensions.rnc" type="compact"?> 
+<!-- Use element 'xref' wherever the target head/title needs to be rendered. When linking to a particular set of words/text string, use element 'link'. -->
+<!-- xml:id should be used for block level titles. As a rule, we would not use xml:id for title/subtitle. However a para would have an xml:id of its own. -->
+<!-- For the dataset, we have decided to do away with the parenthesis '(' and ')'. The metric and the imperial conditions would simply be captured in seperate phrase elements nested inside a member element. -->
+<!-- linkend vs. xlink:href - The better alternative is to use xlink:href since it has a broader usage. However, it does not work well in oxygen. Therefore, for maintaining consistency across all titles, we will stick to using 'linkend' attribute for elements 'xref' and 'link' -->
+<!-- Note that in Military History (the first pilot for migration), phrase role="prt" and "dig" were used, which is a wrong approach. The correct attribute to be used is 'condition' and not "role". Henceforth, we would use phrase condition="prt" and phrase condition="dig" with their corresponding crefs.  -->
+<!-- Difference between role, rend and metaref: -->
+<!-- 1. Attribute rend to be used for clearly presentational mark-up (equivalent to HMTL class attribute) – free form and can include multiple (space separated) values.  -->
+<!-- 2. Attribute role to be used for semantic mark-up and re-defines or adds to the semantics of the element to which it is applied. Only one value is allowed. -->
+<!-- 3. metaref and meta.xml – to be used to associate phrases or blocks with terms described in a term/subject classification taxonomy, which is itself defined in meta.xml. meta.xml classification can be created on request, but this needs to go through the schema working group who will advise on its design. -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+	xml:id="BIRD">
+	<title>Bird</title>
+	<subtitle>The Definitive Visual Guide</subtitle>
+	<!-- DMD: We have included a mark-up for TOC as per the sample on google code. However, the file is not validating. Please help. -->
+	<toc>
+		<title>Contents</title>
+		<tocentry pagenum="6">About this <phrase condition="prt" xml:id="BIRD004CONTEN_COND1"
+				>book</phrase>
+			<phrase condition="dig" cref="BIRD004CONTEN_COND1">guide</phrase>
+		</tocentry>
+		<tocentry pagenum="9">Foreword by Dr Michael Rands, Birdlife International</tocentry>
+		<tocdiv>
+			<title>Introduction</title>
+			<tocentry pagenum="24">Bird anatomy</tocentry>
+			<tocentry pagenum="26">Senses</tocentry>
+			<tocentry pagenum="28">Feathers</tocentry>
+			<tocentry pagenum="30">Wings</tocentry>
+			<!-- Text removed for sample purposes -->
+			<tocentry pagenum="66">Extinct Birds</tocentry>
+		</tocdiv>
+		<tocdiv>
+			<title>Habitats</title>
+			<tocentry pagenum="70">Bird Geography</tocentry>
+			<tocentry pagenum="72">Bird Habitats</tocentry>
+			<!-- Text removed for sample purposes -->
+		</tocdiv>
+		<!-- Text removed for sample purposes -->
+		<tocdiv>
+			<title>Bird Species</title>
+			<tocentry pagenum="100">Classification</tocentry>
+			<!-- Text removed for sample purposes -->
+		</tocdiv>
+		<tocentry pagenum="490">Glossary</tocentry>
+		<tocentry pagenum="494">Index</tocentry>
+		<tocentry pagenum="510">Acknowledgments</tocentry>
+	</toc>
+	<!-- Text removed for sample purposes -->
+	<!-- Element "preface" to be used for any introductory material preceding the first chapter of the book. Note that preface element can appear more than once. It is like a foreword -->
+	<preface xml:id="BIRD006ABOBOO">
+		<!-- Use phrase element to mark out the print ("prt") and digital ("dig") outputs. The two 
+			should be linked with the help of cref attribute containing the same value. Note that condition="dig" 
+			is equivalent to deftext, while condition="prt" is equivalent to alttext in the old mark-up.-->
+		<!-- The value of the crefs should be derived from the parent element (article in this case) - by adding "_COND+incremental value" -->
+		<title xml:id="BIRD006ABOBOO_001">About this <phrase condition="prt"
+				xml:id="BIRD006ABOBOO_COND1">Book</phrase>
+			<phrase condition="dig" cref="BIRD006ABOBOO_COND1">Guide</phrase>
+		</title>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD006ABOBOO_002">
+			<title xml:id="BIRD006ABOBOO_003">Bird species</title>
+			<para xml:id="BIRD006ABOBOO_004" role="intro">This final chapter is devoted to a
+				detailed look at over 1,200 bird species. It opens with an overview of the different
+				ways in which birds are classified. The rest of the chapter is organized according
+				to taxonomic order, with the non-passerine orders being covered first, followed by
+				the passerines. Introductory sections describing the different bird orders and, in
+				the passerine section, bird families are followed by profiles of individual species
+				within that group. In most cases each species profile includes a photograph of the
+				bird, a map showing where it is found, summary data detailing its size, migration
+				status, and preferred habitat. For the most threatened species, information is also
+				given on status according to the IUCN Red List. The chapter is interspersed with
+				illustrated accounts of great bird-watching sites around the world.</para>
+			<!-- Text removed for sample purposes -->
+			<!-- Distribution map has been made into a key since it must be called in mediaobjects role="locator" nested within entries (eg. BIRD182TURVUL_014). In each of the locators, create callouts with areaspec. In the callouts, there would be an xref with a role="keyref". The number of area elements would be the same as the number of colours present in the locator map. -->
+			<!-- variablelist to be used when defining a key. -->
+			<variablelist xml:id="BIRD007DISMAP_003" role="key">
+				<title xml:id="BIRD007DISMAP_001">Distribution maps</title>
+				<para xml:id="BIRD007DISMAP_002">Each profile includes a map showing the natural
+					range of that species, sometimes including well-established introduced
+					populations. Different colours are used to indicate whether the bird is an
+					all-year resident, or inhabits the area only during breeding or non-breeding
+					phases.</para>
+				<!-- varlistentry used for different key items -->
+				<!-- Use xreflabel when defining keys (or keyitems). Xreflabel is especially important when using xref to link back to the key -->
+				<varlistentry xml:id="BIRD007DISMAP_004" role="key" xreflabel="Non-breeding">
+					<term>Non-breeding. Also used to indicate ranges for seabirds.</term>
+					<listitem>
+						<!-- colour coded box - green -->
+						<!-- images to be tagged as mediaobjects -->
+						<mediaobject xml:id="BIRD007DISMAP_005">
+							<imageobject xml:id="BIRD007DISMAP_006">
+								<imagedata fileref="bird007dismap_005.jpg"/>
+							</imageobject>
+						</mediaobject>
+					</listitem>
+				</varlistentry>
+				<varlistentry xml:id="BIRD007DISMAP_007" xreflabel="Resident">
+					<term>Resident. Areas inhabited by non-migrant birds.</term>
+					<listitem>
+						<!-- colour coded box - orange -->
+						<mediaobject xml:id="BIRD007DISMAP_008">
+							<imageobject xml:id="BIRD007DISMAP_009">
+								<imagedata fileref="bird007dismap_008.jpg"/>
+							</imageobject>
+						</mediaobject>
+					</listitem>
+				</varlistentry>
+				<varlistentry xml:id="BIRD007DISMAP_010" xreflabel="Breeding">
+					<term>Breeding. Areas in which a migrant species breeds.</term>
+					<listitem>
+						<!-- colour coded box - purple -->
+						<mediaobject xml:id="BIRD007DISMAP_011">
+							<imageobject xml:id="BIRD007DISMAP_012">
+								<imagedata fileref="bird007dismap_011.jpg"/>
+							</imageobject>
+						</mediaobject>
+					</listitem>
+				</varlistentry>
+			</variablelist>
+		</section>
+		<!-- Text removed for sample purposes -->
+	</preface>
+	<preface xml:id="BIRD008FOREWOR">
+		<title xml:id="BIRD008FOREWOR_001">Foreword</title>
+		<para xml:id="BIRD008FOREWOR_002"><phrase role="leadin">Birds are no more</phrase>
+			extraordinary than any other living organisms. Yet it is their greater familiarity with
+			people that can make them seem so special. They fly, they sing, they are rich in colour
+			and pattern, they are animated, and they are almost everywhere, almost always. No other
+			group of animals can say as much of themselves, however interesting they are.</para>
+		<!-- Text removed for sample purposes -->
+	</preface>
+	<chapter xml:id="BIRD022-067INTROD">
+		<title xml:id="BIRD022INTROD_001">Introduction</title>
+		<mediaobject xml:id="BIRD023INTROD_002">
+			<imageobject xml:id="BIRD022INTROD_003">
+				<imagedata fileref="bird023introd_002.jpg"/>
+			</imageobject>
+		</mediaobject>
+		<!-- The main article to be tagged as section with role "article" -->
+		<section xml:id="BIRD024BIRANA" role="article">
+			<title xml:id="BIRD024BIRANA_001">Bird Anatomy</title>
+			<para xml:id="BIRD024BIRANA_002" role="intro">
+				<phrase role="leadin">Some groups of animals</phrase> are easily confused, but there
+				are no such problems with birds. They are the only animals that have feathers, and
+				the only living vertebrates – apart from bats – that have evolved wings and powered
+				flight. Internally, they have a range of special features, including hollow bones,
+				powerful flight muscles, and a breathing system that extracts the maximum amount of
+				oxygen from air. Thanks to these adaptations, some birds soar as high as passenger
+				planes, while others spend years on the wing before finally landing to breed.</para>
+			<section xml:id="BIRD024BIRANA_003">
+				<title xml:id="BIRD024BIRANA_004">Skeleton and muscles</title>
+				<para xml:id="BIRD024BIRANA_005">All birds have evolved from the same distant
+					ancestors and, as a result, they share the same underlying body plan. Their
+					skeletons contain fewer bones than a mammal’s, and they have bills rather than
+					teeth and jaws. Their wing bones are light and hollow, and end in a
+					three-fingered “hand”, while their legs have a Z-like shape, with a raised ankle
+					joint that looks like a backward-pointing knee. In most birds, the ribcage is
+					compact, but the breastbone has a large vertical flap, called a keel, which acts
+					as an anchor point for the muscles that power the wings. In fast or powerful
+					fliers, such as pigeons and doves, flight muscles can make up 40 per cent of the
+					body’s total weight. These muscles generate a large amount of heat, helping
+					birds to maintain their high body temperature, which averages 40–42°C
+					(104–107°F).</para>
+				<section xml:id="BIRD024BIRANA_006">
+					<title xml:id="BIRD024BIRANA_007">Internal organs</title>
+					<para xml:id="BIRD024BIRANA_008">Birds have similar body systems to mammals, but
+						their organs differ. Most have a crop and a gizzard in the digestive system,
+						and a single opening called the cloaca for excretion and
+						reproduction.</para>
+					<!-- Mark-up for image with annotations -->
+					<mediaobject xml:id="BIRD024BIRANA_009">
+						<imageobjectco xml:id="BIRD024BIRANA_010">
+							<!-- area with xml:ids and coordinates for the callouts -->
+							<!-- the coordinates should be left blank unless required for hotspotting -->
+							<!-- The number of area elements declared here would be the same as the number of annotations -->
+							<areaspec>
+								<area xml:id="BIRD024BIRANA_009_001" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_002" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_003" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_004" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_005" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_006" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_007" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_008" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_009" coords=""/>
+								<area xml:id="BIRD024BIRANA_009_010" coords=""/>
+							</areaspec>
+							<imageobject xml:id="BIRD024BIRANA_011">
+								<imagedata fileref="bird024birana_009.jpg"/>
+							</imageobject>
+							<calloutlist>
+								<!-- each callout linked to the corresponding area with the help of arerefs -->
+								<callout xml:id="BIRD024BIRANA_012" arearefs="BIRD024BIRANA_009_001">
+									<para>oesophagus</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_013" arearefs="BIRD024BIRANA_009_002">
+									<para>crop</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_014" arearefs="BIRD024BIRANA_009_003">
+									<para>liver</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_015" arearefs="BIRD024BIRANA_009_004">
+									<para>small intestines</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_016" arearefs="BIRD024BIRANA_009_005">
+									<para>pancreas</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_017" arearefs="BIRD024BIRANA_009_006">
+									<para>cloaca</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_018" arearefs="BIRD024BIRANA_009_007">
+									<para>gizzard</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_019" arearefs="BIRD024BIRANA_009_008">
+									<para>glandular stomach</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_020" arearefs="BIRD024BIRANA_009_009">
+									<para>kidney</para>
+								</callout>
+								<callout xml:id="BIRD024BIRANA_021" arearefs="BIRD024BIRANA_009_010">
+									<para>lungs</para>
+								</callout>
+							</calloutlist>
+						</imageobjectco>
+					</mediaobject>
+				</section>
+				<!-- Text removed for sample purposes -->
+			</section>
+			<section xml:id="BIRD024BIRANA_022">
+				<title xml:id="BIRD024BIRANA_023">Nervous system</title>
+				<para xml:id="BIRD024BIRANA_024">To fly, birds need fast reactions, and an ability
+					to process rapidly changing information, particularly from their eyes. Their
+					brains are well developed and, in small birds, they can be twice as big as in
+					mammals of a similar size. As well as flying, birds carry out many kinds of
+					complex behaviour, from courtship rituals to long-distance navigation. Most of
+					this behaviour is “hard-wired” into their nervous systems, which means that it
+					does not have to be learned. However, birds do learn new forms of behaviour as
+					they grow up, and some of their instinctive skills – such as nest building –
+					improve with experience.</para>
+				<!-- Text removed for sample purposes -->
+				<!-- If the image is unavailable then add condition="prt" at the section level. This would help differentiate between the sections to be displayed and the ones which are not to be displayed.  -->
+				<!-- In case there is a replacement image, we can put condition="dig" for the rep image and condition="prt" for the blank one. The id naming convention would be the same as the old dtd - suffix "_REP" to be used -->
+				<section xml:id="BIRD024BIRANA_025">
+					<title xml:id="BIRD024BIRANA_026">The skull</title>
+					<para xml:id="BIRD024BIRANA_027">Bird skulls are strong, although often
+						paper-thin. Seen from above, this scan of a bird skull shows the circle of
+						bony plates, called the sclerotic ring, which supports each eye.</para>
+					<mediaobject xml:id="BIRD024BIRANA_028">
+						<imageobject xml:id="BIRD024BIRANA_029">
+							<imagedata fileref="bird024birana_028.jpg"/>
+						</imageobject>
+					</mediaobject>
+				</section>
+			</section>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="BIRD025BRECYC" role="feature">
+				<title xml:id="BIRD025BRECYC_001">Breathing cycle</title>
+				<para xml:id="BIRD025BRECYC_002">Unlike mammals, birds take two complete breathing
+					cycles to move a single breath in through the trachea, through the lungs, and
+					back out of the body. When flying, their breathing rate can speed up by 20 times
+					to power the extra energy required.</para>
+				<!-- 'Breathing Cycle' treated as a procedure? -->
+				<procedure xml:id="BIRD025BRECYC_003">
+					<step xml:id="BIRD025BRECYC_004">
+						<title xml:id="BIRD025BRECYC_005">Inhalation 1</title>
+						<para xml:id="BIRD025BRECYC_006"><phrase role="stepnum">1</phrase> At the
+							start of the cycle, the forward and rear air sacs expand. Inhaled air
+							travels through the bird’s trachea and into the rear air sacs.</para>
+						<mediaobject xml:id="BIRD025BRECYC_007">
+							<imageobjectco xml:id="BIRD025BRECYC_008">
+								<areaspec>
+									<area xml:id="BIRD025BRECYC_007_001" coords=""/>
+									<area xml:id="BIRD025BRECYC_007_002" coords=""/>
+									<area xml:id="BIRD025BRECYC_007_003" coords=""/>
+									<area xml:id="BIRD025BRECYC_007_004" coords=""/>
+								</areaspec>
+								<imageobject xml:id="BIRD025BRECYC_009">
+									<imagedata fileref="bird025brecyc_007.jpg"/>
+								</imageobject>
+								<calloutlist>
+									<callout xml:id="BIRD025BRECYC_010"
+										arearefs="BIRD025BRECYC_007_001">
+										<para>trachea</para>
+									</callout>
+									<callout xml:id="BIRD025BRECYC_011"
+										arearefs="BIRD025BRECYC_007_002">
+										<para>anterior air sacs expanding</para>
+									</callout>
+									<callout xml:id="BIRD025BRECYC_012"
+										arearefs="BIRD025BRECYC_007_003">
+										<para>lung</para>
+									</callout>
+									<callout xml:id="BIRD025BRECYC_013"
+										arearefs="BIRD025BRECYC_007_004">
+										<para>posterior air sacs expanding</para>
+									</callout>
+								</calloutlist>
+							</imageobjectco>
+						</mediaobject>
+					</step>
+					<step xml:id="BIRD025BRECYC_014">
+						<title xml:id="BIRD025BRECYC_015">Exhalation 1</title>
+						<para xml:id="BIRD025BRECYC_016"><phrase role="stepnum">2</phrase> Both sets
+							of air sacs are now compressed, so that air is squeezed out of the rear
+							air sacs and into the lungs.</para>
+						<mediaobject xml:id="BIRD025BRECYC_017">
+							<imageobjectco xml:id="BIRD025BRECYC_018">
+								<areaspec>
+									<area xml:id="BIRD025BRECYC_017_001" coords=""/>
+									<area xml:id="BIRD025BRECYC_017_002" coords=""/>
+								</areaspec>
+								<imageobject xml:id="BIRD025BRECYC_019">
+									<imagedata fileref="bird025brecyc_017.jpg"/>
+								</imageobject>
+								<calloutlist>
+									<callout xml:id="BIRD025BRECYC_020"
+										arearefs="BIRD025BRECYC_017_001">
+										<para>anterior air sacs compressing</para>
+									</callout>
+									<callout xml:id="BIRD025BRECYC_021"
+										arearefs="BIRD025BRECYC_017_002">
+										<para>posterior air sacs compressing</para>
+									</callout>
+								</calloutlist>
+							</imageobjectco>
+						</mediaobject>
+					</step>
+					<step xml:id="BIRD025BRECYC_022">
+						<title xml:id="BIRD025BRECYC_023">Inhalation 2</title>
+						<para xml:id="BIRD025BRECYC_024"><phrase role="stepnum">3</phrase> The air
+							sacs expand again, drawing more air in through the trachea. Meanwhile,
+							air already in the lungs moves into the forward air sacs.</para>
+						<mediaobject xml:id="BIRD025BRECYC_025">
+							<imageobjectco xml:id="BIRD025BRECYC_026">
+								<areaspec>
+									<area xml:id="BIRD025BRECYC_025_001" coords=""/>
+									<area xml:id="BIRD025BRECYC_025_002" coords=""/>
+								</areaspec>
+								<imageobject xml:id="BIRD025BRECYC_027">
+									<imagedata fileref="bird025brecyc_025.jpg"/>
+								</imageobject>
+								<calloutlist>
+									<callout xml:id="BIRD025BRECYC_028"
+										arearefs="BIRD025BRECYC_025_001">
+										<para>anterior air sacs expanding</para>
+									</callout>
+									<callout xml:id="BIRD025BRECYC_029"
+										arearefs="BIRD025BRECYC_025_002">
+										<para>posterior air sacs expanding</para>
+									</callout>
+								</calloutlist>
+							</imageobjectco>
+						</mediaobject>
+					</step>
+					<step xml:id="BIRD025BRECYC_030">
+						<title xml:id="BIRD025BRECYC_031">Exhalation 2</title>
+						<para xml:id="BIRD025BRECYC_032"><phrase role="stepnum">4</phrase> To finish
+							the double cycle, the air sacs are compressed, driving the air in the
+							forward air sacs back out through the trachea.</para>
+						<mediaobject xml:id="BIRD025BRECYC_033">
+							<imageobjectco xml:id="BIRD025BRECYC_034">
+								<areaspec>
+									<area xml:id="BIRD025BRECYC_033_001" coords=""/>
+									<area xml:id="BIRD025BRECYC_033_002" coords=""/>
+								</areaspec>
+								<imageobject xml:id="BIRD025BRECYC_035">
+									<imagedata fileref="bird025brecyc_033.jpg"/>
+								</imageobject>
+								<calloutlist>
+									<callout xml:id="BIRD025BRECYC_036"
+										arearefs="BIRD025BRECYC_033_001">
+										<para>anterior air sacs compressing</para>
+									</callout>
+									<callout xml:id="BIRD025BRECYC_037"
+										arearefs="BIRD025BRECYC_033_002">
+										<para>posterior air sacs compressing</para>
+									</callout>
+								</calloutlist>
+							</imageobjectco>
+						</mediaobject>
+					</step>
+				</procedure>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD030WINGS" role="article">
+			<title xml:id="BIRD030WINGS_001">Wings</title>
+			<para xml:id="BIRD030WINGS_002" role="intro"><phrase role="leadin">Bird wings developed</phrase> from
+				five-fingered limbs, but over millions of years, evolution has completely
+				transformed them for flight. They are light and flexible, with an infinitely
+				variable geometry, which gives the best performance over a wide range of different
+				speeds. They can fold away when not in use, and their feathers replace themselves to
+				make up for wear and tear. Bird wings vary hugely in size and shape, but stripped of
+				their feathers, they are all constructed on the same plan.</para>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="BIRD030WINGS_003">
+				<title xml:id="BIRD030WINGS_004">Wing loading</title>
+				<para xml:id="BIRD030WINGS_005">Although larger birds have larger wings, wing area and body weight
+					do not increase in step. Instead, large birds typically have a greater wing
+					loading, meaning that each unit area of wing has to carry more weight. Wing
+					loading affects a bird’s manoeuvrability and the amount of energy it requires to
+					fly. The greater the wing loading, the harder birds have to work, unless they
+					soaror glide. In the most extreme cases, including swans, bustards, and turkeys,
+					taking off is a real struggle and the birds flap hard for several seconds to get
+					into the air.</para>
+				<!-- DMD: mark-up for informal table (without a head) -->
+				<informaltable xml:id="BIRD030WINGS_006">
+					<tgroup cols="2">
+						<thead>
+							<row>
+								<entry>Species</entry>
+							</row>
+							<row>
+								<!-- DMD: superscript value to be captured -->
+								<entry>Wing loading (g/cm<emphasis rend="sup">2</emphasis>)</entry>
+							</row>
+						</thead>
+						<tbody>
+							<row>
+								<entry>Leach’s Petrel</entry>
+								<entry>0.11</entry>
+							</row>
+							<row>
+								<entry>Barn Swallow</entry>
+								<entry>0.14</entry>
+							</row>
+							<row>
+								<entry>Barn Owl</entry>
+								<entry>0.29</entry>
+							</row>
+							<row>
+								<entry>Golden Eagle</entry>
+								<entry>0.71</entry>
+							</row>
+							<row>
+								<entry>Mute Swan (<phrase condition="prt" xml:id="BIRD030WINGS_003_COND1"
+									>below</phrase><phrase condition="dig" cref="BIRD030WINGS_003_COND1">see
+										image</phrase>)</entry>
+								<entry>1.66</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</informaltable>
+				<mediaobject xml:id="BIRD030WINGS_007">
+					<imageobject xml:id="BIRD030WINGS_008">
+						<imagedata fileref="bird030wings_007.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD030WINGS_009">
+						<formalpara>
+							<title xml:id="BIRD030WINGS_010">Wing loading</title>
+							<para xml:id="BIRD030WINGS_011">The table<phrase condition="prt" xml:id="BIRD030WINGS_009_COND1"> above</phrase> shows the wing
+							loading for different birds of varying weight. Mute Swans weigh up to
+							15kg (33lb) and are among the heaviest of all flying birds. They need a
+							long “runway”to become airborne.</para>
+						</formalpara>						
+					</caption>					
+				</mediaobject>
+				<!-- Text removed for sample purposes -->
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD060MIGROU" role="article">
+			<title xml:id="BIRD060MIGROU_001">Migration Routes</title>
+			<para xml:id="BIRD060MIGROU_002" role="intro">
+				<phrase role="leadin">Migration routes have evolved</phrase> over millions of years.
+				Few are the shortest paths from A to B. Instead, migration routes are shaped by
+				factors which vary from one species to another. Some birds migrate non-stop, flying
+				straight over deserts and other obstacles. Others follow landmarks such as rivers
+				and coasts, and need frequent refuelling breaks. Seabirds roam the ocean, but their
+				routes are influenced by currents and wind direction. All these differences create a
+				complex web of migration routes that stretches across the globe.</para>
+			<!-- note the role="map" -->
+			<mediaobject xml:id="BIRD060MIGROU_003" role="map">
+				<imageobject xml:id="BIRD060MIGROU_004">
+					<imagedata fileref="bird060migrou_003.jpg"/>
+				</imageobject>
+				<caption xml:id="BIRD060MIGROU_005">
+					<!-- formalpara to be used wherever the caption has a head along with a descriptive para -->
+					<!-- DMD: Formalpara xml:id. Same convention followed in MH. -->
+					<formalpara>
+						<title xml:id="BIRD060MIGROU_006">Migration in action</title>
+						<para xml:id="BIRD060MIGROU_007">This map shows the flight paths of eight
+							long-distance migrant species. The distances shown in the text boxes are
+							maximum values for a complete round trip.</para>
+					</formalpara>
+					<!-- Mark-up for key -->
+					<variablelist xml:id="BIRD060RUFHUM_011" role="key" xreflabel="Key to routes">
+						<!-- note the role="key" as per spec -->
+						<varlistentry xml:id="BIRD060RUFHUM_011_001">
+							<term>American Golden Plover</term>
+							<listitem>
+								<!-- mediaobject for colour code -->
+								<mediaobject xml:id="BIRD060RUFHUM_014">
+									<imageobject xml:id="BIRD060RUFHUM_015">
+										<imagedata fileref="bird060migrou_014.gif"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_002">
+							<term>Rufous Hummingbird</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_017">
+									<imageobject xml:id="BIRD060RUFHUM_018">
+										<imagedata fileref="bird060migrou_017.gif"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_003">
+							<term>Short-tailed Shearwater</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_020">
+									<imageobject xml:id="BIRD060RUFHUM_021">
+										<imagedata fileref="bird060migrou_020.gif"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_004">
+							<term>Arctic Tern</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_023">
+									<imageobject xml:id="BIRD060RUFHUM_024">
+										<imagedata fileref="bird060migrou_023.jpg"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_005">
+							<term>Common Cuckoo</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_026">
+									<imageobject xml:id="BIRD060RUFHUM_027">
+										<imagedata fileref="bird060migrou_026.jpg"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_006">
+							<term>Red-breasted Goose</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_029">
+									<imageobject xml:id="BIRD060RUFHUM_030">
+										<imagedata fileref="bird060migrou_029.jpg"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_007">
+							<term>Eastern Curlew</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_032">
+									<imageobject xml:id="BIRD060RUFHUM_033">
+										<imagedata fileref="bird060migrou_032.jpg"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+						<varlistentry xml:id="BIRD060RUFHUM_011_008">
+							<term>Eleonora’s Falcon</term>
+							<listitem>
+								<mediaobject xml:id="BIRD060RUFHUM_035">
+									<imageobject xml:id="BIRD060RUFHUM_036">
+										<imagedata fileref="bird060migrou_035.jpg"/>
+									</imageobject>
+								</mediaobject>
+							</listitem>
+						</varlistentry>
+					</variablelist>
+				</caption>
+			</mediaobject>
+			<section xml:id="BIRD060MIGROU_008">
+				<title xml:id="BIRD060MIGROU_009">Flyways</title>
+				<para xml:id="BIRD060MIGROU_010">Major migration routes over land – known as flyways
+					– are typically oriented in a north–south direction. Some of them follow coasts
+					or large river valleys, such as the Mississippi or the Nile. As the journey
+					progresses, birds are often funnelled into narrow corridors that avoid long and
+					dangerous sea crossings. In the Americas, the busiest by far is the Isthmus of
+					Panama. Here, millions of land birds travel over a neck of land that is only
+					about 60km (40 miles) wide. In Europe, huge numbers of birds converge on the
+					Strait of Gibraltar, cutting out a long journey across the Mediterranean.
+					Oceanic birds also travel huge distances – sometimes literally circling the
+					globe. Many of these journeys are similar to migration over land, because they
+					follow recognizable routes. However, many seabirds spread out over a wide area
+					once they have finished breeding. This behaviour, known as dispersal, can last
+					for several years, until a bird eventually returns to the site where it
+					hatched.</para>
+				<para xml:id="BIRD060MIGROU_011">The majority of birds breed in the northern
+					hemisphere, principally because this contains most of the world’s land. An
+					exception is the Short-tailed Shearwater; this is one of many migratory seabirds
+					that nest on islands scattered across the globe. The migration distances shown
+					in the bird profiles are maximum values for a complete round trip. They are not
+					exact because migrants set off from widely scattered departure points, and
+					arrive at different destinations.</para>
+			</section>
+			<section xml:id="BIRD060MIGROU_012">
+				<title xml:id="BIRD060MIGROU_013">Vagrant species</title>
+				<para xml:id="BIRD060MIGROU_014">Some birds – known as vagrants – get blown far off
+					course, and end up thousands of kilometres outside their normal range. This
+					happens particularly during fierce winter storms or other unusual weather
+					conditions. Sometimes the individual will rest and then continue its journey,
+					slowly finding its way back on to its normal route. Occasionally an individual
+					may remain where it is to die, or to live among groups of other species; these
+					individuals are, of course, unable to breed. If several vagrants are blown off
+					course into the same area, this may lead to a new colony of breeding
+					birds.</para>
+				<mediaobject xml:id="BIRD060MIGROU_015">
+					<imageobject xml:id="BIRD060MIGROU_016">
+						<imagedata fileref="bird060migrou_015.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD060MIGROU_017">
+						<formalpara>
+							<title xml:id="BIRD060MIGROU_018">Blown off course</title>
+							<para xml:id="BIRD060MIGROU_019">The Killdeer originates in North
+								America but vagrants are occasionally seen in winter on meadows or
+								sandy shores in the British Isles.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+			</section>
+			<!-- Entry would be tagged as section with role "entry", while datasets as simplelists with role "dataset" -->
+			<section xml:id="BIRD060RUFHUM" role="entry">
+				<!-- note role="common_name" and "latin_name" -->
+				<title xml:id="BIRD060RUFHUM_001" role="common_name">Rufous Hummingbird</title>
+				<subtitle xml:id="BIRD060RUFHUM_002" role="latin_name">Selasphorus rufus</subtitle>
+				<simplelist xml:id="BIRD060RUFHUM_003" role="dataset">
+					<!-- Element member to be used for marking each dataset item -->
+					<member xml:id="BIRD060RUFHUM_004">
+						<!-- phrase role="label" used for separating out the data from their respective category heads ('Breeding Range' in this case) -->
+						<phrase role="label">Breeding Range </phrase>
+						<phrase role="breeding_range">Northwestern North America</phrase>
+					</member>
+					<member xml:id="BIRD060RUFHUM_005">
+						<phrase role="label">Non-breeding Range </phrase>
+						<phrase role="non-breeding_range">Southeastern USA, Mexico</phrase>
+					</member>
+					<member xml:id="BIRD060RUFHUM_006">
+						<phrase role="label">Migration Distance </phrase>
+						<!-- Wherever a condition attribute is used in profiling, the first phrase will have an xml:id while the subsequent phrase elements will have a cref attribute. Note that the xml:id and the cref value would be the same for all related phrases -->
+						<!-- If a phrase is tagged with a role, let's not duplicate that in the member role - it would be confusing to process and verbose. -->
+						<!-- We have decided to do away with the parenthesis altogether. Given below is the simplest mark-up for dataset item with metric and imperial values. If we wish to make it simpler, the granular tagging for units will also be done away with (only for the master xmls). -->
+						<phrase role="migration_distance" condition="metric"
+							xml:id="BIRD060RUFHUM_003_COND1">6000<phrase role="unit"
+							>km</phrase></phrase>
+						<phrase role="migration_distance" condition="imperial"
+							cref="BIRD060RUFHUM_003_COND1" rend="surround_with_parenthesis"
+								>3700<phrase role="unit">miles</phrase>
+						</phrase>
+						<!-- Mark-up for granular tagging, if needed. -->
+						<!-- <member xml:id="BIRD060RUFHUM_006">
+						<phrase role="label">Migration Distance </phrase>
+						<phrase role="migration_distance" condition="metric"
+							xml:id="BIRD060RUFHUM_003_COND1">6000</phrase>
+						<phrase role="unit" condition="metric">km</phrase>
+						<phrase role="migration_distance" condition="imperial"
+							cref="BIRD060RUFHUM_003_COND1"> ( <phrase role="migration_distance"
+								>3700</phrase>
+							<phrase role="unit" condition="imperial">miles</phrase> ) </phrase> -->
+						<!-- cross ref to key entry -->
+						<!-- The xref element with linkend pointing to the target block should be used.-->
+						<xref linkend="BIRD060RUFHUM_011_002" role="keyref"/>
+						<!-- note the linkend used here. However, the better option is to use xlink:href since it can also be used for xref'ing even those links which are present in other files (such as web links). -->
+						<!-- When working on oxygen, the icon for xlink:href does not take us back to the target key item. Therefore, we would stick to using linkend.  -->
+					</member>
+				</simplelist>
+				<!-- When the units of measurement such as animal weight or migration distance appear inline in a text string, granular tagging would not be done for the masters. -->
+				<!-- In case of a licensing deal, granular tagging would look something like this: -->
+				<!-- "This tiny migrant, only <phrase role="animal_length" condition="metric" xml:id="BIRD060RUFHUM_008_001">9</phrase>
+					 <phrase role="unit" condition="metric">cm</phrase>
+					 <phrase role="animal_length" condition="imperial" cref="BIRD060RUFHUM_008_001"> (3
+							<phrase role="fraction">1/2</phrase></phrase>					
+					<phrase role="unit" condition="imperial">in)</phrase> long"-->
+				<para xml:id="BIRD060RUFHUM_008" role="description">This tiny migrant, only 9cm
+						(3<phrase role="fraction">1/2</phrase>in) long and weighing less than 3.5g
+						(<phrase role="fraction">1/8</phrase>oz), has the longest migration route
+					and breeds further north than any other American hummingbird. Its summer range
+					extends as far as Alaska’s Kenai Peninsula, just 750km (470 miles) from the
+					Arctic Circle. During the northward migration, the males arrive first, setting
+					up their feeding territories.</para>
+				<mediaobject xml:id="BIRD060RUFHUM_009">
+					<imageobject xml:id="BIRD060RUFHUM_010">
+						<imagedata fileref="bird060rufhum_009.jpg"/>
+					</imageobject>
+				</mediaobject>
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+	</chapter>
+	<chapter xml:id="BIRD068-097HABITA">
+		<title xml:id="BIRD068HABITA_001">Habitats</title>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD070BIRGEO" role="article">
+			<title xml:id="BIRD070BIRGEO_001">Bird Geography</title>
+			<para xml:id="BIRD070BIRGEO_002">
+				<phrase role="leadin">Birds are the most mobile animals</phrase> on Earth. They can
+				cross continents and oceans, and some routinely fly tens of thousands of kilometres
+				during their annual migration. But, paradoxically, few birds are found all over the
+				globe. Instead, the majority of species are restricted to particular regions; some
+				are confined to tiny specks on the map, such as remote oceanic islands. This
+				patchiness is a key feature of bird geography. It has come about over millions of
+				years, as birds have evolved and adapted to a changing world. </para>
+			<!-- figure used for grouping the images that have a common caption. When using figure, the caption head would be the 'title'. -->
+			<figure xml:id="BIRD070BIRGEO_003">
+				<title xml:id="BIRD070BIRGEO_004">Global species</title>
+				<para xml:id="BIRD070BIRGEO_005">The Barn Owl and the Osprey are among the few birds
+					whose natural range includes every continent except Antarctica. Some coastal
+					birds, such as the Ruddy Turnstone, are almost as widespread. The House Sparrow
+					and the Common Starling are found across the globe, but largely as a result of
+					human intervention.</para>
+				<mediaobject xml:id="BIRD070BIRGEO_006">
+					<imageobject xml:id="BIRD070BIRGEO_007">
+						<imagedata fileref="bird070birgeo_006.jpg"/>
+					</imageobject>
+				</mediaobject>
+				<mediaobject xml:id="BIRD070BIRGEO_008">
+					<imageobject xml:id="BIRD070BIRGEO_009">
+						<imagedata fileref="bird070birgeo_008.jpg"/>
+					</imageobject>
+				</mediaobject>
+			</figure>
+			<section xml:id="BIRD070BIRGEO_010">
+				<title xml:id="BIRD070BIRGEO_011">Biogeographical realms</title>
+				<para xml:id="BIRD070BIRGEO_012">The world’s wildlife can be divided between eight
+					regions known as biogeographical realms. Realms may share similar habitats, such
+					as forest or grassland, but each has its characteristic wildlife. This
+					distinctiveness results from factors including climate, topography, and – over
+					the much longer term – the rearrangement of Earth’s landmasses by continental
+					drift. The totals given for each realm include both endemic families and species
+					(see <phrase condition="prt" xml:id="BIRD070BIRGEO_010_COND1">
+						<link linkend="BIRD070BIRGEO_004">below</link>
+					</phrase>
+					<phrase condition="dig" cref="BIRD070BIRGEO_010_COND1">
+						<link linkend="BIRD070BIRGEO_016">image</link>
+					</phrase>) and those shared with neighbouring realms.</para>
+				<section xml:id="BIRD070BIRGEO_013">
+					<title xml:id="BIRD070BIRGEO_014">Divided world</title>
+					<para xml:id="BIRD070BIRGEO_015">Biogeography dates back to the mid-19th
+						century, when naturalists began to recognize striking differences in the
+						bird life of different regions of the world. The boundaries between realms
+						are not fixed precisely, but indicate transition zones where marked changes
+						in bird life occur.</para>
+					<!-- Hotspots have been used to correlate the map image with the associated entries by capturing the text on the map such as 'Nearctic', 'Oceania', etc, both, in the xml and the image. -->
+					<mediaobject xml:id="BIRD070BIRGEO_016" role="map">
+						<imageobjectco xml:id="BIRD070BIRGEO_017">
+							<areaspec>
+								<area xml:id="BIRD070BIRANA_016_001" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_002" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_003" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_004" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_005" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_006" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_007" coords=""/>
+								<area xml:id="BIRD070BIRANA_016_008" coords=""/>
+							</areaspec>
+							<imageobject xml:id="BIRD070BIRGEO_018">
+								<imagedata fileref="bird070birgeo_016.jpg"/>
+							</imageobject>
+							<calloutlist xml:id="BIRD070BIRGEO_019">
+								<callout xml:id="BIRD070BIRGEO_020" arearefs="BIRD070BIRANA_016_001">
+									<para>
+										<link linkend="BIRD070NEARCT">Nearctic</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_021">
+								<callout xml:id="BIRD070BIRGEO_022" arearefs="BIRD070BIRANA_016_002">
+									<para>
+										<link linkend="BIRD070OCEANI">Oceanic</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_023">
+								<callout xml:id="BIRD070BIRGEO_024" arearefs="BIRD070BIRANA_016_003">
+									<para>
+										<link linkend="BIRD070ANTARC">Antarctic</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_025">
+								<callout xml:id="BIRD070BIRGEO_026" arearefs="BIRD070BIRANA_016_004">
+									<para>
+										<link linkend="BIRD070NEOTRO">Neotropical</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_027">
+								<callout xml:id="BIRD070BIRGEO_028" arearefs="BIRD070BIRANA_016_005">
+									<para>
+										<link linkend="BIRD070AFROTR">Afrotropical</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_029">
+								<callout xml:id="BIRD070BIRGEO_030" arearefs="BIRD070BIRANA_016_006">
+									<para>
+										<link linkend="BIRD070AUSTRA">Australasian</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_031">
+								<callout xml:id="BIRD070BIRGEO_032" arearefs="BIRD070BIRANA_016_007">
+									<para>
+										<link linkend="BIRD070INDOMA">Indomalayan</link>
+									</para>
+								</callout>
+							</calloutlist>
+							<calloutlist xml:id="BIRD070BIRGEO_033">
+								<callout xml:id="BIRD070BIRGEO_034" arearefs="BIRD070BIRANA_016_008">
+									<para>
+										<link linkend="BIRD070PALEAR">Palearctic</link>
+									</para>
+								</callout>
+							</calloutlist>
+						</imageobjectco>
+					</mediaobject>
+					<section xml:id="BIRD070NEARCT" role="entry">
+						<title xml:id="BIRD070NEARCT_001">Nearctic</title>
+						<simplelist xml:id="BIRD070NEARCT_002" role="dataset">
+							<member xml:id="BIRD070NEARCT_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">61</phrase>
+							</member>
+							<member xml:id="BIRD070NEARCT_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">732</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070NEARCT_005" role="description">Low in bird diversity,
+							the Nearctic has no endemic families. Its bird life has strong links
+							with the Palearctic realm, but includes hummingbirds and tanagers
+							originating in South America. Most birds are migratory, reflecting a
+							cold winter climate.</para>
+					</section>
+					<section xml:id="BIRD070OCEANI" role="entry">
+						<title xml:id="BIRD070OCEANI_001">Oceanic</title>
+						<simplelist xml:id="BIRD070OCEANI_002" role="dataset">
+							<member xml:id="BIRD070OCEANI_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">c.35</phrase>
+							</member>
+							<member xml:id="BIRD070OCEANI_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">c.200</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070OCEANI_005" role="description">For their size, islands
+							in the Oceanic realm are home to an exceptionally rich variety of birds,
+							but only 2 per cent of the global total. As well as marine species, such
+							as albatrosses and tropicbirds, they include many endemics, such as
+							flightless rails.</para>
+					</section>
+					<section xml:id="BIRD070ANTARC" role="entry">
+						<title xml:id="BIRD070ANTARC_001">Antarctic</title>
+						<simplelist xml:id="BIRD070ANTARC_002" role="dataset">
+							<member xml:id="BIRD070ANTARC_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">12</phrase>
+							</member>
+							<member xml:id="BIRD070ANTARC_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">85</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070ANTARC_005" role="description">Antarctica’s tiny
+							species total masks a great abundance of bird life. The overwhelming
+							majority of its species are marine. Penguins remain within its borders
+							all year, but most seabirds – including skuas and terns – are summer
+							migrants.</para>
+					</section>
+					<section xml:id="BIRD070NEOTRO" role="entry">
+						<title xml:id="BIRD070NEOTRO_001">Neotropical</title>
+						<simplelist xml:id="BIRD070NEOTRO_002" role="dataset">
+							<member xml:id="BIRD070NEOTRO_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">95</phrase>
+							</member>
+							<member xml:id="BIRD070NEOTRO_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">3,370</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070NEOTRO_005" role="description">This realm has more bird
+							species than any other. A third of families are endemic, including
+							tinamous, curassows, puffbirds, toucans, and several families of
+							primitive passerines. Neotropicals include many fruit and nectar
+							feeders.</para>
+					</section>
+					<section xml:id="BIRD070AFROTR" role="entry">
+						<title xml:id="BIRD070AFROTR_001">Afrotropical</title>
+						<simplelist xml:id="BIRD070AFROTR_002" role="dataset">
+							<member xml:id="BIRD070AFROTR_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">73</phrase>
+							</member>
+							<member xml:id="BIRD070AFROTR_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">1,950</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070AFROTR_005" role="description">With large expanses of
+							desert and grassland, this realm is rich in terrestrial birds and
+							seed-eaters. Endemic families include ostriches, mousebirds, and
+							turacos. There are strong links with families in the Indomalayan
+							realm.</para>
+					</section>
+					<section xml:id="BIRD070AUSTRA" role="entry">
+						<title xml:id="BIRD070AUSTRA_001">Australasian</title>
+						<simplelist xml:id="BIRD070AUSTRA_002" role="dataset">
+							<member xml:id="BIRD070AUSTRA_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">64</phrase>
+							</member>
+							<member xml:id="BIRD070AUSTRA_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">1,590</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070AUSTRA_005" role="description">There are 13 endemic
+							families here, including cassowaries, emus, lyrebirds,
+							birds-of-paradise, and honeyeaters, plus large numbers of terrestrial
+							and nomadic species, and nectar-feeders. Kingfishers, parrots, and doves
+							are abundant.</para>
+					</section>
+					<section xml:id="BIRD070INDOMA" role="entry">
+						<title xml:id="BIRD070INDOMA_001">Indomalayan</title>
+						<simplelist xml:id="BIRD070INDOMA_002" role="dataset">
+							<member xml:id="BIRD070INDOMA_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">69</phrase>
+							</member>
+							<member xml:id="BIRD070INDOMA_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">1,700</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070INDOMA_005" role="description">Only four families – the
+							leafbirds, bluebirds, ioras, and bristleheads – are endemic to this
+							region, but its bird life is rich and varied. The climate is almost
+							entirely tropical, and its birds include many species that feed on fruit
+							and seeds.</para>
+					</section>
+					<section xml:id="BIRD070PALEAR" role="entry">
+						<title xml:id="BIRD070PALEAR_001">Palearctic</title>
+						<simplelist xml:id="BIRD070PALEAR_002" role="dataset">
+							<member xml:id="BIRD070PALEAR_003">
+								<phrase role="label">Families </phrase>
+								<phrase role="families">69</phrase>
+							</member>
+							<member xml:id="BIRD070PALEAR_004">
+								<phrase role="label">Species </phrase>
+								<phrase role="species">937</phrase>
+							</member>
+						</simplelist>
+						<para xml:id="BIRD070PALEAR_005" role="description">Despite being the
+							largest realm, the Palearctic has just one endemic family – the
+							accentors. It has a large number of insect-eaters, including Old World
+							warblers, the biggest single family in this region. The majority of
+							birds are migrants.</para>
+					</section>
+				</section>
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+		<!-- Text removed for sample purposes -->
+	</chapter>
+	<chapter xml:id="BIRD098-487BIRSPE">
+		<title xml:id="BIRD098BIRSPE">Bird Species</title>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD100CLASSI" role="article">
+			<title xml:id="BIRD100CLASSI_001">Classification</title>
+			<!-- Text removed for sample purposes -->
+			<!-- Mark-up for Bird Orders -->
+			<section xml:id="BIRD100BIRORD" role="feature">
+				<title xml:id="BIRD100BIRORD_001">Bird orders</title>
+				<para xml:id="BIRD100BIRORD_002">This section of the <phrase condition="prt"
+						xml:id="BIRD100BIRORD_COND1">book</phrase><phrase condition="dig"
+						cref="BIRD100BIRORD_COND1">guide</phrase> follows the names and
+					classification sequence used in <emphasis role="italic">The Howard and Moore
+						Complete Checklist of Birds of the World</emphasis> (2003) – one of the most
+					comprehensive and authoritative sources in bird classification. In this
+					sequence, a total of 9,721 bird species are recognized, belonging to a total of
+					204 families. In this book, these families have been grouped into the following
+					29 orders.</para>
+				<!-- A basic taxonomy portraying the 'Order' of birds has been capturted as a key. -->
+				<variablelist xml:id="BIRD100BIRORD_003" role="key" xreflabel="Bird Orders"
+					metaref="DK_Bird_Orders">
+					<!-- Xreflabel necessary for xrefs to render -->
+					<varlistentry xml:id="BIRD100BIRORD_004" xreflabel="Tinamous"
+						metaref="DK_Tinamiformes">
+						<!--  The important part is to be consistent about the 'role' attributes so we can link the associated bits of XML -->
+						<term>Tinamous</term>
+						<listitem>
+							<!-- Note that "Order", "Families" and "Species" have been captured with phrase role="label" -->
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Tinamiformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">1</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">46</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_005" xreflabel="Ostriches"
+						metaref="DK_Struthioniformes">
+						<term>Ostriches</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Struthioniformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">1</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">2</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_006" xreflabel="Cassowaries and Emus"
+						metaref="DK_Casuariiformes">
+						<term>Cassowaries and Emus</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Casuariiformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">2</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">4</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_007" xreflabel="Kiwis"
+						metaref="DK_Dinornithiformes">
+						<term>Kiwis</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Dinornithiformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">1</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">3–6</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_008" xreflabel="Gamebirds"
+						metaref="DK_Galliformes">
+						<term>Gamebirds</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Galliformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">5</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">289</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry xml:id="BIRD100BIRORD_009" xreflabel="Waterfowl"
+						metaref="DK_Anseriformes">
+						<term>Waterfowl</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Anseriformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">3</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">157</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+					<varlistentry xml:id="BIRD100BIRORD_010" xreflabel="Birds of Prey"
+						metaref="DK_Falconiformes">
+						<term>Birds of Prey</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Falconiformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">3</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">304</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+					<varlistentry xml:id="BIRD100BIRORD_011" xreflabel="Passerines"
+						metaref="DK_Passeriformes">
+						<term>Passeriformes</term>
+						<listitem>
+							<para>
+								<phrase role="label">Order </phrase>
+								<phrase role="scientific_name">Passeriformes</phrase>
+							</para>
+							<para>
+								<phrase role="label">Families </phrase>
+								<phrase role="families">92</phrase>
+							</para>
+							<para>
+								<phrase role="label">Species </phrase>
+								<phrase role="species">5,200</phrase>
+							</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+				</variablelist>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<!-- The following blocks have been captured only for validating the file -->
+		<!-- Note the metaref at section role="article" level -->
+		<section xml:id="BIRD107GAMEBI" role="article" metaref="DK_Galliformes">
+			<title xml:id="BIRD107GAMEBI_001">Gamebirds</title>
+			<para/>
+			<section xml:id="BIRD111WILTUR" role="entry">
+				<title xml:id="BIRD111WILTUR_001">Wild Turkey</title>
+				<para/>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD158STOHER" role="article" metaref="DK_Ciconiiformes">
+			<title xml:id="BIRD158STOHER_001">Storks and Herons</title>
+			<para/>
+			<section xml:id="BIRD159SADSTO" role="entry">
+				<title xml:id="BIRD159SADSTO_001">Saddle-billed Stork</title>
+				<para/>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD180BIRPRE" role="article" metaref="DK_Falconiformes">
+			<title xml:id="BIRD180BIRPRE_001">Birds of Prey</title>
+			<para role="intro" xml:id="BIRD180BIRPRE_002">
+				<phrase role="leadin">With some species</phrase> having enormous wingspans, birds of
+				prey include the world’s largest flying carnivores. Also known as raptors, most of
+				them catch their food with their talons – something that requires superb eyesight
+				and fast reactions, particularly when catching prey in mid-air. This large order
+				contains eagles, hawks, kites, and falcons, together with carrion-eating vultures.
+				As a group, they live throughout the world except in Antarctica.</para>
+			<!-- Since the key is to be included here, note that role="dataset" has been assigned to the para element. Simply xref'ing the dataset solves the purpose. No need to create a simplelist with role="dataset" since the xref would render the dataset information on its own. -->
+			<para role="dataset">
+				<xref role="key_include" linkend="BIRD100BIRORD_010"/>
+			</para>
+			<section xml:id="BIRD180BIRPRE_008">
+				<title xml:id="BIRD180BIRPRE_009">Anatomy</title>
+				<para xml:id="BIRD180BIRPRE_010">Birds of prey vary hugely in size. Some eagles have
+					a wingspan of nearly 3m (10ft), compared to just 20cm (8in) for the smallest
+					falconets from southeast Asia. Despite this huge difference in size, all birds
+					of prey share a similar body plan, although with markedly different proportions,
+					particularly in the shape of their wings. Birds of prey have powerful feet armed
+					with sharp claws or talons, and their legs are often feathered as far as the
+					ankle joint. All of them have strongly hooked bills, which they use for tearing
+					up their food, rather than for catching their prey. They also have
+					forward-facing eyes – a vital adaptation for judging distances accurately when
+					they move in to make a kill. Owls have a similar anatomy, but unlike them,
+					almost all birds of prey hunt by day.</para>
+			</section>
+			<section xml:id="BIRD180BIRPRE_011">
+				<title xml:id="BIRD180BIRPRE_012">Wings and flight</title>
+				<para xml:id="BIRD180BIRPRE_013">Even from the far distance, their distinctive wing
+					shape and flight path help to identify different birds of prey. Eagles,
+					buzzards, and vultures typically fly high in the sky, soaring effortlessly on
+					their broad, outstretched wings. One species of African vulture – Rüppell’s
+					Vulture – is on record as the highest flier of this order of birds, after
+					colliding with an aircraft at over 11,000m (36,000ft). However, such high-flying
+					birds are an exception, because most birds of prey operate much closer to the
+					ground. Kites and harriers criss-cross open country and woodland, flying at a
+					leisurely pace relatively near the ground as they watch for potential prey
+					below. Birds of the kestrel family are instantly recognizable, because they are
+					among the few birds of prey that hover while they watch for food. Other birds of
+					prey, such as peregrines and sparrowhawks, are pursuit hunters. These have a
+					flight pattern more like that of a fighter plane: they burst through the air at
+					high speed, diving or swooping on other birds, which are their main prey, and
+					move on straight away if they fail to make a kill.</para>
+				<!-- Mediaobjects within a wrapper "figure" -->
+				<!-- Mark-up for images with a common caption -->
+				<figure xml:id="BIRD180BIRPRE_014">
+					<title xml:id="BIRD180BIRPRE_015">Wing shapes</title>
+					<para xml:id="BIRD180BIRPRE_016">With its widely spaced primary flight feathers,
+						the Wedge-tailed Eagle is a typical soaring bird of prey. The Red Kite’s
+						kinked wings make it agile in the air, while the Peregrine Falcon’s slender
+						wings are shaped for speed.</para>
+					<mediaobject xml:id="BIRD180BIRPRE_017">
+						<imageobject xml:id="BIRD180BIRPRE_018">
+							<imagedata fileref="bird180birpre_017.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD180BIRPRE_019">
+							<para>Wedge-tailed Eagle</para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD180BIRPRE_020">
+						<imageobject xml:id="BIRD180BIRPRE_021">
+							<imagedata fileref="bird180birpre_020.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD180BIRPRE_022">
+							<para>Red Kite</para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD180BIRPRE_023">
+						<imageobject xml:id="BIRD180BIRPRE_024">
+							<imagedata fileref="bird180birpre_023.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD180BIRPRE_025">
+							<para>Peregrine Falcon</para>
+						</caption>
+					</mediaobject>
+				</figure>
+			</section>
+			<section xml:id="BIRD180BIRPRE_026">
+				<title xml:id="BIRD180BIRPRE_027">Hunting and diet</title>
+				<para xml:id="BIRD180BIRPRE_028">Despite their reputation as heavyweight hunters,
+					some birds of prey have unusual and surprising diets. The Snail Kite, for
+					example, lives entirely on freshwater snails, while the Palm-nut Vulture from
+					Africa feeds on the fruit of oil and raffia palms. Small falcons often prey on
+					dragonflies, while some large raptors – such as the Common Buzzard – will stoop
+					to eating earthworms if the weather is too cold or wet for soaring. But given
+					good conditions, most raptors are specialists, concentrating on particular kinds
+					of prey. The fish-eating Osprey has spiny toes which help it to grip its catch,
+					while snake eagles grip their prey just behind the head, preventing it from
+					striking back. In tropical forests, Harpy Eagles snatch monkeys and sloths out
+					of the treetops, carrying prey weighing up to 6kg (13lb) – about two-thirds of
+					their own body weight. Aerial hunters, such as Peregrine Falcons and
+					sparrowhawks, can kill birds substantially bigger than themselves. The latter
+					grip their prey with their talons, but Peregrine Falcons slash it as they dive
+					past, leaving the stricken bird to fall tumbling to the ground, where it is
+					retrieved bythe successful hunter.</para>
+				<mediaobject xml:id="BIRD180BIRPRE_029">
+					<imageobject xml:id="BIRD180BIRPRE_030">
+						<imagedata fileref="bird180birpre_029.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_031">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_032">Bird eats bird</title>
+							<para xml:id="BIRD180BIRPRE_033">The Eurasian Sparrowhawk flies low over
+								hedges and woodland, preying on other birds. This adult female is
+								feeding on a Grey Partridge. It plucks its victim’s breast, eats the
+								flight muscles, but leaves the rest.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD180BIRPRE_034">
+					<imageobject xml:id="BIRD180BIRPRE_035">
+						<imagedata fileref="bird180birpre_034.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_036">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_037">Successful catch</title>
+							<para xml:id="BIRD180BIRPRE_038">The Osprey is one of the most
+								widespread birds of prey. It fishes on lakes, reservoirs, and
+								coasts, flying back to a favourite perch after making a
+								catch.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD180BIRPRE_039">
+					<imageobject xml:id="BIRD180BIRPRE_040">
+						<imagedata fileref="bird180birpre_039.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_041">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_042">Nature’s recyclers</title>
+							<para xml:id="BIRD180BIRPRE_043">Vultures are most common in dry, open
+								habitats where columns of rising air make it easy to soar. These
+								White-backed Vultures in Namibia have gathered around a zebra
+								carcass.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+			</section>
+			<section xml:id="BIRD180BIRPRE_044">
+				<title xml:id="BIRD180BIRPRE_045">Nesting and parenting</title>
+				<para xml:id="BIRD180BIRPRE_046">Birds of prey rarely build elaborate nests, and
+					falcons often take over the disused nests of other birds. However, many species
+					show great site tenacity, using the same nest year after year. These birds often
+					add new nesting material each time they breed, creating enormous structures that
+					can weigh over a tonne. Compared to other birds, birds of prey produce
+					relatively few eggs, and they begin incubation as soon as the first is laid. In
+					large eagles, the incubation period can be as long as seven weeks, but in all
+					cases, it starts as soon as the first egg has been laid. Once the eggs have
+					hatched, the chicks can take over two months to fledge. If food runs short
+					during this period, the largest chick frequently eats its smaller
+					siblings.</para>
+				<mediaobject xml:id="BIRD180BIRPRE_047">
+					<imageobject xml:id="BIRD180BIRPRE_048">
+						<imagedata fileref="bird180birpre_047.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_049">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_050">Swooping for the kill</title>
+							<para xml:id="BIRD180BIRPRE_051">With its wings, talons, and tail
+								outstretched, a Golden Eagle swoops down onto its prey. Birds of
+								prey instinctively attack mammals from behind, minimizing their
+								chances of being seen until it is too late for their prey to
+								escape.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD180BIRPRE_052">
+					<imageobject xml:id="BIRD180BIRPRE_053">
+						<imagedata fileref="bird180birpre_052.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD180BIRPRE_054">
+						<formalpara>
+							<title xml:id="BIRD180BIRPRE_055">Growing family</title>
+							<para xml:id="BIRD180BIRPRE_056">High in a pine tree, an adult Northern
+								Goshawk tends its three chicks. As with most birds of prey, the
+								parents bring food back to the nest, and tear it up into pieces that
+								are small enough for their chicks to swallow.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+			</section>
+			<!-- mark-up for a feature -->
+			<section xml:id="BIRD180CLASSI" role="feature">
+				<title xml:id="BIRD180CLASSI_001">Classification</title>
+				<para xml:id="BIRD180CLASSI_002">Birds of prey are classified in a single order.
+					However, DNA and anatomical studies suggest that American vultures are not
+					closely related to vultures from the Old World, and may be closer to storks.
+					Their outward similarity to Old World vultures is probably the result of
+					convergent evolution, creating similar body forms for similar ways of
+					life.</para>
+				<figure xml:id="BIRD180CLASSI_003">
+					<title xml:id="BIRD180CLASSI_004">A case of convergence</title>
+					<para xml:id="BIRD180CLASSI_005">Like other American vultures, the King Vulture
+							(<phrase condition="prt" xml:id="BIRD180CLASSI_003_COND1">
+							<link linkend="BIRD180CLASSI_006">right</link>
+						</phrase>
+						<phrase condition="dig" cref="BIRD180CLASSI_003_COND1">see <link
+								linkend="BIRD180CLASSI_006">image</link>
+						</phrase> ) has long legs and weak feet, without strongly curved toes. The
+						Griffon Vulture (<phrase condition="prt" xml:id="BIRD180CLASSI_003_COND2">
+							<link linkend="BIRD180CLASSI_008">far right</link>
+						</phrase>
+						<phrase condition="dig" cref="BIRD180CLASSI_003_COND2">see <link
+								linkend="BIRD180CLASSI_008">image</link>
+						</phrase> ) is a typical Old World vulture, with grasping feet that are much
+						more like those of eagles and buzzards.</para>
+					<mediaobject xml:id="BIRD180CLASSI_006">
+						<imageobject xml:id="BIRD180CLASSI_007">
+							<imagedata fileref="bird180classi_006.jpg"/>
+						</imageobject>
+					</mediaobject>
+					<mediaobject xml:id="BIRD180CLASSI_008">
+						<imageobject xml:id="BIRD180CLASSI_009">
+							<imagedata fileref="bird180classi_008.jpg"/>
+						</imageobject>
+					</mediaobject>
+				</figure>
+			</section>
+			<!-- Sample mark-up for features "Human Imapact" and "Great Sites" -->
+			<!-- Note the role="feature_human_impact" -->
+			<section xml:id="BIRD181THRCON" role="feature_human_impact">
+				<title xml:id="BIRD181THRCON_001">Threats and conservation</title>
+				<!-- Added subtitle "Human Impact" to capture the text in xml. -->
+				<subtitle xml:id="BIRD181THRCON_008">Human impact</subtitle>
+				<para xml:id="BIRD181THRCON_002">A quarter of all birds of prey are currently listed
+					as vulnerable, threatened, or endangered. In southern Asia, some vultures have
+					declined by over 95 per cent in less than a decade. Birds of prey are also
+					threatened by habitat destruction – something that particularly affects large,
+					tropical forest species.</para>
+				<mediaobject xml:id="BIRD181THRCON_003">
+					<imageobject xml:id="BIRD181THRCON_004">
+						<imagedata fileref="bird181thrcon_003.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD181THRCON_005">
+						<formalpara>
+							<title xml:id="BIRD181THRCON_006">Checking up</title>
+							<para xml:id="BIRD181THRCON_007">A biologist fits a leg band to a
+								Peregrine Falcon chick, so that its movements can be followed once
+								it leaves the nest.</para>
+						</formalpara>
+					</caption>					
+				</mediaobject>
+			</section>
+			<!-- Mark-up for entry -->
+			<section xml:id="BIRD182TURVUL" role="entry">
+				<!-- role="common_name" assigned to the title -->
+				<title xml:id="BIRD182TURVUL_001" role="common_name">Turkey Vulture</title>
+				<simplelist xml:id="BIRD182TURVUL_002" role="dataset">
+					<!-- We could also use role="scientific_name" instead of "latin_name". It should be kept consistent across the title. -->
+					<member xml:id="BIRD182TURVUL_003" role="latin_name">Cathartes aura</member>
+					<!-- Phrase to be use only when needed, In this case (see 'Length'), it has been used to separate out different bits of info -->
+					<!-- The first occurence of phrase (in case of profiling) will have an xml:id while the subsequent related phrases will have the cref attribute -->
+					<member xml:id="BIRD182TURVUL_004">
+						<!-- Note the role="length" used for tagging the numerical value. Role="label" used for the text string "Length" -->
+						<phrase role="label">Length </phrase>
+						<phrase role="length" condition="metric" xml:id="BIRD182TURVUL_002_COND1"
+								>76<phrase role="unit">cm</phrase></phrase>
+						<phrase role="length" condition="imperial" cref="BIRD182TURVUL_002_COND1"
+							rend="surround_with_parenthesis">30<phrase role="unit">in</phrase>
+						</phrase>
+					</member>
+					<member xml:id="BIRD182TURVUL_006">
+						<phrase role="label">Weight </phrase>
+						<phrase role="weight" condition="metric" xml:id="BIRD182TURVUL_002_COND2"
+								>1.4<phrase role="unit">kg</phrase></phrase>
+						<phrase role="weight" condition="imperial" cref="BIRD182TURVUL_002_COND2"
+							rend="surround_with_parenthesis">3<phrase role="fraction"
+								>1/4</phrase><phrase role="unit">lb</phrase>
+						</phrase>
+					</member>
+					<member xml:id="BIRD182TURVUL_008">
+						<phrase role="label">Migration </phrase>
+						<phrase role="migration">Partial migrant</phrase>
+					</member>
+					<member xml:id="BIRD182TURVUL_009">
+						<phrase role="label">Habitat </phrase>
+						<phrase role="habitat">Open or semi-open areas, often nesting on open ground
+							where there are few other nests</phrase>
+					</member>
+				</simplelist>
+				<para xml:id="BIRD182TURVUL_010" role="description">A common bird of North and South
+					America, the Turkey Vulture is so named because its bare-skinned head is similar
+					to that of a <link linkend="BIRD111WILTUR">Wild Turkey</link>
+					<phrase condition="prt" xml:id="BIRD182TURVUL_COND1"> (see <link
+							linkend="BIRD111WILTUR">p.109</link>)</phrase>. Its grey-brown plumage
+					with two-tone wings contrast with its bright red to pink head and neck, and it
+					has a hooked white bill. This vulture has a keen sense of smell, enabling it to
+					locate prey even in thick jungle.</para>
+				<mediaobject xml:id="BIRD182TURVUL_011">
+					<imageobject xml:id="BIRD182TURVUL_012">
+						<imagedata fileref="bird182turvul_011.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD182TURVUL_013">
+						<para>Adult Turkey vulture</para>
+					</caption>
+				</mediaobject>
+				<!-- The key to the distribution map (on page 7) has been called here using callouts as per colour code -->
+				<mediaobject xml:id="BIRD182TURVUL_014" role="locator">
+					<imageobjectco xml:id="BIRD182TURVUL_015">
+						<areaspec>
+							<area xml:id="BIRD182TURVUL_014_001" coords=""/>
+							<area xml:id="BIRD182TURVUL_014_002" coords=""/>
+						</areaspec>
+						<imageobject xml:id="BIRD182TURVUL_016">
+							<imagedata fileref="bird182turvul_016.jpg"/>
+						</imageobject>
+						<calloutlist>
+							<callout xml:id="BIRD182TURVUL_017" arearefs="BIRD182TURVUL_014_001">
+								<para>
+									<!-- xref to the orange box -->
+									<xref role="keyref" linkend="BIRD007DISMAP_007"/>
+								</para>
+							</callout>
+							<callout xml:id="BIRD182TURVUL_018" arearefs="BIRD182TURVUL_014_002">
+								<para>
+									<!-- Purple box -->
+									<xref role="keyref" linkend="BIRD007DISMAP_010"/>
+								</para>
+							</callout>
+						</calloutlist>
+					</imageobjectco>
+				</mediaobject>
+				<!-- Mark-up for generic features -->
+				<section xml:id="BIRD182ROASCA" role="feature">
+					<title xml:id="BIRD182ROASCA_001">Roadside scavengers</title>
+					<para xml:id="BIRD182ROASCA_002">Well known for its habit of feeding on
+						carcasses, the Turkey Vulture is a common roadside scavenger in its range,
+						often seen feeding on roadkill. Its fondness for carrion probably accounts
+						for its increase in populated areas.</para>
+					<mediaobject xml:id="BIRD182ROASCA_003">
+						<imageobject xml:id="BIRD182ROASCA_004">
+							<imagedata fileref="bird182roasca_003.jpg"/>
+						</imageobject>
+					</mediaobject>
+				</section>
+			</section>
+			<!-- Text removed for sample purposes -->
+			<!-- Mark-up for representative spread "Great Sites" -->
+			<section xml:id="BIRD205KRUNAT" role="feature_great_sites">
+				<title xml:id="BIRD205KRUNAT_001">Kruger National Park</title>
+				<subtitle xml:id="BIRD205KRUNAT_038">Great sites</subtitle>
+				<para xml:id="BIRD205KRUNAT_002">One of Africa’s oldest game reserves, Kruger was
+					established as long ago as 1898, and in 1926 it became a national park that
+					today covers almost 19,000 square km (7,350 square miles). The reserve lies
+					within an enormous zone of grassland and scrub, which stretches across the
+					highland plateau of northeastern South Africa and reaches into neighbouring
+					Mozambique and Zimbabwe. This varied subtropical landscape, called bushveld, is
+					a patchwork of open grassy areas and impenetrable thorny thickets, strewn with
+					boulders, rocky outcrops, and stunted trees.</para>
+				<mediaobject xml:id="BIRD205KRUNAT_003" role="map">
+					<imageobject xml:id="BIRD205KRUNAT_004">
+						<imagedata fileref="bird205krunat_003.jpg"/>
+					</imageobject>
+				</mediaobject>
+				<mediaobject xml:id="BIRD205KRUNAT_005" role="locator">
+					<imageobject xml:id="BIRD205KRUNAT_006">
+						<imagedata fileref="bird205krunat_005.jpg"/>
+					</imageobject>
+					<caption xml:id="BIRD205KRUNAT_007">
+						<formalpara>
+							<title xml:id="BIRD205KRUNAT_008">Location</title>
+							<para xml:id="BIRD205KRUNAT_009">In northeastern South Africa, bordered
+								by Mozambique to the east and by Zimbabwe to the north.</para>
+						</formalpara>
+					</caption>
+				</mediaobject>
+				<!-- 'Figure' used for grouping images -->
+				<figure xml:id="BIRD205KRUNAT_020" role="what_to_spot">
+					<title xml:id="BIRD205KRUNAT_021">What to spot</title>
+					<mediaobject xml:id="BIRD205KRUNAT_022">
+						<imageobject xml:id="BIRD205KRUNAT_023">
+							<imagedata fileref="bird205krunat_022.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_024">
+							<para xml:id="BIRD205KRUNAT_025">White-fronted bee-eater <emphasis
+									role="latin_name">Merops bullockoides</emphasis></para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD205KRUNAT_026">
+						<imageobject xml:id="BIRD205KRUNAT_027">
+							<imagedata fileref="bird205krunat_026.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_028">
+							<!-- link tag used for cross-ref'ing -->
+							<para xml:id="BIRD205KRUNAT_029">
+								<link linkend="BIRD273PURTUR">Purple-crested Turaco </link>
+								<emphasis role="latin_name">Tauraco porphyreolophus</emphasis>
+								<phrase condition="prt" xml:id="BIRD205KRUNAT_028_COND1"> (see <link
+										linkend="BIRD273PURTUR">p.273</link>) </phrase>
+							</para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD205KRUNAT_030">
+						<imageobject xml:id="BIRD205KRUNAT_031">
+							<imagedata fileref="bird205krunat_030.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_032">
+							<para xml:id="BIRD205KRUNAT_033">Natal Spurfowl <emphasis
+									role="latin_name">Pternistis natalensis</emphasis></para>
+						</caption>
+					</mediaobject>
+					<mediaobject xml:id="BIRD205KRUNAT_034">
+						<imageobject xml:id="BIRD205KRUNAT_035">
+							<imagedata fileref="bird205krunat_034.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_036">
+							<para xml:id="BIRD205KRUNAT_037">
+								<link linkend="BIRD159SADSTO">Saddle-billed Stork </link>
+								<emphasis role="latin_name">Ephippiorhynchus senegalensis</emphasis>
+								<phrase condition="prt" xml:id="BIRD205KRUNAT_036_COND1"> (see <link
+										linkend="BIRD159SADSTO">p.159</link>) </phrase>
+							</para>
+						</caption>
+					</mediaobject>
+				</figure>
+				<section xml:id="BIRD205KRUNAT_010">
+					<title xml:id="BIRD205KRUNAT_011">Migration destination</title>
+					<para xml:id="BIRD205KRUNAT_012">Kruger National Park is best known for its
+						herds of grazing animals and for the carnivores that hunt them, but it also
+						supports an extraordinary diversity of bird life, so can rank among the most
+						exciting birdwatching destinations in Africa. More than 520 species of bird
+						have been recorded in the reserve, including around 250 species that occur
+						year-round, together with a similar number of migratory species or nomadic
+						wanderers. The majority of the area’s seasonal visitors arrive in summer
+						(October to March) along with the rains. They include many long-distance
+						migrants from Europe and Central Asia, such as the Barn Swallow, European
+						Roller, and Willow Warbler. Several European and Asian birds of prey also
+						migrate to Kruger, such as the Eurasian Hobby and Red-footed Falcon.</para>
+					<para xml:id="BIRD205KRUNAT_013">A host of open-country African birds are found
+						in Kruger all year, from the Secretarybird, which stamps on snakes and other
+						prey with its extremely long legs, to a wide range of bee-eaters, shrikes,
+						pipits, larks, and francolins. The wooded areas are home to species such as
+						wood hoopoes, mousebirds, starlings, and the massive-beaked Southern Ground
+						Hornbill. However, one of the main highlights of the reserve is its
+						impressive variety of birds of prey.</para>
+					<para xml:id="BIRD205KRUNAT_014">During the winter dry season (April to
+						September), birds concentrate at waterholes, rivers, and artificial dams.
+						But in summer, birds are spread throughout the reserve and many species
+						raise young.</para>
+					<mediaobject xml:id="BIRD205KRUNAT_015">
+						<imageobject xml:id="BIRD205KRUNAT_016">
+							<imagedata fileref="bird205krunat_015.jpg"/>
+						</imageobject>
+						<caption xml:id="BIRD205KRUNAT_017">
+							<formalpara>
+								<title xml:id="BIRD205KRUNAT_018">Martial combat</title>
+								<para xml:id="BIRD205KRUNAT_019">A female Warthog defends its piglet
+									from an attacking Martial Eagle. Kruger has one of the highest
+									breeding densities of this powerful bird of prey anywhere in
+									Africa.</para>
+							</formalpara>
+						</caption>
+					</mediaobject>
+				</section>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="BIRD246PIGDOV" role="article" metaref="DK_Columbiformes">
+			<title xml:id="BIRD246PIGDOV_001">Pigeons and Doves</title>
+			<para/>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="BIRD251TOPPIG">
+				<title xml:id="BIRD251TOPPIG_001" role="common_name">Topknot Pigeon</title>
+				<simplelist xml:id="BIRD251TOPPIG_002" role="dataset">
+					<member xml:id="BIRD251TOPPIG_003" role="latin_name">Lopholaimus
+						antarcticus</member>
+					<member xml:id="BIRD251TOPPIG_004">
+						<phrase role="label">Length </phrase>
+						<!-- Mark-up for range in dataset -->
+						<!-- All the ranges, like date and numeric data range etc, should be given range wrappers. The starting and closing range wrappers should both have 'class' attribute, with values "startofrange" and "endofrange" respectively. 
+							'startref' attribute should be used to link the startofrange and endofrange-->
+						<!-- role="length_range" used for the surrounding phrase -->
+						<phrase role="length_range" condition="metric"
+							xml:id="BIRD251TOPPIG_002_COND1">
+							<range class="startofrange" xml:id="BIRD251TOPPIG_005"/>
+							<phrase role="length">40</phrase>–<phrase role="length">45</phrase>
+							<range class="endofrange" startref="BIRD251TOPPIG_005"/>
+							<phrase role="unit">cm</phrase>
+						</phrase>
+						<phrase role="length_range" condition="imperial"
+							cref="BIRD251TOPPIG_002_COND1" rend="surround_with_parenthesis">
+							<range class="startofrange" xml:id="BIRD251TOPPIG_007"/>
+							<phrase role="length">15<phrase role="fraction">1/2</phrase>
+							</phrase>–<phrase role="length">17<phrase role="fraction">1/2</phrase>
+							</phrase>
+							<range class="endofrange" startref="BIRD251TOPPIG_007"/>
+							<phrase role="unit">in</phrase>
+						</phrase>
+					</member>
+					<member xml:id="BIRD251TOPPIG_009">
+						<phrase role="label">Weight </phrase>
+						<phrase role="weight_range" condition="metric"
+							xml:id="BIRD251TOPPIG_002_COND2">
+							<range class="startofrange" xml:id="BIRD251TOPPIG_010"/>
+							<phrase role="weight">450</phrase>–<phrase role="weight">525</phrase>
+							<range class="endofrange" startref="BIRD251TOPPIG_010"/>
+							<phrase role="unit">g</phrase>
+						</phrase>
+						<phrase role="weight_range" condition="imperial"
+							cref="BIRD251TOPPIG_002_COND2" rend="surround_with_parenthesis">
+							<range class="startofrange" xml:id="BIRD251TOPPIG_012"/>
+							<phrase role="weight">16</phrase>–<phrase role="weight">19</phrase>
+							<range class="endofrange" startref="BIRD251TOPPIG_012"/>
+							<phrase role="unit">oz</phrase>
+						</phrase>
+					</member>
+					<member xml:id="BIRD251TOPPIG_014">
+						<phrase role="label">Migration </phrase>
+						<phrase role="migration">Non-migrant</phrase>
+					</member>
+					<member xml:id="BIRD251TOPPIG_015">
+						<phrase role="label">Habitat </phrase>
+						<phrase role="habitat">Rainforest, sometimes in more open areas during
+							nomadic movements</phrase>
+					</member>
+				</simplelist>
+				<para xml:id="BIRD251TOPPIG_016" role="description">This large Australian Pigeon has
+					an unusual crest of elongated feathers on its forecrown. This crest bulges out
+					and then sweeps back over the crown, blending into a second crest of rufous and
+					black feathers that hangs over the nape. Otherwise, it is mainly grey, but has a
+					narrow silver-grey band on its slaty-black tail.</para>
+				<para xml:id="BIRD251TOPPIG_017">A nomadic species, the Topknot Pigeon is generally
+					found in flocks that can number up to hundreds, making seasonal movements in
+					search of food. It tends to feed on fruit in the canopy, but often rests on
+					exposed branches. This species can get water by drinking raindrops trapped in
+					foliage. Breeding occurs from July to January, when a nest of long, loose twigs
+					is built high up in a rainforest tree. One large, slightly glossy egg is
+					laid.</para>
+				<mediaobject xml:id="BIRD251TOPPIG_018">
+					<imageobject xml:id="BIRD251TOPPIG_019">
+						<imagedata fileref="bird251toppig_018.jpg"/>
+					</imageobject>
+					<caption>
+						<para>Adult Topknot Pigeon</para>
+					</caption>
+				</mediaobject>
+				<mediaobject xml:id="BIRD251TOPPIG_020" role="locator">
+					<imageobjectco>
+						<areaspec>
+							<area xml:id="BIRD251TOPPIG_020_001" coords=""/>
+						</areaspec>
+						<imageobject xml:id="BIRD251TOPPIG_021">
+							<imagedata fileref="bird251toppig_020.jpg"/>
+						</imageobject>
+						<calloutlist>
+							<callout xml:id="BIRD251TOPPIG_022" arearefs="BIRD251TOPPIG_020_001">
+								<para>
+									<!-- xref to the orange box -->
+									<xref role="keyref" linkend="BIRD007DISMAP_007"/>
+								</para>
+							</callout>
+						</calloutlist>
+					</imageobjectco>
+				</mediaobject>
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+		<!-- Text removed for sample purposes -->
+		<!-- entry for cross-ref (for validating the file) -->
+		<section xml:id="BIRD272CUCTUR" role="article" metaref="DK_Cuculiformes">
+			<title xml:id="BIRD272CUCTUR_001">Cuckoos and Turacos</title>
+			<para/>
+			<section xml:id="BIRD273PURTUR" role="entry">
+				<title xml:id="BIRD273PURTUR_001">Purple-crested Turaco</title>
+				<para/>
+			</section>
+		</section>
+		<!-- Text removed for sample purposes -->
+	</chapter>
+</book>

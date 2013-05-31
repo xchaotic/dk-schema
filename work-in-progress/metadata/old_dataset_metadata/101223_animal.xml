@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample mark-up for the title Animal -->
+<!-- This sample contains dummy destination IDs for the cross references to enable validation of the file. Please assign correct destination ids where required. -->
+<!--Dummy usuage value 'print' has been assigned to illustrations for sample purposes. Please provide correct usuage values in the master XML. Also, correct image extension -".gif" or ".jpg" as per the correct format -->
+<!-- "role" attribute is to be used where semantic value of the content needs to be defined, while "type" should be used where print copy needs to be followed. For instance, paras should carry a "role="leadin" in case the initial bit needs to be highlighted as leadin or the illustrations should carry "role=locator" in case these are small locator kind of maps. On the other hand, the data heads inside datasets, like weight, social unit etc. should be marked as types since they are present in/have been derived from the print and might need to be rendered verbatim in the output as well -->
+<book id="ANIMAL">
+	<title>Illustrated Encyclopedia of Animals</title>
+	<toc>
+		<head>Contents</head>
+		<toc_entry>
+			<toc_name>Preface</toc_name>
+			<page_ref>8</page_ref>
+		</toc_entry>
+		<toc_entry>
+			<toc_name>About this Book</toc_name>
+			<page_ref>10</page_ref>
+		</toc_entry>
+		<toc_section>
+			<toc_entry>
+				<toc_name>Introduction</toc_name>
+				<page_ref>12</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>What are Animals?</toc_name>
+				<page_ref>14</page_ref>
+			</toc_entry>
+			<toc_entry>
+				<toc_name>Evolution</toc_name>
+				<page_ref>16</page_ref>
+			</toc_entry>
+			<!-- text removed for sample purposes -->
+		</toc_section>
+		<!-- text removed for sample purposes -->
+	</toc>
+	<!-- text removed for sample purposes -->
+	<article id="ANIMAL010ABOBOO">
+		<head>About this <deftext>content</deftext>
+			<alttext_group>
+				<alttext>Book</alttext>
+			</alttext_group>
+		</head>
+		<intro id="ANIMAL010ABOBOO_002">
+			<p>
+				<hi rend="i">Animal</hi> is organized into three main sections: a general <xref destinationid="ANIMAL012INTROD">INTRODUCTION</xref> to animals and their lives; a section ..................... and common name, including alternative common names.</p>
+		</intro>
+		<!-- text removed for sample purposes -->
+		<key id="ANIMAL010ABOBOO_001">
+			<head>Habitat Symbols</head>
+			<p>Symbols in profiles ..................occurrence.</p>
+			<key_item id="ANIMAL010ABOBOO_001_001" role="habitat">
+				<key_pointer>
+					<illustration id="ANIMAL010ABOBOO_003" usage="print">
+						<image src="animal010aboboo_003.gif"/>
+					</illustration>
+				</key_pointer> Temperate forest, including woodland</key_item>
+			<key_item id="ANIMAL010ABOBOO_001_002" role="habitat">
+				<key_pointer>
+					<illustration id="ANIMAL010ABOBOO_004" usage="print">
+						<image src="animal010aboboo_004.gif"/>
+					</illustration>
+				</key_pointer> Coniferous forest, including woodland</key_item>
+			<!-- text remoed for sample purposes -->
+			<key_item id="ANIMAL010ABOBOO_001_003" role="habitat">
+				<key_pointer>
+					<illustration id="ANIMAL010ABOBOO_005" usage="print">
+						<image src="animal010aboboo_005.gif"/>
+					</illustration>
+				</key_pointer> Desert and semidesert</key_item>
+			<!-- text removed for sample purposes -->
+		</key>
+	</article>
+	<!-- text removed for sample purposes -->
+	<part id="ANIMAL012INTROD">
+		<head>Introduction</head>
+		<intro id="ANIMAL012INTROD_001">
+			<p>Animals form the largest of the natural world’s five kingdoms. Although they evolved after other living things, they are now the dominant form of life on earth. Among the attributes that have made them so successful are the abilities to adapt their behaviour and to move. As well as the features that set animals apart, this section looks at how they have evolved, their often complex responses to the world around them, and the way biologists classify them. It also examines the many threats they face.</p>
+		</intro>
+		<illustration id="ANIMAL012INTROD_002" usage="print">
+			<image src="animal012introd_002.jpg"/>
+		</illustration>
+		<article id="ANIMAL014WHAANI">
+			<head>What are Animals?</head>
+			<!-- text removed for sample purposes -->
+			<section id="ANIMAL014WHAANI_002">
+				<head>Characteristics of Animals</head>
+				<p>Animals are usually easy to distinguish from other forms of life because most of them can move. However, while this rule works for most animals that live on land, it does not apply to many that live in water. Here, many animals spend their adult lives in one place, and some have trailing arms or tentacles that make them look very much like plants. A more reliable way of identifying animals is by their basic biological features: their bodies are composed of many cells, and they have nerves and muscles that enable them to respond to the world around them. Most important of all, they get the energy they need by taking in food.</p>
+				<p>Animals are highly complex, and remarkably responsive, compared with other forms of life. Even the simplest animals react quickly to changes around them, shrinking away from potential danger or reaching out for food. Animals with well-developed nervous systems can go much further: they can learn from experience – an ability that is unique to the animal world.</p>
+				<illustration id="ANIMAL014WHAANI_003" usage="print">
+					<image src="animal014whaani_003.jpg"/>
+					<caption>
+						<head>Static life</head>
+						<p>Sea squirts are typical “sessile” animals: they spend their adult lives fixed to a solid surface. The young, which resemble tadpoles, can move freely, enabling sea squirts to spread.</p>
+					</caption>
+				</illustration>
+			</section>
+			<section id="ANIMAL014WHAANI_004">
+				<head>The scale of animal life</head>
+				<p>The world’s largest living animals, baleen whales, .......................... body systems needed for survival.</p>
+				<!-- text removed for sample purposes -->
+			</section>
+			<!-- text removed for sample purposes -->
+		</article>
+	</part>
+	<part id="ANIMAL082-597ANIKIN">
+		<head>The Animal Kingdom</head>
+		<!-- text removed for sample purposes -->
+		<chapter id="ANIMAL084-257MAMMAL">
+			<head>Mammals</head>
+			<!-- text removed for sample purposes -->
+			<article id="ANIMAL086MAMMAL">
+				<head>Mammals</head>
+				<intro id="ANIMAL086MAMMAL_001">
+					<p>
+						<hi role="leadin">Mammals, the most familiar</hi> group of vertebrates, all nourish their young on milk produced by the female’s mammary glands (the unique skin structures after which the class is named). Most also give birth to live young and, with only a few exceptions, have a covering of hair on their body. Mammals are most widespread and diverse on land, but they have also colonized air and water. Their success is largely due to their ability to maintain a constant internal body temperature, regardless of changing external conditions. They are also highly adaptable and often modify their behaviour to suit changing circumstances. Some mammals, especially primates (the group that includes humans), form complex societies.</p>
+				</intro>
+				<dataset id="ANIMAL086MAMMAL_002" role="classification">
+					<data type="phylum">Chordata</data>
+					<data type="class">Mammalia</data>
+					<data type="orders">21</data>
+					<data type="families">140</data>
+					<data type="species">4,475</data>
+				</dataset>
+				<section id="ANIMAL086MAMMAL_003">
+					<head>Evolution</head>
+					<p>The ancestors of mammals were a group of reptiles known as the therapsids. ......................... faster and more agile.</p>
+					<!-- text removed for sample purposes -->
+				</section>
+				<!-- text removed for sample purposes -->
+			</article>
+			<chapter_div id="ANIMAL090EGGMAM">
+				<head>Egg-laying Mammals</head>
+				<intro id="ANIMAL090EGGMAM_001">
+					<p>
+						<hi role="leadin">Also known as</hi> monotremes, this group comprises the duck-billed platypus and the echidnas. Monotremes are the only mammals that lay eggs. The duck-billed platypus has a duck-like bill, a beaver-like tail, and webbed feet. Echidnas have a tubular beak, huge claws for digging, and spines. The duck-billed platypus lives in freshwater in eastern Australia; echidnas exist in varied habitats in Australia and New Guinea.</p>
+				</intro>
+				<dataset id="ANIMAL090EGGMAM_002" role="classification">
+					<data type="phylum">Chordata</data>
+					<data type="class">Mammalia</data>
+					<data type="order">Monotremata</data>
+					<data type="families">2</data>
+					<data type="species">5</data>
+				</dataset>
+				<!-- text remoed for sample purposes -->
+				<entry id="ANIMAL090SHOECH">
+					<head role="common_name">Short-nosed echidna</head>
+					<dataset id="ANIMAL090SHOECH_001">
+						<!-- The following dataset contains some dummy data blocks in addition to what is there in the print for this particular entry. This has been done in order to cover all the probable cases of data roles and types etc. in the sample -->
+						<!-- "role" will define the semantic value of the data or the broad data category which could encompass further categories (for eg. size could cover length, height, wingspan etc.), while "type" will always follow the print value. For instance, the "role" for both length and tail length would be "size", though the "type" would be "length" and "tail" as shown below  -->
+						<data role="taxonomic_info" type="species">Tachyglossus aculeatus</data>
+						<!-- common name needs to be repeated inside the dataset -->
+						<data role="taxonomic_info" type="common_name">Greater spotted tern</data>
+						<!-- The numerical data values need to be tagged as data_value, though data_range should to be used wherever ranges appear. The units need to be kept inside data value in case of single values, while inside the data_range tag for the ranges -->
+						<data role="size" type="length">
+							<data_range>
+								<data_value>30</data_value>–<data_value>45</data_value>
+								<unit>cm</unit>
+							</data_range> (<data_range>
+								<data_value>12</data_value>–<data_value>18</data_value>
+								<unit>in</unit>
+							</data_range>)</data>
+						<data role="size" type="tail">
+							<data_value>1 <unit>cm</unit>
+							</data_value> (<data_value>
+								<fraction>
+									<numerator>3</numerator>
+									<separator>/</separator>
+									<denominator>8</denominator>
+								</fraction>
+								<unit>in</unit>
+							</data_value>)</data>
+						<data role="weight" type="weight">
+							<data_range>
+								<data_value>2.5</data_value>–<data_value>7</data_value>
+								<unit>kg</unit>
+							</data_range> (<data_range>
+								<data_value>5<fraction>
+										<numerator>1</numerator>
+										<separator>/</separator>
+										<denominator>2</denominator>
+									</fraction>
+								</data_value>–<data_value>15</data_value>
+								<unit>lb</unit>
+							</data_range>)</data>
+						<data role="social_unit" type="social_unit">Individual</data>
+						<data role="conservation_status" type="status">Lower risk</data>
+						<data role="conservation_status" type="status">Endangered</data>
+						<!-- keyrefs should be used wherever the symbols have been defined elsewhere (in the beginning of the book in this case) and carry an associated icon -->
+						<data role="habitat" type="habitat" keyref="ANIMAL010ABOBOO_001_001"/>
+						<data role="habitat" type="habitat" keyref="ANIMAL010ABOBOO_001_003"/>
+						<data role="plumage" type="plumage">Sexes differ</data>
+						<data role="migration" type="migration">Non-migrant</data>
+						<data role="breeding" type="breeding">Oviparous</data>
+						<data role="breeding_season" type="breeding_season">summer</data>
+						<data role="habit" type="habit">Aquatic</data>
+						<data role="sex" type="sex">Male/Female</data>
+						<data role="occurrence" type="occurrence">Temperate waters of northeastern Atlantic, fresh water inland</data>
+						<!-- The location information present in the caption of the locator map should be repeated as data inside the dataset -->
+						<data role="location" type="location">Australia (including Tasmania), New Guinea</data>
+					</dataset>
+					<illustration id="ANIMAL090SHOECH_004" role="locator" usage="print">
+						<image src="animal090shoech_004.gif"/>
+						<caption>
+							<p>
+								<hi rend="b">Location</hi> Australia (including Tasmania), New Guinea</p>
+						</caption>
+					</illustration>
+					<!-- A section wrap with role "description" should be used for the general descriptive passage appearing inside the entries. The locator illustration needs to be placed outside this passage as it belongs to the entry, while the more 'decorative illustrations that 'belong' to the descriptive passage (for instance the animal shown under this entry) need to sit inside the section role="description" -->
+					<section id="ANIMAL090SHOECH_002" role="description">
+						<p>The spines of the Short-nosed Echidna – also called the Spiny Anteater – are longer than the fur between them. Active both day and night, this echidna is solitary and can become torpid in very cold or hot weather, when its temperature falls from the normal 31–33°C (88–92°F) to as low as 4°C (39°F). It eats a variety of ants, termites, grubs, and worms. These are detected by smell and perhaps by sensors on the long snout that detect electric signals. The small head joins the shoulders with no external neck.</p>
+						<illustration id="ANIMAL090SHOECH_003" usage="print">
+							<image src="animal090shoech_003.jpg"/>
+						</illustration>
+					</section>
+				</entry>
+				<entry id="ANIMAL090LONECH">
+					<head role="common_name">Long-nosed echidna</head>
+					<!-- text removed for sample purposes -->
+				</entry>
+				<!-- text removed for sample purposes -->
+			</chapter_div>
+			<!-- text removed for sample purposes -->
+			<chapter_div id="ANIMAL116-137PRIMAT">
+				<head>Primates</head>
+				<!-- text removed for sample purposes -->
+				<!-- articles need to be used wherever the chapter_divs are divided in to further categories, as shown below -->
+				<article id="ANIMAL118PROSIM">
+					<head>Prosimians</head>
+					<!-- text removed for sample purposes -->
+					<entry id="ANIMAL119ANGWAN">
+						<head role="common_name">Angwantibo</head>
+						<!-- text removed for sample purposes -->
+					</entry>
+					<!-- text removed for sample purposes -->
+				</article>
+				<!-- text removed for sample purposes -->
+			</chapter_div>
+			<!-- text removed for sample purposes -->
+		</chapter>
+		<!-- text removed for sample purposes -->
+	</part>
+	<!-- text removed for sample purposes -->
+	<glossary id="ANIMAL598GLOSSA">
+		<head>Glossary</head>
+		<gloss_section id="ANIMAL598GLOSSA_001">
+			<head>A</head>
+			<gloss_entry id="ANIMAL598GLOSSA_002">
+				<term>Abdomen</term>
+				<description>The hind part of the body. The abdomen lies below the ribcage in mammals, and behind the thorax in arthropods.</description>
+			</gloss_entry>
+			<!-- text removed for sample purposes -->
+		</gloss_section>
+		<!-- text removed for sample purposes -->
+	</glossary>
+	<index id="ANIMAL602INDEX">
+		<head>Index</head>
+		<p>In this index, page references in italics identify where the main illustrations for a particular animal or subject appear. Page references in bold type refer to introductions to animal groups.</p>
+		<index_section id="ANIMAL602INDEX_001">
+			<head>A</head>
+			<index_entry>
+				<primary_entry>aardvark <page_ref>20</page_ref>, <page_ref>89</page_ref>,<page_ref>
+						<hi rend="i">222</hi>
+					</page_ref>
+				</primary_entry>
+			</index_entry>
+			<index_entry>
+				<primary_entry>aardwolf <page_ref>178</page_ref>, <page_ref>206</page_ref>,<page_ref>
+						<hi rend="i">207</hi>
+					</page_ref>
+				</primary_entry>
+			</index_entry>
+			<index_entry>
+				<primary_entry>Abah River flying frog <page_ref>
+						<hi rend="i">455</hi>
+					</page_ref>
+				</primary_entry>
+			</index_entry>
+			<!-- text removed for sample purposes -->
+		</index_section>
+		<!-- text removed for sample purposes -->
+	</index>
+</book>

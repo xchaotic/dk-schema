@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
+<!-- sample mark-up for the fractions and equation -->
+<!-- This is a dummy sample (screenshot not available)-->
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title xml:id="title001">An article</title>
+    <para>This is a sample fraction <informalequation>
+            <mathphrase role="decimal">1 </mathphrase>
+            <mathphrase role="text"> and </mathphrase>
+            <mathphrase role="fraction">1/2</mathphrase>
+        </informalequation>.</para>
+    <para>This is a sample equation <informalequation>
+            <mathphrase>x<superscript>2</superscript> + y<superscript>2</superscript> ≠
+                    z<superscript>2</superscript></mathphrase>
+        </informalequation>. </para>
+    <equation>
+        <title>Fermat's Last Theorem</title>
+        <alt>x^n + y^n ≠ z^n ∀ n ≠ 2</alt>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="figures/fermat.png"/>
+            </imageobject>
+            <textobject>
+                <phrase>x^n + y^n ≠ z^n ∀ n ≠ 2</phrase>
+            </textobject>
+        </mediaobject>
+    </equation>
+    <!-- MathML can be used, but due to it's complexity, should be restricted to books about mathematics etc -->
+    <para><inlineequation>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                <mml:mrow>
+                    <mml:msup>
+                        <mml:mi>a</mml:mi>
+                        <mml:mn>2</mml:mn>
+                    </mml:msup>
+                    <mml:mo>=</mml:mo>
+                    <mml:msup>
+                        <mml:mi>b</mml:mi>
+                        <mml:mn>2</mml:mn>
+                    </mml:msup>
+                    <mml:mo>+</mml:mo>
+                    <mml:msup>
+                        <mml:mi>c</mml:mi>
+                        <mml:mn>2</mml:mn>
+                    </mml:msup>
+                </mml:mrow>
+            </mml:math>
+        </inlineequation></para>
+</article>

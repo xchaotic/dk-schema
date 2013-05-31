@@ -1,0 +1,72 @@
+
+        include "dk-extensions.rnc" {
+        dk.metaref.attribute = attribute metaref {
+        
+            
+            "DK_Natural_History" | 
+            "DK_Animal_Kindgom" | 
+            "DK_Mammals" | 
+            "DK_Egg_Laying_Mammals" | 
+            "DK_Short_Nosed_echidna" | 
+            
+            "DK_Natural_History_identifiers" | 
+            "DK_Common_Name" | 
+            "DK_Latin_Name" | 
+            
+            "DK_habitat" | 
+            "habitat_temperate_forest" | 
+            "habitat_desert" | 
+            "habitat_open" | 
+            
+            "DK_Natural_History_measurements" | 
+            "DK_animal_length" | 
+            "DK_tail_length" | 
+            
+            "DK_Countries_and_Teritories" | 
+            "DK_Australia_and_Oceania" | 
+            "DK_East_Australia" | 
+            "DK_New_Guinea" | 
+            "DK_Tasmania" | 
+            
+            "ISO_Country_Codes" | 
+            "AU" | 
+            "PG" | 
+            "GB" | 
+            "FI" | 
+            
+            "ISO_Countries" | 
+            "AUSTRALIA" | 
+            
+            "SI_units" | 
+            "SI_meter" | 
+            
+            "SI_derived_units" | 
+            "SI_centimeter" | 
+            
+            "imperial_units" | 
+            "imperial_inch" | 
+            
+            "test_001" | 
+            "Paris_001" | 
+            "Versaiile_001" | 
+            "Eiffel_001" | 
+            "Children_001" | 
+            "Museums_001" | 
+            "Children_Paris_001" | 
+            "COOKEXP_001" | 
+            "a_15minutes_cook" | 
+            "healthy_001" | 
+            "serves4" | 
+            "Ingredients_001" | 
+            "roastbeef_001" | 
+            "spinach_001" | 
+            "dataset_001" | 
+            "NaturalHistory_001" | 
+            "animal_categories_001" | 
+            "phylum" | 
+            "class_animal" | 
+            "orders" | 
+            "families" | 
+            "species" 
+            }}
+        

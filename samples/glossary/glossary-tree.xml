@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="animal"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title xml:id="animal_000">Flower arrangements</title>
+    <!-- This sample shows a glossary with embedded mediaobjects - figure-->
+    <glossary xml:id="tree_001">
+        <title>Glossary</title>
+        <figure>
+            <title>FLOWER ARRANGEMENTS</title>
+            <para>Flowers are arranged on a single stem either singly or in groups called
+                inflorenscenses.</para>
+            <mediaobject xml:id="flower_arrangements_001">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/umbel.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>UMBEL</para>
+                </caption>
+            </mediaobject>
+            <mediaobject xml:id="flower_arrangements_002">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/cyme.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>CYME</para>
+                </caption>
+            </mediaobject>
+            <mediaobject xml:id="flower_arrangements_003">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/solitary.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>SOLITARY</para>
+                </caption>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>SIMPLE LEAF ARRANGEMENTS</title>
+            <para>Simple leaves are not divided into secondary units</para>
+            <mediaobject xml:id="simple_arrangements_001">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/cyme.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>OPPOSITE</para>
+                </caption>
+            </mediaobject>
+            <mediaobject xml:id="simple_arrangements_002">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/solitary.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>ALTERNATE</para>
+                </caption>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>COMPONENT LEAF ARRANGEMENTS</title>
+            <para>Leaves that are arranges into individual leaflets are known as compound
+                leaves.</para>
+            <mediaobject xml:id="component_arrangements_001">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/cyme.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>OPPOSITE</para>
+                </caption>
+            </mediaobject>
+            <mediaobject xml:id="component_arrangements_002">
+                <imageobject>
+                    <imagedata fileref="glossary-tree/solitary.jpg"/>
+                </imageobject>
+                <caption>
+                    <para>ALTERNATE</para>
+                </caption>
+            </mediaobject>
+        </figure>
+
+        <glossentry xml:id="tree_002">
+            <glossterm>LATERAL</glossterm>
+            <glossdef>
+                <para>Located on or to the side of an axis.</para>
+            </glossdef>
+            <glossdef>
+                <para>Side shoot arising from the stem of the plant</para>
+            </glossdef>
+        </glossentry>
+        <glossentry xml:id="tree_003">
+            <glossterm>LEAFLET</glossterm>
+            <glossdef>
+                <para>Single division of a a compound leaf. Also known as a pina.</para>
+            </glossdef>
+        </glossentry>
+
+        <glossentry xml:id="tree_004">
+            <glossterm>LENTICEL</glossterm>
+            <glossdef>
+                <para>Raised pore on the surface of bark or some fruits that provides access for air
+                    to the inner tissues.</para>
+            </glossdef>
+        </glossentry>
+
+
+        <!-- text removed for brevity -->
+    </glossary>
+
+</book>

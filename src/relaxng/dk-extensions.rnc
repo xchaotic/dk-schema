@@ -1,0 +1,81 @@
+default namespace db = "http://docbook.org/ns/docbook"
+namespace dk = "http://docbook.org/ns/docbook"
+namespace s = "http://www.ascc.net/xml/schematron"
+namespace svg = "http://www.w3.org/2000/svg"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+include "cookery/cookery.inc"
+include "phrasebook/phrasebook.inc"
+
+include "db-publishers-sc.rnc" {
+  db.condition.attribute =
+    
+    ## DK Specific: values are enumerated here:
+    attribute condition { "prt" | "dig" | "imperial" | "metric" }
+    
+    ## DK Specific: allow more rend values
+db.rend.attribute.enumeration = "b" | "i" | "bi" | "u" | "level_H1" | "level_H2"| "level_H3"| "level_H4"| "level_H5"| "level_H6" 
+
+}
+
+## DK Specific: extend the common attributes to allow cref, metaref, geo and RDFa attributes everywhere
+db.common.attributes &=
+  dk.cref.attribute? & dk.metaref.attribute? & dk.geo.attributes?  ## & RDFa.attributes? -uncomment to add RDFa
+  
+  
+## DK Specific allowing ranges using phrase element, by using class attribute
+
+db.phrase.attlist &= dk.phraserange.class.attribute?
+dk.phraserange.class.attribute = attribute class { "startofrange" | "endofrange" }
+  
+
+## DKSpecific: allowing ranges everywhere, TODO - see why the redefinition doesn't include original elements:
+db.publishing.blocks |= dk.range
+db.publishing.inlines |= dk.range
+
+## DK Specific:  allow meta in the info block
+db.info.elements |= dk.meta
+dk.cref.attribute =
+  
+  ## DK Specific: use cref attribute to identify equivalent blocks when profiling is used
+  attribute cref { text }
+dk.metaref.attribute =
+  
+  ## DK Specific: use metaref attribute to assign metadata classification on any element
+  attribute metaref { text }
+
+## DK Specific: define meta element and allow in the info block
+dk.meta.attlist = dk.metaref.attribute | db.common.attributes
+dk.meta = element meta { dk.meta.attlist, empty }
+# DK Specific: geo attributes contain latitude and longtitude of a goegraphical location
+dk.geo.attributes = dk.lat.attribute & dk.lon.attribute 
+dk.lat.attribute =
+  attribute lat { text }
+  
+dk.lon.attribute =
+  attribute lon { text }
+## DK Specific: inherit indexterm model to model range.
+dk.range.attlist =
+  db.indexterm.startofrange.attlist | db.indexterm.endofrange.attlist
+dk.range = element range { dk.range.attlist, empty }
+
+## DK Specific: add RDFa attributes
+
+RDFa.attributes = about? & content? & datatype? & inlist? & prefix? & property? & rel? & resource? & rev? & typeof? & vocab?
+
+ about = attribute  about { text }
+ content = attribute  content { text }
+ datatype = attribute  datatype { text }
+ inlist = attribute  inlist { text }
+ prefix = attribute  prefix { text }
+ property = attribute  property { text }
+ rel = attribute  rel { text }
+ resource = attribute  resource { text }
+ rev = attribute  rev { text }
+ typeof = attribute  typeof { text }
+ vocab = attribute  vocab { text }
+ 
+## DK Specific: add RDFa attributes
+
+db.address &= db.phrase
+

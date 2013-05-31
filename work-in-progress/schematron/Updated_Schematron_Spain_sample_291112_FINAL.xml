@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://kode1100.com/dk/dk-schema/dk-schema.rnc" type="compact"?>
+
+
+<!-- DMD: Current sample is based on profiling values prt and dig
+     prt - anything that is specific to the print version/master and needs to be stripped out
+     dig - anything that is required to be outputted for a digital product such as epub, etc -->
+
+
+<!-- DMD: This sample has the following examples:
+	 1) composite image (Author picks)
+     2) Feature box image which needs to be stripped out for the epub.
+     3) sight POI with structured POI data (in the GUIDE section only)
+     4) event and POI within sections (yet to be captured)(in the GUIDE section only)
+     5) Listings POI with unstructured POI information (in the GUIDE section or the listings chapter of a City Guide)
+     6) Listings POI with structured POI data (in the GUIDE section or the listings chapter of a City Guide)
+     7) Map Index for country/city guides
+	 8) Cross-references: positional references, page references -->
+
+
+<book version="dk_5.0" xml:id="RG_SPAIN" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- Since the imprint data is to be included in the xml, we require an info tag. Please note that title would also be included in the info tag -->
+    <info>
+	    <title>The Rough Guide to Spain</title>
+        <cover>
+            <mediaobject xml:id="COVER" metaref="book_cover">
+                <imageobject>
+                    <imagedata fileref="cover.jpg"/>
+                </imageobject>
+            </mediaobject>
+            <mediaobject xml:id="HALF_TITLE" metaref="half_title">
+                <imageobject>
+                    <imagedata fileref="half_title.jpg"/>
+                </imageobject>
+            </mediaobject>
+        </cover>
+        <publisher>
+            <publishername>Rough Guides</publishername>
+            <address>
+                <street>xxx</street>
+                <city>yyy</city>
+                <postcode>zzz</postcode>
+                <country>aaa</country>
+                <uri>roughguides.com</uri>
+            </address>
+        </publisher>
+        <authorgroup>
+            <author metaref="author">
+                <personname>
+                    <firstname>First name</firstname>
+                    <surname>Surname</surname>
+                </personname>
+            </author>
+            <editor metaref="editor">
+                <personname>
+                    <firstname>First name</firstname>
+                    <surname>Surname</surname>
+                </personname>				
+            </editor>
+            <!-- Metaref for other credits would be a generic value, such as contributor. -->
+            <othercredit metaref="contributor">
+                <personname>
+                    <firstname>First name</firstname>
+                    <surname>Surname</surname>
+                </personname>
+            </othercredit>
+        </authorgroup>
+        <biblioset xml:lang="en-GB">
+        	<biblioid role="ISBN" metaref="US_epub_ISBN">Digital epub ISBN</biblioid>
+        	<biblioid role="ISBN" metaref="UK_epub_ISBN">Digital mobi ISBN</biblioid>
+            <bibliosource role="ISBN" metaref="print">Print ISBN (source)</bibliosource>
+            <edition>Fourteenth edition</edition>
+            <revhistory>
+                <revision>
+                    <date>2013</date><!-- The next date of revisions would be used -->					
+                </revision>
+                <revision>
+                    <date/>					
+                </revision>
+            </revhistory>
+            <date>March 2012</date>
+        </biblioset>
+        <!-- Biblioset for US -->
+        <biblioset xml:lang="en-US">
+            <biblioid role="ISBN" metaref="epub">Digital epub ISBN</biblioid>
+            <biblioid role="ISBN" metaref="mobi">Digital mobi ISBN</biblioid>
+            <bibliosource role="ISBN" metaref="print"/>
+            <!-- Since we do not have US print book, the edition and revhistory tags would not be used -->
+        </biblioset>
+	</info>
+    <preface xml:id="RG_SPAIN001INSBOO" condition="prt">
+		<title>Inside this <phrase xml:id="RG_SPAIN001INSBOO_COND1" condition="prt">Book</phrase>
+			<phrase cref="RG_SPAIN001INSBOO_COND1" condition="prt">Guide</phrase>
+		</title>
+		<formalpara xml:id="RG_SPAIN001INSBOO_001">
+			<title>Introduction</title>
+			<para>What to see, what not to miss, itineraries and more – everything you need to get
+				started</para>
+		</formalpara>
+		<!-- Text removed for sample purposes -->
+		<para role="key">We’ve flagged up our favourite places – a perfectly sited hotel, an
+			atmospheric café, a special restaurant – throughout the guide with the
+				<inlinemediaobject xml:id="RG_SPAIN001INSBOO_005">
+				<imageobject>
+					<imagedata fileref="rg_spain001insboo_005.jpg"/>
+				</imageobject>
+			</inlinemediaobject> symbol.</para>
+		<mediaobject xml:id="RG_SPAIN001INSBOO_006_map">
+			<imageobjectco>
+				<areaspec>
+					<area xml:id="RG_SPAIN001INSBOO_006_map_1" coords=""/>
+					<area xml:id="RG_SPAIN001INSBOO_006_map_2" coords=""/>
+					<!-- Text removed for sample purposes -->
+				</areaspec>
+				<imageobject>
+					<imagedata fileref="rg_spain001insboo_006.gif"/>
+				</imageobject>
+			</imageobjectco>
+			<caption>
+				<variablelist xml:id="RG_SPAIN001INSBOO_007" role="key" xreflabel="Spain Map Key">
+					<varlistentry xml:id="RG_SPAIN001INSBOO_007_1" xreflabel="Madrid">
+						<term>Madrid</term>
+						<listitem>
+							<para>
+								<xref linkend="RG_SPAIN001INSBOO_006_map_1" role="map_callout"/>
+								<inlinemediaobject>
+									<imageobject>
+										<imagedata fileref="1_round.gif"/>
+									</imageobject>
+								</inlinemediaobject>
+							</para>
+						</listitem>
+					</varlistentry>
+					<!-- Text removed for sample purposes -->
+				</variablelist>
+			</caption>
+		</mediaobject>
+		<para>Make the Most of Your Time on Earth at <phrase rend="b">
+				<uri xlink:href="http://roughguides.com">roughguides.com</uri>
+			</phrase>
+		</para>
+		<para>This fourteenth edition published March 2012</para>
+	</preface>
+	<toc>
+		<tocdiv linkend="RG_SPAIN004INTSPA">
+			<title>Introduction</title>
+			<tocentry pagenum="5" linkend="xxx">Where to go</tocentry>
+			<tocentry pagenum="13" linkend="xxx">When to go</tocentry>
+			<tocentry pagenum="14" linkend="xxx">Things not to miss</tocentry>
+			<tocentry pagenum="24" linkend="xxx">Itineraries</tocentry>
+		</tocdiv>
+		<!-- Text removed for sample purposes -->
+		<tocdiv linkend="xxx">
+			<title>Contexts</title>
+			<tocentry pagenum="891" linkend="xxx">History</tocentry>
+			<tocentry pagenum="906" linkend="xxx">Wildlife</tocentry>
+			<tocentry pagenum="912" linkend="xxx">Flamenco</tocentry>
+			<tocentry pagenum="916" linkend="xxx">Books</tocentry>
+			<!-- DMD: xml:id added to tocentry when using condition attribute -->
+			<tocentry pagenum="923" linkend="xxx" condition="prt" xml:id="yyy">Language</tocentry>
+		</tocdiv>
+		<tocentry pagenum="931" linkend="xxx">Small print and Index</tocentry>
+	</toc>
+	<chapter xml:id="RG_SPAIN004INTROD">
+		<title>Introduction</title>
+		<!-- DMD: There shouldnt be any nested prt conditions? -->
+		<section xml:id="RG_SPAIN004INTROD_001" role="illustration" condition="prt">
+			<title/>
+			<!-- rend="half_title" -->
+			<mediaobject xml:id="RG_SPAIN004INTROD_002" rend="half_title">
+				<imageobject>
+					<imagedata fileref="rg_spain004introd_002.jpg"/>
+				</imageobject>
+				<caption>
+					<para>
+					    <!-- DMD: Note that the nested prt conditions should be avoided. It must be removed from here -->
+						<!-- <phrase condition="prt" xml:id="RG_SPAIN004INTROD_002_COND1"> --><phrase rend="b">Opposite</phrase> <!-- </phrase> -->Segovia castle</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section xml:id="RG_SPAIN004INTROD_003" role="illustration" condition="prt">
+			<title/>
+			<!-- rend="toc_image" -->
+			<mediaobject xml:id="RG_SPAIN004INTROD_004" rend="toc_image">
+				<imageobject>
+					<imagedata fileref="rg_spain004introd_004.jpg"/>
+				</imageobject>
+				<caption>
+					<para>
+					    <!-- <phrase condition="prt" xml:id="RG_SPAIN004INTROD_004_COND1"> --><phrase rend="b">Previous page</phrase> <!-- </phrase> -->Windmills at Consuegra</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section xml:id="RG_SPAIN004INTSPA" role="article" rend="level_H1">
+			<title>Introduction to <phrase rend="b">Spain</phrase>
+			</title>
+			<subtitle role="runningHead">Introduction</subtitle>
+			<mediaobject xml:id="RG_SPAIN004INTSPA_004">
+				<imageobject>
+					<imagedata fileref="rg_spain004intspa_004.jpg"/>
+				</imageobject>
+				<!-- DMD: Caption not required for the first Introduction vertical strip image for epub purposes -->
+				<!-- Prt to be added on caption and not on para -->
+			    <!-- There shouldnt be any nesting of prt conditions -->
+				<caption condition="prt" xml:id="RG_SPAIN004INTSPA_004_COND2">
+				    <para><phrase rend="b">Above</phrase> La Pedrera, Barcelona</para>
+				</caption>
+			</mediaobject>
+			<para role="intro">If you’re visiting Spain for the first time, be warned: this is a
+				country that fast becomes an addiction. You might intend to come just for a beach
+				holiday, a walking tour or a city break, but before you know it you’ll find yourself
+				hooked by something quite different – the wild celebration of some local fiesta,
+				perhaps, or the otherworldly architecture of Barcelona. Even in the best-known
+				destinations – from the capital, Madrid, to the <phrase rend="i">costas</phrase>,
+				from the high Pyrenees to the Moorish cities of the south – there are genuinely
+				surprising attractions at every turn, whether it’s hip restaurants in the Basque
+				country, the wild landscapes of the central plains, or cutting-edge galleries in the
+				industrial north. Soon, you’ll notice that there is not just one Spain but many –
+				and indeed, Spaniards themselves often speak of Las Españas (the Spains).</para>
+			<para>kjfsfvkdvkj</para>
+			<!-- Text removed for sample purposes -->
+
+			<!-- DMD: Feature box with mediaobject -->
+			<section xml:id="RG_SPAIN013TAPTRA" role="feature" rend="level_Box_H1">
+				<title>On the tapas trail</title>
+				<para>Everyone thinks they know tapas – the little nibbles served up in bars – yet
+					nothing can prepare you for the variety available on their home soil. If all
+					you’ve ever encountered is deep-fried squid and spicy potatoes, then a treat
+					awaits. That’s not even to say that those dishes aren’t authentic – but the
+					truth is that your first beachfront plate of Andalucían <phrase rend="b"
+						>calamari</phrase> or <phrase rend="b">patatas bravas</phrase> in
+					back-street Barcelona really make you sit up and take notice. The proper way to
+					eat tapas is to wander from one bar to another to sample a particular
+					speciality, since the best bars tend to be known for just one or two dishes… and
+					the locals wouldn’t dream of ordering anything else. So you might duck into one
+					place for <phrase rend="b">jamón serrano</phrase> (cured ham), another for
+						<phrase rend="b">pulpo gallego</phrase> (pot-cooked octopus), a third for
+						<phrase rend="b">pimientos de Padrón</phrase> (small green peppers – about
+					one in ten being fiery-hot), and then maybe on to a smoky old bar that serves
+					just <phrase rend="b">fino</phrase> (dry sherry) from the barrel along with
+					slices of <phrase rend="b">mojama</phrase> (dried, pressed roe). And that’s not
+					counting the creative, new-wave bars where sculpted <phrase rend="b"
+						>montaditos</phrase> (canapés), yucca chips, samosas, sushi-fusion titbits
+					or artisan-produced cheese and meat are all vying for your attention before you
+					sit down later to the serious business of dinner.</para>
+				<!-- DMD: All images nested in feature boxes should have a condition="prt" -->
+				<section xml:id="RG_SPAIN013TAPTRA_001" role="illustration">
+					<title/>
+					<mediaobject xml:id="RG_SPAIN013TAPTRA_002" condition="prt">
+						<imageobject>
+							<imagedata fileref="rg_spain013taptra_002.jpg"/>
+						</imageobject>
+					</mediaobject>
+				</section>
+			</section>
+
+
+            
+			<!-- DMD: mark-up for composite image in Author picks: -->
+		</section>
+		<section xml:id="RG_SPAIN011AUTPIC" role="article">
+			<title>Author Picks</title>
+			<!-- CJ_201112: We will not keep separate images for Author picks. There will be just one block of mediaobject for 
+				all composite images (which includes Author picks, Itineraries strip and any pother composite image appearing in the guide chapters) -->
+			
+			<!-- DMD: Block 1 (Mark-up for epub) -->
+			<mediaobject xml:id="RG_SPAIN011AUTPIC_011" role="composite_image" condition="dig">
+				<imageobject>
+					<imagedata fileref="rg_spain011autpic_011.jpg"/>
+				</imageobject>
+				<caption>
+					<para><phrase rend="b">From Left</phrase> La Tomatina; Zahara de la Sierra,
+						Andalucía; Sardines and anchovies </para>
+				</caption>
+			</mediaobject>
+			
+			<para role="note" xml:id="RG_SPAIN011AUTPIC_001">Our author recommendations don’t
+				end here. We’ve flagged up our favourite places – a perfectly sited hotel, an
+				atmospheric café, a special restaurant – throughout the guide, highlighted with
+				the <xref linkend="RG_SPAIN001INSBOO_005" role="key_include" rend="author_pick"
+				/> symbol.</para>
+			
+			<para>Our hard-travelling authors have visited every corner of Spain – from the Rías
+				of Galicia to the white towns of Andalucía – to bring you some unique travel
+				experiences. These are some of their own, personal favourites.</para>
+			
+			<section xml:id="RG_SPAIN011AUTPIC_002" rend="level_H3">
+				<title rend="inlinehead">In-your-face fiestas</title>
+				<para><link linkend="xxx">La Tomatina </link><phrase condition="prt" xml:id="RG_SPAIN011AUTPIC_002_COND1"
+					>(p.815)</phrase> puts the pulp in people (literally); or do battle with
+					wine, not tomatoes, in <link linkend="xxx">Haro</link><phrase condition="prt"
+						xml:id="RG_SPAIN011AUTPIC_002_COND2"> (p.413)</phrase>.</para>
+				
+				<!-- DMD: Image 1 (Mark-up for master where each of the images from the composite image block has been nested with the relevant content) -->
+				<mediaobject xml:id="RG_SPAIN011AUTPIC_011b" condition="prt"
+					cref="RG_SPAIN011AUTPIC_011"><!-- DMD: This cref corresponds to the xml:id of the composite image required for epub output. -->
+					<imageobject>
+						<imagedata fileref="rg_spain011autpic_011.jpg"/>
+					</imageobject>
+					<caption>
+						<para><phrase condition="prt" xml:id="RG_SPAIN011AUTPIC_011b_001">Right
+							from top </phrase>La Tomatina</para>
+					</caption>
+				</mediaobject>
+			</section>
+			<section xml:id="RG_SPAIN011AUTPIC_003" rend="level_H3">
+				<title rend="inlinehead">Gourmet treats</title>
+				<para>Spain tickles the taste-buds, from <link linkend="xxx">L’Escala</link>
+					anchovies<phrase condition="prt" xml:id="RG_SPAIN011AUTPIC_003_COND1">
+						(p.724)</phrase> to Jijona <link linkend="xxx">
+							<phrase rend="i">turrón</phrase>
+						</link>
+					<phrase condition="prt" xml:id="RG_SPAIN011AUTPIC_003_COND2">
+						(p.835)</phrase>, washed down with Asturian cider<phrase condition="prt"
+							xml:id="RG_SPAIN011AUTPIC_003_COND3"> (p.529)</phrase>.<phrase
+								condition="dig" cref="RG_SPAIN011AUTPIC_003_COND3"> For more information, see <link linkend="xxx"
+									>Asturian Food and Drink</link>.</phrase></para>
+				<!-- DMD: Image 2 -->
+				<mediaobject xml:id="RG_SPAIN011AUTPIC_011c" condition="prt"
+					cref="RG_SPAIN011AUTPIC_011">
+					<imageobject>
+						<imagedata fileref="rg_spain011autpic_011.jpg"/>
+					</imageobject>
+					<caption>
+						<para>Sardines and Anchovies</para>
+					</caption>
+				</mediaobject>
+			</section>
+			
+			
+			<section xml:id="RG_SPAIN011AUTPIC_005" rend="level_H3">
+				<title rend="inlinehead">Delightful towns</title>
+				<para>Not famous, no fanfares, but thoroughly lovely – <link linkend="xxx"
+					>Cudillero</link> in Asturias<phrase condition="prt"
+						xml:id="RG_SPAIN011AUTPIC_005_COND1"> (p.540)</phrase>, <link
+							linkend="xxx">El Burgo de Osma</link> in Castilla y León<phrase
+								condition="prt" xml:id="RG_SPAIN011AUTPIC_005_COND2"> (p.403)</phrase>
+					and Andalucía’s <link linkend="xxx">Zahara de la Sierra</link><phrase
+						condition="prt" xml:id="RG_SPAIN011AUTPIC_005_COND3">
+						(p.261)</phrase>.</para>
+				<!-- DMD: Image 3 -->
+				<mediaobject xml:id="RG_SPAIN011AUTPIC_011d" condition="prt"
+					cref="RG_SPAIN011AUTPIC_011">
+					<imageobject>
+						<imagedata fileref="rg_spain011autpic_011.jpg"/>
+					</imageobject>
+					<caption>
+						<para>Zahara de la Sierra, Andalucía</para>
+					</caption>
+				</mediaobject>
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+		<section xml:id="RG_SPAIN01428THI" role="article" rend="level_H1">
+			<title>
+				<phrase rend="b">28</phrase> Things not to Miss</title>
+			<para role="intro">It’s not possible to see everything that Spain has to offer in one
+				trip – and we don’t suggest you try. What follows, in no particular order, is a
+				selection of the country’s highlights, including spectacular architecture,
+				outstanding natural wonders, flamboyant local festivals and a few culinary treats.
+				Each entry has a page reference to take you straight into the Guide, where you can
+				find out more.</para>
+			<section xml:id="RG_SPAIN01428THI_001" role="things_not_to_miss" rend="level_H2">
+				<title>1 <link linkend="xxx">Flamenco in Seville</link>
+				</title>
+				<para>
+					<phrase condition="prt" xml:id="RG_SPAIN01428THI_001_COND1">Page 282
+					</phrase>The stamp of heels and heart-rending lament of a <phrase rend="i"
+						>cante</phrase> jondo encapsulate the soul of the Spanish south.</para>
+				<mediaobject xml:id="RG_SPAIN01428THI_002">
+					<imageobject>
+						<imagedata fileref="rg_spain01428thi_002.jpg"/>
+					</imageobject>
+				</mediaobject>
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+	</chapter>
+	<chapter xml:id="RG_SPAIN026BASICS" role="basics">
+		<title>Basics</title>
+		<toc role="miniToc">
+			<tocentry pagenum="27" linkend="RG_SPAIN027GETTHE">Getting there</tocentry>
+			<tocentry pagenum="30" linkend="RG_SPAIN030GETARO">Getting around</tocentry>
+			<tocentry pagenum="34" linkend="xxx">Accommodation</tocentry>
+			<tocentry pagenum="38" linkend="xxx">Food and drink</tocentry>
+			<!-- Text removed for sample purposes -->
+		</toc>
+		<!-- Text removed for sample purposes -->
+		<section xml:id="RG_SPAIN027GETTHE" role="article" rend="level_H1">
+			<title>Getting there</title>
+			<para role="intro">Madrid and Barcelona are the two main Spanish airports, though the
+				summer holiday trade to the costas and the Balearics, and the rapid growth of
+				European budget airlines, has opened up regional airports right across Spain. Taking
+				the train to Spain is a greener option and has much to recommend it – there’s a lot
+				to be said for waking up refreshed in Madrid or Barcelona after the quick Eurostar
+				service to Paris and the comfortable overnight journey on the “train-hotel”. Driving
+				is more of an adventure, but there are several routes that can save you time, like
+				the direct ferry services from Portsmouth and Plymouth to Santander and
+				Bilbao.</para>
+			<section xml:id="RG_SPAIN027GETTHE_001" rend="level_H2">
+				<title>Flights from the UK and Ireland</title>
+				<para>Flight time to Spain is two to three hours, depending on the route, and
+					usually the cheapest flights are with the no-frills <phrase rend="b">budget
+						airlines</phrase> such as bmibaby (<uri xlink:href="http://bmibaby.com"
+						>bmibaby.com</uri>), easyJet (<uri xlink:href="http://easyjet.com"
+						>easyjet.com</uri>), flybe (<uri xlink:href="http://flybe.com"
+						>flybe.com</uri>), Jet2 (<uri xlink:href="http://jet2.com">jet2.com</uri>)
+					and Ryanair (<uri xlink:href="http://ryanair.com">ryanair.com</uri>), who
+					between them fly from over twenty regional UK airports direct to <phrase
+						rend="b">destinations all over Spain</phrase> – not just Madrid and
+					Barcelona, but also to smaller regional Spanish airports like Málaga, Alicante,
+					Bilbao, Valencia and in the Balearics. Note that London flights tend to depart
+					from Stansted or Luton, while it’s always worth double-checking the exact
+					Spanish airport used – Ryanair (and others’) “Barcelona” flights, for example,
+					are actually to Girona (1hr to the north) or Reus (1hr 15min to the south).
+						<phrase rend="b">Fares</phrase> for flights on all routes start at around
+					£9.99 each way. However, book last minute in the summer and you can expect to
+					pay considerably more, up to £100 each way depending on the route.</para>
+				<!-- Text removed for sample purposes -->
+			</section>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="RG_SPAIN028BETKIN" role="feature" rend="level_Box_H1">
+				<title>A better kind of travel</title>
+				<para>At Rough Guides we are passionately committed to travel. We feel that
+					travelling is the best way to understand the world we live in and the people we
+					share it with – plus tourism has brought a great deal of benefit to developing
+					economies around the world over the last few decades. But the growth in tourism
+					has also damaged some places irreparably, and climate change is exacerbated by
+					most forms of transport, especially flying. All Rough Guides’ trips are
+					carbon-offset, and every year we donate money to a variety of charities devoted
+					to combating the effects of climate change.</para>
+			</section>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="RG_SPAIN027GETTHE_005" rend="level_H3">
+				<title>Specialist tour operators</title>
+				<section xml:id="RG_SPAIN028ADVENT" role="directory" rend="level_LH1">
+					<title>Adventure</title>
+					<section xml:id="RG_SPAIN028ADVENT_001" role="dir_entry" rend="level_LH3">
+						<title rend="inlinehead">Adventure Center</title>
+						<para>
+							<!-- DMD: Initially, the wrapper tag of address was used for Directory data. We would now be using phrase role="POI_info" -->
+							<phrase role="POI_info">US <phone>1 800 228 8747</phone>, <uri
+									xlink:href="http://adventurecenter.com"
+									>adventurecenter.com</uri>.</phrase> Active vacations in the
+							Picos de Europa, Pyrenees, Catalunya, Andalucía and the Sierra Nevada –
+							self-guided trekking to rustic family adventures, starting at $1000
+							(excluding airfares).</para>
+					</section>
+					<!-- Text removed for sample purposes -->
+				</section>
+				<!-- Text removed for sample purposes -->
+			</section>
+		</section>
+		<section xml:id="RG_SPAIN030GETARO" role="article" rend="level_H1">
+			<title>Getting around</title>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="RG_SPAIN034DISCHA" role="feature" rend="level_Box_H1"
+				condition="prt">
+				<title>Distance chart (km)</title>
+				<table frame="none" xml:id="RG_SPAIN034DISCHA_001">
+					<title/>
+					<tgroup cols="20" align="left" colsep="0" rowsep="0">
+						<colspec colname="1" colnum="1" colwidth="10.00*"/>
+						<colspec colname="2" colnum="2" colwidth="4.73*"/>
+						<colspec colname="3" colnum="3" colwidth="4.73*"/>
+						<!-- Text removed for sample purposes -->
+						<thead>
+							<row>
+								<entry/>
+								<entry>Alicante</entry>
+								<entry>Barcelona</entry>
+								<entry>Bilbao</entry>
+								<!-- Text removed for sample purposes -->
+							</row>
+						</thead>
+						<tbody>
+							<row>
+								<entry>
+									<phrase rend="b">Alicante</phrase>
+								</entry>
+								<entry>–</entry>
+								<entry>552</entry>
+								<entry>814</entry>
+								<entry>645</entry>
+								<!-- Text removed for sample purposes -->
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</section>
+			<!-- DMD: Distance chart going in as an image for epub. -->
+			<section xml:id="RG_SPAIN051TRAESS_027" condition="dig" role="illustration"
+				cref="RG_SPAIN034DISCHA">
+				<title/>
+				<mediaobject xml:id="RG_SPAIN051TRAESS_028">
+					<imageobject>
+						<imagedata fileref="rg_spain051traess_028.gif"/>
+					</imageobject>
+				</mediaobject>
+			</section>
+		</section>
+
+		<section xml:id="RG_SPAIN034ACCOMM" role="article" rend="level_H1">
+			<title>Accommodation</title>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="RG_SPAIN034ACCOMM_003" rend="level_H2">
+				<title>Paradores</title>
+				<para>Spain has over ninety superior hotels in a class of their own, called <phrase
+						rend="b">paradores</phrase> (<uri xlink:href="http://parador.es"
+						>parador.es</uri>), which are often spectacular lodgings converted from
+					castles, monasteries and other Spanish monuments (although some are
+					purpose-built). They can be really special places to stay, sited in the most
+					beautiful parts of the country, or in some of the most historic cities, and
+					prices are very good when compared with the five-star hotels with which they
+					compete. Overnight rates depend on location and popularity, and start at around
+					€110 a night, though €150–180 is more typical. That said, a whole host of
+					special offers and web deals (through the official website) offer discounted
+					rates for the over 60s, the 20s to 30s, or for multi-night stays.</para>
+				<!-- Text removed for sample purposes -->
+				<section xml:id="RG_SPAIN037PICPAR" role="feature" rend="level_Box_H1">
+					<title>Pick of the paradores</title>
+					<para>Nearly all Spain’s <phrase rend="b">paradores</phrase> have a quirky
+						history, a story to tell or a magnificent location – here’s our choice of
+						the best, from former palaces to pilgrims’ hospitals.</para>
+					<section xml:id="RG_SPAIN037PICPAR_001" rend="level_Box_H3">
+						<title rend="inlinehead">
+							<link linkend="xxx">Hostal dos Reis Católicos, Santiago de
+								Compostela</link>
+						</title>
+						<para>Apparently the oldest hotel in the world, impressively set in a
+							fifteenth-century hospital at the end of the Camino de Santiago.<phrase
+								condition="prt" xml:id="RG_SPAIN037PICPAR_001_COND1"> See
+								p.559.</phrase>
+						</para>
+					</section>
+					<!-- Text removed for sample purposes -->
+				</section>
+
+			</section>
+		</section>
+		<section xml:id="RG_SPAIN038FOODRI" role="article" rend="level_H1">
+			<title>Food and drink</title>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="RG_SPAIN040SPACUI" role="feature" rend="level_Box_H1">
+				<title>Spanish cuisine</title>
+				<para>There really is no such thing as traditional “Spanish” cuisine, since every
+					region claims a quite separate culinary heritage. That said, lots of dishes crop
+					up right across the country, whatever their origin, while typical Mediterranean
+					staples are ubiquitous – olive oil, tomatoes, peppers, garlic, onions, lemons
+					and oranges.</para>
+				<para>It’s usual to start your meal with a <phrase rend="b">salad</phrase> or a
+					plate of cold cuts, while <phrase rend="b">soups</phrase> might be fish or
+					seafood or, in the north especially, hearty broths such as the Galician
+					cabbage-and-potato <phrase rend="i">caldo gallego</phrase>. Boiled potatoes with
+					greens, or a thick minestrone of vegetables, are also fairly standard starters,
+					while depending on the season you might be offered grilled asparagus or
+					artichokes, or stewed beans with chunks of sausage.</para>
+				<para>Anywhere near the coast, you really should make the most of what’s on offer,
+					whether it’s the fried fish of Málaga, Basque shellfish or the seafood
+					specialities in Galicia, notably octopus (<phrase rend="i">pulpo</phrase>). Fish
+					stews (<phrase rend="i">zarzuelas</phrase>) can be memorable, while seafood rice
+					dishes range from <phrase rend="i">arroz negro</phrase> (“black rice”, cooked
+					with squid ink) to the better-known <phrase rend="b">paella</phrase>. This comes
+					originally from Valencia (still the best place for an authentic one), though a
+					proper paella from there doesn’t include fish or seafood at all but things like
+					chicken, rabbit, beans and snails.</para>
+				<para>
+					<phrase rend="b">Meat</phrase> is most often grilled and served with a few fried
+					potatoes. Regional specialities include <phrase rend="i">cordero</phrase> (lamb)
+					from Segovia, Navarra and the Basque Country, as well as <phrase rend="i"
+						>cochinillo</phrase> (suckling pig) or <phrase rend="i">lechal</phrase>
+					(suckling lamb) in central Spain. <phrase rend="b">Cured ham</phrase>, or
+						<phrase rend="i">jamón serrano</phrase>, is superb, produced at its best
+					from acorn-fed Iberian pigs in Extremadura and Andalucía, though it can be
+					extremely expensive. Every region has a local <phrase rend="b">sausage</phrase>
+					in its locker – the best known is the spicy <phrase rend="i">chorizo</phrase>,
+					made from pork, though others include <phrase rend="i">morcilla</phrase> (blood
+					sausage; best in Burgos, León and Asturias), and <phrase rend="i"
+						>butifarra</phrase>, a white Catalan sausage made from pork and tripe.
+						<phrase rend="b">Stews</phrase> are typified by the mighty <phrase rend="i"
+						>fabada</phrase>, a fill-your-boots Asturian bean-and-meat
+					concoction.</para>
+				<para>
+					<phrase rend="b">Cheeses</phrase> to look out for include Cabrales, a tangy blue
+					cheese made in the Picos de Europa; Manchego, a sharp, nutty cheese made from
+					sheep’s milk in La Mancha; Mahon, a cow’s-milk cheese from Menorca, often with
+					paprika rubbed into its rind; Idiazábal, a smoked cheese from the Basque
+					Country; and Zamorano, made from sheep’s milk in Castilla y León.</para>
+				<para>In most restaurants, <phrase rend="b">dessert</phrase> is nearly always fresh
+					fruit or <phrase rend="i">flan</phrase>, the Spanish <phrase rend="i">crème
+						caramel</phrase>, with the regions often having their own versions such as
+						<phrase rend="i">crema catalana</phrase> in Catalunya and the Andalucian
+						<phrase rend="i">tocino de cielo</phrase>. There are also many varieties of
+						<phrase rend="i">postre</phrase> – rice pudding or assorted blancmange
+					mixtures – and a range of commercial ice-cream dishes.</para>
+				<para>If you want to know more about the food in the region where you’re travelling,
+					turn to the special <phrase rend="b">features</phrase>:</para>
+				<simplelist xml:id="RG_SPAIN040SPACUI_001">
+					<!-- DMD: role="POI_ref" added to element member in such cases where the text string is abbreviated or limited to 2-3 words
+						(such that they are actually references to POIs appearing elsewhere in the book). 
+						Eg: Andalucia is a POI, the reference of which is on Pg. 229, therefore member role="POI_ref" -->
+					<member role="POI_ref">
+						<phrase rend="level_H3">
+							<link linkend="xxx">Andalucía</link>
+						</phrase>
+						<phrase condition="prt" xml:id="RG_SPAIN040SPACUI_001_COND1"> See
+							p.229</phrase>
+					</member>
+					<member role="POI_ref">
+						<phrase rend="level_H3">
+							<link linkend="xxx">Aragón</link>
+						</phrase>
+						<phrase condition="prt" xml:id="RG_SPAIN040SPACUI_001_COND2"> See
+							p.606</phrase>
+					</member>
+				</simplelist>
+			</section>
+		</section>
+	</chapter>
+	<part xml:id="RG_SPAIN058GUIDE">
+		<title>The Guide</title>
+		<chapter xml:id="RG_SPAIN058MADRID" rend="level_H1" role="guide">
+			<title>Madrid</title>
+			<!-- DMD: note rend="chapter_opener" -->
+			<mediaobject xml:id="RG_SPAIN058MADRID_001" rend="chapter_opener">
+				<imageobject>
+					<imagedata fileref="rg_spain058madrid_001.jpg"/>
+				</imageobject>
+				<caption>
+					<para>
+						<phrase condition="prt" xml:id="RG_SPAIN058MADRID_001_COND1">
+							<link linkend="xxx">Gran Vía and the Edificio Metrópolis</link>
+						</phrase>
+						<phrase condition="prt" xml:id="RG_SPAIN058MADRID_001_COND2">
+							(p.88)</phrase>
+					</para>
+				</caption>
+			</mediaobject>
+			<mediaobject xml:id="RG_SPAIN058MADRID_002" role="locator" condition="prt">
+				<imageobject>
+					<imagedata fileref="rg_spain058madrid_002.gif"/>
+				</imageobject>
+			</mediaobject>
+			<para role="intro">Madrid became Spain’s capital simply by virtue of its geographical
+				position at the heart of Iberia. When Felipe II moved the seat of government here in
+				1561, his aim was to create a symbol of the unification and centralization of the
+				country, and a capital from which he could receive the fastest post and
+				communication from every corner of the nation. The site itself had few natural
+				advantages – it is 300km from the sea on a 650-metre-high plateau, freezing in
+				winter, boiling in summer – and it was only the determination of successive rulers
+				to promote a strong central capital that ensured Madrid’s survival and
+				development.</para>
+			<para>Today, Madrid is a vast, predominantly modern city, with a population of some four
+				million and growing. The journey in – through a stream of soulless suburbs and
+				high-rise apartment blocks – isn’t pretty, but the streets at the heart of the city
+				are a pleasant surprise, with pockets of medieval buildings and narrow, atmospheric
+				alleys, dotted with the oddest of shops and bars, and interspersed with
+				eighteenth-century Bourbon squares. Compared with the historic cities of Spain –
+				Toledo, Salamanca, Seville, Granada – there may be few sights of great architectural
+				interest, but the monarchs did acquire outstanding picture collections, which formed
+				the basis of the <phrase role="POI_ref">Prado</phrase> museum. This, together with
+				the <phrase role="POI_ref">Reina Sofía</phrase> and the <phrase role="POI_ref"
+					>Thyssen-Bornemisza</phrase> museums, state-of-the-art homes to fabulous arrays
+				of modern Spanish painting (including Picasso’s <phrase rend="i">Guernica</phrase>)
+				and European and American masters, has made Madrid a top port-of-call on the
+				European art tour.</para>
+			<!-- Text removed for sample purposes -->
+			<section xml:id="RG_SPAIN058MADRID_014" role="illustration">
+				<title/>
+				<mediaobject xml:id="RG_SPAIN058MADRID_015" role="map">
+					<imageobjectco>
+						<areaspec>
+							<area xml:id="RG_SPAIN058MADRID_015_map_1" coords=""/>
+							<!-- Text removed for sample purposes -->
+						</areaspec>
+						<imageobject>
+							<imagedata fileref="rg_spain058madrid_015.gif"/>
+						</imageobject>
+					</imageobjectco>
+					<caption>
+						<variablelist xml:id="RG_SPAIN058MADRID_016" role="key"
+							xreflabel="Highlight" condition="prt">
+							<varlistentry xml:id="RG_SPAIN058MADRID_016_1"
+								xreflabel="Monasterio de las Descalzas Reales">
+								<term>Monasterio de las Descalzas Reales</term>
+								<listitem>
+									<para>
+										<xref linkend="RG_SPAIN058MADRID_015_map_1"
+											role="map_callout"/>
+										<inlinemediaobject>
+											<imageobject>
+												<imagedata fileref="1_round.gif"/>
+											</imageobject>
+										</inlinemediaobject>
+									</para>
+								</listitem>
+							</varlistentry>
+							<!-- Text removed for sample purposes -->
+						</variablelist>
+					</caption>
+				</mediaobject>
+			</section>
+			<!-- DMD: The following box is not required for epub -->
+			<section xml:id="RG_SPAIN060HIGHLI" role="feature" rend="level_Box_H1"
+				condition="prt">
+				<title/>
+				<simplelist xml:id="RG_SPAIN060HIGHLI_001" role="highlightIndex">
+					<member>
+						<phrase role="highlight">
+							<link linkend="xxx">Madrid’s fiestas</link>
+						</phrase>
+						<phrase condition="prt" xml:id="RG_SPAIN060HIGHLI_001_COND1"> p.64</phrase>
+					</member>
+					<member>
+						<phrase role="highlight">
+							<link linkend="xxx">Orientation</link>
+						</phrase>
+						<phrase condition="prt" xml:id="RG_SPAIN060HIGHLI_001_COND2"> p.65</phrase>
+					</member>
+					<!-- Text removed for sample purposes -->
+				</simplelist>
+			</section>
+			<section xml:id="RG_SPAIN058MADRID_003" role="highlight" rend="level_H2">
+				<title>Highlights</title>
+				<mediaobject xml:id="RG_SPAIN058MADRID_004">
+					<imageobject>
+						<imagedata fileref="rg_spain058madrid_004.jpg"/>
+					</imageobject>
+					<caption>
+						<para>
+							<phrase rend="i">La Chata</phrase> tapas bar, La Latina</para>
+					</caption>
+				</mediaobject>
+				<para condition="prt" xml:id="RG_SPAIN058MADRID_005">Highlights are marked on
+					the map on p.62–63</para>
+				<section xml:id="RG_SPAIN058MADRID_006" rend="level_H3">
+					<title rend="inlinehead">
+						<link linkend="xxx">1 </link>
+						<link linkend="xxx">Monasterio de las Descalzas Reales</link>
+					</title>
+					<para>A fascinating hoard of art treasures hidden away in a convent in the
+						centre of Madrid.<phrase condition="prt"
+							xml:id="RG_SPAIN058MADRID_006_COND1"> See p.69</phrase>
+					</para>
+				</section>
+				<!-- Text removed for sample purposes -->
+			</section>
+
+			<section xml:id="RG_SPAIN066MADDE" role="article" rend="level_H2">
+				<title>Madrid de los Austrias</title>
+				<para>
+					<phrase role="POI_ref">Madrid de los Austrias</phrase> (Habsburg Madrid) was a
+					mix of formal planning – at its most impressive in the expansive and theatrical
+					Plaza Mayor – and areas of shanty town development, thrown up as the new capital
+					gained an urban population. The central area of old Madrid still reflects both
+					characteristics, with its twisting grid of streets, alleyways and steps, and its
+					Flemish-inspired architecture of red brick and grey stone, slate-tiled towers
+					and Renaissance doorways.</para>
+
+				<!-- DMD: sight POI with structured POI data and metaref attribute has been used instead of role -->
+				<section xml:id="RG_SPAIN068OPEPAL_004" metaref="POI" rend="level_H3">
+					<title>Teatro Real</title>
+					<para role="POI_info">
+						<address>
+							<otheraddr>Pl. de Isabel II</otheraddr>
+						</address>
+						<phrase metaref="opening_time">Tours Mon &amp; Wed–Fri 10.30am–1pm, Sat
+							&amp; Sun 11am–1.30pm; closed mid-July to mid-Sept</phrase>; <phrase
+							metaref="price">€5 (under-7s free); tickets on sale from the box office
+							10am–1pm</phrase>
+						<phrase metaref="additional_info">Info and reservations <phone>915 160
+								696</phone>, <uri xlink:href="http://teatro-real.com"
+								>teatro-real.com</uri>
+						</phrase>
+						<phrase metaref="metro">Ópera</phrase>
+					</para>
+					<para>West of Sol, c/Arenal leads to the <phrase role="POI_ref">Teatro
+							Real</phrase>, or <phrase role="POI_ref">Ópera</phrase>, which gives
+						this area its name. Built in the mid-nineteenth century, it almost sank a
+						few decades later as a result of subsidence caused by underground canals and
+						was forced to close in 1925; it finally reopened in 1997 after an epic
+						ten-year refurbishment that ended up costing a mind-boggling €150 million.
+						The interior is suitably lavish and merits a visit in its own right, and it
+						makes a truly magnificent setting for opera, ballet and classical <link
+							linkend="xxx">concerts</link>
+						<phrase condition="prt" xml:id="RG_SPAIN068OPEPAL_004_COND1"> (see
+							p.119)</phrase>.</para>
+				</section>
+
+				<!-- Text removed for sample purposes -->
+
+				<!-- DMD: Multiple POIs within sections -->
+				<section xml:id="RG_SPAIN068OPEPAL_006" metaref="POI" rend="level_H3">
+					<title>Catedral Nuestra Señora de la Almudena</title>
+					<section xml:id="RG_SPAIN068OPEPAL_007" metaref="POI">
+						<title/>
+						<para role="POI_info">							
+							<address>
+								<otheraddr>C/Bailén 8–10</otheraddr>
+							</address>
+							<phrase metaref="opening_time">Daily: 9am–8.30pm; not open for visits
+								during Mass: Mon–Sat 10am, noon, 6pm &amp; 7pm, Sun &amp;
+								hols 10.30am, noon, 1.30pm, 6 &amp; 7pm</phrase>
+							<phrase metaref="additional_info">Free</phrase>
+							<uri xlink:href="http://museocatedral.archimadrid.es"
+								>museocatedral.archimadrid.es</uri>
+						</para>
+					</section>
+					<section xml:id="RG_SPAIN068OPEPAL_008" metaref="POI">
+						<title rend="inlinehead">Museum</title>
+						<para role="POI_info">
+							<phrase metaref="opening_time">Mon–Sat 10am–2.30pm</phrase>
+							<phrase metaref="price">€6, €4 for Madrid residents and
+								students</phrase>
+						</para>
+					</section>
+					<section xml:id="RG_SPAIN068OPEPAL_009" metaref="POI">
+						<title rend="inlinehead">Crypt</title>
+						<para role="POI_info">
+							<phrase metaref="opening_time">daily 10am–8pm</phrase>
+							<phrase metaref="metro">Ópera</phrase>
+						</para>
+					</section>
+					<!-- CJ_201112: To be discussed with Stuart -->
+					<!-- This para can come before the POI_info of the multiple POI sections -->
+					<section xml:id="RG_SPAIN068OPEPAL_010">
+						<title/>
+						<para>Facing the Palacio Real to the south, across the shadeless Plaza de la
+							Armería, is Madrid’s cathedral, <phrase role="POI_ref">Nuestra Señora de
+								la Almudena</phrase>. Planned centuries ago, bombed out in the Civil
+							War, worked upon at intervals since, and plagued by lack of funds, it
+							was eventually opened for business in 1993 by Pope John Paul II. The
+							building’s bulky Neoclassical facade was designed to match the Palacio
+							Real opposite, while its cold neo-Gothic interior is largely
+							uninspiring.</para>
+						<para>To one side of the main facade is a small <phrase rend="b"
+								>museum</phrase> containing some of the cathedral’s treasures,
+							though the main reason to visit is to gain access to the dome from where
+							you can enjoy some fantastic views over the city and out towards the
+							Sierra. The entrance to the <phrase rend="b">crypt</phrase> with its
+							forest of columns and dimly lit chapels is to be found on
+							c/Mayor.</para>
+					</section>
+				</section>
+				<!-- Text removed for sample purposes -->
+			</section>
+			<!-- Text removed for sample purposes -->
+
+
+
+			<!-- Listings -->
+
+
+			<section xml:id="RG_SPAIN093SALPAS_011" rend="level_LH1">
+				<title>Madrid</title>
+				<section xml:id="RG_SPAIN093SALPAS_012" role="listing" rend="level_LH1">
+					<title>Arrival and departure</title>
+					<para>Whatever your point of <phrase rend="b">arrival</phrase> In Madrid, it’s
+						an easy business getting into the centre of the Spanish capital. The airport
+						is connected by a speedy metro link, shuttle buses and taxis, while the
+						city’s main train and bus stations are all linked to the metro system only a
+						short ride from the centre.</para>
+					<section xml:id="RG_SPAIN093SALPAS_013" rend="level_LH2">
+						<title>By plane</title>
+						<!-- DMD: Listings with unstructured POI information -->
+						<section xml:id="RG_SPAIN093SALPAS_014" rend="level_LH3" metaref="POI">
+							<title rend="inlinehead">Aeropuerto de Barajas</title>
+							<para>(general information <phone>902 404 704</phone>, <uri
+									xlink:href="http://aena.es">aena.es</uri>) is 16km east of the
+								city, at the end of Avenida de América (the A2 road). It has four
+								terminals, including the vast new T4 building designed by Richard
+								Rogers and Carlos Lamela, which has helped double the capacity to
+								some seventy million passengers a year. All Iberia’s domestic and
+								international flights, as well as airlines that belong to the
+								Oneworld group, such as British Airways and American Airways, use T4
+								(a 10min shuttle-bus ride from the other terminals); other
+								international flights and budget airlines, including Aer Lingus,
+								EasyJet and Ryanair, go from T1, while Air France, KLM and SAS use
+								T2.</para>
+						</section>
+					</section>
+				</section>
+				<!-- Text removed for sample purposes -->
+				<section xml:id="RG_SPAIN093SALPAS_106" role="listing" rend="level_LH1">
+					<title>Eating</title>
+
+					<section xml:id="RG_SPAIN093SALPAS_107" rend="level_LH2">
+						<title>Sol, Plaza Mayor and Ópera</title>
+						<para>The central area is the most varied in Madrid in terms of price and
+							food. Indeed, there can be few places in the world that rival the
+							streets around <phrase role="POI_ref">Puerta del Sol</phrase> for sheer
+							number of places to eat and drink. Around the smarter <phrase
+								role="POI_ref">Ópera</phrase> district, you need to be more
+							selective, while on <phrase role="POI_ref">Plaza Mayor</phrase> itself,
+							stick to drinks. Unless indicated otherwise, all these places are easily
+							reached from <phrase role="POI_ref">Metro Sol</phrase>.</para>
+						<section xml:id="RG_SPAIN093SALPAS_108" rend="level_LH4">
+							<title>Cafés</title>
+							<section xml:id="RG_SPAIN093SALPAS_109" metaref="POI" rend="level_LH3">
+								<title rend="inlinehead">Café de Oriente</title>
+								<para>
+									<!-- DMD: Intially address wrapper was used for POI information that appear in listings. 
+										As per the discussion in one of the schema meetings, phrase role="POI_info" has been used instead. -->
+									<phrase role="POI_info">
+										<address>
+											<otheraddr>Pl. de Oriente 2</otheraddr>
+										</address>; 
+										<phrase metaref="metro">Ópera</phrase>; <phrase
+											metaref="map_ref">
+											<link linkend="AAA">map</link>
+											<phrase condition="prt"
+												xml:id="RG_SPAIN093SALPAS_109_COND1"> p.102</phrase>
+										</phrase>.</phrase> Elegant, Parisian-style affair with a
+									popular terraza looking out towards the Palacio Royal.</para>
+							</section>
+							<!-- Text removed for sample purposes -->
+						</section>
+						<!-- Text removed for sample purposes -->
+					</section>
+					<!-- Listings nested in a feature box -->
+					<section xml:id="RG_SPAIN106MADVEG" role="feature" rend="level_Box_H1">
+						<title>Madrid’s vegetarian restaurants</title>
+						<para>Madrid has a growing number of good-value <phrase rend="b">vegetarian
+								restaurants</phrase>, scattered about the centre. These
+							include:</para>
+						<section xml:id="RG_SPAIN106MADVEG_001" rend="level_Box_H3">
+							<title rend="inlinehead">Artemisa</title>
+							<para>
+								<phrase role="POI_info">
+									<address>
+									<otheraddr>c/Ventura de la Vega 4 </otheraddr></address>
+									<phone>914 295 092</phone>, <uri
+										xlink:href="http://restauranteartemisa.com"
+										>restauranteartemisa.com</uri>; <phrase metaref="metro"
+										>Sevilla; c/Tres Cruces 4 </phrase>
+									<phone>915 218 721</phone>; <phrase metaref="metro">Gran
+										Vía</phrase>; <phrase metaref="map_ref">
+										<link linkend="AAA">map</link>
+										<phrase condition="prt" xml:id="RG_SPAIN106MADVEG_001_COND1"
+											> p.102</phrase>
+									</phrase>.</phrase> Two branches of this long-standing popular
+								vegetarian (you may have to wait for a table), good for veggie
+								pizzas and paellas, superb vegetable dishes and an imaginative range
+								of salads and soups. Reasonable prices at around €20–25 per head,
+								lunchtime <phrase rend="i">menú</phrase> at €11.25. <phrase
+									role="POI_info">
+									<phrase metaref="opening_time">Daily 1.30–4pm,
+										9pm–midnight.</phrase>
+								</phrase>
+							</para>
+						</section>
+					</section>
+					<!-- Text removed for sample purposes -->
+				</section>
+				<!-- Text removed for sample purposes -->
+				<section xml:id="RG_SPAIN093SALPAS_327" role="listing" rend="level_LH1">
+					<title>Children</title>
+					<para>Many of the big sights may lack children-specific services or activities,
+						but there’s plenty to keep kids occupied for a short stay. There are various
+							<phrase rend="b">parks</phrase> (El Retiro being a particular
+						favourite), a host of well-attended public <phrase rend="b">swimming
+							pools</phrase> and an increasing number of <phrase rend="b"
+							>child-oriented attractions</phrase>. Children are welcome in nearly all
+						cafés and restaurants. See <uri xlink:href="http://saposyprincesas.com"
+							>saposyprincesas.com</uri> for more ideas.</para>
+
+					<section xml:id="RG_SPAIN093SALPAS_328" rend="level_LH2">
+						<title>In the city</title>
+						<!-- DMD: Listings POI with structured POI data -->
+						<section xml:id="RG_SPAIN093SALPAS_330" metaref="POI" rend="level_LH3">
+							<title rend="inlinehead">Museo de Cera (Wax Museum)</title>
+							<para>
+								<!-- DMD: Note the phrase role="POI_info" wrapper -->
+								<phrase role="POI_info">
+									<!-- DMD: Also note that the address tag only contains the otheraddr -->
+									<address>
+										<otheraddr>Paseo de Recoletos 41 </otheraddr></address>
+									<phone>913 192 649</phone>, <uri
+										xlink:href="http://museoceramadrid.com"
+										>museoceramadrid.com</uri>; <phrase metaref="metro"
+										>Colón</phrase>.</phrase> Expensive, tacky, and the figures
+								bear little resemblance to the originals, but nevertheless popular
+								with children. There’s also a train of horrors and a film history of
+								Spain. €16, under-10s &amp; over-65s €12, under-4s free. <!-- DMD: Address wrapper changed to phrase role="POI_info" -->
+								<phrase role="POI_info">
+									<phrase metaref="opening_time">Mon–Fri 10am–2.30pm &amp;
+										4.30–8.30pm, Sat, Sun &amp; public hols
+										10am–8.30pm.</phrase>
+								</phrase>
+							</para>
+						</section>
+						<!-- Text removed for sample purposes -->
+					</section>
+					<!-- Text removed for sample purposes -->
+				</section>
+				<!-- Text removed for sample purposes -->
+			</section>
+		</chapter>
+		
+		<chapter xml:id="MALAYSIA_TABLE" rend="level_H1" role="guide">
+			<title/>
+			<!-- Mark-up for feature box with table (from the title Malaysia) wherein the table is to be ouputted as a table itself (2-column format) -->
+			<section xml:id="RG_MALSIN193PLAVIS" role="feature" rend="level_Box_H1">
+				<title>Planning a visit to Taman Negara</title>
+				<para>Given that tropical rainforest is ... reasonable flavour of the park.</para>
+				<section xml:id="RG_MALSIN193PLAVIS_001" rend="level_Box_H2">
+					<title/>
+					<table xml:id="RG_MALSIN193PLAVIS_002" frame="none">
+						<title>Fees and charges</title>
+						<!-- DMD: When we double tap on the table on iPad, it opens up as a standalone table filling up the entire page. 
+							For the table to look complete, the title and the para are to be captured as part of the table itself. 
+							To accomodate the para, we would be using the textobject element-->
+						<textobject>
+							<para>The following fees apply to all sections of Taman Negara:</para>
+						</textobject>
+						<tgroup cols="2" align="left" colsep="0" rowsep="0">
+							<colspec colname="1" colnum="1" colwidth="50.00*"/>
+							<colspec colname="2" colnum="2" colwidth="50.00*"/>
+							<tbody>
+								<row>
+									<entry>
+										<phrase role="POI_ref">Park entry</phrase>
+									</entry>
+									<entry>RM1 per person</entry>
+								</row>
+								<row>
+									<entry>
+										<phrase rend="b">Camping permit</phrase>
+									</entry>
+									<entry>RM1 per person per night</entry>
+								</row>
+								<row>
+									<entry>
+										<phrase role="POI_ref">Camera licence</phrase>
+									</entry>
+									<entry>RM5</entry>
+								</row>
+								<row>
+									<entry>
+										<phrase rend="b">Fishing licence</phrase>
+									</entry>
+									<entry>RM10 per rod</entry>
+								</row>
+								<row>
+									<entry>
+										<phrase rend="b">Use of hides or fishing
+											lodges</phrase>
+									</entry>
+									<entry>RM5 per person</entry>
+								</row>
+								<row>
+									<entry>
+										<phrase role="POI_ref">Guide hire</phrase>
+									</entry>
+									<entry>Around RM150 per day, plus RM100 for
+										overnighting</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+				</section>
+				<!-- Text removed for sample purposes -->
+			</section>
+			
+		</chapter>
+	
+	</part>
+
+	<chapter xml:id="RG_SPAIN890CONTEX">
+		<title>Contexts</title>
+		<toc role="miniToc">
+			<tocentry pagenum="891" linkend="xxx">History</tocentry>
+			<tocentry pagenum="906" linkend="xxx">Wildlife</tocentry>
+			<tocentry pagenum="912" linkend="xxx">Flamenco</tocentry>
+			<tocentry pagenum="916" linkend="xxx">Books</tocentry>
+			<tocentry pagenum="923" linkend="xxx" condition="prt" xml:id="RG_SPAIN890CONTEX_COND1">Language</tocentry>
+		</toc>
+		<mediaobject xml:id="RG_SPAIN890CONTEX_001" rend="chapter_opener">
+			<imageobject>
+				<imagedata fileref="rg_spain890contex_001.jpg"/>
+			</imageobject>
+			<caption>
+				<para>Christopher Columbus received by the Catholic Monarchs</para>
+			</caption>
+		</mediaobject>
+		<!-- DMD: Initially, each of the timeline entries were treated as members in a simplelist. 
+			However, we suggest using sections for timeline since nesting of simplelists would be a problem  -->
+		<section xml:id="RG_SPAIN891TIMELI" role="timeline" condition="prt">
+			<title/>
+			<section xml:id="RG_SPAIN891TIMELI_001" role="timeline_entry">
+				<title><phrase role="date">1.5 million years ago</phrase></title>
+				<para role="timeline_description">Early humans active at Orce in the province
+				of Granada after arriving from Africa</para>
+			</section>
+			<section xml:id="RG_SPAIN891TIMELI_002" role="timeline_entry">
+				<title><phrase role="date">25,000 BC</phrase></title>
+					<para role="timeline_description">Cave dwellers occupy caves in Málaga
+						province</para>
+			</section>				
+				
+			</section>
+	</chapter>
+
+
+	<chapter xml:id="YYYYY">
+		<title/>
+		<section xml:id="xxx">
+			<title/>
+			<para>For Dummy Links</para>
+			<mediaobject xml:id="AAA" role="map">
+				<imageobject>
+					<imagedata fileref="aaa.jpg"/>
+				</imageobject>
+			</mediaobject>
+		</section>
+	</chapter>
+
+	<chapter xml:id="RG_SPAIN931SMAPRI">
+		<title>Small print and Index</title>
+		<toc role="miniToc">
+			<!-- DMD: Note the xml:id and cref attributes in tocentry (for condition prt and dig) -->
+			<tocentry pagenum="932" linkend="RG_SPAIN932SMAPRI" condition="prt" xml:id="RG_SPAIN931SMAPRI_001">Small print</tocentry>
+			<tocentry pagenum="933" linkend="xxx" condition="prt" xml:id="RG_SPAIN931SMAPRI_002">About the authors</tocentry>
+			<tocentry pagenum="935" linkend="RG_SPAIN935SMAPRI" condition="prt" xml:id="RG_SPAIN931SMAPRI_003">Index</tocentry>
+			<tocentry pagenum="942" linkend="RG_SPAIN942MAPSYM_050">Map symbols</tocentry>
+			<!-- DMD: xml:id has not been included for this tocentry -->
+			<tocentry pagenum="932" linkend="RG_SPAIN932SMAPRI" condition="dig" cref="RG_SPAIN931SMAPRI_001">Small print</tocentry>
+		</toc>
+		<section xml:id="RG_SPAIN932SMAPRI" role="article" condition="prt">
+			<title/>
+			<section xml:id="RG_SPAIN931ROUGUI" role="feature" rend="level_Box_H1">
+				<title>A Rough Guide to Rough Guides</title>
+				<para>Published in 1982, the first Rough Guide – to Greece – was a student scheme
+					that became a publishing phenomenon. Mark Ellingham, a recent graduate in
+					English from Bristol University, had been travelling in Greece the previous
+					summer and couldn’t find the right guidebook. With a small group of friends he
+					wrote his own guide, combining a highly contemporary, journalistic style with a
+					thoroughly practical approach to travellers’ needs.</para>
+				<!-- Text removed for sample purposes -->
+			</section>
+			<!-- Text removed for sample purposes -->
+		</section>
+		<section xml:id="RG_SPAIN942MAPSYM" role="article" condition="prt">
+			<title>Map Symbols</title>
+			<para>The symbols below are used on maps throughout the book</para>
+			<variablelist xml:id="RG_SPAIN942MAPSYM_001" xreflabel="Map symbols" role="key">
+				<varlistentry xml:id="RG_SPAIN942MAPSYM_001_1" xreflabel="Airport">
+					<term>Airport</term>
+					<listitem>
+						<para>
+							<inlinemediaobject xml:id="RG_SPAIN942MAPSYM_002">
+								<imageobject>
+									<imagedata fileref="rg_spain942mapsym_002.gif"/>
+								</imageobject>
+							</inlinemediaobject>
+						</para>
+					</listitem>
+				</varlistentry>
+				<!-- Text removed for sample purposes -->
+			</variablelist>
+			<section xml:id="RG_SPAIN942MAPSYM_047" rend="level_H2">
+				<title>Listings key</title>
+				<mediaobject xml:id="RG_SPAIN942MAPSYM_048" role="map">
+					<imageobject>
+						<imagedata fileref="rg_spain942mapsym_048.gif"/>
+					</imageobject>
+					<caption>
+						<variablelist xml:id="RG_SPAIN942MAPSYM_049" role="key">
+							<varlistentry xml:id="RG_SPAIN942MAPSYM_049_1" xreflabel="Accommodation">
+								<term>Accommodation</term>
+								<listitem>
+									<para>
+										<inlinemediaobject>
+											<imageobject>
+												<imagedata fileref="key"/>
+											</imageobject>
+										</inlinemediaobject>
+									</para>
+								</listitem>
+							</varlistentry>
+							<!-- Text removed for sample purposes -->
+						</variablelist>
+					</caption>
+				</mediaobject>
+			</section>
+		</section>
+		<!-- DMD: Map symbols image required for epub -->
+		<section xml:id="RG_SPAIN942MAPSYM_050" condition="dig" role="illustration">
+			<title/>
+			<mediaobject xml:id="RG_SPAIN942MAPSYM_051">
+				<imageobject>
+					<imagedata fileref="rg_spain942mapsym_051.gif"/>
+				</imageobject>
+			</mediaobject>
+		</section>
+		<!-- DMD: Listings key image required for epub -->
+		<section xml:id="RG_SPAIN942MAPSYM_052" condition="dig" role="illustration">
+			<title/>
+			<mediaobject xml:id="RG_SPAIN942MAPSYM_053">
+				<imageobject>
+					<imagedata fileref="rg_spain942mapsym_053.gif"/>
+				</imageobject>
+			</mediaobject>
+		</section>
+		<index xml:id="RG_SPAIN935SMAPRI" condition="prt">
+			<title>Index</title>
+			<para>Maps are marked in <phrase rend="b">grey</phrase>
+			</para>
+			<indexdiv>
+				<title>A</title>
+				<indexentry>
+					<primaryie>Abellán, Carles <phrase role="pagenumber">39</phrase>
+					</primaryie>
+				</indexentry>
+				<!-- Text removed for sample purposes -->
+			</indexdiv>
+		</index>
+	
+	<!-- DMD: Country guides do not have a map index in the printed version but as per creative's specs, it was included for epubs specifically. 
+		Note that the map index would not have a cref value in country guides since there is no corresponding print map index.
+		City Gudes already have a print map index but a customized one might be included for epub only. 
+		Following is the mark-up for map index taken from South Africa -->
+	<index xml:id="RG_SOUAFR690INDEX_001" condition="dig">
+		<title>Index</title>
+		<para/>
+		<indexdiv>
+			<title>South Africa, Lesotho &amp; Swaziland chapters</title>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">South Africa, Lesotho &amp; Swaziland</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Itineraries</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Main intercity bus routes</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Major parks and wilderness areas</link>
+				</primaryie>
+			</indexentry>
+		</indexdiv>
+		<indexdiv>
+			<title>
+				<link linkend="xxx">Cape Town and the Peninsula</link>
+			</title>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Cape Town City Centre and suburbs</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Cape Town City Centre</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Cape Town City Centre: around Long St and the Company
+						Gardens</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">V&amp;A Waterfront and De Waterkant</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Mouille Point, Green Point, Sea Point and Clifton</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Camps Bay and Bakoven</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">Kalk Bay to Muizenberg</link>
+				</primaryie>
+			</indexentry>
+			<indexentry>
+				<primaryie>
+					<link linkend="xxx">City Bowl suburbs</link>
+				</primaryie>
+			</indexentry>
+		</indexdiv>
+		<!-- Text removed for sample purposes -->
+	</index>
+	
+	
+
+
+</chapter>
+
+
+
+
+
+
+</book>

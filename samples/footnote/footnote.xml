@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- footnote mark-up as per the Docbook schema -->
+<!-- Reference title: Re-imagine, pg. 45 -->
+<book xmlns="http://docbook.org/ns/docbook" xml:id="REIMAG">
+    <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="5.0" xml:id="REIMAG041-052REIWOR">
+        <title>Re-Imagining the World: All Bets are Off</title>
+        <section xml:id="REIMAG041REIWOR_008">
+            <title>Losing bet I: Systematic planning rituals</title>
+            <!--text removed -->
+            <!-- The footnotes will sit, wherever they have been referenced from, in the main text, as shown here -->
+            <para>Meg Whitman has seen the faith in long-term strategy<footnote
+                    xml:id="REIMAG041REIWOR_022" role="buy_the_book">
+                    <formalpara><title>“Plan” to buy this book</title>
+                        <para><superscript>1</superscript>My favorite management book in the last 25
+                            years?</para></formalpara>
+                    <para>No contest. <emphasis>The Rise and Fall of Strategic Planning</emphasis>,
+                        by Henry Mintzberg.</para></footnote> come and go. She’s .........several
+                times a <emphasis>week</emphasis>.”</para>
+        </section>
+    </chapter>
+    <!-- Another example -->
+    <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="5.0" xml:id="REIMAG053-073CONALT">
+        <title>Control Alt Delete: The Destruction Imperative</title>
+        <sidebar xml:id="REIMAG060DOMAT" remap="feature">
+            <title>Do the math (1+1=0)</title>
+            <para>The table below summarizes the financial impact of the 10 biggest mergers of the
+                1998–2002 period.</para>
+            <informaltable xml:id="REIMAG060DOMAT_001">
+                <tgroup cols="1">
+                    <thead>
+                        <row>
+                            <entry>Recent Merger (Year)</entry>
+                        </row>
+                        <row>
+                            <entry>Value Created (+) or Destroyed (–) Since Acquisition <footnote
+                                    xml:id="REIMAG060DOMAT_002"><para><superscript>*</superscript>As
+                                        of 1 July 2002. ........ 2002.</para></footnote></entry>
+                        </row>
+                    </thead>
+
+                    <tbody>
+                        <row>
+                            <entry>text removed</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+
+
+            </informaltable>
+        </sidebar>
+    </chapter>
+</book>

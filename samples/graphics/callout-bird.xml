@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<book xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <title>Bird</title>
+    <subtitle>The Definitive Visual Guide</subtitle>
+    <chapter xml:id="BIRD068-097HABITA">
+        <title>Habitats</title>
+        <section xml:id="BIRD070BIRGEO_013">
+            <title xml:id="BIRD070BIRGEO_014">Divided world</title>
+            <para xml:id="BIRD070BIRGEO_015">Biogeography dates back to the mid-19th
+                century, when naturalists began to recognize striking differences in the
+                bird life of different regions of the world. The boundaries between realms
+                are not fixed precisely, but indicate transition zones where marked changes
+                in bird life occur.</para>
+            <!-- DMD: Example of hotspot. The text on the map has been captured in the xml. -->
+            <mediaobject xml:id="BIRD070BIRGEO_016" role="map">
+                <imageobjectco xml:id="BIRD070BIRGEO_017">
+                    <areaspec>
+                        <area xml:id="BIRD070BIRANA_016_001" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_002" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_003" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_004" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_005" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_006" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_007" coords=""/>
+                        <area xml:id="BIRD070BIRANA_016_008" coords=""/>
+                    </areaspec>
+                    <imageobject xml:id="BIRD070BIRGEO_018">
+                        <imagedata fileref="bird070birgeo_016.jpg"/>
+                    </imageobject>
+                    <calloutlist xml:id="BIRD070BIRGEO_019">
+                        <callout xml:id="BIRD070BIRGEO_020" arearefs="BIRD070BIRANA_016_001">
+                            <para>
+                                <link linkend="BIRD070NEARCT">Nearctic</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_021">
+                        <callout xml:id="BIRD070BIRGEO_022" arearefs="BIRD070BIRANA_016_002">
+                            <para>
+                                <link linkend="BIRD070OCEANI">Oceanic</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_023">
+                        <callout xml:id="BIRD070BIRGEO_024" arearefs="BIRD070BIRANA_016_003">
+                            <para>
+                                <link linkend="BIRD070ANTARC">Antarctic</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_025">
+                        <callout xml:id="BIRD070BIRGEO_026" arearefs="BIRD070BIRANA_016_004">
+                            <para>
+                                <link linkend="BIRD070NEOTRO">Neotropical</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_027">
+                        <callout xml:id="BIRD070BIRGEO_028" arearefs="BIRD070BIRANA_016_005">
+                            <para>
+                                <link linkend="BIRD070AFROTR">Afrotropical</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_029">
+                        <callout xml:id="BIRD070BIRGEO_030" arearefs="BIRD070BIRANA_016_006">
+                            <para>
+                                <link linkend="BIRD070AUSTRA">Australasian</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_031">
+                        <callout xml:id="BIRD070BIRGEO_032" arearefs="BIRD070BIRANA_016_007">
+                            <para>
+                                <link linkend="BIRD070INDOMA">Indomalayan</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                    <calloutlist xml:id="BIRD070BIRGEO_033">
+                        <callout xml:id="BIRD070BIRGEO_034" arearefs="BIRD070BIRANA_016_008">
+                            <para>
+                                <link linkend="BIRD070PALEAR">Palearctic</link>
+                            </para>
+                        </callout>
+                    </calloutlist>
+                </imageobjectco>
+            </mediaobject>
+            <section xml:id="BIRD070NEARCT" role="entry">
+                <title xml:id="BIRD070NEARCT_001">Nearctic</title>
+                <simplelist xml:id="BIRD070NEARCT_002" role="dataset">
+                    <member xml:id="BIRD070NEARCT_003" role="families">61</member>
+                    <member xml:id="BIRD070NEARCT_004" role="species">732</member>
+                </simplelist>
+                <para xml:id="BIRD070NEARCT_005" role="description">Low in bird diversity,
+                    the Nearctic has no endemic families. Its bird life has strong links
+                    with the Palearctic realm, but includes hummingbirds and tanagers
+                    originating in South America. Most birds are migratory, reflecting a
+                    cold winter climate.</para>
+            </section>
+            <section xml:id="BIRD070OCEANI" role="entry">
+                <title xml:id="BIRD070OCEANI_001">Oceanic</title>
+                <simplelist xml:id="BIRD070OCEANI_002" role="dataset">
+                    <member xml:id="BIRD070OCEANI_003" role="families">c.35</member>
+                    <member xml:id="BIRD070OCEANI_004" role="species">c.200</member>
+                </simplelist>
+                <para xml:id="BIRD070OCEANI_005" role="description">For their size, islands
+                    in the Oceanic realm are home to an exceptionally rich variety of birds,
+                    but only 2 per cent of the global total. As well as marine species, such
+                    as albatrosses and tropicbirds, they include many endemics, such as
+                    flightless rails.</para>
+            </section>
+            <section xml:id="BIRD070ANTARC" role="entry">
+                <title xml:id="BIRD070ANTARC_001">Antarctic</title>
+                <simplelist xml:id="BIRD070ANTARC_002" role="dataset">
+                    <member xml:id="BIRD070ANTARC_003" role="families">12</member>
+                    <member xml:id="BIRD070ANTARC_004" role="species">85</member>
+                </simplelist>
+                <para xml:id="BIRD070ANTARC_005" role="description">Antarctica’s tiny
+                    species total masks a great abundance of bird life. The overwhelming
+                    majority of its species are marine. Penguins remain within its borders
+                    all year, but most seabirds – including skuas and terns – are summer
+                    migrants.</para>
+            </section>
+            <section xml:id="BIRD070NEOTRO" role="entry">
+                <title xml:id="BIRD070NEOTRO_001">Neotropical</title>
+                <simplelist xml:id="BIRD070NEOTRO_002" role="dataset">
+                    <member xml:id="BIRD070NEOTRO_003" role="families">95</member>
+                    <member xml:id="BIRD070NEOTRO_004" role="species">3,370</member>
+                </simplelist>
+                <para xml:id="BIRD070NEOTRO_005" role="description">This realm has more bird
+                    species than any other. A third of families are endemic, including
+                    tinamous, curassows, puffbirds, toucans, and several families of
+                    primitive passerines. Neotropicals include many fruit and nectar
+                    feeders.</para>
+            </section>
+            <section xml:id="BIRD070AFROTR" role="entry">
+                <title xml:id="BIRD070AFROTR_001">Afrotropical</title>
+                <simplelist xml:id="BIRD070AFROTR_002" role="dataset">
+                    <member xml:id="BIRD070AFROTR_003" role="families">73</member>
+                    <member xml:id="BIRD070AFROTR_004" role="species">1,950</member>
+                </simplelist>
+                <para xml:id="BIRD070AFROTR_005" role="description">With large expanses of
+                    desert and grassland, this realm is rich in terrestrial birds and
+                    seed-eaters. Endemic families include ostriches, mousebirds, and
+                    turacos. There are strong links with families in the Indomalayan
+                    realm.</para>
+            </section>
+            <section xml:id="BIRD070AUSTRA" role="entry">
+                <title xml:id="BIRD070AUSTRA_001">Australasian</title>
+                <simplelist xml:id="BIRD070AUSTRA_002" role="dataset">
+                    <member xml:id="BIRD070AUSTRA_003" role="families">64</member>
+                    <member xml:id="BIRD070AUSTRA_004" role="species">1,590</member>
+                </simplelist>
+                <para xml:id="BIRD070AUSTRA_005" role="description">There are 13 endemic
+                    families here, including cassowaries, emus, lyrebirds,
+                    birds-of-paradise, and honeyeaters, plus large numbers of terrestrial
+                    and nomadic species, and nectar-feeders. Kingfishers, parrots, and doves
+                    are abundant.</para>
+            </section>
+            <section xml:id="BIRD070INDOMA" role="entry">
+                <title xml:id="BIRD070INDOMA_001">Indomalayan</title>
+                <simplelist xml:id="BIRD070INDOMA_002" role="dataset">
+                    <member xml:id="BIRD070INDOMA_003" role="families">69</member>
+                    <member xml:id="BIRD070INDOMA_004" role="species">1,700</member>
+                </simplelist>
+                <para xml:id="BIRD070INDOMA_005" role="description">Only four families – the
+                    leafbirds, bluebirds, ioras, and bristleheads – are endemic to this
+                    region, but its bird life is rich and varied. The climate is almost
+                    entirely tropical, and its birds include many species that feed on fruit
+                    and seeds.</para>
+            </section>
+            <section xml:id="BIRD070PALEAR" role="entry">
+                <title xml:id="BIRD070PALEAR_001">Palearctic</title>
+                <simplelist xml:id="BIRD070PALEAR_002" role="dataset">
+                    <member xml:id="BIRD070PALEAR_003" role="families">69</member>
+                    <member xml:id="BIRD070PALEAR_004" role="species">937</member>
+                </simplelist>
+                <para xml:id="BIRD070PALEAR_005" role="description">Despite being the
+                    largest realm, the Palearctic has just one endemic family – the
+                    accentors. It has a large number of insect-eaters, including Old World
+                    warblers, the biggest single family in this region. The majority of
+                    birds are migrants.</para>
+            </section>
+        </section>
+    </chapter>
+</book>

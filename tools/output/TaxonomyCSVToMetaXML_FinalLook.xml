@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metapresets xmlns="http://dk.com/dk-schema">
+   <group xmlns="" xml:id="MILHIS_Yes">
+      <name>Yes</name>
+      <group xml:id="MILHIS_Vehicles">
+         <name>Vehicles</name>
+         <group xml:id="MILHIS_Air">
+            <name>Air</name>
+            <group xml:id="MILHIS_Aeroplane">
+               <name>Aeroplane</name>
+               <group xml:id="MILHIS_Fighter_Aircraft">
+                  <name>Fighter Aircraft</name>
+                  <item xml:id="MILHIS_Stealth_Fighter">
+                     <name>Stealth Fighter</name>
+                  </item>
+               </group>
+               <item xml:id="MILHIS_Attack_Aircraft">
+                  <name>Attack Aircraft</name>
+               </item>
+               <item xml:id="MILHIS_Bomber_Aircraft">
+                  <name>Bomber Aircraft</name>
+               </item>
+               <item xml:id="MILHIS_Jet_Aircraft">
+                  <name>Jet Aircraft</name>
+               </item>
+               <item xml:id="MILHIS_Rocket_Aircraft">
+                  <name>Rocket Aircraft</name>
+               </item>
+               <item xml:id="MILHIS_TransportCarrier_Aircraft">
+                  <name>Transport/Carrier Aircraft</name>
+               </item>
+               <item xml:id="MILHIS_Unmanned_Drone">
+                  <name>Unmanned Drone</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_Helicopter">
+               <name>Helicopter</name>
+               <item xml:id="MILHIS_Attack_Helicopter">
+                  <name>Attack Helicopter</name>
+               </item>
+               <item xml:id="MILHIS_Maritime_Helicopter">
+                  <name>Maritime Helicopter</name>
+               </item>
+               <item xml:id="MILHIS_Observational_Helicopter">
+                  <name>Observational Helicopter</name>
+               </item>
+               <item xml:id="MILHIS_Transport_Helicopter">
+                  <name>Transport Helicopter</name>
+               </item>
+            </group>
+         </group>
+         <group xml:id="MILHIS_Land">
+            <name>Land</name>
+            <item xml:id="MILHIS_Armoured_Vehicle">
+               <name>Armoured Vehicle</name>
+            </item>
+            <item xml:id="MILHIS_Chariot">
+               <name>Chariot</name>
+            </item>
+            <item xml:id="MILHIS_Jeep">
+               <name>Jeep</name>
+            </item>
+            <item xml:id="MILHIS_Motorbike">
+               <name>Motorbike</name>
+            </item>
+            <item xml:id="MILHIS_Tank">
+               <name>Tank</name>
+            </item>
+            <item xml:id="MILHIS_Truck">
+               <name>Truck</name>
+            </item>
+            <item xml:id="MILHIS_Unmanned_Land_Vehicle">
+               <name>Unmanned Land Vehicle</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Sea">
+            <name>Sea</name>
+            <group xml:id="MILHIS_Ship">
+               <name>Ship</name>
+               <item xml:id="MILHIS_Aircraft_Carrier">
+                  <name>Aircraft Carrier</name>
+               </item>
+               <item xml:id="MILHIS_Battleship">
+                  <name>Battleship</name>
+               </item>
+               <item xml:id="MILHIS_Bomb_Ketch">
+                  <name>Bomb Ketch</name>
+               </item>
+               <item xml:id="MILHIS_Dreadnought">
+                  <name>Dreadnought</name>
+               </item>
+               <item xml:id="MILHIS_Frigate">
+                  <name>Frigate</name>
+               </item>
+               <item xml:id="MILHIS_Galleon">
+                  <name>Galleon</name>
+               </item>
+               <item xml:id="MILHIS_Great_Ship">
+                  <name>Great Ship</name>
+               </item>
+               <item xml:id="MILHIS_Ironclad">
+                  <name>Ironclad</name>
+               </item>
+               <item xml:id="MILHIS_Landing_Craft">
+                  <name>Landing Craft</name>
+               </item>
+               <item xml:id="MILHIS_Longship">
+                  <name>Longship</name>
+               </item>
+               <item xml:id="MILHIS_MissileArmed_Ship">
+                  <name>Missile-Armed Ship</name>
+               </item>
+               <item xml:id="MILHIS_Steam_Warship">
+                  <name>Steam Warship</name>
+               </item>
+               <item xml:id="MILHIS_SuperDreadnought">
+                  <name>Super-Dreadnought</name>
+               </item>
+               <item xml:id="MILHIS_ThreeDecker">
+                  <name>Three-Decker</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_Submarine">
+               <name>Submarine</name>
+               <item xml:id="MILHIS_Diesel">
+                  <name>Diesel</name>
+               </item>
+               <item xml:id="MILHIS_Manual">
+                  <name>Manual</name>
+               </item>
+               <item xml:id="MILHIS_Nuclear">
+                  <name>Nuclear</name>
+               </item>
+            </group>
+         </group>
+      </group>
+      <group xml:id="MILHIS_Weapons">
+         <name>Weapons</name>
+         <group xml:id="MILHIS_ChemicalBiological">
+            <name>Chemical/Biological</name>
+            <group xml:id="MILHIS_Primitive">
+               <name>Primitive</name>
+               <item xml:id="MILHIS_Early_Gunpowder_Weapons">
+                  <name>Early Gunpowder Weapons</name>
+               </item>
+            </group>
+            <item xml:id="MILHIS_Defoliant">
+               <name>Defoliant</name>
+            </item>
+            <item xml:id="MILHIS_Poison_Gas">
+               <name>Poison Gas</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Early_Siege__Field_Guns">
+            <name>Early Siege &amp; Field Guns</name>
+            <group xml:id="MILHIS_Field_Gun">
+               <name>Field Gun</name>
+               <item xml:id="MILHIS_Cannon">
+                  <name>Cannon</name>
+               </item>
+               <item xml:id="MILHIS_Falconet">
+                  <name>Falconet</name>
+               </item>
+               <item xml:id="MILHIS_Howitzer">
+                  <name>Howitzer</name>
+               </item>
+               <item xml:id="MILHIS_Mortar">
+                  <name>Mortar</name>
+               </item>
+            </group>
+         </group>
+         <group xml:id="MILHIS_MunitionsBombsArtillery">
+            <name>Munitions/Bombs/Artillery</name>
+            <item xml:id="MILHIS_Grenade">
+               <name>Grenade</name>
+            </item>
+            <item xml:id="MILHIS_Mine">
+               <name>Mine</name>
+            </item>
+            <item xml:id="MILHIS_Rocket">
+               <name>Rocket</name>
+            </item>
+            <item xml:id="MILHIS_Shell">
+               <name>Shell</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Nuclear">
+            <name>Nuclear</name>
+            <item xml:id="MILHIS_ICBM">
+               <name>ICBM</name>
+            </item>
+            <item xml:id="MILHIS_Hydrogen_Bomb">
+               <name>Hydrogen Bomb</name>
+            </item>
+            <item xml:id="MILHIS_SubmarineLaunched_Missile">
+               <name>Submarine-Launched Missile</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Small_Arms__Personal_Weapons">
+            <name>Small Arms &amp; Personal Weapons</name>
+            <group xml:id="MILHIS_AntiMateriel_Weapons">
+               <name>Anti-Materiel Weapons</name>
+               <item xml:id="MILHIS_AntiAircraft_Weapon">
+                  <name>Anti-Aircraft Weapon</name>
+               </item>
+               <item xml:id="MILHIS_AntiMateriel_Rifle">
+                  <name>Anti-Materiel Rifle</name>
+               </item>
+               <item xml:id="MILHIS_AntiMateriel_Shotgun_Shell">
+                  <name>Anti-Materiel Shotgun Shell</name>
+               </item>
+               <item xml:id="MILHIS_AntiStructure_Weapon">
+                  <name>Anti-Structure Weapon</name>
+               </item>
+               <item xml:id="MILHIS_Flamethrower">
+                  <name>Flamethrower</name>
+               </item>
+               <item xml:id="MILHIS_Improvised_Weapon">
+                  <name>Improvised Weapon</name>
+               </item>
+               <item xml:id="MILHIS_Thermite_Grenade">
+                  <name>Thermite Grenade</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_AntiPersonnel_Weapons">
+               <name>Anti-Personnel Weapons</name>
+               <group xml:id="MILHIS_Archery_Weapon">
+                  <name>Archery Weapon</name>
+                  <item xml:id="MILHIS_Bow">
+                     <name>Bow</name>
+                  </item>
+                  <item xml:id="MILHIS_Crossbow">
+                     <name>Crossbow</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Bludgeoning_Weapon">
+                  <name>Bludgeoning Weapon</name>
+                  <item xml:id="MILHIS_Club">
+                     <name>Club</name>
+                  </item>
+                  <item xml:id="MILHIS_Flail">
+                     <name>Flail</name>
+                  </item>
+                  <item xml:id="MILHIS_Mace">
+                     <name>Mace</name>
+                  </item>
+                  <item xml:id="MILHIS_Morgenstern">
+                     <name>Morgenstern</name>
+                  </item>
+                  <item xml:id="MILHIS_War_Hammer">
+                     <name>War Hammer</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Chopping_Weapon">
+                  <name>Chopping Weapon</name>
+                  <item xml:id="MILHIS_Axe">
+                     <name>Axe</name>
+                  </item>
+                  <item xml:id="MILHIS_Bardiche">
+                     <name>Bardiche</name>
+                  </item>
+                  <item xml:id="MILHIS_Halberd">
+                     <name>Halberd</name>
+                  </item>
+                  <item xml:id="MILHIS_Hatchet">
+                     <name>Hatchet</name>
+                  </item>
+                  <item xml:id="MILHIS_Poleaxe">
+                     <name>Poleaxe</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_EdgedBladed_Weapon">
+                  <name>Edged/Bladed Weapon</name>
+                  <group xml:id="MILHIS_Knife">
+                     <name>Knife</name>
+                     <group xml:id="MILHIS_Dagger">
+                        <name>Dagger</name>
+                        <item xml:id="MILHIS_Baselard">
+                           <name>Baselard</name>
+                        </item>
+                        <item xml:id="MILHIS_Dirk">
+                           <name>Dirk</name>
+                        </item>
+                        <item xml:id="MILHIS_Punching_Dagger">
+                           <name>Punching Dagger</name>
+                        </item>
+                        <item xml:id="MILHIS_Quillon">
+                           <name>Quillon</name>
+                        </item>
+                        <item xml:id="MILHIS_Stiletto">
+                           <name>Stiletto</name>
+                        </item>
+                        <item xml:id="MILHIS_Swordbreaker">
+                           <name>Swordbreaker</name>
+                        </item>
+                     </group>
+                     <item xml:id="MILHIS_Bayonet">
+                        <name>Bayonet</name>
+                     </item>
+                     <item xml:id="MILHIS_Combat_Knife">
+                        <name>Combat Knife</name>
+                     </item>
+                     <item xml:id="MILHIS_KnuckleDuster_Knife">
+                        <name>Knuckle-Duster Knife</name>
+                     </item>
+                  </group>
+                  <group xml:id="MILHIS_Sword">
+                     <name>Sword</name>
+                     <item xml:id="MILHIS_Broadsword">
+                        <name>Broadsword</name>
+                     </item>
+                     <item xml:id="MILHIS_Cutlass">
+                        <name>Cutlass</name>
+                     </item>
+                     <item xml:id="MILHIS_Handandahalf_Sword">
+                        <name>Hand-and-a-half Sword</name>
+                     </item>
+                     <item xml:id="MILHIS_Hanger">
+                        <name>Hanger</name>
+                     </item>
+                     <item xml:id="MILHIS_Rapier">
+                        <name>Rapier</name>
+                     </item>
+                     <item xml:id="MILHIS_Sabre">
+                        <name>Sabre</name>
+                     </item>
+                     <item xml:id="MILHIS_Short_Sword">
+                        <name>Short Sword</name>
+                     </item>
+                     <item xml:id="MILHIS_TwoHanded_Sword">
+                        <name>Two-Handed Sword</name>
+                     </item>
+                  </group>
+               </group>
+               <group xml:id="MILHIS_Fully_Automatic_Weapon">
+                  <name>Fully Automatic Weapon</name>
+                  <item xml:id="MILHIS_Assault_Rifle">
+                     <name>Assault Rifle</name>
+                  </item>
+                  <item xml:id="MILHIS_Heavy_Machine_Gun">
+                     <name>Heavy Machine Gun</name>
+                  </item>
+                  <item xml:id="MILHIS_Light_Machine_Gun">
+                     <name>Light Machine Gun</name>
+                  </item>
+                  <item xml:id="MILHIS_Multiple_Barrel_Firearm">
+                     <name>Multiple Barrel Firearm</name>
+                  </item>
+                  <item xml:id="MILHIS_Submachine_Gun">
+                     <name>Submachine Gun</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Grenade_Launcher">
+                  <name>Grenade Launcher</name>
+                  <item xml:id="MILHIS_RifleMounted">
+                     <name>Rifle-Mounted</name>
+                  </item>
+                  <item xml:id="MILHIS_StandAlone">
+                     <name>Stand-Alone</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Hand_Grenade">
+                  <name>Hand Grenade</name>
+                  <item xml:id="MILHIS_AntiTank_Type">
+                     <name>Anti-Tank Type</name>
+                  </item>
+                  <item xml:id="MILHIS_Concussion_Type">
+                     <name>Concussion Type</name>
+                  </item>
+                  <item xml:id="MILHIS_Flash_Type">
+                     <name>Flash Type</name>
+                  </item>
+                  <item xml:id="MILHIS_Fragmentation_Type">
+                     <name>Fragmentation Type</name>
+                  </item>
+                  <item xml:id="MILHIS_Smoke_Type">
+                     <name>Smoke Type</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Handgun">
+                  <name>Handgun</name>
+                  <group xml:id="MILHIS_Pistol">
+                     <name>Pistol</name>
+                     <group xml:id="MILHIS_BrassCartridge_Pistol">
+                        <name>Brass-Cartridge Pistol</name>
+                        <group xml:id="MILHIS_SelfLoading_Pistol">
+                           <name>Self-Loading Pistol</name>
+                           <item xml:id="MILHIS_Automatic_Pistol">
+                              <name>Automatic Pistol</name>
+                           </item>
+                           <item xml:id="MILHIS_Revolver">
+                              <name>Revolver</name>
+                           </item>
+                        </group>
+                     </group>
+                     <group xml:id="MILHIS_PercussionCap_Pistol">
+                        <name>Percussion-Cap Pistol</name>
+                        <item xml:id="MILHIS_PercussionCap_Revolver">
+                           <name>Percussion-Cap Revolver</name>
+                        </item>
+                     </group>
+                     <item xml:id="MILHIS_Flintlock_Pistol">
+                        <name>Flintlock Pistol</name>
+                     </item>
+                     <item xml:id="MILHIS_Matchlock_Pistol">
+                        <name>Matchlock Pistol</name>
+                     </item>
+                  </group>
+                  <item xml:id="MILHIS_Improvised_Handgun">
+                     <name>Improvised Handgun</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Long_Gun">
+                  <name>Long Gun</name>
+                  <group xml:id="MILHIS_Musket">
+                     <name>Musket</name>
+                     <item xml:id="MILHIS_Asian_Matchlock">
+                        <name>Asian Matchlock</name>
+                     </item>
+                     <item xml:id="MILHIS_Flintlock_Musket">
+                        <name>Flintlock Musket</name>
+                     </item>
+                     <item xml:id="MILHIS_Indian_Musket">
+                        <name>Indian Musket</name>
+                     </item>
+                     <item xml:id="MILHIS_Ottoman_Musket">
+                        <name>Ottoman Musket</name>
+                     </item>
+                     <item xml:id="MILHIS_PercussionCap_Musket">
+                        <name>Percussion-Cap Musket</name>
+                     </item>
+                  </group>
+                  <group xml:id="MILHIS_Rifle">
+                     <name>Rifle</name>
+                     <group xml:id="MILHIS_Early_Rifle">
+                        <name>Early Rifle</name>
+                        <group xml:id="MILHIS_Breech_Loader">
+                           <name>Breech Loader</name>
+                           <item xml:id="MILHIS_PercussionCap">
+                              <name>Percussion-Cap</name>
+                           </item>
+                        </group>
+                        <group xml:id="MILHIS_Carbine">
+                           <name>Carbine</name>
+                           <item xml:id="MILHIS_Asian_Carbine">
+                              <name>Asian Carbine</name>
+                           </item>
+                           <item xml:id="MILHIS_Ottoman_Carbine">
+                              <name>Ottoman Carbine</name>
+                           </item>
+                        </group>
+                     </group>
+                     <group xml:id="MILHIS_Modern_Rifle">
+                        <name>Modern Rifle</name>
+                        <group xml:id="MILHIS_Repeater_Rifle">
+                           <name>Repeater Rifle</name>
+                           <group xml:id="MILHIS_SelfLoading">
+                              <name>Self-Loading</name>
+                              <group xml:id="MILHIS_MultiShot_Rifle">
+                                 <name>Multi-Shot Rifle</name>
+                                 <item xml:id="MILHIS_Carbine">
+                                    <name>Carbine</name>
+                                 </item>
+                              </group>
+                              <item xml:id="MILHIS_Revolver_Rifle">
+                                 <name>Revolver Rifle</name>
+                              </item>
+                           </group>
+                           <item xml:id="MILHIS_Manually_Loaded">
+                              <name>Manually Loaded</name>
+                           </item>
+                        </group>
+                        <item xml:id="MILHIS_Flintlock_Rifle">
+                           <name>Flintlock Rifle</name>
+                        </item>
+                        <item xml:id="MILHIS_PercussionCap_Rifle">
+                           <name>Percussion-Cap Rifle</name>
+                        </item>
+                        <item xml:id="MILHIS_Sniper_Rifle">
+                           <name>Sniper Rifle</name>
+                        </item>
+                     </group>
+                  </group>
+               </group>
+               <group xml:id="MILHIS_Penetrating_Weapon">
+                  <name>Penetrating Weapon</name>
+                  <item xml:id="MILHIS_Lance">
+                     <name>Lance</name>
+                  </item>
+                  <item xml:id="MILHIS_Pike">
+                     <name>Pike</name>
+                  </item>
+                  <item xml:id="MILHIS_Spear">
+                     <name>Spear</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Shotgun">
+                  <name>Shotgun</name>
+                  <item xml:id="MILHIS_Military_Shotgun">
+                     <name>Military Shotgun</name>
+                  </item>
+                  <item xml:id="MILHIS_Sporting_Shotgun">
+                     <name>Sporting Shotgun</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_Throwing_Weapon">
+                  <name>Throwing Weapon</name>
+                  <item xml:id="MILHIS_Throwing_Axe">
+                     <name>Throwing Axe</name>
+                  </item>
+                  <item xml:id="MILHIS_Throwing_Knife">
+                     <name>Throwing Knife</name>
+                  </item>
+                  <item xml:id="MILHIS_Throwing_Spear">
+                     <name>Throwing Spear</name>
+                  </item>
+               </group>
+               <item xml:id="MILHIS_Combination_Weapon">
+                  <name>Combination Weapon</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_AntiVehicle_Weapons">
+               <name>Anti-Vehicle Weapons</name>
+               <item xml:id="MILHIS_AntiTank_Rifle">
+                  <name>Anti-Tank Rifle</name>
+               </item>
+               <item xml:id="MILHIS_Recoilless_Rifle">
+                  <name>Recoilless Rifle</name>
+               </item>
+               <item xml:id="MILHIS_ShoulderFired_Disposable_Rocket">
+                  <name>Shoulder-Fired Disposable Rocket</name>
+               </item>
+               <item xml:id="MILHIS_ShoulderFired_Disposable_Tube_Missile">
+                  <name>Shoulder-Fired Disposable Tube Missile</name>
+               </item>
+               <item xml:id="MILHIS_ShoulderFired_Rocket">
+                  <name>Shoulder-Fired Rocket</name>
+               </item>
+            </group>
+         </group>
+         <group xml:id="MILHIS_Space">
+            <name>Space</name>
+            <group xml:id="MILHIS_Mounted_Weapon">
+               <name>Mounted Weapon</name>
+               <group xml:id="MILHIS_Mounted_Siege">
+                  <name>Mounted (Siege)</name>
+                  <item xml:id="MILHIS_Ballista">
+                     <name>Ballista</name>
+                  </item>
+                  <item xml:id="MILHIS_Cannon">
+                     <name>Cannon</name>
+                  </item>
+                  <item xml:id="MILHIS_Catapult">
+                     <name>Catapult</name>
+                  </item>
+                  <item xml:id="MILHIS_Onager">
+                     <name>Onager</name>
+                  </item>
+               </group>
+               <group xml:id="MILHIS_VehicleMounted">
+                  <name>Vehicle-Mounted</name>
+                  <group xml:id="MILHIS_Air">
+                     <name>Air</name>
+                     <item xml:id="MILHIS_Aircraft_Gun">
+                        <name>Aircraft Gun</name>
+                     </item>
+                     <item xml:id="MILHIS_Missile">
+                        <name>Missile</name>
+                     </item>
+                  </group>
+                  <group xml:id="MILHIS_Land">
+                     <name>Land</name>
+                     <item xml:id="MILHIS_Railway_Gun">
+                        <name>Railway Gun</name>
+                     </item>
+                  </group>
+                  <group xml:id="MILHIS_Naval">
+                     <name>Naval</name>
+                     <group xml:id="MILHIS_Ship">
+                        <name>Ship</name>
+                        <group xml:id="MILHIS_Naval_Cannon">
+                           <name>Naval Cannon</name>
+                           <item xml:id="MILHIS_Carronnade">
+                              <name>Carronnade</name>
+                           </item>
+                        </group>
+                     </group>
+                     <group xml:id="MILHIS_Submarine">
+                        <name>Submarine</name>
+                        <item xml:id="MILHIS_Torpedo">
+                           <name>Torpedo</name>
+                        </item>
+                     </group>
+                  </group>
+               </group>
+            </group>
+         </group>
+      </group>
+   </group>
+   <group xmlns="" xml:id="MILHIS_No">
+      <name>No</name>
+      <group xml:id="MILHIS_Armour">
+         <name>Armour</name>
+         <group xml:id="MILHIS_ArmLeg_Armour">
+            <name>Arm/Leg Armour</name>
+            <item xml:id="MILHIS_Armoured_Boot">
+               <name>Armoured Boot</name>
+            </item>
+            <item xml:id="MILHIS_Cuisse">
+               <name>Cuisse</name>
+            </item>
+            <item xml:id="MILHIS_Forearm_Guard">
+               <name>Forearm Guard</name>
+            </item>
+            <item xml:id="MILHIS_Gauntlet">
+               <name>Gauntlet</name>
+            </item>
+            <item xml:id="MILHIS_Greave">
+               <name>Greave</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Body_Armour">
+            <name>Body Armour</name>
+            <item xml:id="MILHIS_Breastplate">
+               <name>Breastplate</name>
+            </item>
+            <item xml:id="MILHIS_Cuirass">
+               <name>Cuirass</name>
+            </item>
+            <item xml:id="MILHIS_Hauberk">
+               <name>Hauberk</name>
+            </item>
+            <item xml:id="MILHIS_Neck_Protection">
+               <name>Neck Protection</name>
+            </item>
+            <item xml:id="MILHIS_Shoulder_Defence">
+               <name>Shoulder Defence</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Helmet">
+            <name>Helmet</name>
+            <item xml:id="MILHIS_Basinet">
+               <name>Basinet</name>
+            </item>
+            <item xml:id="MILHIS_Coif">
+               <name>Coif</name>
+            </item>
+            <item xml:id="MILHIS_Close_Helm">
+               <name>Close Helm</name>
+            </item>
+            <item xml:id="MILHIS_Face_Defence">
+               <name>Face Defence</name>
+            </item>
+            <item xml:id="MILHIS_Jousting_Helm">
+               <name>Jousting Helm</name>
+            </item>
+            <item xml:id="MILHIS_Sailet">
+               <name>Sailet</name>
+            </item>
+         </group>
+      </group>
+      <group xml:id="MILHIS_Clothing__Kit">
+         <name>Clothing &amp; Kit</name>
+      </group>
+      <group xml:id="MILHIS_Infrastructure">
+         <name>Infrastructure</name>
+      </group>
+      <group xml:id="MILHIS_Insignia">
+         <name>Insignia</name>
+      </group>
+      <group xml:id="MILHIS_Medals">
+         <name>Medals</name>
+      </group>
+      <group xml:id="MILHIS_Technology">
+         <name>Technology</name>
+         <group xml:id="MILHIS_Communications">
+            <name>Communications</name>
+            <item xml:id="MILHIS_Battlefield_Signals">
+               <name>Battlefield Signals</name>
+            </item>
+            <item xml:id="MILHIS_CodeBreaking_Devices">
+               <name>Code-Breaking Devices</name>
+            </item>
+            <item xml:id="MILHIS_Espionage_Field_Equipment">
+               <name>Espionage Field Equipment</name>
+            </item>
+            <item xml:id="MILHIS_Radio">
+               <name>Radio</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Navigation">
+            <name>Navigation</name>
+            <group xml:id="MILHIS_PreIndustrial">
+               <name>Pre-Industrial</name>
+               <item xml:id="MILHIS_Astrolabe">
+                  <name>Astrolabe</name>
+               </item>
+               <item xml:id="MILHIS_Compass">
+                  <name>Compass</name>
+               </item>
+               <item xml:id="MILHIS_CrossStaff__Backstaff">
+                  <name>Cross-Staff / Backstaff</name>
+               </item>
+               <item xml:id="MILHIS_Sextant">
+                  <name>Sextant</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_PostIndustrial">
+               <name>Post-Industrial</name>
+               <item xml:id="MILHIS_BombAiming_Device">
+                  <name>Bomb-Aiming Device</name>
+               </item>
+               <item xml:id="MILHIS_Chronometer">
+                  <name>Chronometer</name>
+               </item>
+               <item xml:id="MILHIS_Missile_Guidance_System">
+                  <name>Missile Guidance System</name>
+               </item>
+               <item xml:id="MILHIS_RADAR">
+                  <name>RADAR</name>
+               </item>
+            </group>
+         </group>
+      </group>
+      <group xml:id="MILHIS_Troops">
+         <name>Troops</name>
+         <group xml:id="MILHIS_Air">
+            <name>Air</name>
+            <item xml:id="MILHIS_Bomber_Crew">
+               <name>Bomber Crew</name>
+            </item>
+            <item xml:id="MILHIS_RAF_Fighter_Pilot_WWI">
+               <name>RAF Fighter Pilot (WWI)</name>
+            </item>
+            <item xml:id="MILHIS_WWII_Fighter_Pilot">
+               <name>WWII Fighter Pilot</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Cavalry">
+            <name>Cavalry</name>
+            <group xml:id="MILHIS_Horseman">
+               <name>Horseman</name>
+               <item xml:id="MILHIS_Asian_Horseman">
+                  <name>Asian Horseman</name>
+               </item>
+               <item xml:id="MILHIS_Medieval_Mounted_Warrior">
+                  <name>Medieval Mounted Warrior</name>
+               </item>
+               <item xml:id="MILHIS_Mongol_Horseman">
+                  <name>Mongol Horseman</name>
+               </item>
+               <item xml:id="MILHIS_Mughal_Warrior">
+                  <name>Mughal Warrior</name>
+               </item>
+               <item xml:id="MILHIS_Ottoman_Soldier">
+                  <name>Ottoman Soldier</name>
+               </item>
+               <item xml:id="MILHIS_US_Cavalryman">
+                  <name>US Cavalryman</name>
+               </item>
+            </group>
+            <item xml:id="MILHIS_Charioteer">
+               <name>Charioteer</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Infantry">
+            <name>Infantry</name>
+            <group xml:id="MILHIS_Pikeman">
+               <name>Pikeman</name>
+               <item xml:id="MILHIS_Landesknecht">
+                  <name>Landesknecht</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_Rifleman">
+               <name>Rifleman</name>
+               <item xml:id="MILHIS_Confederate_Infantryman">
+                  <name>Confederate Infantryman</name>
+               </item>
+               <item xml:id="MILHIS_Redcoat">
+                  <name>Redcoat</name>
+               </item>
+               <item xml:id="MILHIS_Union_Infantryman">
+                  <name>Union Infantryman</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_Vietnam_Infantryman">
+               <name>Vietnam Infantryman</name>
+               <item xml:id="MILHIS_US_Marine">
+                  <name>US Marine</name>
+               </item>
+               <item xml:id="MILHIS_Viet_Cong_Guerilla">
+                  <name>Viet Cong Guerilla</name>
+               </item>
+            </group>
+            <group xml:id="MILHIS_WWI_Infantryman">
+               <name>WWI Infantryman</name>
+               <item xml:id="MILHIS_Stormtrooper">
+                  <name>Stormtrooper</name>
+               </item>
+            </group>
+            <item xml:id="MILHIS_Cuirassier">
+               <name>Cuirassier</name>
+            </item>
+            <item xml:id="MILHIS_Dragoon">
+               <name>Dragoon</name>
+            </item>
+            <item xml:id="MILHIS_Foreign_Legionnaire">
+               <name>Foreign Legionnaire</name>
+            </item>
+            <item xml:id="MILHIS_Grenadier">
+               <name>Grenadier</name>
+            </item>
+            <item xml:id="MILHIS_Hoplite">
+               <name>Hoplite</name>
+            </item>
+            <item xml:id="MILHIS_Lancer">
+               <name>Lancer</name>
+            </item>
+            <item xml:id="MILHIS_Legionary">
+               <name>Legionary</name>
+            </item>
+            <item xml:id="MILHIS_Longbowman">
+               <name>Longbowman</name>
+            </item>
+            <item xml:id="MILHIS_Maori_Warrior">
+               <name>Maori Warrior</name>
+            </item>
+            <item xml:id="MILHIS_Medieval_Footsoldier">
+               <name>Medieval Footsoldier</name>
+            </item>
+            <item xml:id="MILHIS_Modern_Western_Infantryman">
+               <name>Modern Western Infantryman</name>
+            </item>
+            <item xml:id="MILHIS_Musketeer">
+               <name>Musketeer</name>
+            </item>
+            <item xml:id="MILHIS_PreColumbian_Warrior">
+               <name>Pre-Columbian Warrior</name>
+            </item>
+            <item xml:id="MILHIS_Samurai">
+               <name>Samurai</name>
+            </item>
+            <item xml:id="MILHIS_SAS_Soldier">
+               <name>SAS Soldier</name>
+            </item>
+            <item xml:id="MILHIS_Sioux_Warrior">
+               <name>Sioux Warrior</name>
+            </item>
+            <item xml:id="MILHIS_SOE_Operative">
+               <name>SOE Operative</name>
+            </item>
+            <item xml:id="MILHIS_US_Paratrooper">
+               <name>US Paratrooper</name>
+            </item>
+            <item xml:id="MILHIS_Viking">
+               <name>Viking</name>
+            </item>
+            <item xml:id="MILHIS_Zulu_Warrior">
+               <name>Zulu Warrior</name>
+            </item>
+         </group>
+         <group xml:id="MILHIS_Navy">
+            <name>Navy</name>
+            <item xml:id="MILHIS_Sailor">
+               <name>Sailor</name>
+            </item>
+            <item xml:id="MILHIS_UBoat_Crewman">
+               <name>U-Boat Crewman</name>
+            </item>
+         </group>
+      </group>
+   </group>
+</metapresets>

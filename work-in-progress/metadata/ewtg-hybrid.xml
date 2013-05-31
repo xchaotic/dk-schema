@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-common.rnc" type="compact"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="EWTG_PARIS104-115BEALES">
+    <!-- travel sample to illustrate metadata -->
+    
+    <title>Beaubourg and Les Halles</title>
+    <para xml:id="EWTG_PARIS105BEALES_001">This Right Bank area is dominated by the modernistic Forum des Halles and the Pompidou Centre. These two spectacular undertakings are thriving public areas of contact for shoppers, art lovers, students and tourists. Literally millions flow between the two squares. The Halles is for street fashion, with most of the shops underground, and the clientele strolling under the concrete and glass bubbles is young. Above ground, there are gardens and mini-pavilions. The surrounding streets are coloured by popular cheap shops and bars, but there are still enough specialist food shops, butchers and small markets to recall what Les Halles must have been like in its prime as the city’s thriving market. All roads round Les Halles lead to the Beaubourg area and the Pompidou Centre, an avant-garde assembly of vast pipes, ducts and cables, renovated in the 1990s to cope with its 20,000 daily visitors. The adjoining streets, such as Rue St-Martin and Rue Beaubourg, house small contemporary art galleries in crooked, gabled buildings.</para>
+    <section xml:id="EWTG_PARIS105BEALES_013">
+        <title>Catalogue</title>
+        <section xml:id="EWTG_PARIS114MUSDE" >
+            <title>Musée de la Poupée</title>
+            <info>  
+                <meta metaref='Museums_001'>Museums</meta>
+                <meta metaref='Children_001'>Children’s Attractions</meta>
+                <meta metaref='Paris_001'/>
+                <meta metaref="Children_001"></meta>
+                <meta metaref="Children_Paris_001"/>
+                
+              
+                
+            </info>
+            <!-- 
+                <address>Impasse Berthaud 75003.</address>
+                <map_ref>13 B2.</map_ref>
+                <phone>01 42 72 73 11</phone>
+                <transport role="underground_railway" keyref="EWTG_PARISKEYMAI_002">Rambuteau.</transport>
+                <opening_info keyref="EWTG_PARISKEYMAI_027">10am–6pm Tue–Sun.</opening_info>
+                <admission_charge keyref="EWTG_PARISKEYMAI_013"/>
+                <tg_data role="guided_tours" keyref="EWTG_PARISKEYMAI_014">for groups, by appt.</tg_data>
+                <url>www.museedelapoupeeparis.com</url> -->
+            <para>An impressive collection of hand-made dolls, from the mid-19th century to the present day, are on show in this charming museum. Thirty-six of the displays contain French dolls with porcelain heads ranging from 1850 to 1950. Another 24 display windows are devoted to themed exhibitions of dolls from around the world.</para>
+            <para>Father and son, Guido and Samy Odin, who own the museum, are at your service if your doll needs medical care. The museum shop stocks everything you need to preserve and maintain these unique works of art. The Odins also offer comprehensive classes on doll-making for both adults and children.</para>
+            <mediaobject xml:id="EWTG_PARIS114MUSDE_002" condition="prt">
+                
+                <imageobject>   <imagedata fileref="ewtg_paris114musde_002.jpg" /></imageobject>
+                <caption>
+                    <para>A 19th-century French doll with porcelain head</para>
+                </caption>
+            </mediaobject>
+        </section>
+        
+    </section>
+   
+</article>

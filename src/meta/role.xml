@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="group.rnc" type="compact"?>
+<group xmlns="http://dk.com/dk-schema" xml:id="role_values">
+    <name>Role attribute values</name>
+    <description>This group contains all the possible values for the role attribute</description>
+    <item xml:id="article">
+        <name>Article</name>
+        <description>To indicate a standalone piece of text</description>
+    </item>
+</group>

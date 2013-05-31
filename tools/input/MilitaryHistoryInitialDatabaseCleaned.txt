@@ -1,0 +1,316 @@
+(Siege)
+Aerial bomb
+Aeroplane
+Air
+Aircraft
+Aircraft Carrier
+Aircraft gun
+Airman
+Anti-Aircraft Weapon
+Anti-materiel Rifle
+Anti-materiel Shotgun Shell
+Anti-materiel Weapon
+Anti-Personnel Weapons
+Anti-Structure Weapon
+Anti-tank Rifle
+Anti-tank Type
+Anti-vehicle Weapon
+Archery weapon
+Arm/leg armour
+Armour
+Armoured boot
+Armoured Vehicle
+Asian Carbine
+Asian horseman
+Asian Matchlock
+Assault Rifle
+Astrolabe
+Attack Aircraft
+Attack helicopter
+Automatic pistol
+Axe
+Ballista
+Bardiche
+Baselard
+Basinet
+Battlefield signals
+Battleship
+Bayonet
+Bludgeoning Weapon
+Body Armour
+Bomb ketch
+Bomb-aiming Device
+Bomber Aircraft
+Bomber crew
+Bow
+Brass-cartridge Pistol
+Breastplate
+Breech Loader
+Broadsword
+Camp
+Cannon
+Carbine
+Carronnade
+Castle
+Catapult
+Cavalry
+Chariot
+Charioteer
+Chemical/Biological
+Chopping Weapon
+Chronometer
+Close helm
+Clothing & Kit
+Club
+Code-breaking device
+Coif
+Combat knife
+Combination weapons
+Commmunications
+Compass
+Concussion Type
+Confederate infantryman
+Conflict
+Congreve rocket
+Country
+Cross-staff/backstaff
+Crossbow
+Cuirass
+Cuirassier
+Cuisse
+Cutlass
+Dagger
+Defoliant
+Diesel
+Dirk
+Dragoon
+Dreadnought
+Early Gunpowder Weapons
+Early Rifle
+Early siege and field guns
+Edged/Bladed Weapon
+Enfield Rifle-musket
+Era
+Espionage field equipment
+Face defence
+Falconet
+Field gun
+Field kit
+Fighter Aircraft
+Flail
+Flamethrower
+Flash Type
+Flintlock Musket
+Flintlock Pistol
+Flintlock Rifle
+Foream guard
+Foreign Legionnaire
+Fort
+Fortification/Infrastructure
+Fragmentation Type
+Frigate
+Fully-Automatic Weapon
+Galleon
+Gauntlet
+Great ship
+Greave
+Grenade
+Grenade Launcher
+Grenadier
+Halberd
+Hand Grenade
+Hand-and-a-half sword
+Handgun
+Hanger
+Hatchet
+Hauberk
+Heavy machine gun
+Heavy tank
+Helicopter
+Helmet
+Hoplite
+Horseman
+Howitzer
+Hussar
+Hydrogen bomb
+ICBM
+Improvised Handgun
+Improvised Weapon
+Indian Musket
+Infantry
+Insignia/Heraldry/Flag
+Ironclad
+Jeep
+Jet Aircraft
+Jousting helm
+Knife
+Knuckle-duster knife
+Lance
+Lancer
+Land
+Land 
+Landesknecht
+Landing Craft
+Legionary
+Light Machine Gun
+Light tank
+Long Gun
+Longbowman
+Longship
+Mace
+Main battle tank
+Manual
+Manually-loaded 
+Maori warrior
+Maritime helicopter
+Matchlock Pistol
+Medal
+Medieval footsoldier
+Medieval mounted warrior
+Medium tank
+Military shotgun
+Mine
+Missile
+Missile guidance system
+Missile-armed Ship
+Modern Rifle
+Modern western infantryman
+Mongol horseman
+Morgenstern
+Mortar
+Motorbike
+Mounted
+Mounted Weapon
+Mughal warrior
+Multi-shot rifle
+Multiple Barrel Firearm
+Munitions/Bombs/Artillery
+Musket
+Musketeer
+National
+Naval
+Naval Cannon
+Navigation
+Navy
+Neck protection
+Nuclear
+Object Material
+Object Type
+Observational helicopter
+Onager
+Ottoman Carbine
+Ottoman Musket
+Ottoman soldier
+Pentrating weapon
+Percussion-cap
+Percussion-cap Musket
+Percussion-cap Pistol
+Percussion-cap revolver
+Percussion-cap Rifle
+Pike
+Pikeman
+Pistol
+Poison Gas
+Poleaxe 
+Post-industrial
+Pre-Columbian warrior
+Pre-industrial
+Primitive
+Punching dagger
+Quillon
+RADAR
+Radio
+RAF fighter pilot (WWI)
+Railway gun
+Rank
+Rapier
+Recoilless Rifle
+Redcoat
+Regimental
+Region
+Repeater Rifle
+Revolver
+Revolver rifle
+Rifle
+Rifle-mounted
+Rifle-Musket
+Rifleman
+Road
+Rocket
+Rocket Aircraft
+Sabre
+Sailor
+Sallet
+Samurai
+SAS soldier
+Sea
+Self-loading
+Self-loading Pistol
+Self-propelled gun
+Sextant
+Shell
+Shield
+Ship
+Short sword
+Shotgun
+Shoulder defence
+Shoulder-fired Disposable Rocket
+Shoulder-fired Disposable Tube Missile
+Shoulder-fired Rocket
+Single-shot breech-loading
+Sioux warrior
+Small Arms/Personal Weapons
+Smoke Type
+Sniper Rifle
+SOE operative
+Space
+Spear
+Sporting shotgun
+Stand-alone
+Stealth Fighter
+Steam Warship
+Stiletto
+Stormtrooper
+Submachine Gun
+Submarine
+Submarine-launched missile
+Super-Dreadnought
+Sword 
+Swordbreaker
+Tank
+Technology
+Thermite Grenade
+Three-decker
+Throwing axe
+Throwing knife
+Throwing spear
+Throwing weapon
+Torpedo
+Transport helicopter
+Transport/Carrier Aircraft
+Trench
+Troop
+Truck
+Tunnel
+Two-handed sword
+U-boat crew
+Uniform
+Union infantryman
+Unmanned drone
+Unmanned land vehicle
+US cavalryman
+US Marine
+US paratrooper
+V1/V2
+Vehicle
+Vehicle-mounted
+Viet Cong guerilla
+Vietnam infantry
+Viking
+Wall
+War Hammer
+Weapon
+WW1 infantryman
+WWII fighter pilot
+Year
+Zulu warrior

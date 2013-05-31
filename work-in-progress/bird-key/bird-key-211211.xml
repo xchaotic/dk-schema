@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-extensions.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="BIRD">
+    <title>Bird</title>
+    <subtitle>The Definitive Visual Guide</subtitle>
+    <!-- Text removed for sample purposes -->
+    <chapter xml:id="BIRD098-487BIRSPE">
+        <title xml:id="BIRD098BIRSPE">Bird Species</title>
+        <!-- Text removed for sample purposes -->
+        <section xml:id="BIRD100CLASSI" role="article">
+            <title xml:id="BIRD100CLASSI_001">Classification</title>
+            <!-- Text removed for sample purposes -->			
+            <section xml:id="BIRD100BIRORD" role="feature">
+                <title xml:id="BIRD100BIRORD_001">Bird orders</title>
+                <!-- Text removed for sample purposes -->			
+                <variablelist xml:id="BIRD100BIRORD_003" role="key" xreflabel="Bird Orders" metaref="DK_Bird_Orders">
+                    <varlistentry xml:id="BIRD100BIRORD_004" xreflabel="Tinamous" metaref="DK_Tinamiformes"><!-- Lech: Xreflabel necessary for xrefs to render -->
+                        <term>Tinamous</term>
+                        <listitem>
+                            <para><phrase role="label">Order</phrase> <phrase role="scientific_name">Tinamiformes</phrase></para> <!-- Lech: the important part is to be consistent about the 'role' attributes so we can link the associated bits of XML -->
+                            <para><phrase role="label">Families</phrase> <phrase role="families">1</phrase></para>
+                            <para><phrase role="label">Species</phrase> <phrase role="species">46</phrase></para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </section>
+            
+        </section>
+        <section xml:id="BIRD182TURVUL" role="entry">
+            <title xml:id="BIRD182TURVUL_001" role="common_name">Turkey Vulture</title>
+            <simplelist xml:id="BIRD182TURVUL_002" role="dataset"> <!-- by default we will try to use simplelist, but the important part is role='dataset' -->
+                <member xml:id="BIRD182TURVUL_003" role="scientific_name">Cathartes aura</member> <!-- Lech: no need to introduce extra phrase - only use phrase when needed, to separate out different bits of info -->
+                <member xml:id="BIRD182TURVUL_004"><phrase role="label">Length</phrase> <phrase role="length" 
+                    condition="metric" xml:id="BIRD182TURVUL_002_COND1">76</phrase> <!-- Lech: again, no need to repeat  role="length" on the whole member -->
+                    <phrase role="unit" condition="metric">cm</phrase>
+                    <phrase condition="imperial" cref="BIRD182TURVUL_002_COND1">(<phrase role="length" cref="BIRD182TURVUL_002_COND1">30</phrase>
+                        <phrase role="unit">in</phrase>)</phrase> 
+                    <!-- Lech: changes here - I needed to introduce an extra phrase, as '(' should not be part of numerical value, also use cref whenever possible to link to the original, metric phrase xml:id  -->
+                    
+                
+                </member>
+                <!-- Text removed for sample purposes -->
+                <member xml:id="BIRD182TURVUL_008"><phrase role="label">Migration</phrase> <phrase
+                    role="migration">Partial migrant</phrase></member>
+                <member xml:id="BIRD182TURVUL_009"><phrase role="label">Habitat</phrase> <phrase role="habitat"
+                    >Open or semi-open areas, often nesting on open ground where there are
+                    few other nests</phrase></member>
+            </simplelist>
+            <!-- Text removed for sample purposes -->			
+        </section>
+    </chapter>
+</book>

@@ -1,0 +1,270 @@
+Abelisauridae
+Abelisauroidea
+Abelisaurus
+Abydosaurus
+Abydosaurus mcintoshi
+Acrocanthosaurus
+Adamantisaurus
+Adeopapposaurus
+Adeopapposaurus mognai
+Aerosteon
+Aerosteon riocoloradensis
+Afrovenator
+Agustinia
+Alamosaurus
+Albertosaurus
+Albinykus
+Alioramus
+Alioramus altai
+Allosauridae
+Allosaurus
+Allosaurus fragilis
+Alvarezsauridae
+Alxasauridae
+Alxasaurus
+Alxasaurus elesitaiensis
+Amargasaurus
+Amazonsaurus
+Anchiornis
+Anchiornis huxleyi
+Anchisauridae
+Angaturama
+Apatosaurinae
+Apatosaurus
+Argentinosaurus huiculensis
+Argyrosaurus
+Atacamatitan
+Aublysodontinae
+Austrocheirus
+Austrocheirus isasii
+Austroraptor
+Austroraptor cabazai
+Avetheropoda
+Avialae
+Avimimidae
+Banji
+Banji long
+Barapasaurus
+Barrosasaurus
+Barrosasaurus casamiquelai
+Baryonyx
+Becklespinax
+Beipiaosaurus
+Brachiosauridae
+Brachiosaurus
+Brontomerus
+Brontomerus mcintoshi
+Buitreraptor
+Buitreraptor gonzalezorum
+Caenagnathidae
+Camarasauridae
+Camarasauromorpha
+Carcharodontosauria
+Carcharodontosauridae
+Carcharodontosaurus
+Carnosauria
+Cathartesaura
+Caudipterygidae
+Cedarosaurus
+Ceratosauria
+Ceratosaurus
+Ceratosaurus dentisulcatus
+Ceratosaurus magnicornis
+Citipati
+Coelophysis
+Coelophysis bauri
+Coelophysoidea
+Coloradisaurus
+Compsognathidae
+Cristatusaurus
+Cryolophosaurus
+Daemonosaurus
+Daemonosaurus chauliodus
+Deinocheiridae
+Deinocheirus
+Deinonychosauria
+Deinonychus
+Dicraeosaurus
+Dilophosauridae
+Dilophosaurus wetherilli
+Diplodocinae
+Diplodocoidea
+Diplodocus
+Dromaeosauridae
+Dromaeosaurinae
+Dromaeosauroidea
+Dromaeosaurus
+Dromiceiomimus
+Drusilasaura
+Drusilasaura deseadensis
+Eobrontosaurus
+Eodromaeus
+Eodromaeus murphi
+Eoraptor
+Eoraptor lunensis
+Epidexipteryx
+Epidexipteryx hui
+Euhelopididae
+Euhelopus
+Eusaurischia
+Falcarius
+Giganotosaurus
+Giganotosaurus carolinii
+Gigantoraptor
+Gigantoraptor erlianensis
+Guaibasaurus
+Guanlong
+Guanlong wucaii
+Herrerasauria
+Herrerasauridae
+Herrerasaurus ischigualastensis
+Hollanda
+Hulsanpes
+Ilokelesia
+Incertae cedis Ceratosauria
+Incertae cedis Coelophysoidea
+Incertae cedis Neoceratosauria
+Incertae Sedis (Avetheropoda)
+Incertae sedis (Titanosauriformes)
+Incertae Sedis Macronaria
+Incertae sedis Plateosauria
+Incertae sedis Tetanurae
+Incertae sedis Therizinosauroidea
+Insertae sedis Eusauropoda
+Insertae sedis Ornithomimosauria
+Insertae sedis Sauropoda
+Insertae sedis Tyrannosauroidea
+Jobaria
+Jobaria tiguidensis
+Lacertastatium
+Ligabuesaurus
+Liliensternus
+Linhenykus monodactylus
+Linheraptor
+Linheraptor exquisitus
+Lithostrotia
+Liubangosaurus
+Liubangosaurus hei
+Macronaria 
+Mapusaurus
+Mapusaurus roseae
+Massospondylidae
+Megalosaurinae
+Megalosaurus
+Megapnosaurus
+Megapnosaurus kayentakatae
+Megapnosaurus rhodesiensis
+Megaraptor
+Melanorosauridae
+Microraptor
+Mussaurus
+Nanotyrannus
+Nemegtomaia
+Nemegtosauridae
+Neoceratosauria
+Neovenator
+Neuquenraptor
+Neuquenraptor argentinus
+Nigersaurus
+Noasauridae
+Nothronychus
+Ornithomimosauria
+Ornithomimus
+Ornithuromorpha
+Oviraptor
+Oviraptoridae
+Oviraptorinae
+Oviraptorosauria
+Oxalaia
+Panamericansaurus schroederi
+Panphagia
+Panphagia protos
+Petrobrasaurus
+Petrobrasaurus puestohernandezi
+Plateosauria
+Podokesaurus
+Podokesaurus holyokensis
+Proceratosauridae
+Procompsognathus
+Prosauropoda
+Pyroraptor
+Pyroraptor olympius
+Rahonavis
+Rahonavis ostromi
+Rayososaurus
+Rebbachisauridae
+Rebbachisaurus
+Riojasaurus
+Saltasauridae
+Saltasaurus
+Saltopodidae
+Sanjuansaurus
+Sanjuansaurus gordilloi
+Sarahsaurus
+Sarahsaurus aurifontanalis
+Saurischia
+Saurischia.
+Sauropoda
+Sauropodomorpha
+Sauroposeidon
+Saurornithoides
+Saurornithoides mongoliensis
+Scansoriopterygidae
+Segisaurus
+Sellosaurus
+Shaochilong maortuensis
+Sinosauropteryx
+Spinosauridae
+Spinosauroidea
+Spinosaurus aegyptiacus
+Staurikosaurus
+Staurikosaurus pricei
+Supersaurus
+Tapuiasaurus
+Tapuiasaurus macedoi
+Tawa
+Tawa hallae
+Teratophoneus
+Teratophoneus curriei
+Tetanurae
+Thecodontosauridae
+Therizinosauridae
+Therizinosauroidea
+Therizinosaurus cheloniformis
+Theropoda
+Titanosauria
+Titanosauridae
+Traukutitan
+Traukutitan eocaudata
+Troodontinae
+Troodontoidea
+Tyrannosauridae
+Tyrannosaurinae
+Tyrannosauroidea
+Tyrannosaurus
+Tyrannosaurus rex
+Uberabatitan
+Uberabatitan ribeiroi
+Unenlagia
+Unenlagia comahuensis
+Unenlagia paynemili
+Unenlagiinae
+Unspecified Camarasauromorpha Group
+Unspecified Eusaurischia Suborder
+Unspecified Macronaria Superfamily
+Unspecified Neosauropoda Group
+Unspecified Prosauropoda Family
+Unspecified Prosauropoda Superfamily
+Unspecified Saurischia Family
+Unspecified Saurischia Group
+Unspecified Titanosauria Group
+Variraptor mechinorum
+Velociraptor mongoliensis
+Velociraptor osmolskae
+Volkheimeria
+Xenoposeidon
+Xenoposeidon proneneukos
+Xixianykus
+Xixianykus zhangi
+Zhuchengtyrannus
+Zhuchengtyrannus magnus

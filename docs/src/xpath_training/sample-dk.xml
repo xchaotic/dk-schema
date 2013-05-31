@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/dk-schema.rnc" type="compact"?>
+<book version="5.0" xml:id="RG_SPAIN" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>The Rough Guide to Spain</title>
+    <preface>
+        <title>Inside this <phrase xml:id="RG_SPAIN001INSBOO_COND1" condition="prt">Book</phrase>
+            <phrase cref="RG_SPAIN001INSBOO_COND1" condition="dig">Guide</phrase>
+        </title>
+        <para role="key">We’ve flagged up our favourite places – a perfectly sited hotel, an
+            atmospheric café, a special restaurant – throughout the guide with the
+            <inlinemediaobject xml:id="RG_SPAIN001INSBOO_005">
+                <imageobject>
+                    <imagedata fileref="rg_spain001insboo_005.jpg"/>
+                </imageobject>
+            </inlinemediaobject> symbol.</para>
+    </preface>
+    <part xml:id="RG_SPAIN058GUIDE">
+        <title>The Guide</title>
+        <chapter xml:id="RG_SPAIN792VALMUR" rend="level_H1" role="guide">
+            <title>Valencia and Murcia</title>
+            <section xml:id="RG_SPAIN796VALENC" role="article" rend="level_H2">
+                <title>Valencia</title>
+                <section xml:id="RG_SPAIN796VALENC_032" rend="level_LH1">
+                    <title>Valencia</title>
+                    <section xml:id="RG_SPAIN796VALENC_076" role="listing" rend="level_LH1">
+                        <title>Eating</title>
+                        <section xml:id="RG_SPAIN796VALENC_088" rend="level_LH2">
+                            <title>Tapas bars</title>
+                            <section xml:id="RG_SPAIN796VALENC_089" metaref="POI" rend="level_LH3">
+                                <title rend="inlinehead">
+                                    <xref linkend="RG_SPAIN001INSBOO_005" role="key_include"
+                                        rend="author_pick"/>Bar Pilar</title>
+                                <para>
+                                    <address>
+										<otheraddr>Cnr c/Moro Zeit 13, off Pl. del Esparto </otheraddr>
+										<phone>963 910 497</phone>.</address>
+                                    This boisterous joint, which has been around since 1917, gets
+                                    packed most nights, with the beer-happy crowd spilling out onto
+                                    the pavement. The speciality is <phrase rend="i"
+                                        >clochinas</phrase> (mussels), which you can slurp at the
+                                    bar, tossing the shells into buckets on the floor.
+                                    <address>
+										<phrase role="opening_time">Daily noon–midnight.</phrase>
+									</address>
+                                </para>
+                            </section>
+                            <section xml:id="RG_SPAIN796VALENC_090" metaref="POI" rend="level_LH3">
+                                <title rend="inlinehead">La Bodeguilla del Gato</title>
+                                <para>
+                                    <address>
+										<otheraddr>c/Catalans 10 </otheraddr>
+										<phone>963 918 235</phone>.</address>
+                                    Yes, it can sometimes seem like there are more tourists than
+                                    locals, but this is an authentically lively tapas bar
+                                    nonetheless, with exposed brick-and-mustard walls hung with
+                                    bullfighting posters. Munch on <phrase rend="i">pulpo a la
+                                        Gallega</phrase>, octopus dusted with paprika, and crisp
+                                        <phrase rend="i">flamenquines</phrase>, croquettes of pork,
+                                    ham and cheese.
+                                    <address>
+										<phrase role="opening_time">Daily 8.30pm–midnight.</phrase>
+									</address>
+                                </para>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+        </chapter>
+    </part>
+</book>

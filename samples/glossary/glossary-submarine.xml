@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: EWG Submarine -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="EWG_SUBMAR">
+    <title>Eyewitnees Guides: Submarine</title>
+    <glossary xml:id="EWG_SUBMAR070GLOSSA">
+        <title>Glossary</title>
+        <glossentry xml:id="EWG_SUBMAR070GLOSSA_001">
+            <glossterm>Attack centre</glossterm>
+            <glossdef>
+                <para>Space on a modern military submarine in ........... and missile guidance
+                    systems.</para>
+            </glossdef>
+        </glossentry>
+        <glossentry xml:id="EWG_SUBMAR070GLOSSA_002">
+            <glossterm>Ballast tank</glossterm>
+            <glossdef>
+                <para>Tank used to hold seawater ballast; when full, it ........ the submarine to
+                    surface.</para>
+            </glossdef>
+        </glossentry>
+        <!-- text removed -->
+        <!-- glosssee and glossseealso generate the necessary crossref text like 'See', 'See also' etc. on its own -->
+        <glossentry xml:id="EWG_SUBMAR070GLOSSA_003">
+            <glossterm>Boomer</glossterm>
+            <glossdef>
+                <para>Slang for large missile carrier, or SSBN.</para>
+                <glossseealso otherterm="EWG_SUBMAR070GLOSSA_004">SSBN</glossseealso>
+            </glossdef>
+        </glossentry>
+        <!-- text removed -->
+        <glossentry xml:id="EWG_SUBMAR070GLOSSA_004">
+            <glossterm>SSBN (Ship Submersible Ballistic Nuclear)</glossterm>
+            <glossdef>
+                <para>Huge missile&#x002D;carrying submarine, designed to deter enemies.</para>
+            </glossdef>
+        </glossentry>
+        <!-- text removed for brevity -->
+    </glossary>
+</book>

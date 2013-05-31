@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="SURHAN">
+    <title>Survival Handbook</title>
+    <article xml:id="SURHAN205WILCOO">
+        <title>Wild Cooking</title>
+        <section xml:id="SURHAN205WILCOO_001">
+            <title>Clay baking</title>
+            <para>Baking food in clay ......... wrap them in leaves first.</para>
+            <procedure xml:id="SURHAN205WILCOO_002">
+                <step xml:id="SURHAN205WILCOO_003">
+                    <para>Wrap the food in a ...... non-toxic.</para>
+                    <mediaobject xml:id="SURHAN205WILCOO_004">
+                        <imageobject>
+                            <imagedata fileref="surhan205wilcoo_003.jpg"/>
+                        </imageobject>
+                    </mediaobject>
+                </step>
+                <step xml:id="SURHAN205WILCOO_005">
+                    <para>Cover the food parcel ..... it’s well sealed.</para>
+                </step>
+                <step xml:id="SURHAN205WILCOO_006">
+                    <para>Place the parcel ........and remove the food.</para>
+                </step>
+            </procedure>
+        </section>
+    </article>
+</book>

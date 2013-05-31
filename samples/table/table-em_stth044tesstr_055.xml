@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title>Table Sample</title>
+    <subtitle>em_mabu046procas_006</subtitle>
+    <section>
+        <title>Essential Mangers</title>
+        <subtitle>St TH</subtitle>
+        <informaltable frame="all">
+            <!-- use informaltable if there is no title, normal table with a title -->
+            <tgroup cols="5">
+                <!-- specify number of columns here -->
+                <!-- colspec is optional and is used to specify the width, sequence etc of a column.
+                    It is required if you're defining column spans.
+                    If you are declaring a colspec, do so for all columns and you have to provide colname for all-->
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                <colspec colname="c3" colnum="3" colwidth="1.0*"/>
+                <colspec colname="c4" colnum="4" colwidth="1.0*"/>
+                <colspec colname="c5" colnum="5" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>Criteria (main criteria of strategy)</entry>
+                        <entry>Priority rating (score 1-10)</entry>
+                        <entry>New idea (score 1-10)</entry>
+                        <entry>Weighting (miltiply scores)</entry>
+                        <entry>Idea weighting (priority x10)</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Increase short-term sales</entry>
+                        <entry>7</entry>
+                        <entry>7</entry>
+                        <entry>49</entry>
+                        <entry>70</entry>
+                    </row>
+                    <row>
+                        <entry>Protect long-term sales</entry>
+                        <entry>5</entry>
+                        <entry>2</entry>
+                        <entry>10</entry>
+                        <entry>50</entry>
+                    </row>
+                    <row>
+                        <entry>Keep staff to minimum</entry>
+                        <entry>7</entry>
+                        <entry>8</entry>
+                        <entry>56</entry>
+                        <entry>70</entry>
+                    </row>
+                    <row>
+                        <!-- use namest and namend to define boundaries of a column span, don't use empty entry for padding -->
+                        <entry namest="c1" nameend="c3" align="left">Total scores</entry>
+
+
+                        <entry>115</entry>
+                        <entry>190</entry>
+                    </row>
+                    <row>
+                        <!-- use namest and namend to define boundaries of a column span, don't use empty entry for padding -->
+                        <entry namest="c1" nameend="c4" align="left">% of ideal</entry>
+
+                        <entry>61%</entry>
+                    </row>
+
+                </tbody>
+            </tgroup>
+        </informaltable>
+
+
+
+
+
+    </section>
+</article>

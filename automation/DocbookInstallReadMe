@@ -1,0 +1,10 @@
+https://help.ubuntu.com/community/DocBook
+
+sudo apt-get install xsltproc
+sudo apt-get install docbook-xsl
+sudo apt-get install fop
+
+
+Execution:
+xsltproc /usr/share/xml/docbook/stylesheet/docbook-xsl-ns/fo/docbook.xsl test.xml > book.fo 
+fop -fo book.fo -pdf book.pdf

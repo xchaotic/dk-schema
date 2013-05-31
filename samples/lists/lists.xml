@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Please note that the content used in the old mark-up sample could be different from this sample for some cases.-->
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0" xml:id="EWG_INSECT064DIDKNO">
+    <!-- itemisedlist (to replace list type simple from DK DTD) -->
+    <!-- Reference title: EWG Insect, pg. 64 
+        Reference screenshot: itemized_list_1, and itemized_list_2 -->
+    <title>Did you Know</title>
+    <itemizedlist xml:id="EWG_INSECT064AMAFAC_005" remap="list" mark="bug0001.png">
+        <listitem>
+            <para>A cockroach can live for up to three months without its head.</para>
+        </listitem>
+        <listitem>
+            <para>The bombadier beetle defends itself by ........ off to safety.</para>
+        </listitem>
+        <listitem>
+            <para>The colour a head louse will be as .......in which it lives.</para>
+        </listitem>
+    </itemizedlist>
+    <!-- ordered list (to replace list type ordered)-->
+    <!-- Reference screenshot: 'orderedlist' -->
+    <!-- the default numeration digits are arabic, otherwise specify -->
+    <orderedlist xml:id="EWG_ARMARM018FIRCRO_002" numeration="arabic">
+        <listitem>
+            <para>Freemasonry is a clandestine organization........ members of its higher
+                degrees.</para>
+        </listitem>
+        <listitem>
+            <para>The members of the organization, ........... faith or sect.</para>
+        </listitem>
+        <listitem>
+            <para>The organization attracts members on ......... and its aims are unjust.</para>
+        </listitem>
+    </orderedlist>
+    <!-- it is possible to restart, continue or inherit the numbering of the ordered list -->
+    <orderedlist continuation="continues">
+        <listitem>
+            <para>New members participate ....... and orders.</para>
+        </listitem>
+    </orderedlist>
+
+    <!-- simple list: An undecorated list of single words or short phrases 
+        Reference screenshot: 'simplelist.bmp' -->
+    <simplelist xml:id="DUMMY_001">
+        <member>George Washington</member>
+        <member>James Monroe</member>
+        <member>Andrew Jackson</member>
+        <member>James Polk</member>
+        <!-- text removed -->
+    </simplelist>
+    <!-- Dummy segmented list: a list of sets of elements -->
+    <!--For example see pg. 280, 'Faiths and followers...', e.encyclopedia 
+        Reference screenshot: segmentedlist.bmp-->
+    <segmentedlist xml:id="DUMMY_002">
+        <title>Faiths and Followers (A rough guide based on censuses)</title>
+        <segtitle>Beliefs</segtitle>
+        <segtitle>Number of followers</segtitle>
+        <seglistitem>
+            <seg>Christianity</seg>
+            <seg>1.9 billion</seg>
+        </seglistitem>
+        <seglistitem>
+            <seg>Islam</seg>
+            <seg>1.2 billion</seg>
+        </seglistitem>
+        <seglistitem>
+            <seg>Nonreligious, etc.</seg>
+            <seg>920 million</seg>
+        </seglistitem>
+        <!-- text removed -->
+    </segmentedlist>
+    <!-- Dummy variablelist list: A list with a set of one or more terms and an associated description -->
+    <!--For example see pg. 185, 'Circuit Definitions', e.encyclopedia 
+        Reference screenshot: variablelist -->
+    <variablelist xml:id="DUMMY_003">
+        <title>Circuit Definitions</title>
+        <varlistentry>
+            <term>Voltage</term>
+            <listitem>
+                <para>is the energy given to each unit of charge .....</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Current</term>
+            <listitem>
+                <para>is the amount of electric charge ....</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Wattage</term>
+            <listitem>
+                <para>PostScript fonts. ..... systems.</para>
+            </listitem>
+        </varlistentry>
+    </variablelist>
+</article>

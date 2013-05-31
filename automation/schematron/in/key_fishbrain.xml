@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-extensions.rnc" type="compact"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title>Key example</title>
+    
+    <!--c) keys: many samples on this in the repo, but the idea is that 
+        key will always be a variablelist, so check that:
+        -varaiblelist and each listentry has xml:id (again only if it's a key
+        - normal lists don't always have to ahve xml:ids)
+        -if the xref has "keyref_include, it would bee good to see if varaiblelist 
+        is allowed where xref is, nt sure if it can be done in schematron    -->
+    
+    <!-- see common_key1 image -->
+    <!-- illustrates how to create a reausable key that can be linked to in whole or in parts  -->
+    <!-- first we define the key, at the beginning of the whole block (chapter, article or a section) -->
+    <!-- the key should normally be tagged using as variable list  -->
+    
+    
+    
+    
+    <variablelist role="key" xml:id="parts_of_brain" xreflabel="Parts of brain">
+        <!-- use role="key" to indicate that it's a key and not a standard list -->
+        <!-- xreflabel is required to indicate the name/title of the key -->
+        <!-- if role="key" is used then xml:id are mandatory for the whole list and all entries to be able to refer to them whenever the key is used -->
+        <varlistentry xml:id="cerebellum">
+            <term>Cerebellum</term>
+            <listitem>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="fishbrain/red_square.gif"/>
+                    </imageobject>
+                </mediaobject>
+            </listitem>
+        </varlistentry>
+        <varlistentry xml:id="opticlobe">
+            <term>OPtic Lobe</term>
+            <listitem>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="fishbrain/yellow_square.gif"/>
+                    </imageobject>
+                </mediaobject>
+            </listitem>
+        </varlistentry>
+    </variablelist>
+    
+    
+    <variablelist role="keyed" xml:id="parts_of_brain_error" xreflabel="Parts of brain">
+        <!-- use role="key" to indicate that it's a key and not a standard list -->
+        <!-- xreflabel is required to indicate the name/title of the key -->
+        <!-- if role="key" is used then xml:id are mandatory for the whole list and all entries to be able to refer to them whenever the key is used -->
+        <varlistentry xml:id="cerebellum">
+            <term>Cerebellum</term>
+            <listitem>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="fishbrain/red_square.gif"/>
+                    </imageobject>
+                </mediaobject>
+            </listitem>
+        </varlistentry>
+    </variablelist>
+
+    <section>
+        <title>Fish</title>
+        <para>A fish's cerebrum receives sensory signals from the sense organs and combines them
+            with information from (...)</para>
+        <!-- Put xref with role keyref to indicate a key that applies to a given portion of XML -->
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="fishbrain/fishbrain_large.jpg"/>
+            </imageobject>
+            <caption>
+                <para>Fish brain<xref role="keyref" linkend="parts_of_brain"/></para>
+            </caption>
+        </mediaobject>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="fishbrain/fishbrain_large.jpg"/>
+            </imageobject>
+            <caption>
+                <para>Fish brain<xref role="keyref" linkend="parts_of_brain_error"/></para>
+            </caption>
+        </mediaobject>
+        
+    </section>
+    <section>
+        <title>Amphibians</title>
+        <para>Amphibian brain resembles the fish brain (...)</para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="fishbrain/amphibianbrain_large.jpg"/>
+            </imageobject>
+            <caption>
+                <para>Amphibian brain <xref role="keyref" linkend="parts_of_brain"/></para>
+            </caption>
+        </mediaobject>
+    </section>
+
+
+
+</article>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/dk-schema.rnc"?>
+<section xml:id="" metaref="POI" xmlns="http://docbook.org/ns/docbook">
+    <title metaref="POI_name"><!-- put the name of the Point of Interest here  --></title>
+    <para metaref="POI_info">
+        <!-- put the address here by adding the address template -->
+        <!-- put the POI description here -->
+        
+    </para>
+</section>

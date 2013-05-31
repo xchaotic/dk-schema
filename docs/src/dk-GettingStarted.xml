@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>Getting Started with DK-Schema 2.0</title>
+        <author>
+            <personname>Lech Rzedzicki</personname>
+            <email>lech@kode1100.com</email>
+        </author>
+    </info>
+    <section>
+        <title>Introduction</title>
+        <para>DK Schema 2.0 is based on Docbook 5.x, with customisations to cater for DK specific requirements.</para>
+        
+    </section>
+    <section>
+        <title>Getting the DK-Schema 2.0 Documentation</title>
+        <para>In addition to this document, there is an extensive set of reference documentation:</para>
+        <variablelist>
+            <varlistentry>
+                <term>Dk-Schema Specification</term>
+                <listitem><para>A document enumerating all the differences between DK-Schema 2.0 and standard Docbook 5.x.</para>
+                    <para>It also describes DK specific markup techniques such as <link xlink:href="http://www.kode1100.co.uk/dk/docs/dk-schema-spec-with-samples.html#s.profiling">profiling</link>. </para></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>XML Markup Samples</term>
+                <listitem><para>For every area that differes from standard Docbook 5.x the specification lanaguage is accompanied by sample XML markup, in most cases taken from real DK book, for example:</para>
+                    <para><link xlink:href="http://www.kode1100.co.uk/dk/samples/procedure/procedure-centrifuge.xml">Procedure markup example</link></para></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Screenshots</term>
+                <listitem><para>Every portion of the specification is accompanied by a visual rendering from the book spread, PDF or a screenshot.</para>
+                <para>This helps to decide the XML markup that the printed book layout should be captured with.</para>
+                    <para><link xlink:href="http://www.kode1100.co.uk/dk/screenshots/procedure/procedure_centrifuge.png">Procedure screenshot</link></para></listitem>
+            </varlistentry>
+        </variablelist>
+        <para>For convenience all of the above are combined in a single document, which can be viewed as:</para>
+        <simplelist>
+            <member><link xlink:href="http://www.kode1100.co.uk/dk/docs/dk-schema-spec-with-samples.pdf">DK-Schema-spec-with-samples - PDF</link></member>
+            <member><link xlink:href="http://www.kode1100.co.uk/dk/docs/dk-schema-spec-with-samples.html">DK-Schema-spec-with-samples - HTML</link></member>
+        </simplelist>
+        <para>Whenever possible, the authors of the schema try to encourage using standard Docbook markup to enable better compatibility with 3rd parties and other standards such as EPUB or HTML.</para>
+        <para>Therefore familiarity with Docbook is required and an excellent resource for that is: <link xlink:href="http://www.docbook.org/tdg/en/html/docbook-x.html">DocBook: The Definitive Guide</link></para>
+    </section>
+    <section>
+        <title>Getting the latest DK-Schema files</title>
+        <para>The schema, like Docbook 5.x is authored in RelaxNG schema language, the procedure below only describes how to get RelaxNG comact sytax files, for other variants of the schema, please refer to the
+            <link xlink:href="http://www.kode1100.co.uk/dk/docs/dk-DeveloperGuide.html">DK-Schema Developer Guide</link>.</para>
+        <para>The latest versions of the schemas and documentation are kept in a repository located at <link xlink:href="kode1100.co.uk/dk">kode1100.co.uk/dk</link>, specifically:</para>
+        <variablelist>
+            <varlistentry xml:id="s.dkschema">
+                <term><link xlink:href="http://www.kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc">dk-schema.rnc</link></term>
+                <listitem><para>The default schema and should be be used whenever possible, especially by external outsourcers and 3rd parties.</para>
+                <para>This form of the schema is flattened to one file, therefore it can be used on its own or offline.</para>
+                <para>This form of the schema also has additional Schematron rules embedded, although additional configuration may be necessary to validate against these rules.</para>
+                <para>By default, this schema also includes all the variants such as </para></listitem>
+            </varlistentry>
+            <varlistentry xml:id="s.dkextensions">
+                <term><link xlink:href="http://www.kode1100.co.uk/dk/dk-schema/src/dk-extensions.rnc">dk-extensions.rnc</link></term>
+                <listitem><para>The dk-extensions.rnc schema, should be be used whenever changes are made to the core schema.</para>
+                    <para>This form of the schema only enumerates the differences between DK-Schema and Docbook 5.x, it will only work if all the files referenced by it are available.</para></listitem>
+            </varlistentry>
+            <varlistentry xml:id="s.schematron">
+                <term><link xlink:href="http://www.kode1100.co.uk/dk/dk-schema/dk-schema.sch">dk-schema.sch</link></term>
+                <listitem><para>In addition to the core schema expressed in RelaxNG, DK-Schema uses Schematron lnaguage to express additional constraints in XML.</para>
+                    <para>This form of the schema validation can result in two types of validation messages:</para>
+                <variablelist>
+                    <varlistentry>
+                        <term>error</term>
+                        <listitem><para>Errors always need to be fixed, otherwise it will not be valid DK-Schema</para></listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>warning</term>
+                        <listitem>
+                            <para>Warnings do not always need to be fixed, but some tools such as XSL are not guaranteed to work until the warnings are fixed.</para>
+                            <para>Warnings usually suggest a more consistent way of tagging content.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist></listitem>
+            </varlistentry>
+        <varlistentry xml:id="s.variants">
+            <term>Other variants</term>
+            <listitem>
+                <para>The <link linkend="s.dkschema">Default Schema</link> includes the definitions of all the variant, therefore it can be used to validate content types such as cookery or phrasebooks.</para>
+                <para>If the variants need to be used in isolation or they need to be modified, variants of the schema are kept in subdirectories of the dk-scema repository, for example 
+                    <code>dk-schema/cookery/</code>.</para>
+                <para>Standalone variants of the schema are only applicable to specific titles.</para>
+                <para>For example: <link xlink:href="http://www.kode1100.co.uk/dk/dk-schema/cookery/cookery.rnc">cookery/cookery.rnc</link>is only applicable to cookery titles such as <quote>Cook Express</quote>.</para></listitem>
+        
+       </varlistentry>
+        </variablelist>
+        
+    </section>
+    <section>
+        <title>Validating against DK-Schema 2.0 with OxygenXML editor</title>
+        <para>While it is possible to validate against DK-Schema 2.0 with many tools, includding free ones, validating with OxygenXML is the preferred method.</para>
+        <procedure>
+            <title>Validating against RelaxNG dk-schema.rnc</title>
+            <step><para>Install OxygenXML if not installed already. It can be downloaded from <link xlink:href="http://www.oxygenxml.com/download_oxygenxml_editor.html">www.oxygenxml.com</link>.</para></step>
+      
+            <step><para>Get the license. If it is urgent, or a licence is not availabe, get a trial license from <link xlink:href="http://www.oxygenxml.com/register.html">www.oxygenxml.com/register.html</link></para></step>
+            <step><para>Open the XML file to validate.</para></step>
+            <step><para>If necessary, add the processing-instruction to instruct Oxygen to validate against DK-Schema rather than standard Docbook 5.x</para>
+            <para>If the processing instruction is already present, OxygenXML will vaildate automatically, when opening the file.</para>
+         
+                <para>The processing instruction, for internal users, outsourcers and 3rd parties should be as follows:
+                    <code><![CDATA[<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>]]></code>
+                </para>   
+                <para>The processing instruction, for OxygenXML versions older than 12.0, should be as follows:
+                    <code><![CDATA[<?oxygen RNGSchema="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc" type="compact"?>]]></code>
+                </para>
+            </step>
+            
+            <step><para>Save the file (File menu -> save)</para></step>
+            <step><para>Press the <code>Validate</code> button on the toolbar (marked with a Tick symbol) or choose <code>Document</code> menu, choose <code>Validate</code>, choose <code>Reset Cache and Validate</code></para></step>
+        
+        </procedure>
+        <para>Result: If the file is valid a green square in the upper-right corner of the window appears.</para>
+        <para> If the file is invalid, the square is red and the errors can be navigated to by cliking on on the vertical bar below the square.</para>
+    <procedure>
+        <title>Validating against Schematron dk-schema.sch</title>
+        <step><para>Install OxygenXML if not installed already. It can be downloaded from <link xlink:href="http://www.oxygenxml.com/download_oxygenxml_editor.html">www.oxygenxml.com</link>.</para></step>
+        
+        <step><para>Get the license. If it is urgent, or a licence is not availabe, get a trial license from <link xlink:href="http://www.oxygenxml.com/register.html">www.oxygenxml.com/register.html</link></para></step>
+        <step><para>Open the XML file to validate.</para></step>
+        <step><para>Choose <guimenu>Document</guimenu> menu -> <guisubmenu>Validate</guisubmenu> submenu -> <guimenuitem>Validate with...</guimenuitem></para>
+        <para>For OxygenXML versions older than 11.x, the name of the menu item is <guimenuitem>External Validation</guimenuitem></para></step>
+        <step><para>In the dialog type or paste the following <guilabel>URL</guilabel>: <uri>http://kode1100.co.uk/dk/dk-schema/dk-schema.sch</uri></para>
+        <para>It should automatically change <guilabel>Schema Type</guilabel> to "Schematron", change it manually, if necessary.</para></step>
+        <step><para>Finally click <guibutton>OK</guibutton>. The file will be validated against schematron rules and a list of errors and warning will appear at the bottom of the screen.</para></step>
+        <step><para>For subsequent validations this association will become the default and you can validate again, bu clicking <guibutton>Validate</guibutton> button on the toolbar.</para></step>
+    </procedure>
+    </section>
+    <section>
+        <title>Getting Help and submitting issues</title>
+        <para>if you get stuck and can not find the answer to your question in Docbook or DK-Schema documentation or community help (Google, mailing-lists such as docbook-apps), don't hesitate to contact the authors of the schema or to submit an issue to a bug tracking system.</para>
+        <procedure>
+            <title>Submitting a bug / new feature request</title>
+            <para>We are using Google Code to keep track of of the issues</para>
+            <step><para>Get a <link xlink:href="https://accounts.google.com/NewAccount">Google Account</link> and log in.</para></step>
+            <step><para>Go to <link xlink:href="http://code.google.com/p/dk-schema/issues/list">Issues List</link> and verify that your issue is not in the list already.</para></step>
+            <step><para>Submit a new issue <link xlink:href="http://code.google.com/p/dk-schema/issues/entry">here</link>. Ensure that you have described and clasified the issue properly and if possible attach screenshots and markup examples.</para></step>
+        </procedure>
+        <procedure>
+            <title>Getting in touch</title>
+            <step><para>Send us an email to <email>dk-schema@kode1100.com</email></para></step>
+        </procedure>
+    </section>
+    
+</article>

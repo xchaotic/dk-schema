@@ -1,0 +1,257 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Custom Validators"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="If you need to validate the edited document with other validation engine than the built-in one you have the possibility to configure external validators in the Oxygen XML user preferences. After such ..."/>
+<meta name="DC.subject" content="Validating XML documents, against a schema, custom validation"/>
+<meta name="keywords" content="Validating XML documents, against a schema, custom validation"/>
+<meta name="indexterms" content="Validating XML documents, against a schema, custom validation"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/validating-XML-documents-against-schema.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/automatic-validation.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/linked-output-messages-of-external-engine.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/linked-output-messages-of-external-engine.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="custom-validation"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Custom Validators</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="custom-validation">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/validating-XML-documents-against-schema.html" title="Validating XML Documents Against a Schema"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Validating XML Documents Against a Schema</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/automatic-validation.html" title="Automatic Validation"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Automatic Validation</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/linked-output-messages-of-external-engine.html" title="Linked Output Messages of an External Engine"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Linked Output Messages of an External Engine</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/validating-XML-documents.html" title="Validating XML Documents">Validating XML Documents</a> / <a class="navheader_parent_path" href="../topics/validating-XML-documents-against-schema.html" title="Validating XML Documents Against a Schema">Validating XML Documents Against a Schema</a></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Custom Validators</h1>
+
+    
+    <div class="body">
+        <p class="p">If you need to validate the edited document with other validation engine than the
+            built-in one you have the possibility to configure external validators in the <span class="ph">Oxygen XML</span> user preferences.
+            After such a custom validator is <a class="xref" href="preferences-editor-custom-validation.html">properly configured</a> it can be applied on the current document with just one
+            click on the <span class="ph uicontrol">Custom Validation Engines</span> toolbar. The document is
+            validated against the schema declared in the document. </p>
+
+        <p class="p">Some validators are configured by default but they are third party processors which do
+            not support the <a class="xref" href="linked-output-messages-of-external-engine.html#linked-output-messages-of-external-engine">output message format</a> of <span class="ph">Oxygen XML</span> for linked
+            messages:</p>
+
+        <ul class="ul">
+            <li class="li"><strong class="ph b">LIBXML</strong> - Included in <span class="ph">Oxygen XML</span> (Windows
+                edition only). It is associated to XML Editor. It is able to validate the edited
+                document against XML Schema, Relax NG schema full syntax, internal DTD (included in
+                the XML document) or a custom schema type. XML catalogs support (the
+                    <span class="keyword parmname">--catalogs</span> parameter) and XInclude processing
+                    (<span class="keyword parmname">--xinclude</span>) are enabled by default in the preconfigured
+                LIBXML validator. The <span class="keyword parmname">--postvalid</span> parameter is also set by
+                default which allows LIBXML to validate correctly the main document even if the
+                XInclude fragments contain IDREFS to ID's located in other fragments.<p class="p">For
+                    validation against an external DTD specified by URI in the XML document, the
+                    parameter <span class="keyword parmname">--dtdvalid ${ds}</span> must be added manually to the
+                    DTD validation command line. ${ds} represents the detected DTD declaration in
+                    the XML document.</p>
+<div class="cautiontitle">CAUTION:</div><div class="note caution">Known problem: file paths containing
+                    spaces are not handled correctly in the LIBXML processor. For example the
+                    built-in XML catalog files of the predefined document types (DocBook, TEI, DITA,
+                    etc) are not handled by LIBXML if <span class="ph">Oxygen XML</span> is
+                    installed in the default location on Windows (C:\Program Files) because the
+                    built-in XML catalog files are stored in the <span class="ph filepath">frameworks</span>
+                    subfolder of the installation folder which in this case contains at least one
+                    space character in the file path.</div>
+<div class="note attention"><span class="attentiontitle">Attention:</span> 
+                    <p class="p">On Mac OS X if the full path to the LIBXML executable file is not specified
+                        in the <span class="ph uicontrol">Executable path</span> text field, some errors may
+                        occur on validation against a W3C XML Schema like:</p>
+
+                    <pre class="pre msgblock">Unimplemented block at ... xmlschema.c</pre>
+
+                    <p class="p">These errors can be avoided by specifying the full path to the LIBXML
+                        executable file.</p>
+
+                </div>
+</li>
+
+            <li class="li"><strong class="ph b">Saxon SA</strong> - Included in <span class="ph">Oxygen XML</span>. It is
+                associated to XML Editor and XSD Editor. It is able to validate XML Schema schemas
+                and XML documents against XML Schema schemas. The validation is done according to
+                the W3C XML Schema 1.0 or 1.0. This can be <a class="xref" href="xml-schema-preferences-page.html">configured in
+                Preferences</a>.</li>
+
+            <li class="li"><strong class="ph b">MSXML 4.0</strong> - Included in <span class="ph">Oxygen XML</span> (Windows
+                edition only). It is associated to XML Editor, XSD Editor and XSL Editor. It is able
+                to validate the edited document against XML Schema, internal DTD (included in the
+                XML document), external DTD or a custom schema type.</li>
+
+            <li class="li"><strong class="ph b">MSXML.NET</strong> - Included in <span class="ph">Oxygen XML</span> (Windows
+                edition only). It is associated to XML Editor, XSD Editor and XSL Editor. It is able
+                to validate the edited document against XML Schema, internal DTD (included in the
+                XML document), external DTD or a custom schema type.</li>
+
+            <li class="li"><strong class="ph b">XSV</strong> - Not included in <span class="ph">Oxygen XML</span>. Windows and
+                Linux distributions of XSV can be downloaded from <a class="xref" href="http://www.cogsci.ed.ac.uk/%7Eht/xsv-status.html" target="_blank">http://www.cogsci.ed.ac.uk/~ht/xsv-status.html</a>. The
+                executable path is <a class="xref" href="preferences-editor-custom-validation.html">already
+                    configured in <span class="ph">Oxygen XML</span></a> for
+                the <span class="ph filepath">[Oxygen-install-folder]/xsv</span> installation folder. If it is
+                installed in a different folder the predefined executable path must be <a class="xref" href="preferences-editor-custom-validation.html">corrected in
+                    Preferences.</a> It is associated to XML Editor and XSD Editor. It is able to
+                validate the edited document against XML Schema or a custom schema type.</li>
+
+            <li class="li"><strong class="ph b">SQC (Schema Quality Checker from IBM)</strong> - Not included in <span class="ph">Oxygen XML</span>. It can be
+                downloaded <a class="xref" href="http://www.alphaworks.ibm.com/tech/xmlsqc/download" target="_blank">from here</a> (it comes as a .zip file, at the
+                time of this writing SQC2.2.1.zip is about 3 megabytes). The executable path and
+                working directory are already configured for the SQC installation directory
+                    <span class="ph filepath">[Oxygen-install-folder]/sqc</span>. If it is installed in a
+                different folder the predefined executable path and working directory must be <a class="xref" href="preferences-editor-custom-validation.html">corrected in the Preferences
+                    page.</a> It is associated to XSD Editor.</li>
+
+        </ul>
+
+        <p class="p">A custom validator cannot be applied on files loaded
+            through an <a class="xref" href="create-plugins-introduction.html"><span class="ph">Oxygen XML</span> custom
+                protocol plugin</a> developed independently and added to <span class="ph">Oxygen XML</span> after
+            installation.</p>
+
+    </div>
+
+<div class="related-links">
+<ol class="olchildlinks">
+<li class="link olchildlink"><a href="../topics/linked-output-messages-of-external-engine.html">Linked Output Messages of an External Engine</a>
+</li>
+</ol>
+</div>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/validating-XML-documents-against-schema.html" title="Validating XML Documents Against a Schema"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Validating XML Documents Against a Schema</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/automatic-validation.html" title="Automatic Validation"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Automatic Validation</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/linked-output-messages-of-external-engine.html" title="Linked Output Messages of an External Engine"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Linked Output Messages of an External Engine</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

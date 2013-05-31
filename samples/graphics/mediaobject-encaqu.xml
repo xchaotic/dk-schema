@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: Encyclopedia of Aquarium &amp; Pond Fish, pg. 14 -->
+<!-- Sample mark-up for mediaobject and related elements -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ENCAQU">
+    <title>Encyclopedia of Aquarium &amp; Pond Fish</title>
+    <part xml:id="ENCAQU012-023INTFIS">
+        <title>Introduction to Fishkeeping</title>
+        <article xml:id="ENCAQU014DIVERS">
+            <title>Diversity</title>
+            <!-- This illustration group has no title so informalfigure should be used -->
+            <informalfigure>
+                <mediaobject xml:id="ENCAQU014DIVERS_002">
+                    <imageobject>
+                        <imagedata fileref="encaqu014divers_002.jpg"/>
+                    </imageobject>
+                    <caption>
+                        <para><phrase role="inline_head">Coral reefs</phrase> are highly varied
+                            ........... fish and invertebrates.</para>
+                    </caption>
+                </mediaobject>
+            </informalfigure>
+            <section xml:id="ENCAQU014DIVERS_003">
+                <title>Geography and species formation</title>
+                <!-- text removed for sample purposes -->
+                <mediaobject xml:id="ENCAQU014DIVERS_004">
+                    <imageobject>
+                        <imagedata fileref="encaqu014divers_004.jpg"/>
+                    </imageobject>
+                    <caption>
+                        <para><phrase role="inline_head">Lake Malawi</phrase> is home to many
+                            ........... colour variants.</para>
+                    </caption>
+                </mediaobject>
+                <!-- figure should be used in case of multiple images with a common title -->
+
+                <figure xml:id="ENCAQU014DIVERS_005">
+                    <title>Body shapes</title>
+                    <mediaobject xml:id="ENCAQU014DIVERS_006">
+                        <imageobject>
+                            <imagedata fileref="encaqu014divers_006.jpg"/>
+                        </imageobject>
+                    </mediaobject>
+                    <mediaobject xml:id="ENCAQU014DIVERS_007">
+                        <imageobject>
+                            <imagedata fileref="encaqu014divers_007.jpg"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </section>
+            <!-- content removed for brevity -->
+        </article>
+    </part>
+</book>

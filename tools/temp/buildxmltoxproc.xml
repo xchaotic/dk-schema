@@ -1,0 +1,58 @@
+<p:xslt name="ExtractXLinkRef" version="1.0">
+    <p:input port="stylesheet">
+        <p:document href="../xslt/ExtractXLinkRef.xsl"/>
+    </p:input>
+    <p:with-param name="type" select="$type"/>
+    <p:with-param name="href" select="$dirFileNamesList"/>
+    <p:input port="parameters">
+        <p:empty/>
+    </p:input>
+</p:xslt>
+
+
+<p:xslt name="ExtractXLinkRef" version="1.0">
+    <p:input port="stylesheet"><p:document href="../xslt/iso_dsdl_include.xsl" />
+    </p:input>"dk-extensions.sch"
+    out="dk-extensions1.sch">
+   
+    <p:input port="parameters">
+        <p:empty/>
+    </p:input>
+</p:xslt>
+
+<!-- expand abstract patterns -->
+<p:xslt name="ExtractXLinkRef" version="1.0">
+    <p:input port="stylesheet"><p:document href="../xslt/iso_abstract_expand.xsl" />
+    </p:input>"dk-extensions1.sch"
+    out="dk-extensions2.sch">
+  
+    <p:input port="parameters">
+        <p:empty/>
+    </p:input>
+</p:xslt>
+
+
+
+<!-- compile it -->
+<p:xslt name="ExtractXLinkRef" version="1.0">
+    <p:input port="stylesheet"><p:document href="../xslt/iso_svrl_for_xslt2.xsl" />
+    </p:input>"dk-extensions2.sch"
+    out="dk-extensions.xsl">
+
+    <p:input port="parameters">
+        <p:empty/>
+    </p:input>
+</p:xslt>
+
+
+<!-- validate -->
+<p:xslt name="ExtractXLinkRef" version="1.0">
+    <p:input port="stylesheet"><p:document href="../xslt/dk-extensions.xsl" 
+    />
+    </p:input>"${xmlFileInput}"
+    out="${schematronOutput}">
+
+    <p:input port="parameters">
+        <p:empty/>
+    </p:input>
+</p:xslt>

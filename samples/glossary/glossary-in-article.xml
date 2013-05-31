@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="animal"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title xml:id="pirate_000">Pirates</title>
+    <article>
+        <title>Pirates</title>
+        <formalpara>
+            <title>Privateers</title>
+            <para>Some shipowners were given permissions by their countries to attack shipping from
+                other countries in time of war. Often they turned to piracy once the war was
+                over</para>
+        </formalpara>
+
+        <glosslist xml:id="glossary_001">
+            <title>Pirate words</title>
+            <glossentry xml:id="pirate_001">
+                <glossterm>Freebooter</glossterm>
+                <glossdef>
+                    <para>This was another name for a pirate</para>
+                </glossdef>
+            </glossentry>
+            <glossentry xml:id="pirate_002">
+                <glossterm>Fliebustier</glossterm>
+                <glossdef>
+                    <para>Single division of a a compound leaf. Also known as a pina.</para>
+                </glossdef>
+            </glossentry>
+            <glossentry xml:id="pirate_003">
+                <glossterm>PICAROON</glossterm>
+                <glossdef>
+                    <para>A word meaning a small-time pirate or slave smuggler, particullary during
+                        18-th century</para>
+                </glossdef>
+            </glossentry>
+
+
+            <!-- text removed for brevity -->
+        </glosslist>
+    </article>
+</book>

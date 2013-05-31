@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ENCAQU">
+    <title>Animal Encyclopedia</title>
+    <toc>
+        <title>Contents</title>
+        <tocentry pagenum="10">Preface</tocentry>
+        <tocentry pagenum="11">How to use this book</tocentry>
+        <tocdiv pagenum="12">
+            <title>INTRODUCTION TO FISHKEEPING</title>
+            <tocentry pagenum="14">Diversity</tocentry>
+            <tocentry pagenum="16">What is a fish?</tocentry>
+            <!-- text removed for brevity -->
+        </tocdiv>
+    </toc>
+    <!-- text removed for brevity -->
+</book>

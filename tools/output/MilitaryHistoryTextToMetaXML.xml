@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group xml:id="MILHIS_Military_History_Database">
+   <name>Military History Database</name>
+   <description>The meta data is gathered from the Military History Database</description>
+   <item xml:id="MILHIS_Siege">
+      <name>(Siege)</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Aerial_bomb">
+      <name>Aerial bomb</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Aeroplane">
+      <name>Aeroplane</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Air">
+      <name>Air</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Aircraft">
+      <name>Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Aircraft_Carrier">
+      <name>Aircraft Carrier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Aircraft_gun">
+      <name>Aircraft gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Airman">
+      <name>Airman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_AntiAircraft_Weapon">
+      <name>Anti-Aircraft Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Antimateriel_Rifle">
+      <name>Anti-materiel Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Antimateriel_Shotgun_Shell">
+      <name>Anti-materiel Shotgun Shell</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Antimateriel_Weapon">
+      <name>Anti-materiel Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_AntiPersonnel_Weapons">
+      <name>Anti-Personnel Weapons</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_AntiStructure_Weapon">
+      <name>Anti-Structure Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Antitank_Rifle">
+      <name>Anti-tank Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Antitank_Type">
+      <name>Anti-tank Type</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Antivehicle_Weapon">
+      <name>Anti-vehicle Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Archery_weapon">
+      <name>Archery weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Armleg_armour">
+      <name>Arm/leg armour</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Armour">
+      <name>Armour</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Armoured_boot">
+      <name>Armoured boot</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Armoured_Vehicle">
+      <name>Armoured Vehicle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Asian_Carbine">
+      <name>Asian Carbine</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Asian_horseman">
+      <name>Asian horseman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Asian_Matchlock">
+      <name>Asian Matchlock</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Assault_Rifle">
+      <name>Assault Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Astrolabe">
+      <name>Astrolabe</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Attack_Aircraft">
+      <name>Attack Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Attack_helicopter">
+      <name>Attack helicopter</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Automatic_pistol">
+      <name>Automatic pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Axe">
+      <name>Axe</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Ballista">
+      <name>Ballista</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bardiche">
+      <name>Bardiche</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Baselard">
+      <name>Baselard</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Basinet">
+      <name>Basinet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Battlefield_signals">
+      <name>Battlefield signals</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Battleship">
+      <name>Battleship</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bayonet">
+      <name>Bayonet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bludgeoning_Weapon">
+      <name>Bludgeoning Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Body_Armour">
+      <name>Body Armour</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bomb_ketch">
+      <name>Bomb ketch</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bombaiming_Device">
+      <name>Bomb-aiming Device</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bomber_Aircraft">
+      <name>Bomber Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bomber_crew">
+      <name>Bomber crew</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Bow">
+      <name>Bow</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Brasscartridge_Pistol">
+      <name>Brass-cartridge Pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Breastplate">
+      <name>Breastplate</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Breech_Loader">
+      <name>Breech Loader</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Broadsword">
+      <name>Broadsword</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Camp">
+      <name>Camp</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Cannon">
+      <name>Cannon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Carbine">
+      <name>Carbine</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Carronnade">
+      <name>Carronnade</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Castle">
+      <name>Castle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Catapult">
+      <name>Catapult</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Cavalry">
+      <name>Cavalry</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Chariot">
+      <name>Chariot</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Charioteer">
+      <name>Charioteer</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_ChemicalBiological">
+      <name>Chemical/Biological</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Chopping_Weapon">
+      <name>Chopping Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Chronometer">
+      <name>Chronometer</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Close_helm">
+      <name>Close helm</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Clothing__Kit">
+      <name>Clothing &amp; Kit</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Club">
+      <name>Club</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Codebreaking_device">
+      <name>Code-breaking device</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Coif">
+      <name>Coif</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Combat_knife">
+      <name>Combat knife</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Combination_weapons">
+      <name>Combination weapons</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Commmunications">
+      <name>Commmunications</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Compass">
+      <name>Compass</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Concussion_Type">
+      <name>Concussion Type</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Confederate_infantryman">
+      <name>Confederate infantryman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Conflict">
+      <name>Conflict</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Congreve_rocket">
+      <name>Congreve rocket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Country">
+      <name>Country</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Crossstaffbackstaff">
+      <name>Cross-staff/backstaff</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Crossbow">
+      <name>Crossbow</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Cuirass">
+      <name>Cuirass</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Cuirassier">
+      <name>Cuirassier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Cuisse">
+      <name>Cuisse</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Cutlass">
+      <name>Cutlass</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Dagger">
+      <name>Dagger</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Defoliant">
+      <name>Defoliant</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Diesel">
+      <name>Diesel</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Dirk">
+      <name>Dirk</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Dragoon">
+      <name>Dragoon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Dreadnought">
+      <name>Dreadnought</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Early_Gunpowder_Weapons">
+      <name>Early Gunpowder Weapons</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Early_Rifle">
+      <name>Early Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Early_siege_and_field_guns">
+      <name>Early siege and field guns</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_EdgedBladed_Weapon">
+      <name>Edged/Bladed Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Enfield_Riflemusket">
+      <name>Enfield Rifle-musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Era">
+      <name>Era</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Espionage_field_equipment">
+      <name>Espionage field equipment</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Face_defence">
+      <name>Face defence</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Falconet">
+      <name>Falconet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Field_gun">
+      <name>Field gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Field_kit">
+      <name>Field kit</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Fighter_Aircraft">
+      <name>Fighter Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Flail">
+      <name>Flail</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Flamethrower">
+      <name>Flamethrower</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Flash_Type">
+      <name>Flash Type</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Flintlock_Musket">
+      <name>Flintlock Musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Flintlock_Pistol">
+      <name>Flintlock Pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Flintlock_Rifle">
+      <name>Flintlock Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Foream_guard">
+      <name>Foream guard</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Foreign_Legionnaire">
+      <name>Foreign Legionnaire</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Fort">
+      <name>Fort</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_FortificationInfrastructure">
+      <name>Fortification/Infrastructure</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Fragmentation_Type">
+      <name>Fragmentation Type</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Frigate">
+      <name>Frigate</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_FullyAutomatic_Weapon">
+      <name>Fully-Automatic Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Galleon">
+      <name>Galleon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Gauntlet">
+      <name>Gauntlet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Great_ship">
+      <name>Great ship</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Greave">
+      <name>Greave</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Grenade">
+      <name>Grenade</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Grenade_Launcher">
+      <name>Grenade Launcher</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Grenadier">
+      <name>Grenadier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Halberd">
+      <name>Halberd</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hand_Grenade">
+      <name>Hand Grenade</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Handandahalf_sword">
+      <name>Hand-and-a-half sword</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Handgun">
+      <name>Handgun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hanger">
+      <name>Hanger</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hatchet">
+      <name>Hatchet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hauberk">
+      <name>Hauberk</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Heavy_machine_gun">
+      <name>Heavy machine gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Heavy_tank">
+      <name>Heavy tank</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Helicopter">
+      <name>Helicopter</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Helmet">
+      <name>Helmet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hoplite">
+      <name>Hoplite</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Horseman">
+      <name>Horseman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Howitzer">
+      <name>Howitzer</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hussar">
+      <name>Hussar</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Hydrogen_bomb">
+      <name>Hydrogen bomb</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_ICBM">
+      <name>ICBM</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Improvised_Handgun">
+      <name>Improvised Handgun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Improvised_Weapon">
+      <name>Improvised Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Indian_Musket">
+      <name>Indian Musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Infantry">
+      <name>Infantry</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_InsigniaHeraldryFlag">
+      <name>Insignia/Heraldry/Flag</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Ironclad">
+      <name>Ironclad</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Jeep">
+      <name>Jeep</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Jet_Aircraft">
+      <name>Jet Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Jousting_helm">
+      <name>Jousting helm</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Knife">
+      <name>Knife</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Knuckleduster_knife">
+      <name>Knuckle-duster knife</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Lance">
+      <name>Lance</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Lancer">
+      <name>Lancer</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Land">
+      <name>Land</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Land_">
+      <name>Land </name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Landesknecht">
+      <name>Landesknecht</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Landing_Craft">
+      <name>Landing Craft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Legionary">
+      <name>Legionary</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Light_Machine_Gun">
+      <name>Light Machine Gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Light_tank">
+      <name>Light tank</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Long_Gun">
+      <name>Long Gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Longbowman">
+      <name>Longbowman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Longship">
+      <name>Longship</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mace">
+      <name>Mace</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Main_battle_tank">
+      <name>Main battle tank</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Manual">
+      <name>Manual</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Manuallyloaded_">
+      <name>Manually-loaded </name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Maori_warrior">
+      <name>Maori warrior</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Maritime_helicopter">
+      <name>Maritime helicopter</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Matchlock_Pistol">
+      <name>Matchlock Pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Medal">
+      <name>Medal</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Medieval_footsoldier">
+      <name>Medieval footsoldier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Medieval_mounted_warrior">
+      <name>Medieval mounted warrior</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Medium_tank">
+      <name>Medium tank</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Military_shotgun">
+      <name>Military shotgun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mine">
+      <name>Mine</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Missile">
+      <name>Missile</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Missile_guidance_system">
+      <name>Missile guidance system</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Missilearmed_Ship">
+      <name>Missile-armed Ship</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Modern_Rifle">
+      <name>Modern Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Modern_western_infantryman">
+      <name>Modern western infantryman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mongol_horseman">
+      <name>Mongol horseman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Morgenstern">
+      <name>Morgenstern</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mortar">
+      <name>Mortar</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Motorbike">
+      <name>Motorbike</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mounted">
+      <name>Mounted</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mounted_Weapon">
+      <name>Mounted Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Mughal_warrior">
+      <name>Mughal warrior</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Multishot_rifle">
+      <name>Multi-shot rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Multiple_Barrel_Firearm">
+      <name>Multiple Barrel Firearm</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_MunitionsBombsArtillery">
+      <name>Munitions/Bombs/Artillery</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Musket">
+      <name>Musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Musketeer">
+      <name>Musketeer</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_National">
+      <name>National</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Naval">
+      <name>Naval</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Naval_Cannon">
+      <name>Naval Cannon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Navigation">
+      <name>Navigation</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Navy">
+      <name>Navy</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Neck_protection">
+      <name>Neck protection</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Nuclear">
+      <name>Nuclear</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Object_Material">
+      <name>Object Material</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Object_Type">
+      <name>Object Type</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Observational_helicopter">
+      <name>Observational helicopter</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Onager">
+      <name>Onager</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Ottoman_Carbine">
+      <name>Ottoman Carbine</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Ottoman_Musket">
+      <name>Ottoman Musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Ottoman_soldier">
+      <name>Ottoman soldier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Pentrating_weapon">
+      <name>Pentrating weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Percussioncap">
+      <name>Percussion-cap</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Percussioncap_Musket">
+      <name>Percussion-cap Musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Percussioncap_Pistol">
+      <name>Percussion-cap Pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Percussioncap_revolver">
+      <name>Percussion-cap revolver</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Percussioncap_Rifle">
+      <name>Percussion-cap Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Pike">
+      <name>Pike</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Pikeman">
+      <name>Pikeman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Pistol">
+      <name>Pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Poison_Gas">
+      <name>Poison Gas</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Poleaxe_">
+      <name>Poleaxe </name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Postindustrial">
+      <name>Post-industrial</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_PreColumbian_warrior">
+      <name>Pre-Columbian warrior</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Preindustrial">
+      <name>Pre-industrial</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Primitive">
+      <name>Primitive</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Punching_dagger">
+      <name>Punching dagger</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Quillon">
+      <name>Quillon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_RADAR">
+      <name>RADAR</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Radio">
+      <name>Radio</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_RAF_fighter_pilot_WWI">
+      <name>RAF fighter pilot (WWI)</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Railway_gun">
+      <name>Railway gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Rank">
+      <name>Rank</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Rapier">
+      <name>Rapier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Recoilless_Rifle">
+      <name>Recoilless Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Redcoat">
+      <name>Redcoat</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Regimental">
+      <name>Regimental</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Region">
+      <name>Region</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Repeater_Rifle">
+      <name>Repeater Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Revolver">
+      <name>Revolver</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Revolver_rifle">
+      <name>Revolver rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Rifle">
+      <name>Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Riflemounted">
+      <name>Rifle-mounted</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_RifleMusket">
+      <name>Rifle-Musket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Rifleman">
+      <name>Rifleman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Road">
+      <name>Road</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Rocket">
+      <name>Rocket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Rocket_Aircraft">
+      <name>Rocket Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sabre">
+      <name>Sabre</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sailor">
+      <name>Sailor</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sallet">
+      <name>Sallet</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Samurai">
+      <name>Samurai</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_SAS_soldier">
+      <name>SAS soldier</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sea">
+      <name>Sea</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Selfloading">
+      <name>Self-loading</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Selfloading_Pistol">
+      <name>Self-loading Pistol</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Selfpropelled_gun">
+      <name>Self-propelled gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sextant">
+      <name>Sextant</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shell">
+      <name>Shell</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shield">
+      <name>Shield</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Ship">
+      <name>Ship</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Short_sword">
+      <name>Short sword</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shotgun">
+      <name>Shotgun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shoulder_defence">
+      <name>Shoulder defence</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shoulderfired_Disposable_Rocket">
+      <name>Shoulder-fired Disposable Rocket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shoulderfired_Disposable_Tube_Missile">
+      <name>Shoulder-fired Disposable Tube Missile</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Shoulderfired_Rocket">
+      <name>Shoulder-fired Rocket</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Singleshot_breechloading">
+      <name>Single-shot breech-loading</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sioux_warrior">
+      <name>Sioux warrior</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Small_ArmsPersonal_Weapons">
+      <name>Small Arms/Personal Weapons</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Smoke_Type">
+      <name>Smoke Type</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sniper_Rifle">
+      <name>Sniper Rifle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_SOE_operative">
+      <name>SOE operative</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Space">
+      <name>Space</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Spear">
+      <name>Spear</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sporting_shotgun">
+      <name>Sporting shotgun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Standalone">
+      <name>Stand-alone</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Stealth_Fighter">
+      <name>Stealth Fighter</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Steam_Warship">
+      <name>Steam Warship</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Stiletto">
+      <name>Stiletto</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Stormtrooper">
+      <name>Stormtrooper</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Submachine_Gun">
+      <name>Submachine Gun</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Submarine">
+      <name>Submarine</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Submarinelaunched_missile">
+      <name>Submarine-launched missile</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_SuperDreadnought">
+      <name>Super-Dreadnought</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Sword_">
+      <name>Sword </name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Swordbreaker">
+      <name>Swordbreaker</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Tank">
+      <name>Tank</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Technology">
+      <name>Technology</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Thermite_Grenade">
+      <name>Thermite Grenade</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Threedecker">
+      <name>Three-decker</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Throwing_axe">
+      <name>Throwing axe</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Throwing_knife">
+      <name>Throwing knife</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Throwing_spear">
+      <name>Throwing spear</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Throwing_weapon">
+      <name>Throwing weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Torpedo">
+      <name>Torpedo</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Transport_helicopter">
+      <name>Transport helicopter</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_TransportCarrier_Aircraft">
+      <name>Transport/Carrier Aircraft</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Trench">
+      <name>Trench</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Troop">
+      <name>Troop</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Truck">
+      <name>Truck</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Tunnel">
+      <name>Tunnel</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Twohanded_sword">
+      <name>Two-handed sword</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Uboat_crew">
+      <name>U-boat crew</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Uniform">
+      <name>Uniform</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Union_infantryman">
+      <name>Union infantryman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Unmanned_drone">
+      <name>Unmanned drone</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Unmanned_land_vehicle">
+      <name>Unmanned land vehicle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_US_cavalryman">
+      <name>US cavalryman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_US_Marine">
+      <name>US Marine</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_US_paratrooper">
+      <name>US paratrooper</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_V1V2">
+      <name>V1/V2</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Vehicle">
+      <name>Vehicle</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Vehiclemounted">
+      <name>Vehicle-mounted</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Viet_Cong_guerilla">
+      <name>Viet Cong guerilla</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Vietnam_infantry">
+      <name>Vietnam infantry</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Viking">
+      <name>Viking</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Wall">
+      <name>Wall</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_War_Hammer">
+      <name>War Hammer</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Weapon">
+      <name>Weapon</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_WW1_infantryman">
+      <name>WW1 infantryman</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_WWII_fighter_pilot">
+      <name>WWII fighter pilot</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Year">
+      <name>Year</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+   <item xml:id="MILHIS_Zulu_warrior">
+      <name>Zulu warrior</name>
+      <description/>
+      <source>Military History Database</source>
+   </item>
+</group>

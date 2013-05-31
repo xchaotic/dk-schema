@@ -1,0 +1,246 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="The xml-model Processing Instruction"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="The xml-model processing instruction associates a schema with the XML document that contains the processing instruction. It must be added at the beginning of the document, just after the XML prologue. ..."/>
+<meta name="DC.Relation" scheme="URI" content="../topics/set-schema-for-content-completion.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/associate-schema-namespace-root-elem.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/learning-document-structure.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="oxygen-processing-instruction"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>The xml-model Processing Instruction</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="oxygen-processing-instruction">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/set-schema-for-content-completion.html" title="Setting a Schema for Content Completion"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Setting a Schema for Content Completion</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/associate-schema-namespace-root-elem.html" title="Associating a Schema With the Namespace of the Root Element"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Associating a Schema With the Namespace of the Root Element</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/learning-document-structure.html" title="Learning Document Structure"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Learning Document Structure</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/associate-schema-to-document.html" title="Associate a Schema to a Document">Associate a Schema to a Document</a> / <a class="navheader_parent_path" href="../topics/set-schema-for-content-completion.html" title="Setting a Schema for Content Completion">Setting a Schema for Content Completion</a></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">The <samp class="ph codeph">xml-model</samp> Processing Instruction</h1>
+
+    <div class="body conbody">
+        <p class="p">The <samp class="ph codeph">xml-model</samp> processing instruction associates a schema with the XML
+            document that contains the processing instruction. It must be added at the beginning of
+            the document, just after the XML prologue. The following code snippet contains an
+                <samp class="ph codeph">xml-model</samp> processing instruction declaration:</p>
+
+        <pre class="pre codeblock">&lt;?xml-model href="../schema.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" phase="ALL" title="Main schema"?&gt;</pre>
+
+        <p class="p">It is available in the <a class="xref" href="../topics/streamline-with-content-completion.html#streamline-with-content-completion">content completion</a> assistant, before XML document root element
+            and has the following attributes:</p>
+
+        <ul class="ul">
+            <li class="li"><samp class="ph codeph">href</samp> - schema file location. Mandatory attribute.</li>
+
+            <li class="li"><samp class="ph codeph">type</samp> - content type of schema. Optional attribute with the
+                following possible values:<ul class="ul">
+                    <li class="li">for DTD the recommended value is <samp class="ph codeph">application/xml-dtd</samp>;</li>
+
+                    <li class="li">for W3C XML Schema the recommended value is <samp class="ph codeph">application/xml</samp>
+                        or can be left unspecified;</li>
+
+                    <li class="li">for RELAX NG the recommended value is <samp class="ph codeph">application/xml</samp> or
+                        can be left unspecified;</li>
+
+                    <li class="li">for RELAX NG - compact syntax the recommended value is
+                            <samp class="ph codeph">application/relax-ng-compact-syntax</samp>;</li>
+
+                    <li class="li">for Schematron the recommended value is <samp class="ph codeph">application/xml</samp> or
+                        can be left unspecified;</li>
+
+                    <li class="li">for NVDL the recommended value is <samp class="ph codeph">application/xml</samp> or can be
+                        left unspecified.</li>
+
+                </ul>
+</li>
+
+            <li class="li"><samp class="ph codeph">schematypens</samp> - namespace of schema language of referenced schema
+                with the following possible values:<ul class="ul">
+                    <li class="li">for DTD - not specified;</li>
+
+                    <li class="li">for W3C XML Schema the recommended value is
+                            <samp class="ph codeph">http://www.w3.org/2001/XMLSchema</samp>;</li>
+
+                    <li class="li">for RELAX NG the recommended value is
+                            <samp class="ph codeph">http://relaxng.org/ns/structure/1.0</samp>;</li>
+
+                    <li class="li">for RELAX NG - not specified;</li>
+
+                    <li class="li">for Schematron the recommended value is
+                            <samp class="ph codeph">http://purl.oclc.org/dsdl/schematron</samp>;</li>
+
+                    <li class="li">for NVDL the recommended value is
+                            <samp class="ph codeph">http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0</samp>.</li>
+
+                </ul>
+</li>
+
+            <li class="li"><samp class="ph codeph">phase</samp> - phase name of validation function in Schematron schema.
+                Optional attribute.</li>
+
+            <li class="li"><samp class="ph codeph">title</samp> - title for associated schema. Optional attribute.</li>
+
+        </ul>
+
+        <p class="p">Older versions of  <span class="ph">Oxygen XML</span> used the <samp class="ph codeph">oxygen</samp> processing instruction
+            with the following attributes:</p>
+
+        <ul class="ul">
+            <li class="li"><samp class="ph codeph">RNGSchema</samp> - specifies the path to the Relax NG schema associated
+                with the current document;</li>
+
+            <li class="li"><samp class="ph codeph">type</samp> - specifies the type of Relax NG schema. It is used together
+                with the RNGSchema attribute and can have the value "xml" or "compact";</li>
+
+            <li class="li"><samp class="ph codeph">NVDLSchema</samp> - specifies the path to the NVDL schema associated with
+                the current document;</li>
+
+            <li class="li"><samp class="ph codeph">SCHSchema</samp> - specifies the path to the SCH schema associated with
+                the current document.</li>
+
+        </ul>
+
+        <div class="note note"><span class="notetitle">Note:</span> Documents that use the <samp class="ph codeph">oxygen</samp> processing instruction are compatible
+            with newer versions of <span class="ph">Oxygen XML</span>.</div>
+
+    </div>
+
+<div class="related-links"/>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/set-schema-for-content-completion.html" title="Setting a Schema for Content Completion"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Setting a Schema for Content Completion</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/associate-schema-namespace-root-elem.html" title="Associating a Schema With the Namespace of the Root Element"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Associating a Schema With the Namespace of the Root Element</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/learning-document-structure.html" title="Learning Document Structure"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Learning Document Structure</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

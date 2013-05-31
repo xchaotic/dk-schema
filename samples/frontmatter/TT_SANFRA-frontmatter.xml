@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="TT_SANFRA">
+
+    <info>
+        <title>DK Eyewitness Top 10 Travel Guides San Francisco</title>
+        <cover condition="prt">
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="print_cover.jpg"/>
+                </imageobject>
+            </mediaobject>
+        </cover>
+        <cover condition="dig">
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="digital_cover.jpg"/>
+                </imageobject>
+            </mediaobject>
+        </cover>
+        <publisher>
+            <publishername>Dorling kindersley Limited</publishername>
+            <address>
+                <city>London</city>
+                <street>80 Strand</street>
+                <postcode>WC2R 0RL</postcode>
+                <country>United Kingdom</country>
+                <otheraddr role="website">www.dk.com</otheraddr>
+            </address>
+        </publisher>
+        <authorgroup>
+            <!-- authors can be grouped together -->
+            <author role="main">
+                <personname>
+                    <firstname>Jeffrey</firstname>
+                    <surname>Kennedy</surname>
+                </personname>
+            </author>
+            <editor>
+                <personname>
+                    <firstname>Zoë</firstname>
+                    <surname>Ross</surname>
+                </personname>
+            </editor>
+        </authorgroup>
+        <titleabbrev>TT</titleabbrev>
+        <!-- can be used to conjure a unique ID used in epub OPF file -->
+        <biblioset>
+            <biblioid class="isbn" condition="prt">9781405348348</biblioid>
+            <!-- to indicate ISBN of the printed book-->
+            <biblioid class="isbn" condition="dig">9781405333559</biblioid>
+            <!-- isbn for the epub -->
+            <bibliosource class="isbn">9781405348348</bibliosource>
+            <!-- to indicate the edition of the book that the epub has been sourced from -->
+            <revhistory>
+                <revision>
+                    <date>2004</date>
+                </revision>
+                <revision>
+                    <date>2006</date>
+                </revision>
+                <revision>
+                    <date>2007</date>
+                </revision>
+                <revision>
+                    <date>2008</date>
+                </revision>
+                <revision>
+                    <date>2009</date>
+                </revision>
+                <revision>
+                    <date>2010</date>
+                </revision>
+
+            </revhistory>
+
+        </biblioset>
+    </info>
+    <part xml:id="TT_SANFRA006-079SANFRA">
+        <title>San Francisco's Top 10</title>
+        <chapter role="article" xml:id="TT_SANFRA006-007SANFRA">
+            <title>San Francisco’s Highlights</title>
+            <para role="intro" xml:id="TT_SANFRA006SANFRA_011">San Franciscans will, rather
+                candidly, admit that they are the most fortunate people on earth, the occasional
+                earthquake notwithstanding; and most visitors, after a few days of taking in the
+                sights and sounds of this magnificent city, will agree. Ask anyone who has been here
+                and they will tell you it’s their favorite US city. The geographical setting evokes
+                so much emotional drama, the light seems clearer, the colors more vivid, the
+                cultural diversity of the ethnic neighborhoods so captivating and inviting, that
+                it’s a place almost everyone can fall in love with at first sight.</para>
+        </chapter>
+    </part>
+    <appendix role="copyright">
+        <title>Copyright</title>
+        <para>Produced by Sargasso Media Ltd, London Reproduced by Colourscan, Singapore Printed and
+            bound by South China Printing Co. Ltd., China First published in Great Britain in 2003
+            by Dorling Kindersley Limited 80 Strand, London WC2R 0RL A Penguin Company Reprinted
+            with revisions 2004, 2006, 2007, 2008, 2009, 2010 Copyright 2003, 2010 © Dorling
+            Kindersley Limited, London All rights reserved. No part of this publication may be
+            reproduced, stored in a retrieval system, or transmitted in any form or by any means,
+            electronic, mechanical, photocopying, recording or otherwise, without the prior written
+            permission of the copyright owner. A CIP catalogue record is available from the British
+            Library ISBN 978-1-40534-834-8 Within each Top 10 list in this book, no hierarchy of
+            quality or popularity is implied. All 10 are, in the editor’s opinion, of roughly equal
+            merit. Floors are referred to throughout in accordance with American usage; ie. the
+            “first floor” is at ground level.</para>
+    </appendix>
+    <appendix role="acknowledgments">
+        <title>Acknowledgments</title>
+        <section>
+            <title>Main Contributors</title>
+            <para>Native San Franciscan Jeffrey Kennedy now lives mainly in Italy and Spain. A
+                graduate of Stanford University, he spends his time producing, writing and acting.
+                He is also co-author of Top 10 Rome and author of Top 10 Mallorca and Top 10 Miami
+                &quot; The Keys.</para>
+            <para>Produced by Sargasso Media Ltd, London</para>
+            <para>Editorial Director Zoë Ross Art Editor Janis Utton Picture Research Helen Stallion
+                Proofreader Stewart J Wild Indexer Hilary Bird Editorial Assistance Tracy Becker
+                Main Photographer Robert Vente Additional Photography Trevor Hill, Neil Lukas,
+                Andrew McKinney, Rough Guides/Angus Oborn, Dan Rubin Illustrator chrisorr.com Fact
+                Checkers Dan Rubin, AnneLise Sorensen</para>
+            <para> For Dorling Kindersley Publishing Managers Ian Midson, Scarlett O’Hara Publisher
+                Douglas Amrine Revisions Coordinators Rose Hudson, Mani Ramaswamy, Ros Walford, Hugo
+                Wilkinson Assistant Revisions Coordinators Mary Ormandy, Pollyanna Poulter Senior
+                Cartographic Editor Casper Morris DTP Jason Little Production Melanie Dowland
+                Picture Librarian David Saldanha </para>
+
+        </section>
+        <section>
+            <title>Additional Design and Editorial Assistance</title>
+            <para>Sherry Collins, Conrad Van Dyk, Nicola Erdpresser, Claire Jones, Jude Ledger, Sam
+                Merrell, Pete Quinlan, Karen Villabona</para>
+            <formalpara>
+                <title>Maps</title>
+                <para>DK India: Managing Editor Aruna Ghose; Senior Cartographer Uma Bhattacharya;
+                    Cartographic Researcher Suresh Kumar.</para>
+            </formalpara>
+            <formalpara>
+                <title>Special Assistance</title>
+                <para>The author would like to thank the following people for their assistance:
+                    Patricia Perez-Arce and Ed, Sonal Bhatt, Bruce and Celeste Joki, Margaret Casey
+                    and Mark Trahan, Robert Vente, Angela Jackson, Sandy Barnes, Harriet and Rick
+                    Lehrbaum, Paul Brown, Phyllis Butler, Nini Dibble, Jolie Chain, Helen Craddick,
+                    Vivian Deuschl, Marr Goodrum, and Isabelle Lejano.</para>
+            </formalpara>
+            <section>
+                <title>Picture Credits</title>
+                <para>t-top, tl-top left; tlc-top left center; tc-top center; tr-top right; cla-
+                    center left above; ca-center above; cra-center right above; cl-center left;
+                    c-center; cr-center right; clb-center left below; cb-center below; crb-center
+                    right below; bl- bottom left, b-bottom; bc-bottom center; bcl-bottom center
+                    left; br- bottom right; d-detail. Every effort has been made to trace the
+                    copyright holders of images, and we apologize in advance for any unintentional
+                    omissions. We would be pleased to insert the appropriate acknowledgments in any
+                    subsequent edition of this publication. The publishers would like to thank the
+                    following individuals, companies and picture libraries for their kind permission
+                    to reproduce their photographs:</para>
+                <para> ABSINTHE BRASSERIE &quot; BAR: 105tl; ALAMY IMAGES: Jim Gold- stein 40tl; ANA
+                    MANDARA; 97tl. BAMBUDDHALOUNGE.COM: 70tl; BANCROFT LIBRARY, BERKELEY UNIVERSITY:
+                    36tr; BRIAN BIGGS: 120tr. CABLE CAR MUSEUM: 11b; CALI- FORNIA ACADEMY OF SCIEN-
+                    CES: 22b; Dong Lin 22tl, 22tr, 23br, 23tr; CAMPTON PLACE HOTEL: 114tl; THE CLIFT
+                    HOTEL: Ian Schrager Hotels, Nikolas Koerno: 114tr; CORBIS: 1, 4–5, 8cl, 9, 10b,
+                    12–13, 14–15, 16tl, 16b, 17c, 17b, 27c, 34t, 36tl, 37tr, 37br, 39, 40tr, 52tl,
+                    52tr, 54tl, 54tr, 54b, 55r, 74b, 76tr, 78tl, 78tr, 79t, 80–81, 86–7, 102–03,
+                    118–19, 130–31; COST PLUS WORLD MARKET: 96tr. DE YOUNG MUSEUM: Mark Darley 21c.
+                    ENCHANTED CRYSTAL: photo by David J Landry 104tl; EXECUTIVE SUITES: 149tl;
+                    Courtesy of the FINE ARTS MUSEUM OF SAN FRAN-CISCO: 114tl; FREY NOR- RIS
+                    GALLERY: 42tl; GETTY IM- AGES: Ronald Martinez 73r; HOUSERSTOCK: Jan Butchofsky
+                    – Houser 18t; Dave G Houser 15cr, 18–19, 75tl; THE LARK CREEK INN: 129tl;
+                    TERRENCE MC- CARTHY: 56b; SEAN MORIARTY: 74tr; MUSEUM OF CRAFT &quot; FOLK ART:
+                    Baby Frog 2001, blown and sand-carved glass, 11 x 103⁄4 x 8 inches Archie Noise
+                    Cat photo Lee Fatheree 42b. NOVA BAR AND RESTAURANT: 66tr. Courtesy of OAKLAND
+                    MUSEUM OF CALIFORNIA: 126tc, 126tr. PINK CLUB: Christian Horan Photography 71tl.
+                    REDFERNS: David Redfern 54tc; REX FEATURES: 37cl, 53tl; RON- ALD GRANT ARCHIVE:
+                    MGM 53tr; Paramount Pictures 16tr; Warner Brothers 53br. Collection of the SAN
+                    FRANCISCO MUSEUM OF MODERN ART: Cali- fornia Artist, 1982 © Estate of Robert
+                    Arneson/DACS London/ VAGA, New York, 2006 27t; Michael Jackson and Bubbles, 1988
+                    Jeff Koons 27bl; SAN FRAN- CISCO ZOO: Jason Langer 114c. TABLESPOON: 3tr. ROBERT
+                    VENTE: 20b, 32c, 32b, 33t, 34tr, 35t, 61r, 72b, 74tl, 148tl, 149. YANK SING:
+                    91tl; JERRY YULSMAN: 52b. For jacket credits see Contents page All other images
+                    are © Dorling Kindersley. For further information see: www.dkimages.com. </para>
+            </section>
+
+        </section>
+        <section>
+            <title>Special Editions of DK Travel Guides</title>
+            <para>DK Travel Guides can be purchased in bulk quantities at discounted prices for use
+                in promotions or as premiums. We are also able to offer special editions and
+                personalized jackets, corporate imprints, and excerpts from all of our books,
+                tailored specifically to meet your own needs. To find out more, please contact: (in
+                the US) <email>specialsales@dk.com</email> (in the UK)
+                    <email>travelspecialsales@uk.dk.com</email> (in Canada) DK Special Sales at
+                    <email>general@tourmaline.ca</email> (in Australia)
+                    <email>business.development@pearson.com.au</email></para>
+        </section>
+    </appendix>
+
+</book>

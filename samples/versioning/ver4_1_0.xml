@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/dk-schema.rnc" type="compact"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="dk_4.1.0" xml:id="VER0001">
+	<title>This document uses version 4.1 of DK-Schema</title>
+	
+	<para>All the current tools work, it validates against current schema etc</para>
+</article>

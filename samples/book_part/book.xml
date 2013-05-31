@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Reference title: DK Animal; Book structure and hierarchy as per Docbook 5.0  -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <title>Animal Encyclopedia</title>
+    <part>
+        <title>Introduction</title>
+        <!-- text removed for brevity -->
+        <article>
+            <title>What are animals?</title>
+            <para>Dummy.....</para>
+            <!-- text removed for brevity -->
+        </article>
+        <!-- text removed for brevity -->
+    </part>
+    <part>
+        <title>Habitats</title>
+        <!-- text removed for brevity -->
+        <article>
+            <title>World Habitats</title>
+            <para>Dummy.....</para>
+            <!-- text removed fro brevity -->
+        </article>
+        <!-- text removed for brevity -->
+    </part>
+    <part>
+        <title>The Animal Kingdom</title>
+        <chapter>
+            <title>Mammals</title>
+            <section role="article">
+                <title>Mammals</title>
+                <para>Dummy.....</para>
+            </section>
+            <section>
+                <title>Egg-laying Mammals</title>
+                <para>Dummy.....</para>
+                <!-- text removed for brevity -->
+            </section>
+            <section>
+                <title>Primates</title>
+                <para>Dummy.....</para>
+                <!-- text removed for brevity -->
+                <section>
+                    <title>PROSIMIANS</title>
+                    <para>Dummy.....</para>
+                </section>
+                <section>
+                    <title>MONKEYS</title>
+                    <para>Dummy.....</para>
+                </section>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Birds</title>
+            <section role="article">
+                <title>Birds</title>
+                <para>Dummy.....</para>
+            </section>
+            <!-- text removed for brevity -->
+        </chapter>
+    </part>
+</book>

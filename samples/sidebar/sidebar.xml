@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- features are to be tagged as sidebar as per the DB 5.0 schema -->
+<!-- Reference title: Encyclopedia of Aquarium &amp; Pond Fish, pg. 29 -->
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0"
+    xml:id="ENCAQU">
+    <title>Encyclopedia of Aquarium &amp; Pond Fish</title>
+    <part xml:id="ENCAQU024-071INTFRE">
+        <title>Introduction to Freshwater Fish</title>
+        <!-- text removed -->
+        <chapter xml:id="ENCAQU029SETTAN">
+            <title>Setting up the Tank</title>
+            <!-- text removed -->
+            <section xml:id="ENCAQU032LITHEA">
+                <title>Lighting and Heating</title>
+                <!-- text removed for sample purposes -->
+                <sidebar xml:id="ENCAQU032PHOTOS" remap="feature">
+                    <title>PHOTOSYNTHESIS</title>
+                    <para>Nearly all plants – terrestrial and aquatic .............others in
+                        energizing the process.</para>
+                    <mediaobject xml:id="ENCAQU032PHOTOS_001">
+                        <imageobject>
+                            <imagedata fileref="encaqu032photos_001.jpg"/>
+                        </imageobject>
+                        <caption>
+                            <para><phrase role="inline_head">Certain wavelengths</phrase> of light
+                                are ........... illuminate an aquarium.</para>
+                        </caption>
+                    </mediaobject>
+                    <!-- content removed for brevity -->
+                </sidebar>
+            </section>
+        </chapter>
+    </part>
+</book>

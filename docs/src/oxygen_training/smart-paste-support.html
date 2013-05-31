@@ -1,0 +1,207 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Smart Paste Support"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="The Smart Paste capability was developed to help authors copy content from various sources (like web pages or office-type documents) and paste it into DITA, TEI, Docbook and XHTML documents. Oxygen ..."/>
+<meta name="DC.Relation" scheme="URI" content="../topics/tagless-editor.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/profiling-conditional-text-menu.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/author-dita.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="smart_paste_support"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Smart Paste Support</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="smart_paste_support">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/tagless-editor.html" title="Authoring in the Visual Editor"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Authoring in the Visual Editor</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/profiling-conditional-text-menu.html" title="Profiling / Conditional Text Menu"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Profiling / Conditional Text Menu</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/author-dita.html" title="Author for DITA"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Author for DITA</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/tagless-editor.html" title="Authoring in the Visual Editor">Authoring in the Visual Editor</a></td></tr></tbody></table>
+
+  <h1 class="title topictitle1">Smart Paste Support</h1>
+
+  <div class="body">
+    <p class="p">The <dfn class="term">Smart Paste</dfn> capability was developed to help authors copy content from
+      various sources (like web pages or office-type documents) and paste it into DITA, TEI, Docbook
+      and XHTML documents. <span class="ph">Oxygen XML</span>
+      eases this process by keeping the original text styling (like bold, italics) and formatting
+      (like lists, tables, paragraphs), while providing assistance to obtain a valid structured
+      document.</p>
+
+    <p class="p">The <span class="ph">Oxygen XML</span>
+      <dfn class="term">Smart Paste</dfn> support encapsulates the following capabilities:</p>
+
+    <div class="p">
+      <ul class="ul" id="smart_paste_support__ul_qgh_fkz_zd">
+        <li class="li">The conversion of the copied content into valid DITA, Docbook, TEI and XHTML
+            fragments:<div class="p">Styled content can be inserted in the
+      Author editor by copying or dragging it from:<ul class="ul">
+        <li class="li">Office-type applications (<span class="ph uicontrol">Microsoft Word</span> and <span class="ph uicontrol">Microsoft
+            Excel</span>, <span class="ph uicontrol">OpenOffice.org Writer</span> and
+            <span class="ph uicontrol">OpenOffice.org Calc</span>);</li>
+
+        <li class="li">web browsers (like <span class="ph uicontrol">Mozilla Firefox</span> or <span class="ph uicontrol">Microsoft
+            Internet Explorer</span>);</li>
+
+        <li class="li">the <span class="ph uicontrol">Data Source Explorer</span> view (where resources are available from
+          WebDAV or CMS servers).</li>
+
+      </ul>
+The styles and general layout of the copied content like: sections with headings, tables,
+      list items, bold, and italic text, hyperlinks, are preserved by the paste operation by
+      transforming them to the equivalent XML markup of the target document type. This is available
+      by default in the following <a class="xref" href="predefined-document-types.html#predefined-document-types">predefined
+        document types</a>: <a class="xref" href="author-dita-doc-type.html#author-dita-doc-type">DITA</a>, <a class="xref" href="author-docbook4-doc-type.html#author-docbook4-doc-type">DocBook
+      4</a>, <a class="xref" href="author-docbook5-doc-type.html#author-docbook5-doc-type">DocBook 5</a>, <a class="xref" href="author-teip4-doc-type.html#author-teip4-doc-type">TEI 4</a>, <a class="xref" href="author-teip5-doc-type.html#author-teip5-doc-type">TEI 5</a>, <a class="xref" href="author-xhtml-doc-type.html#author-xhtml-doc-type">XHTML</a>.</div>
+<p class="p">This support is enabled by default, but you can disable it trough the <a class="xref" href="preferences-schema-aware.html#preferences-schema-aware__convert_external_content_on_paste">Convert external content on paste</a> option, available in the
+              <span class="ph uicontrol">Schema Aware</span> preferences.</p>
+</li>
+
+        <li class="li">Inserting the converted fragment at the correct location in the document.<p class="p">This
+            capability is controlled by the <a class="xref" href="preferences-schema-aware.html#preferences-schema-aware__smart_paste_and_drag_and_drop">Smart paste and drag and drop</a> option, available in the
+              <span class="ph uicontrol">Schema Aware</span> preferences.</p>
+</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+<div class="related-links"/>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/tagless-editor.html" title="Authoring in the Visual Editor"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Authoring in the Visual Editor</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/profiling-conditional-text-menu.html" title="Profiling / Conditional Text Menu"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Profiling / Conditional Text Menu</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/author-dita.html" title="Author for DITA"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Author for DITA</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>

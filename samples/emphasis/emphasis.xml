@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- hi tag has been replaced by emphasis in DB 5.0 based model. For subscript, superscript and 
+    foreign, dedicated tags should be used. 
+    On emphasis, rend attribute is used to give a hint to the renedring engine, role can be used to add semantic information. 
+-->
+<!-- Reference title : EWG Insect, pg. 6-7 -->
+<!-- emphasis with rend attribute (hi type "leadin") -->
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0" xml:id="EWG_INSECT">
+    <title>The Parts of an Insect</title>
+    <para>
+        <emphasis rend="leadin">An adult insect</emphasis> never grows any larger. It cannot,
+        because it has a hard, external skeleton composed largely of a tough, horny substance called
+        chitin. ..............or chrysalis.</para>
+    <!-- emphasis with role attribute (hi type "scientific"), and 10-11-->
+    <section xml:id="EWG_INSECT010FIRINS_014">
+        <title>Largest dragonfly</title>
+        <para>This dragonfly (<emphasis rend="i" role="scientific">Tetracanthagyna
+                plagiata</emphasis>) from Borneo is a member of the largest dragonfly species still
+            in existence today. The largest dragonfly ever known is a fossilized specimen from the
+            U.S.A., with a wing span of about 60 cm (24 in).</para>
+    </section>
+    <!-- Reference title : EWG China -->
+    <!-- foreignphrase with xml:lang (hi type "foreign"), pg. 10-11 -->
+    <section xml:id="EWG_CHINA010BEGCHI_002">
+        <title>Pre&#x002D;Shang jades</title>
+        <para>These ancient jades were probably used in Neolithic rituals concerned with death. The
+                <foreignphrase xml:lang="zh">cong</foreignphrase> may have represented the earthly
+            powers.</para>
+    </section>
+    <!-- emphasis with just rend "i" (similarly "b", "bi"), pg. 24-25 -->
+    <section xml:id="EWG_CHINA024PAPPRI_019">
+        <title>Prayers in print</title>
+        <para>This Buddhist text, called the <emphasis rend="i">Diamond Sutra</emphasis>, is the
+            earliest known printed book. ............</para>
+    </section>
+    <!-- Dummy section to show subscript (or superscript) mark-up-->
+    <section xml:id="DUMMY_004">
+        <title>Dummy section</title>
+        <para>Hydrogen reacts with oxygen to from H<subscript>2</subscript>O.</para>
+    </section>
+</article>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:s="http://www.ascc.net/xml/schematron" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dk="http://docbook.org/ns/docbook" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="db-publishers-sc.rng">
+    <define name="db.condition.attribute">
+      <attribute name="condition">
+        <a:documentation>DK Specific: values are enumerated here:</a:documentation>
+        <choice>
+          <value>prt</value>
+          <value>dig</value>
+          <value>imperial</value>
+          <value>metric</value>
+        </choice>
+      </attribute>
+    </define>
+  </include>
+  <define name="db.effectivity.attributes" combine="interleave">
+    <a:documentation>DK Specific: extend the common attributes to allow cref, metaref and geo attributes everywhere</a:documentation>
+    <interleave>
+      <optional>
+        <ref name="dk.cref.attribute"/>
+      </optional>
+      <optional>
+        <ref name="dk.metaref.attribute"/>
+      </optional>
+      <optional>
+        <ref name="dk.geo.attributes"/>
+      </optional>
+    </interleave>
+  </define>
+  <define name="db.publishing.blocks" combine="choice">
+    <a:documentation>DKSpecific: allowing ranges everywhere, TODO - see why the redefinition doesn't include original elements:</a:documentation>
+    <ref name="dk.range"/>
+  </define>
+  <define name="db.publishing.inlines" combine="choice">
+    <ref name="dk.range"/>
+  </define>
+  <define name="db.info.elements" combine="choice">
+    <a:documentation>DK Specific:  allow meta in the info block</a:documentation>
+    <ref name="dk.meta"/>
+  </define>
+  <define name="dk.cref.attribute">
+    <attribute name="cref">
+      <a:documentation>DK Specific: use cref attribute to identify equivalent blocks when profiling is used</a:documentation>
+    </attribute>
+  </define>
+  <define name="dk.metaref.attribute">
+    <attribute name="metaref">
+      <a:documentation>DK Specific: use metaref attribute to assign metadata classification on any element</a:documentation>
+    </attribute>
+  </define>
+  <define name="dk.meta.attlist">
+    <a:documentation>DK Specific: define meta element and allow in the info block</a:documentation>
+    <choice>
+      <ref name="dk.metaref.attribute"/>
+      <ref name="db.common.attributes"/>
+    </choice>
+  </define>
+  <define name="dk.meta">
+    <element name="meta">
+      <ref name="dk.meta.attlist"/>
+      <empty/>
+    </element>
+  </define>
+  <!-- DK Specific: geo attributes contain latitude and longtitude of a goegraphical location -->
+  <define name="dk.geo.attributes">
+    <choice>
+      <attribute name="lat"/>
+      <attribute name="long"/>
+    </choice>
+  </define>
+  <define name="dk.range.attlist">
+    <a:documentation>DK Specific: inherit indexterm model to model range.</a:documentation>
+    <choice>
+      <ref name="db.indexterm.startofrange.attlist"/>
+      <ref name="db.indexterm.endofrange.attlist"/>
+    </choice>
+  </define>
+  <define name="dk.range">
+    <element name="range">
+      <ref name="dk.range.attlist"/>
+      <empty/>
+    </element>
+  </define>
+</grammar>

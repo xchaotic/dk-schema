@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../dk-schema/common/dk-schema-all.rnc"?>
+<!--<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/phrasebook/phrasebook.rnc" type="compact"?>-->
+<book xml:id="EWPB_Chinese_test" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <chapter xml:id="EWPB_Chinese_test_samplechapter">
+        <title>Week 5: Getting About</title>
+        <!-- sample taken from page 54: At the Airport -->
+
+        <section xml:id="EWPB_Chinese_test_p54">
+            <title>Zai jichang</title>
+            <subtitle>At the Airport</subtitle>
+
+            <para>International flights arrive at most major cities, and there is an extensive
+                network of internal flights operating from every provincial capital. Although the
+                airport environment is largely universal, it is sometimes useful to be able to
+                understand key words and phrases in Chinese.</para>
+            <!-- exercise 1: illustrates crossreferencing of parts of phrase entry -->
+            <section xml:id="EWPB_Chinese_test_p54_1_warmup">
+                <title>1. Warm Up</title>
+                <para>Say <inline_phrase_entry>
+                        <form><xref condition="dig" cref="EWPB_Chinese_test_p54_1_warmup_1"
+                                xlink:href="#EWPB_Chinese_test_p24" role="phrase_entry_ref"/>
+                            <link condition="prt" cref="EWPB_Chinese_test_p54_warmup_1"
+                                xlink:href="#EWPB_Chinese_test_p24" role="phrase_entry_ref"
+                                >(pp.24–5)</link></form>
+                        <sense><def><quote>Would you please help
+                        me?</quote></def></sense></inline_phrase_entry>
+                </para>
+            </section>
+            <!-- exercise 2 -->
+            <section xml:id="EWPB_Chinese_test_p54_2">
+                <title>2. Words to remember</title>
+                <para>Familiarize yourself with these words and test yourself using the flap.</para>
+                <phrase_entry xml:id="EWPB_Chinese_test_p54_2_pe1">
+                    <form>
+                        <orth>办理登机手续</orth>
+                        <pron>banli dengji shouxu</pron>
+                    </form>
+                    <sense>
+                        <def>check-in</def>
+                    </sense>
+                </phrase_entry>
+            </section>
+            <!-- section "3. Useful phrases omitted as has the same model as 2." -->
+            <section xml:id="EWPB_Chinese_test_p54_4">
+                <!-- exercise 4 -->
+                <title>4. Put into practice</title>
+                <para>Join in this conversation. Read the Chinese on the left and follow the
+                    instructions to make your reply. Then test yourself by concealing the answers
+                    with the cover flap.</para>
+                <phrase_entry xml:id="EWPB_Chinese_test_p54_4_pe1">
+                    <form>
+                        <orth>下次请</orth>
+                        <pron>xiayiwei</pron>
+                    </form>
+                    <sense>
+                        <def>Next, please.</def>
+                    </sense>
+                </phrase_entry>
+                <phrase_entry xml:id="EWPB_Chinese_test_p54_4_pe2">
+                    <sense>
+                        <def>Ask: Is the plane to Shanghai on time?</def>
+                    </sense>
+                    <form>
+                        <orth>去上海德费基准点码</orth>
+                        <pron>qu shanghai de feiji zhundian ma</pron>
+                    </form>
+                </phrase_entry>
+            </section>
+
+            <section xml:id="EWPB_Chinese_test_p54_5">
+                <!-- exercise 5-->
+                <title>5. Match and repeat</title>
+                <para>Match the numbered items to the Chinese words in the panel.</para>
+                <mediaobject xml:id="EWPB_Chinese_test_p54_5_airport_image">
+                    <imageobjectco>
+                        <areaspec>
+                            <area xml:id="EWPB_Chinese_test_p54_5_airport_image_co1"
+                                coords="150 40 155 45"/>
+                        </areaspec>
+                        <imageobject>
+                            <imagedata
+                                fileref="EW_ChinesePhraseBook/EWTG_Chinese_Phrasebook_airport.jpg"/>
+                        </imageobject>
+                        <calloutlist>
+                            <callout arearefs="EWPB_Chinese_test_p54_5_airport_image_co1">
+                                <para><inline_phrase_entry xml:id="EWPB_Chinese_test_p54_5_pe1">
+                                        <form>
+                                            <orth>登机手</orth>
+                                            <pron>dengjipai</pron>
+                                        </form>
+                                        <sense condition="dig">
+                                            <!-- boarding pass is already in the image so only use sense for digital / rich  outputs -->
+                                            <def>boarding pass</def>
+                                            <link
+                                                xlink:href="#EWPB_Chinese_test_p54_5_airport_image_co1"
+                                                role="phrase_entry_ref"/>
+                                            <!-- optionally use link with role="phrase_entry_ref" to indicate thate the sense/definition is in the image -->
+                                        </sense>
+                                    </inline_phrase_entry></para>
+
+                            </callout>
+                        </calloutlist>
+
+                    </imageobjectco>
+                </mediaobject>
+                <sidebar>
+                    <title>Read it</title>
+                    <para> Chinese takes basic concepts and combines them to make different
+                        meanings, e.g.<inline_phrase_entry>
+                            <form>
+                                <orth>飞</orth>
+                                <pron>feiji</pron>
+                            </form>
+                            <sense><quote>plane</quote></sense>
+                        </inline_phrase_entry>(<inline_phrase_entry>
+                            <sense><quote>flying</quote></sense>
+                            <form>
+                                <orth>飞</orth>
+                                <pron>fei</pron>
+                            </form>
+                        </inline_phrase_entry>+<inline_phrase_entry>
+                            <sense><quote>machine</quote></sense>
+                            <form>
+                                <orth>机</orth>
+                                <pron>ji</pron>
+                            </form>
+                        </inline_phrase_entry>);
+                        <!-- 2nd example skipped as it follows the same model -->
+                    </para>
+                </sidebar>
+            </section>
+
+
+
+        </section>
+
+
+
+
+
+
+    </chapter>
+</book>

@@ -1,0 +1,57 @@
+Great stuff, I'm checking now.
+
+1. If you could write a basic script that simply validates against yet
+nonexistent dk-schema.rnc (just rename dk-common.rnc for now) plus the
+schematron rules, that would suffice , that's probably your time
+better spent that reading the spec PDF (but feel free to do both).
+2. A few more rules:
+
+a) every block-level element should have an xml:id (as in db.blocks in
+the docbook schema - so sections, chapters, paragraphs etc, perhaps
+you can re-use the definition of what block is from the docbook or
+publishers schema, but if it's not obvious just hardcode it), also add
+some elements that are typically crossreferenced - mediaobject (i
+think it's a block anyway), title
+b) There is a rather loose <range> element allowed in the schema.
+Have a look here:
+http://code.google.com/p/dk-schema/source/browse/work-in-progress/ranges/DB-5.0%20mark-up/date.xml
+we need to validate two things again:
+-that for every start of range there is an endofrange
+-that startofrange has xml:id - try to have a general xml:id rule and
+reuse it if possible - in this the endofrange element doesn't have to
+have xml:id so we can't simply add it to the list from a)
+c) keys: many samples on this in the repo, but the idea is that key
+will always be a variablelist, so check that:
+-varaiblelist and each listentry has xml:id (again only if it's a key
+- normal lists don't always have to ahve xml:ids)
+-if the xref has "keyref_include, it would bee good to see if
+varaiblelist is allowed where xref is, nt sure if it can be done in
+schematron
+
+
+3. We need a link between an entry in the spec and the schematron
+rule. I've followed docbook's own doc convention and used section ids
+like s.address etc The most straightforward solution would be to use
+that same id for a pattern dk-extensions.sch, but I suppose it may be
+more than one pattern per section sometimes so I guess an xlink:xref
+from the dk-extensions.sch back to an id in dk-schema-spec, or the
+other way around.
+
+Since we already have links in the spec to the the samples and
+screenshots it feels more consistent to add links from the spec to the
+the pattern.
+
+
+
+Later on I plan to do the following:
+a) check coverage - see that every spec section has a schematron rule
+and if not, maunally verify whether it needs one
+b) possibly include quoted schematron in the
+dk-schema-spec-with-samples, but judging from the target audience this
+won't be very useful.
+Other than setting up a consistent naming convention for pattern id's,
+there isn't anything concrete that you have to do about it yet, but
+hte first two  rules will be linked to a section called s.profiling,
+so I guess we could have and ID along the lines of
+profiling.condition.check and profiling.cref.check
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://dk-schema.googlecode.com/hg/dk-schema/common/dk-meta-enumerations.rnc" type="compact"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="ANIMAL">
+	<!-- Illustrated Encyclopedia of Animals sample to illustrate dataset metadata -->
+	<title>Animal</title>
+	<part xml:id="ANIMAL082-597ANIKIN">
+		<title>The Animal Kingdom</title>
+		<!-- text removed for sample purposes -->
+		<chapter xml:id="ANIMAL084-257MAMMAL">
+			<title>Mammals</title>
+			<!-- text removed for sample purposes -->
+			<section xml:id="ANIMAL090EGGMAM">
+				<title>Egg-laying Mammals</title>
+				<!-- text removed -->
+				<section xml:id="ANIMAL090SHOECH" role="entry">
+					<title>Short-nosed echidna</title>
+					<simplelist xml:id="ANIMAL090SHOECH_001" role="dataset">
+						<member metaref="DK_animal_length">
+							<!-- illustrating ranges, profiling and granuar mark-up with metaref for units -->
+							<phrase xml:id="ANIMAL090SHOECH_002_metric" condition="metric"
+								cref="ANIMAL090SHOECH_002_imperial">
+								<range class="startofrange" xml:id="ANIMAL090SHOECH_002_range"/>
+								<phrase metaref="SI_centimeter">30</phrase>-<phrase
+									metaref="SI_centimeter">45</phrase>
+								<range class="endofrange" startref="ANIMAL090SHOECH_002_range"/>
+								<phrase role="unit"> cm</phrase>
+							</phrase>
+							<phrase xml:id="ANIMAL090SHOECH_002_imperial" condition="imperial"
+								cref="ANIMAL090SHOECH_002_metric"> (<phrase metaref="imperial_inch"
+									>15</phrase>-<phrase metaref="imperial_inch">18</phrase><phrase
+									role="unit"> in</phrase>) </phrase>
+						</member>
+						<!--text removed for sample purposes -->
+					</simplelist>
+				</section>
+			</section>
+			<!-- text removed for sample purposes -->
+		</chapter>
+		<!-- text removed for sample purposes -->
+	</part>
+</book>

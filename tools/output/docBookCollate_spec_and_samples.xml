@@ -1,0 +1,1654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="5.0">
+    <info>
+        <title>DK Schema 2.0 Specification</title>
+        <subtitle>Working Draft</subtitle>
+        
+        
+    </info>
+   <chapter>
+     <title>Common Schema</title>
+     <section xml:id="usage">
+         <title>When to use?</title>
+         <para>Common schema should be used whenever possible as it allows best interoperability.</para>
+     </section>
+        <section xml:id="s.attributes">
+         <title xmlns:db="http://docbook.org/ns/docbook">DK Common Attributes</title>
+         <para>
+            <phrase role="attribute">xml:id</phrase> attribute is used to provide a unique identifier for a given block.</para>
+         <para>DK Schema allows for a set of attributes that can be used anywhere in the XML structure.</para>
+         <para>These attributes are <link xlink:href="http://www.docbook.org/tdg/common">Docbook common attributes</link> and DK specific attributes.</para>
+         <para>
+            <phrase role="attribute">condition</phrase> and <phrase role="dk.attribute">cref</phrase> attributes are used for profiling (marking content for a specific use). Refer to <xref xlink:href="#s.profiling"/> for more details.</para>
+         <para>
+            <phrase role="dk.attribute">metaref</phrase> attribute is used to link to additional metadata about the subject. Refer to <xref xlink:href="#s.meta"/> for more details.</para>
+         <para>
+            <phrase role="attribute">role</phrase> attribute is used to classify portions of the content. Refer to <xref xlink:href="#s.role"/> for more details.</para>
+         <para>
+            <phrase role="attribute">lat</phrase> and <phrase role="attribute">lon</phrase> are used to associate geocoding information. Refer to <xref xlink:href="#s.geo"/> for more details.</para>
+         <para>
+            <phrase role="dk.attribute">rend</phrase> attribute is used to provide strictly presentational hints to the rendering system. Refer to <xref xlink:href="#s.emphasis"/> for more details.</para>
+      </section>
+    
+    
+      <section xml:id="s.address">
+         <title xmlns:db="http://docbook.org/ns/docbook">Address elements</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> address - address.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/address/address.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/address/address.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> address - address.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/address/address.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>The standard Docbook elements <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/address.html">address</link> (and constituent elements - <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/street.html">street</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/city.html">city</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/state.html">state</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/country.html">country</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/pob.html">pob</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/postcode.html">postcode</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/otheraddr.html">otheraddr</link>) should be used.</para>
+         <para>The Docbook elements (<link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/street.html">street</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/city.html">city</link> etc) as well as additional elements: <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phone.html">phone</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/fax.html">fax</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/email.html">email</link> are allowed inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/address.html">address</link> wrapper.</para>
+         <para>Where necessary, single, inline <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/address.html">address</link> elements can be used, wrapped within an <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/address.html">address</link> element</para>
+         <para>See <xref linkend="s.xref"/> for details on marking-up urls.</para>
+         <para>
+            The following attributes from the Docbook v5.x Schema: <phrase role="attribute">continuation</phrase>, <phrase role="attribute">format</phrase>, <phrase role="attribute">linenumbering</phrase> are not allowed.
+        </para>
+      </section>
+    
+      <section xml:id="s.date">
+         <title xmlns:db="http://docbook.org/ns/docbook">Date</title>
+         <para>Dates should be captured using a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element, with a <phrase role="attribute">role="date"</phrase> attribute value. For date ranges, see <xref linkend="s.range"/>. For more descriptive tagging options see <xref linkend="s.meta"/>
+         </para>
+      </section>
+    
+      <section xml:id="s.directory">
+         <title xmlns:db="http://docbook.org/ns/docbook">Directory</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> directory - directory.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/directory/directory.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/directory/directory.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> directory - directory_Homeopathy.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/directory/directory_Homeopathy.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Content that contains a directory of contact addresses, further information, phone book listing etc. should be captured with a <phrase role="attribute">role</phrase> attribute indicating a directory entry container element.</para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link> with a <phrase role="attribute">role="directory"</phrase> attribute if the directory exists as a top-level entry in the structure of the book or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> with a <phrase role="attribute">role="directory"</phrase> attribute if the directory exists below the chapter level.</para>
+         <para>Individual entries should be captured using a block level element such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> with a <phrase role="attribute">role="dir_entry"</phrase> attribute.</para>
+         <para>Directory can be further subdivided using a block level element such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> with a <phrase role="attribute">role="dir_section"</phrase> attribute.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/directory/directory.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/directory/directory_Homeopathy.jpg">Example</link>
+         </para>
+         <para>A directory listing containing referential type of information should be captured using <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> elements with a <phrase role="attribute">role</phrase> attribute indicating a directory entry container element.</para>
+      </section>
+    
+    
+    
+      <section xml:id="s.toc">
+         <title xmlns:db="http://docbook.org/ns/docbook">Table of Contents</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> toc - toc.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../samples/toc/toc.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/toc/toc.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> toc - contents.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/toc/contents.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Under normal circumstances, Table of Contents should not be captured by hand. Instead, the structure of the book must be captured using a hierarchy of parts, chapters and sections. The Table of Contents will be automatically generated from that.</para>
+         <para>If there is a specific case where an alternative Table of Contents needs to be produced that does not reflect the hierarchy of the XML, use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/toc.html">toc</link> element.</para>
+      </section>
+    
+      <section xml:id="s.index">
+         <title xmlns:db="http://docbook.org/ns/docbook">Index</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> index - index.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../samples/index/index.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/index/index.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> index - index_ewc_tree.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/index/index_ewc_tree.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>If it is desirable to auto-generate an index, individual terms may be marked-up at the point-of-reference in the text using the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/indexterm.html">indexterm</link> element.</para>
+         <para>Otherwise, capture the index using the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/index.html">index</link> element inside a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/book.html">book</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/part.html">part</link> element.</para>
+      </section>
+    
+      <section xml:id="s.set">
+         <title xmlns:db="http://docbook.org/ns/docbook">Set element</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Set.html">Set</link> element is used to group books from one series to allow validation of crossreferences.</para>
+         <para>In normal circumstances <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/set.html">set</link> may not be used and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/book.html">book</link> should be used to capture a single title.</para>
+      </section>
+    
+      <section xml:id="s.book">
+         <title xmlns:db="http://docbook.org/ns/docbook">Book element</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Book.html">Book</link> should be the default top-level (root) element for a title. </para>
+         <para>The DK book model follows docbook specification, although it does not allow <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/colophon.html">colophon</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/bibliography.html">bibliography</link>.</para>
+         <para>A <phrase role="attribute">version</phrase> attribute must be used to indicate which version of the schema is being used (5 at the time of writing).</para>
+      </section>
+    
+      <section xml:id="s.frontmatter">
+         <title xmlns:db="http://docbook.org/ns/docbook">Frontmatter</title>
+         <section xml:id="s.cover">
+            <title xmlns:db="http://docbook.org/ns/docbook">Book covers</title>
+            <example xmlns:db="http://docbook.org/ns/docbook">
+               <title> frontmatter - TT_SANFRA-frontmatter.xml</title>
+               <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                              href="../../samples/frontmatter/TT_SANFRA-frontmatter.xml"
+                              parse="text">
+                     <xi:fallback>SAMPLE MISSING: ../../samples/frontmatter/TT_SANFRA-frontmatter.xml</xi:fallback>
+                  </xi:include>
+               </programlisting>
+            </example>
+            <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/cover.html">cover</link> element inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/info.html">info</link> block for the book to describe the cover.</para>
+            <para>Usually this will point to an image on the cover, in which case use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link>.</para>
+            <para>Where two or more different covers are used for different outputs, use multiple <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/cover.html">cover</link> elements with the appropriate <phrase role="attribute">condition</phrase> attribute.</para>
+         </section>
+         <section xml:id="s.biblio">
+            <title xmlns:db="http://docbook.org/ns/docbook">Bibliographic information</title>
+            <para>Where a book includes a bibliography, mark-up using simple structural elements as appropriate (e.g. <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/appendix.html">appendix</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link>) with a with a <phrase role="attribute">role="bibliography"</phrase> attribute value.</para>
+            <para>To annotate bibliographic information associated with the whole book, use the following bibliographic elements inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/info.html">info</link> block:</para>
+            <section xml:id="s.biblioid">
+               <title xmlns:db="http://docbook.org/ns/docbook">biblioid</title>
+               <example xmlns:db="http://docbook.org/ns/docbook">
+                  <title> frontmatter - TT_SANFRA-frontmatter.xml</title>
+                  <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                                 href="../../samples/frontmatter/TT_SANFRA-frontmatter.xml"
+                                 parse="text">
+                        <xi:fallback>SAMPLE MISSING: ../../samples/frontmatter/TT_SANFRA-frontmatter.xml</xi:fallback>
+                     </xi:include>
+                  </programlisting>
+               </example>
+               <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/biblioid.html">biblioid</link> with attribute <phrase role="attribute">class</phrase> set to "ISBN" to indicate the ISBN number of the book.</para>
+               <para>To capture multiple ISBN numbers for different editions of the book (such as printed vs ebook), use multiple <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/biblioid.html">biblioid</link> elements with <phrase role="attribute">condition</phrase> attribute and group the together using <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/biblioset.html">biblioset</link> element.</para>
+            </section>
+            <section xml:id="s.revhistory">
+               <title xmlns:db="http://docbook.org/ns/docbook">Revision history</title>
+               <para>To capture the revision history of the printed book, use <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/revhistory.html">revhistory</link> element.</para>
+            </section>
+         </section>
+         <section xml:id="s.author">
+            <title xmlns:db="http://docbook.org/ns/docbook">Authors, editors and publisher</title>
+            <example xmlns:db="http://docbook.org/ns/docbook">
+               <title> frontmatter - TT_SANFRA-frontmatter.xml</title>
+               <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                              href="../../samples/frontmatter/TT_SANFRA-frontmatter.xml"
+                              parse="text">
+                     <xi:fallback>SAMPLE MISSING: ../../samples/frontmatter/TT_SANFRA-frontmatter.xml</xi:fallback>
+                  </xi:include>
+               </programlisting>
+            </example>
+            <para>To capture the information about the main author, use a single <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/author.html">author</link> element inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/info.html">info</link> block.</para>
+            <para>To capture multiple authors, editors contributors etc, use multiple <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/author.html">author</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/editor.html">editor</link> elements and group them together using <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/authorgroup.html">authorgroup</link> element.</para>
+         </section>
+      </section>
+    
+      <section xml:id="s.appendix">
+         <title xmlns:db="http://docbook.org/ns/docbook">Appendices, copyright page, acknowledgments, inside covers</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> frontmatter - TT_SANFRA-frontmatter.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/frontmatter/TT_SANFRA-frontmatter.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/frontmatter/TT_SANFRA-frontmatter.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <para>Any front or back-matter book level construct that does not fit into the standard <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/part.html">part</link> / <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link> / <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> structure should be captured using the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/appendix.html">appendix</link> element.</para>
+         <para>Use the <phrase role="attribute">role</phrase> attribute to indicate the type of content captured, for example acknowledgments (see <xref linkend="s.role"/>).</para>
+      </section>
+    
+    
+    
+      <section xml:id="s.chapter">
+         <title xmlns:db="http://docbook.org/ns/docbook">Chapter</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> chapter - chapter.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/chapter/chapter.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/chapter/chapter.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> chapter - contents_animal.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/chapter/contents_animal.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link> should be the default top-level book division for content that runs over more than a single spread. It may contain a number of <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> elements, or nested <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> elements if more granular division is required.</para>
+      </section>  
+    
+    
+      <section xml:id="s.part">
+         <title xmlns:db="http://docbook.org/ns/docbook">Part elements</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> book_part - book.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/book_part/book.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/book_part/book.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> book_part - contents_animal.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/book_part/contents_animal.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Part.html">Part</link> elements are used to indicate parts of the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/book.html">book</link>. They should only be used when there are distinctive parts of the book above chapter level. If there is only one level of hierarchy, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link> elements should be used.</para>
+      </section>
+    
+      <section xml:id="s.article">
+         <title xmlns:db="http://docbook.org/ns/docbook">Article</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Article.html">Article</link> should only be used immediately below the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/part.html">part</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/book.html">book</link> level, and for portions of information that can be used standalone.</para>
+         <para>Article is sometimes equivalent to a page spread.</para>
+         <para>Nested <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link> or an <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link> inside a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link> is not allowed. If such a division is deemed to be helpful, use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> instead and apply the <phrase role="attrbiute">role</phrase> attribute with a value 'article'.</para>
+      </section>
+    
+      <section xml:id="s.glossary">
+         <title xmlns:db="http://docbook.org/ns/docbook">Glossary</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> glossary - glossary-submarine.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/glossary/glossary-submarine.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/glossary/glossary-submarine.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> glossary - glossary_1.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/glossary/glossary_1.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Glossary.html">Glossary</link> would normally be used as a child of the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/book.html">book</link> element.</para>
+         <para>If a glossary occurs at a lower level (such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link>), use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/glosslist.html">glosslist</link>.</para>
+      </section>
+    
+      <section xml:id="s.section">
+         <title xmlns:db="http://docbook.org/ns/docbook">Section elements</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> section - section.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/section/section.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/section/section.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> section - contents_animal.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/section/contents_animal.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Section.html">Section</link> elements are used to create logical subdivisions and to reflect the structure of the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/book.html">book</link>.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Section.html">Section</link> elements can be nested. It may be helpful to use stylesheets (XSLT ot CSS) or XML editing tool functions to ensure that the nesting is correct.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/section/section.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/section/contents_animal.jpg">Example</link>
+         </para>
+         <para>The <phrase role="attribute">role</phrase> attribute can be used to specify functions of a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> (see <xref linkend="s.role"/>).</para>
+         <para>
+            <phrase role="attribute">role="feature"</phrase> can be used to indicate standalone portions of information that can not be captured using <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/sidebar.html">sidebar</link>.</para>
+         <para>
+            <phrase role="attribute">role="entry"</phrase> can be used to capture blocks equivalent to reference book entries.</para>
+      </section>
+    
+      <section xml:id="s.sidebar">
+         <title xmlns:db="http://docbook.org/ns/docbook">Sidebar</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/sidebar.html">sidebar</link> should only be used to capture simple portions of information that are separated from the main flow of text.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/sidebar/sidebar.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/sidebar/feature.jpg">Example</link>
+         </para>
+         <para>In more complex scenarios, where additional structure needs to be captured, use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> with <phrase role="attribute">role="feature"</phrase> attribute value.</para>
+      </section>
+    
+      <section xml:id="s.titleabbrev">
+         <title xmlns:db="http://docbook.org/ns/docbook">Title Abbreviations</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> titleabbrev - titleabbrev.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/titleabbrev/titleabbrev.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/titleabbrev/titleabbrev.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> titleabbrev - titleabbrev.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/titleabbrev/titleabbrev.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Use the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/titleabbrev.html">titleabbrev</link> element in block constructs such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> if there is a need to capture an abbreviated version of a title.</para>
+         <para>Note this should not be used in place of <phrase role="attribute">xreflabel</phrase> (see <xref linkend="s.xref"/>).</para>
+      </section>
+    
+      <section xml:id="s.xref">
+         <title xmlns:db="http://docbook.org/ns/docbook">Cross-references</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> crossref - crossref.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/crossref/crossref.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/crossref/crossref.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> crossref - xref.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/crossref/xref.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>The <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> element with the <phrase role="attribute">linkend</phrase> attribute should be used to for internal document links and cross-references. This will allow the link text to be generated from the target element (usually from the title text).</para>
+         <para>Cross-references should point to the block elements such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> and not their respective <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link> elements.</para>
+         <para>If an alternative or abbreviated link text is needed, use <phrase role="attribute">xreflabel</phrase> attribute on the target element.</para>
+         <para>See <link linkend="s.meta">metadata</link> section for instances where the content linked by a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> should be meta-tagged.</para>
+         <para>Use the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/link.html">link</link> element with the  <phrase role="attribute">linkend</phrase> attribute when the rendering of the cross-reference should not be generated.</para>
+         <para>For external links (such as a website url) use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/link.html">link</link> with a <phrase role="attribute">xlink:href</phrase> attribute.</para>
+         <para>If useful to mark-up a website url semantically, but render as a plain text string, use the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/uri.html">uri</link> element.</para>
+      </section>
+    
+      <section xml:id="s.footnote">
+         <title xmlns:db="http://docbook.org/ns/docbook">Footnotes</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> footnote - footnote.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/footnote/footnote.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/footnote/footnote.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> footnote - footnote.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/footnote/footnote.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>To capture footnotes use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/footnote.html">footnote</link> element inline in the text.</para>
+         <para>The whole content of the footnote should be captured within the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/footnote.html">footnote</link> element.</para>
+         <para>The <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/footnote.html">footnote</link> element usually generates a mark (a superscript symbol or number) at the place in the flow of the document in which it occurs. The body of the footnote is then presented elsewhere, typically at the bottom of the page.</para>
+      </section>
+    
+      <section xml:id="s.fraction">
+         <title xmlns:db="http://docbook.org/ns/docbook">Mathematical formulas, fractions, ranges and units</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/informalequation.html">informalequation</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mathphrase.html">mathphrase</link> element should be used to capture simple mathematical values, formulas, numbers, fractions, equations and similar numerical expressions. </para>
+         <para>
+            <phrase role="attribute">Role</phrase> attribute on the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mathphrase.html">mathphrase</link> can be used to indicate parts of the expression such as fraction.</para>
+         <para>For non inline math, use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/equation.html">equation</link> element</para>
+         <para>For complex formulas use MathML or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link> to provide verbatim rendering.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/alt.html">alt</link> element inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/equation.html">equation</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/inlineequation.html">inlineequation</link> can be used to indicate the most simple form of the expression.</para>
+         <section xml:id="s.range">
+            <title xmlns:db="http://docbook.org/ns/docbook">Ranges</title>
+            <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/range.html">range</link> element to indicate the beginning and the end of a range.</para>
+            <para>Use <phrase role="attribute">class="startofrange"</phrase> and <phrase role="attribute">xml:id</phrase> attribute to indicate the beginning of a range.</para>
+            <para>Use <phrase role="attribute">class="endofrange"</phrase> and <phrase role="attribute">startref</phrase> attribute to point to the <phrase role="attribute">xml:id</phrase> of the start of a range and indicate the end of a range.</para>
+            <para>
+               <link role="sample"
+                     xlink:href="http://dk-schema.googlecode.com/hg/samples/fraction/unit.xml">Example</link>
+            </para>
+            <para>
+               <link role="screenshot"
+                     xlink:href="http://dk-schema.googlecode.com/hg/screenshots/metadata/entry_animal.jpg">Example</link>
+            </para>
+         </section>
+         <section xml:id="s.units">
+            <title xmlns:db="http://docbook.org/ns/docbook">Units</title>
+            <example xmlns:db="http://docbook.org/ns/docbook">
+               <title> fraction - unit.xml</title>
+               <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../samples/fraction/unit.xml"
+                              parse="text">
+                     <xi:fallback>SAMPLE MISSING: ../../samples/fraction/unit.xml</xi:fallback>
+                  </xi:include>
+               </programlisting>
+            </example>
+            <para>In the event that it is necessary to apply very granular tagging to
+                numerical values (such as weights and measures), use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element to isolate each value,
+                and <phrase role="dk.attribute">metaref</phrase> attribute and a metadata preset item/group to define the standard unit of
+                measurement.</para>
+            <para>For example, units of measure as defined by International System of Units (SI) may
+                be added as an item/group in metadata preset XML. </para>
+            <para>Note it is not expected that such granular tagging will be the norm. Often it is
+                better (and far-less labour intensive), to isolate these values programmatically
+                (e.g. through a regular expression algorithm), than to tag each value upfront. </para>
+            <para>See <xref linkend="s.meta"/> and <xref linkend="s.range"/>.</para>
+            <para>
+               <link role="screenshot"
+                     xlink:href="http://dk-schema.googlecode.com/hg/screenshots/metadata/entry_animal.jpg">Example</link>
+            </para>
+         </section>
+      </section>
+    
+      <section xml:id="s.emphasis">
+         <title xmlns:db="http://docbook.org/ns/docbook">Highlighting</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> emphasis - emphasis.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/emphasis/emphasis.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/emphasis/emphasis.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> emphasis - emphasis.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/emphasis/emphasis.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/emphasis.html">emphasis</link> element to capture text that should have a different visual representation.</para>
+         <para>The <phrase role="attribute">rend</phrase> attribute can be used to give a hint to the rendering engine as to how the text may be displayed (e.g. bold or italic).</para>
+      </section>
+    
+   
+    
+      <section xml:id="s.lists">
+         <title xmlns:db="http://docbook.org/ns/docbook">Lists</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> lists - lists.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../samples/lists/lists.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/lists/lists.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> lists - itemized_list_1.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/lists/itemized_list_1.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Care must be taken in choosing the most simple and appropriate list type.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/simplelist.html">simplelist</link> should be sufficient in majority of the cases. The <phrase role="attribute">type</phrase> attribute can be used to further specify the presenetation of the list.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/itemizedlist.html">itemizedlist</link> should normally be used for bulleted lists.</para>
+         <para>A <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element can be used to highlight a heading or a keyword inside a list.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Variablelist.html">Variablelist</link> should only be used to represent a list of term definitions.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/segmentedlists.html">segmentedlists</link> should only be used as a simple alternative to represent lists or series of data and only in basic cases where there are no empty fields (cells) and there is a one to one mapping between every item in the segmented list and its associated heading.</para>
+         <para>The following list types are allowed in DK-Schema:</para>
+         <variablelist>
+            <varlistentry>
+                <term>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/simplelist.html">simplelist</link>
+               </term>
+                <listitem>
+                  <para>An undecorated list of single words or short phrases.</para>
+               </listitem>
+            </varlistentry>
+            
+            <varlistentry>
+                <term>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/itemizedlist.html">itemizedlist</link>
+               </term>
+                <listitem>
+                  <para>A list in which each entry is marked with a bullet or other dingbat.</para>
+                  <para>That bullet or dingbat can be specified via mark attribute that point to the URI of the image.</para>
+               </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/orderedlist.html">orderedlist</link>
+               </term>
+                <listitem>
+                  <para>A list in which each entry is marked with a sequentially incremented <link xmlns:db="http://docbook.org/ns/docbook"
+                           xlink:href="http://www.docbook.org/tdg/en/html/label.html">label</link>.</para>
+                    <para>It possible to specify <link xmlns:db="http://docbook.org/ns/docbook"
+                           xlink:href="http://www.docbook.org/tdg/en/html/orderedlist.html">orderedlist</link> 
+                     <link xmlns:db="http://docbook.org/ns/docbook"
+                           xlink:href="http://www.docbook.org/tdg/en/html/label.html">label</link> to be arabic, roman and alphabetic, using <phrase role="attribute">numeration</phrase> attribute.</para>
+                    <para>The <phrase role="attribute">continuation</phrase> attribute can specify to continue, restart or inherit the numbering from previous or parent list.</para>
+                    <para>For more details please refer to <link xlink:href="http://www.docbook.org/tdg5/en/html/orderedlist.html">The Definitive Guide Ordered List</link> page.</para>
+               </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/variablelist.html">variablelist</link>
+               </term>
+                <listitem>
+                  <para>A list in which each entry is composed of a set of one or more terms and an associated description.</para>
+               </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/segmentedlist.html">segmentedlist</link>
+               </term>
+                <listitem>
+                  <para>A segmented list, a list of sets of elements.</para>
+               </listitem>
+            </varlistentry>
+            
+            
+            
+        </variablelist>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/lists/itemized_list_2.png">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/lists/orderedlist.gif">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/lists/segmentedlist.gif">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/lists/simplelist.gif">Example</link>
+         </para>
+      </section>
+    
+      <section xml:id="s.keys">
+         <title xmlns:db="http://docbook.org/ns/docbook">Keys</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> key - key_encaqu.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/key/key_encaqu.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/key/key_encaqu.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <para>A <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/key.html">key</link> is a textual or a graphical list that is referred from another location in the document.</para>
+         <para>To capture a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/key.html">key</link> use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/variablelist.html">variablelist</link> with attribute <phrase role="attribute">role="key"</phrase>.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/key/key_fishbrain.xml">Example</link>
+         </para>
+         <para>Attribute <phrase role="attribute">xreflabel</phrase> can be used to define a title of the key (<link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/variablelist.html">variablelist</link>) or the key entry (<link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/listitem.html">listitem</link>). If no value is specified, a default word "Key" may be rendered by the transformation toolkit in place of the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link>.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Variablelist.html">Variablelist</link> for key must have an xml:id attribute.</para>
+         <para>All the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/varlistentry.html">varlistentry</link> elements must have xml:id attribute.</para>
+         <para>If the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/key.html">key</link> lists graphics, use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link> inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/listitem.html">listitem</link> to capture that, give that <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link> and <phrase role="attribute">xml:id</phrase> and link directly to that <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link>.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/key/key_encaqu.xml">Example</link>
+         </para>
+         <para>The <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/key.html">key</link> should be placed at the beginning of the relevant XML fragment, usually the beginning of a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link> or a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link> or <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link> 
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/caption.html">caption</link>.</para>
+         <para>To refer to a defined <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/key.html">key</link> use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> element with a <phrase role="attribute">role</phrase> attribute, so that custom processing can applied.</para>
+         <para>Use <phrase role="attribute">role="keyref"</phrase> to produce a link to the key.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/key/key_brainweight.xml">Example</link>
+         </para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/role=&#34;key_include&#34;.html">role="key_include"</link> to include/render that key or key entry where the link is.</para>
+      </section>
+    
+      <section xml:id="s.graphics">
+         <title xmlns:db="http://docbook.org/ns/docbook">Graphics</title>
+         <section xml:id="s.mediaobject">
+            <title xmlns:db="http://docbook.org/ns/docbook">Media Objects</title>
+            <para>All media such as photos, graphs and the associated annotations, heads, and captions should be captured using <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link> element and its children.</para>
+            <para>
+               <link role="sample"
+                     xlink:href="http://dk-schema.googlecode.com/hg/samples/graphics/mediaobject-encaqu.xml">Example</link>
+            </para>
+            <para>
+               <link role="screenshot"
+                     xlink:href="http://dk-schema.googlecode.com/hg/screenshots/graphics/illustration_encaqu.jpg">Example</link>
+            </para>
+            <para>If the graphic object must be displayed inline, use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/inlinemediobject.html">inlinemediobject</link>.</para>
+            <para>
+               <link role="sample"
+                     xlink:href="http://dk-schema.googlecode.com/hg/samples/graphics/inlinemediaobject.xml">Example</link>
+            </para>
+            <para>
+               <link role="screenshot"
+                     xlink:href="http://dk-schema.googlecode.com/hg/screenshots/graphics/inline_icon_iPod.jpg">Example</link>
+            </para>
+            <para>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/Textobject.html">Textobject</link> can be used to provide a fallback text description of the object and any text that is not rendered along with the actual graphic media.</para>
+            <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/caption.html">caption</link> for the image captions and other text that needs to be displayed alongside the media.</para>
+            <para>For images with callouts, see <xref linkend="s.callouts"/>.</para>
+         </section>
+         <section xml:id="s.illustrationgroup">
+            <title xmlns:db="http://docbook.org/ns/docbook">Groups of illustrations</title>
+            <example xmlns:db="http://docbook.org/ns/docbook">
+               <title> graphics - informalfigure.xml</title>
+               <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                              href="../../samples/graphics/informalfigure.xml"
+                              parse="text">
+                     <xi:fallback>SAMPLE MISSING: ../../samples/graphics/informalfigure.xml</xi:fallback>
+                  </xi:include>
+               </programlisting>
+            </example>
+            <figure xmlns:db="http://docbook.org/ns/docbook">
+               <title> graphics - BB_illust_group.png</title>
+               <mediaobject>
+                  <imageobject>
+                     <imagedata scalefit="1" width="100%" contentdepth="100%"
+                                fileref="../../screenshots/graphics/BB_illust_group.png"
+                                format="png"/>
+                  </imageobject>
+               </mediaobject>
+            </figure>
+            <para>To logically group media objects such as illustrations use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/figure.html">figure</link>.</para>
+            <para>
+               <link role="sample"
+                     xlink:href="http://dk-schema.googlecode.com/hg/samples/graphics/mediaobject-encaqu.xml">Example</link>
+            </para>
+            <para>If the group of illustrations does not have a <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link>, use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/informalfigure.html">informalfigure</link>.</para>
+         </section>
+         <section xml:id="s.callouts">
+            <title xmlns:db="http://docbook.org/ns/docbook">Callouts</title>
+            <example xmlns:db="http://docbook.org/ns/docbook">
+               <title> graphics - butterfly.xml</title>
+               <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                              href="../../samples/graphics/butterfly.xml"
+                              parse="text">
+                     <xi:fallback>SAMPLE MISSING: ../../samples/graphics/butterfly.xml</xi:fallback>
+                  </xi:include>
+               </programlisting>
+            </example>
+            <para>For images with annotations use <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/imageobjectco.html">imageobjectco</link> inside the <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/mediaobject.html">mediaobject</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/calloutlist.html">calloutlist</link> with <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/callout.html">callout</link> elements inside.</para>
+            <para>The <phrase role="attribute">arearefs</phrase> attribute in a <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/callout.html">callout</link> element is mandatory to uniquely identify a <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/callout.html">callout</link>.</para>
+            <para>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/areaspec.html">areaspec</link> is an optional element available for use recording the areas on a graphic that a <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/callout.html">callout</link> relates to.</para>
+            <para> When an <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/areaspec.html">areaspec</link> is defined it will associate the <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/callout.html">callout</link> with an area of an image.</para>
+         </section>
+      </section>
+    
+      <section xml:id="s.procedure">
+         <title xmlns:db="http://docbook.org/ns/docbook">Procedure</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> procedure - procedure-centrifuge.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/procedure/procedure-centrifuge.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/procedure/procedure-centrifuge.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> procedure - procedure-animal.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/procedure/procedure-animal.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/procedure/procedure-animal.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> procedure - procedure.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/procedure/procedure.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/procedure/procedure.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> procedure - procedure_centrifuge.png</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/procedure/procedure_centrifuge.png"
+                             format="png"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> procedure - Animal_illust_group.png</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/procedure/Animal_illust_group.png"
+                             format="png"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> procedure - stepbystep_survival.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/procedure/stepbystep_survival.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/procedure.html">procedure</link> element to capture all lists where order is important, such as 'step by step', cooking instructions and other types of sequences.</para>
+         <para>When the numbering needs to be preserved rather than generated, please use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element with a <phrase role="attribute">role="stepnum"</phrase> to specify the glyph associated with the step.</para>
+      </section>
+    
+      <section xml:id="s.phrase">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase</title>
+         <para>Where possible, use the best matching inline element to capture meaning; for instance <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/foreignphrase.html">foreignphrase</link> for latin words.</para>
+         <para>Where no useful element is present, the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element and an appropriate <phrase role="attribute">role</phrase> attribute value can be used.</para>
+         <para>It may be useful to combine <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> with dk metadata attributes; see <link linkend="s.meta">metadata</link> section.</para>
+         <para>The <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element may be used to indicate an inline heading or keywords.</para>
+      </section>
+    
+      <section xml:id="s.role">
+         <title xmlns:db="http://docbook.org/ns/docbook">role attribute</title>
+         <para>The <phrase role="attribute">role</phrase> attribute may be used re-define the semantics of any docbook element, this may occur on block and inline elements</para>
+         <para>It may be useful to combine <phrase role="attribute">role</phrase> with dk metadata attributes; see <link linkend="s.meta">metadata</link> section.</para>
+         <para>The enumeration of <phrase role="attribute">role</phrase> values and rules for their usage will be validated with a DK schematron.</para>
+      </section>
+    
+      <section xml:id="s.para">
+         <title xmlns:db="http://docbook.org/ns/docbook">Paragraphs</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> element is the default element to represent blocks of text.</para>
+         <para>DK Schema <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> element is equivalent to a Docbook <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/simplepara.html">simplepara</link> model.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> should only contain text and inline formatting elements.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> should not contain structural elements such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/section.html">section</link>.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> should not contain block level elements such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/blockquote.html">blockquote</link> and in such cases additional blocks should be captured outside of <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> element.</para>
+      </section>
+    
+    
+    
+    
+      <section xml:id="s.formalpara">
+         <title xmlns:db="http://docbook.org/ns/docbook">Formal Paragraph</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> formalpara - formalpara.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/formalpara/formalpara.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/formalpara/formalpara.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> formalpara - list_item_phrase.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/formalpara/list_item_phrase.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>A formal paragraph - <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/formalpara.html">formalpara</link> should be used to capture blocks of text with an inline <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link> or a heading.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/formalpara.html">formalpara</link> requires that both <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> elements are present and non-empty.</para>
+         <para>In cases where both the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link> and the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> are not always consistently present, a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/para.html">para</link> with a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> should be used to capture the content.</para>
+      </section>
+    
+      <section xml:id="s.qandaset">
+         <title xmlns:db="http://docbook.org/ns/docbook">Questions and Answers (Q&amp;A)</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> qandaset - qandaset.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/qandaset/qandaset.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/qandaset/qandaset.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> qandaset - qandaset.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/qandaset/qandaset.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>To handle sets of questions and answers, use Docbook <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/qandaset.html">qandaset</link> model.</para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/qandaentry.html">qandaentry</link> for each entry and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/question.html">question</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/answer.html">answer</link> respectively.</para>
+      </section>
+    
+      <section xml:id="s.table">
+         <title xmlns:db="http://docbook.org/ns/docbook">Tables</title>
+         <para>CALS Table format is used to capture any tabular data.</para>
+         <para>CALS Table model allows for complex <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/table.html">table</link> structures such as <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/colspan.html">colspan</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/rowspan.html">rowspan</link> and it is easy to convert to alternative representations such as HTML Table or CSV.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Table.html">Table</link> should only be used to capture actual tabular data such as statistics or similar two-dimensional data-representations.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Table.html">Table</link> should not be used for presentational purposes only such as fixing layout issues.</para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/informaltable.html">informaltable</link> if the table has no <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link> that is visible and should be rendered or normal <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/table.html">table</link> element for a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/table.html">table</link> with a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link>.</para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/tgroup.html">tgroup</link> to specify number of columns and default formatting.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Colspec.html">Colspec</link> is optional and is used to specify the width, sequence etc of a column. It is
+            required if you're defining column spans. If you are declaring a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/colspec.html">colspec</link>, do so for all
+            columns and you have to provide <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/colname.html">colname</link> for all columns.</para>
+         <para>Use <phrase role="attribute">namest</phrase> and <phrase role="attribute">namend</phrase> attributes on <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/entry.html">entry</link> element to specify cells spanning multiple
+            columns.</para>
+         <para>Use <phrase role="attribute">morerows</phrase> attribute to specify vertical spans.</para>
+         <para>For all other cases please refer to <link xlink:href="http://www.docbook.org/tdg/en/html/table.html">TDG section on CALS</link> and <link xlink:href="http://www.oasis-open.org/specs/tm9502.html">CALS Table Model Specification</link>.</para>
+      </section>
+    
+      <section xml:id="s.quote">
+         <title xmlns:db="http://docbook.org/ns/docbook">Quotations</title>
+         <example xmlns:db="http://docbook.org/ns/docbook">
+            <title> blockquote - blockquote_epigraph.xml</title>
+            <programlisting language="xml"><?db-font-size 7pt?><xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                           href="../../samples/blockquote/blockquote_epigraph.xml"
+                           parse="text">
+                  <xi:fallback>SAMPLE MISSING: ../../samples/blockquote/blockquote_epigraph.xml</xi:fallback>
+               </xi:include>
+            </programlisting>
+         </example>
+         <figure xmlns:db="http://docbook.org/ns/docbook">
+            <title> blockquote - epigraph.jpg</title>
+            <mediaobject>
+               <imageobject>
+                  <imagedata scalefit="1" width="100%" contentdepth="100%"
+                             fileref="../../screenshots/blockquote/epigraph.jpg"
+                             format="jpg"/>
+               </imageobject>
+            </mediaobject>
+         </figure>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/quote.html">quote</link> element to capture inline quotations, citations and similar text structures.</para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/blockquote.html">blockquote</link> to capture quotations that are logically separate from the rest of the text and should be rendered as a separate block.</para>
+         <para>Where quotation is the first element in a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/chapter.html">chapter</link>, <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/article.html">article</link> or a similar division, this is usally an <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/epigraph.html">epigraph</link> and should be captured as an <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/epigraph.html">epigraph</link> element.</para>
+         <para>Do not include literal quotation characters in quotes. Their appeareance can be controlled when publishing via XSL or otherwise.</para>
+      </section>
+    
+    
+    
+      <section xml:id="s.profiling">
+         <title xmlns:db="http://docbook.org/ns/docbook">Profiling</title>
+         <para>Profiling is a technique to conditionally filter out portions of XML.</para>
+         <para>Use <phrase role="attribute">condition</phrase> attribute on an element to mark it for profiling.</para>
+         <para>This is done by applying a <phrase role="attribute">condition</phrase> attribute at the lowest possible level.</para>
+         <para>If there is no suitable element to apply the profiling, wrap the XML or text fragment in a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element, to keep it at the lowest level. </para>
+         <para>Every element that has profiling applied (<phrase role="attribute">condition</phrase> attribute) needs to have a <phrase role="attribute">cref</phrase> attribute to uniquely identify that XML portion.</para>
+         <para>If two blocks of XML represent the same content for different outputs, they need to have the same <phrase role="attribute">cref</phrase> attribute value.</para>
+         <para>Nesting of profiling should be avoided in general to prevent confusing results. Nesting for the same type of condition will not work.</para>
+         <para>For example if a whole sentence is marked as print only (<phrase role="attribute">condition="prt"</phrase>) and a word inside as digital, the digital part will never show up in digital output as the whole sentence is profiled out. </para>
+         <para>Profiling should be used sparsely  and only where necessary as it duplicates the XML and can have unforeseen consequences.</para>
+         <para>Linking: Conditional content might get stripped upon profiling. if possible links should point to parent element that isn't profiled. If that's not possible, stylesheet should translate links to the equivalent elements by matching on <phrase role="attribute">cref</phrase> values.</para>
+         <para>Appropriate use cases include:</para>
+         <simplelist>
+            
+            <member>Output specific content: print vs digital. In this case point links and xrefs to digital variant or parent element.</member>
+            <member>Imperial vs Metric measurements. In this case, it can be decided to include only Metric </member>
+            
+        </simplelist>
+      </section>
+    
+      <section xml:id="s.meta">
+         <title xmlns:db="http://docbook.org/ns/docbook">Metadata Presets</title>
+         <para>A custom functionality has been introduced in DK Schema to allow straightforward classification and tagging of chunks of content using predefined presets.</para>
+         <para>Meta classification can be applied in the following ways:
+            <variablelist>
+                <varlistentry>
+                    <term>
+                     <link xmlns:db="http://docbook.org/ns/docbook"
+                           xlink:href="http://www.docbook.org/tdg/en/html/meta.html">meta</link> element in an <link xmlns:db="http://docbook.org/ns/docbook"
+                           xlink:href="http://www.docbook.org/tdg/en/html/info.html">info</link> block</term>
+                    <listitem>
+                     <para>This is the recommended behaviour. This means that the metadata will apply the the whole block.</para>
+                        <para>Multiple <link xmlns:db="http://docbook.org/ns/docbook"
+                              xlink:href="http://www.docbook.org/tdg/en/html/meta.html">meta</link> elements are allowed.</para>
+                        <para>Use <phrase role="attribute">metaref</phrase> and point to the <phrase role="attribute">xml:id</phrase> in the meta classification defined in the <phrase role="filename">meta.xml</phrase>
+                     </para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>
+                     <phrase role="attribute">metaref</phrase> attrbute on any element</term>
+                    <listitem>
+                     <para>If the meta classification needs to be applied for a small portion of XML use <phrase role="attribute">metaref</phrase> attribute on any element.</para>
+                        <para>If there is no suitable element, use <link xmlns:db="http://docbook.org/ns/docbook"
+                              xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> element with a <phrase role="attribute">metaref</phrase> attribute.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>
+                     <phrase role="attribute">metaref</phrase> on a <link xmlns:db="http://docbook.org/ns/docbook"
+                           xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> element</term>
+                    <listitem>
+                     <para>If a <link xmlns:db="http://docbook.org/ns/docbook"
+                              xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> element is used to generate an image or text found in a key (see <link linkend="s.keys">keys</link>), and it is desirable to further classify the key information with metadata, the <phrase role="attribute">metaref</phrase> attribute must be applied to the <link xmlns:db="http://docbook.org/ns/docbook"
+                              xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> element.</para>
+                    </listitem>
+                </varlistentry>
+                
+                
+            </variablelist>
+            
+        </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/metadata/metadata-animal.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/metadata/entry_animal.jpg">Example</link>
+         </para>
+         <section xml:id="metafile">
+            <title>Meta XML file</title>
+            <para>The meta classification presets are stored in the <phrase role="filename">meta.xml</phrase> and can be extended by adhering to the <phrase role="filename">meta.rnc</phrase> RelaxNG schema.</para>
+            <para>The <phrase role="filename">meta.xml</phrase> file has a number of <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/item.html">item</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/group.html">group</link> elements that define a given classification.</para>
+            <para>At minimum every <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/item.html">item</link> and <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/group.html">group</link> needs to have a unique <phrase role="attribute">xml:id</phrase> attribute that will be used to refer to that classification from individual XML files as well as a <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/name.html">name</link>.</para>
+            <para>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/description.html">description</link> helps by giving more details about a given classification.</para>
+            <para>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/source.html">source</link> identifies the origin of classification, for example: "Rough Guides", "Navteq", "Natural History DB" etc..</para>
+            
+        </section>
+      </section>
+    
+    
+    
+      <section xml:id="s.geo">
+         <title xmlns:db="http://docbook.org/ns/docbook">Geocoding</title>
+         <para>In order to associate geographic location with a portion of XML <phrase role="attribute">lat</phrase> and <phrase role="attribute">long</phrase> attributes are allowed on most elements.</para>
+      </section>
+    
+      <section xml:id="custom.dk">
+        <title>Customization</title>
+        
+        <para>From the very beginning, one of the goals of DK-Schema has been
+            that users should be able to produce customizations that are either
+            subsets of extensions of common Dk-Schema.</para>
+        
+        
+        
+        <para>In DK-Schema v2, we hope to take advantage of RELAX NGs more
+            robust design (and it's lack of pernicious determinism rules) to make
+            customization easier.</para>
+        
+        <para>Three schema design patterns in the underlying DocBook v5 design get us most of the way there.</para>
+        
+        <section xml:id="db.s.patnames">
+            <title>Logical Groupings</title>
+            
+            <para>DocBook elements, particularly the inlines, can be divided into
+                broad classes: general purpose, technical, error-related, operating-system
+                related, bibliographic, publishing, etc. In DocBook V5.0, these are collected
+                together in named patterns.</para>
+            
+            <para>To add a new inline, <literal>endpoint</literal> for example,
+                to the list of technical inlines, one need only extend the appropriate
+                pattern. If an element should appear in several classes, they can all
+                be extended in the same way:</para>
+            
+            <programlisting>db.technical.inlines |= endpoint
+                db.programming.inlines |= endpoint
+                db.os.inlines |= endpoint</programlisting>
+            
+            <para>Much the same concept was used in DocBook V4.x, where instead of
+                patterns we had parameter entities. However, the constraints of DTD
+                validation severely limit the circumstances under which an element can
+                appear twice in a content model. That meant that adding an element to
+                one parameter entity might make it an error to add it to another. Such
+                constraints do not exist in RELAX NG which greatly simplifies the
+                customization.</para>
+        </section>
+        
+        <section xml:id="db.s.elemdefs">
+            <title>Element Definitions</title>
+            
+            <para>Each element in DocBook V5.0 is defined by its own pattern. To
+                change the content model of an element, only that pattern need be
+                redefined. To remove an element from DocBook, that pattern can be
+                redefined as <quote>
+                  <literal>notAllowed</literal>
+               </quote>.</para>
+            
+        </section>
+        
+        <section xml:id="db.s.attrdefs">
+            <title>Attribute Definitions</title>
+            
+            <para>Each attribute list in DocBook V5.0 is defined by its own
+                pattern. To change the list of attributes available on an element,
+                only that pattern need be redefined. To remove all the attributes,
+                that pattern can be redefined as
+                <quote>
+                  <literal>empty</literal>
+               </quote>.</para>
+            
+        </section>
+      </section>
+    
+   </chapter>
+   <chapter>
+     <title>Phrase Book</title>
+     <section xml:id="pb_usage">
+         <title>When to use?</title>
+         <para>Phrase Book variant should be used for all phrasebooks, dictionaries and multilingual content.</para>
+         <para>It allows typical Common DK-Schema content plus phrase book specific content based on TEI P5 dictionary model.</para>
+         <para>If no specific phrasebook element exists, use equivalent Common DK-Schema / Docbook element, for example <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/quote.html">quote</link>.</para>
+         <para>To clarify the usage the following should be established:
+         <procedure>
+               <step>
+                  <para>What is the native language of the audience?</para>
+                  <para>This language should be considered local.</para>
+                 <para>Any portions of phrase entries in the local language should normally be captured inside <xref xlink:href="#s.sense"/> structure and its children such as <xref xlink:href="#s.def"/> regardless of the order of appearance.</para>
+               </step>
+               <step>
+                  <para>What is the language the audience doesn't understand?</para>
+                 <para>This language should be considered foreign.</para>
+                 <para>Any portions of phrase entries in the foreign language should normally be captured inside <xref xlink:href="#s.form"/>structure and its children such as <xref xlink:href="#s.orth"/> regardless of the order of appearance.</para>
+               </step>
+            </procedure>
+         </para>
+         <para>For example in a book for English readers with foreign phrases in German, all German phrases should be captured inside <xref xlink:href="#s.form"/>structure and its children and their English equivalents inside <xref xlink:href="#s.sense"/> structure and its children.</para>
+         <para role="external_link">For more information on TEI p5 architecture please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DI.html">TEI Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/rg_phrasebook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/RGPB_GERMAN_b.gif">Example</link>
+         </para>
+     </section>
+     
+     <section xml:id="s.phrase_entry">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Entry</title>
+         <para>This is the main block and wrapper for a phrase entry.</para>
+         <para>A typical phrase entry should ideally consist of at least one portion in the source language using the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/form.html">form</link> element and at least one portion in target language using  the <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/sense.html">sense</link> element.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.phrase_xref">
+         <title xmlns:db="http://docbook.org/ns/docbook">Crossreferencing phrase entries</title>
+         <para>Whenever there is a crossreference inside a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase_entry.html">phrase_entry</link> element, use standard Docbook linking elements: <xref xlink:href="#s.xref"/>
+         </para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/xref.html">xref</link> for links to other portions of XML and <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/link.html">link</link> to point ot non-resolvable destination such as pages or parts of an image.</para>
+         <para>A <phrase role="attribute">role</phrase> attribute value of <phrase role="attribute">role="phrase_entry_include"</phrase> can be used to specify that the link phrase entry or its portion should be copied and included inline.</para>
+         <para>A <phrase role="attribute">role</phrase> attribute value of <phrase role="attribute">role="phrase_entry_ref"</phrase> can be used to specify that the link phrase entry or its portion should be referenced and a hyperlink created.</para>
+      </section>
+     
+     <section xml:id="s.form">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Form</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Form.html">Form</link> element groups all the information on the written and spoken forms of one headword.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Form.html">Form</link> should be used to capture content foreign to the audience, for more explanation go to: <xref xlink:href="#s.phrase_entry"/>
+         </para>
+         <para role="external_link">For more information on TEI p5 form please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-form.html">TEI Form Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     <section xml:id="s.inline_phrase_entry">
+         <title xmlns:db="http://docbook.org/ns/docbook">Inline Phrase Entry</title>
+         <para>This is the inline version of a phrase entry.</para>
+         <para>See <xref xlink:href="#s.phrase_entry"/> for a full definition.</para>
+         <para>The inline version of the phrase entry is to be used inside blocks such as <xref xlink:href="#s.para"/> or tables and the processing systems will by default not introduce any newlines or formatting.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.sense">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Sense</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Sense.html">Sense</link> element groups together all information relating to one word sense in a dictionary entry, for example definitions, examples, and translation equivalents.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Form.html">Form</link> should be used to capture content local to the audience, for more explanation go to: <xref xlink:href="#s.phrase_entry"/>
+         </para>
+         <para>Whenever possible use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/def.html">def</link> to include the definition or the translation of the phrase.</para>
+         <para role="external_link">For more information on TEI p5 sense please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sense.html">TEI Sense Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.def">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Definition</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Def.html">Def</link> element contains definition text in a dictionary entry.</para>
+         <para>Whenever possible use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/def.html">def</link> inside <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/sense.html">sense</link> element to include the definition or the translation of the phrase.</para>
+         <para role="external_link">For more information on TEI p5 def please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-def.html">TEI Def Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.usg">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Usage</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Usg.html">Usg</link> element contains usage or an example of a phrase text in an entry.</para>
+         <para>Whenever possible use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/usg.html">usg</link> inside <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/sense.html">sense</link> element to include the usage of the phrase.</para>
+         <para role="external_link">For more information on TEI p5 usg please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-usg.html">TEI Usg Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/rg_phrasebook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/RGPB_GERMAN_b.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.orth">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Ortographic Form</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Orth.html">Orth</link> gives the orthographic form of a dictionary headword or a phrase.</para>
+         <para>Use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/orth.html">orth</link> to capture the main form of the phrase in the original or source language.</para>
+         <para>Whenever possible use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/orth.html">orth</link> inside <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/form.html">form</link> element.</para>
+         <para role="external_link">For more information on TEI p5 orth please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orth.html">TEI Orth Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.pron">
+         <title xmlns:db="http://docbook.org/ns/docbook">Phrase Pronounciation</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Pron.html">Pron</link> contains the pronunciation(s) of the word.</para>
+         <para>Whenever possible use <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/pron.html">pron</link> inside <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/form.html">form</link> element.</para>
+         <para role="external_link">For more information on TEI p5 pron please go to: <link role="reference"
+                  xlink:href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pron.html">TEI Pron Reference</link>
+         </para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/EW_ChinesePhraseBook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/15MinutesChinese.gif">Example</link>
+         </para>
+      </section>
+     
+     <section xml:id="s.gramGrp">
+         <title xmlns:db="http://docbook.org/ns/docbook">Grammatical Classification</title>
+         <para>Every phrase entry can be classified in the context of part of speech, number and gender. This classification should only be applied once in a given <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Phrase_entry.html">Phrase_entry</link> element.</para>
+         <para>The classification should be grouped under <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/gramGrp.html">gramGrp</link> element.</para>
+         <para>The predefined classifications are:
+         <simplelist>
+               <member>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/partofspeech.html">partofspeech</link>
+               </member>
+               <member>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/phrase_number.html">phrase_number</link>
+               </member>
+               <member>
+                  <link xmlns:db="http://docbook.org/ns/docbook"
+                        xlink:href="http://www.docbook.org/tdg/en/html/phrase_gender.html">phrase_gender</link>
+               </member>
+            </simplelist>
+         </para>
+         <para>If necssary further classification can be specified by using <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/phrase.html">phrase</link> with a <phrase role="attribute">role</phrase> attribute inside a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/gramGrp.html">gramGrp</link> element.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/phrasebook/rg_phrasebook.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/phrasebook/RGPB_GERMAN_b.gif">Example</link>
+         </para>
+      </section>
+     
+   </chapter>   
+ 
+   <chapter>
+     <title>Cookery</title>
+     <section xml:id="cookery_usage">
+         <title>Using Cookery Module</title>
+         <para>
+            DK Schema Cookery variant should be used to capture any book containing recipies.
+         </para>
+         <para>Typicaly, each recipe should be captured using <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/recipe.html">recipe</link>.</para>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Recipe.html">Recipe</link> needs to have a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/title.html">title</link> and details about the recipe itself, such as:</para>
+         <simplelist>
+             <member>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/ingredients.html">ingredients</link>
+            </member>
+             <member>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/nutrition.html">nutrition</link>
+            </member>
+             <member>
+               <link xmlns:db="http://docbook.org/ns/docbook"
+                     xlink:href="http://www.docbook.org/tdg/en/html/preparation.html">preparation</link>
+            </member>
+         </simplelist>
+         <para>Capture any additional information such as serving size or preparation time using <phrase role="attribute">metaref</phrase> or <xref xlink:href="#s.keys"/>.</para>
+     </section>
+     <section xml:id="s.ingredients">
+         <title xmlns:db="http://docbook.org/ns/docbook">Ingredients</title>
+         <para>A block containing a listing of ingredients used in a recipe.</para>
+         <para>Identify each individual ingredient using <phrase role="attribute">role="ingredient"</phrase> attribute.</para>
+         <para>Use <phrase role="attribute">metaref</phrase> attribute to identify units of measurement, see <xref xlink:href="#s.units"/> for more information.</para>
+         <para>Use <xref xlink:href="#s.profiling"/> to distinguish between imperial and metric units.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/cookery/cookery-COOEXP.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/cookery/cookery-COOEXP.png">Example</link>
+         </para>
+      </section>
+     <section xml:id="s.nutrition">
+         <title xmlns:db="http://docbook.org/ns/docbook">Nutrition</title>
+         <para>Whenever possible, capture the nutritional information about the recipe and its ingredients, such as calories count, amount of fat, sodium, etc.</para>
+         <para>If possible, wrap all nutrition information in a <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/nutrition.html">nutrition</link> element.</para>
+         <para>Identify each individual nutritional ingredient using <phrase role="attribute">role="nutrition"</phrase>  attribute and <phrase role="attribute">metaref</phrase> attribute from "nutrition" meta group.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/cookery/cookery-COOEXP.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/cookery/cookery-COOEXP.png">Example</link>
+         </para>
+      </section>
+     <section xml:id="s.preparation">
+         <title xmlns:db="http://docbook.org/ns/docbook">Preparation</title>
+         <para>
+            <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/Preparation.html">Preparation</link> is the block for capturing the actual procedure of meal or recipe preparation, divided into steps.</para>
+         <para>An individual prepration step should be captured using <link xmlns:db="http://docbook.org/ns/docbook"
+                  xlink:href="http://www.docbook.org/tdg/en/html/step.html">step</link> element. If it is necessary to explicitly indicate the step number, use the <phrase role="attribute">stepnum</phrase> attribute, otherwise the numbering will be generated automatically.</para>
+         <para>
+            <link role="sample"
+                  xlink:href="http://dk-schema.googlecode.com/hg/samples/cookery/cookery-COOEXP.xml">Example</link>
+         </para>
+         <para>
+            <link role="screenshot"
+                  xlink:href="http://dk-schema.googlecode.com/hg/screenshots/cookery/cookery-COOEXP.png">Example</link>
+         </para>
+      </section>
+   </chapter>
+    <appendix xml:id="changes">
+        <title>Revision History</title>
+        <section xml:id="dk.ver2.0">
+            <title>DK Schema Version 2.0</title>
+            <para>This is the new version of the schema based on Docbook v5.x Publisher Subcommittee draft and it focuses on good interoperability with the Core Docbook schema.</para>
+        </section>
+        <section xml:id="dk.ver1.0">
+            <title>DK Schema Version 1.0</title>
+            <para>This is the intial version of the schema based on: Docbook v4.x DTD, TEI, CALS and other industry standards</para>
+        </section>
+    </appendix>    
+</book>

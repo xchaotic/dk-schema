@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<!-- Please note that these samples have been modified from original content for the purposes of illustration -->
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0" xml:id="EWG_INSECT064DIDKNO">
+    <!-- Reference title: EWG Insect, pg. 64 Reference screenshot: itemized_list_1, and itemized_list_2 -->
+    <title>Key Sample</title>
+    <variablelist role="key" xml:id="brain_weight" xreflabel="Brain weight">
+        <!-- use role="key" to indicate that it's a key and not a standard list -->
+        <!-- xreflabel may be necessary to indicate the name/title of the key -->
+        <!-- if role="key" is used then xml:id are mandatory for the whole list and all entries to be able to refer to them whenever the key is used -->
+        <varlistentry xml:id="female">
+            <term>FEMALE</term>
+            <listitem>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="brainweight/red_line.gif"/>
+                    </imageobject>
+                </mediaobject>
+            </listitem>
+        </varlistentry>
+        <varlistentry xml:id="male">
+            <term>MALE</term>
+            <listitem>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="brainweight/blue_line.gif"/>
+                    </imageobject>
+                </mediaobject>
+            </listitem>
+        </varlistentry>
+    </variablelist>
+
+    <section>
+        <title>BRAIN WEIGHT</title>
+        <para>The brain weight increases from birth and reaches its maximum at adolescence...</para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="brainweight/brainweight1.gif"/>
+            </imageobject>
+            <caption>
+                <para>Brain weight
+                        <!-- xref with role key_inlude will include/render that key or key entry where the xref is.--><xref
+                        role="key_include" linkend="brain_weight"/></para>
+            </caption>
+        </mediaobject>
+    </section>
+    <section>
+        <title>BRAIN WEIGHT AND BODY WEIGHT</title>
+        <para>This graph shows brain weight as a percentage of total body weight over the course of
+            a lifetime...</para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="brainweight/brainweight1.gif"/>
+            </imageobject>
+            <caption>
+                <para>Brain weight and body weight <xref role="key_include" linkend="brain_weight"
+                    /></para>
+            </caption>
+        </mediaobject>
+    </section>
+
+
+</article>

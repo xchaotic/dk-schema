@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://kode1100.com/dk/dk-schema/relaxng/dk-schema.rnc"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0" xml:id="RG_LOSSYM033-039CHARAC">
+    <!-- sample mark-up for epigraph -->
+    <!-- Reference title: RG to Lost Symbol, pg. 33 -->
+    <title>The Characters</title>
+    <subtitle>What&#x2019;s in a Name?</subtitle>
+    <epigraph xml:id="RG_LOSSYM033CHARAC_001">
+        <attribution>The Lost Symbol [chapter 22]</attribution>
+        <!-- Do not include quotation marks in para- these will be generated. -->
+        <para>My name is Dr Christopher Abaddon. ...........not recognize the name.</para>
+    </epigraph>
+    <!-- text removed -->
+    <!-- please note that the file is invalid since article needs to be allowed under chapter -->
+    <!-- sample mark-up for quote -->
+    <article xml:id="RG_LOSSYM033MALWOU">
+        <title>Mal’akh the Would-Be God</title>
+        <para>Zachary Solomon, alias Andros.....<quote xml:id="RG_LOSSYM033MALWOU_001">'He read of
+                the great fallen angel ....... called Moloch....became Mal’akh’</quote>
+        </para>
+        <!-- text removed -->
+    </article>
+    <!-- text removed -->
+    <!-- sample mark-up for blockquote and quotes -->
+    <!-- Reference title: Your Toddler Month by Month, pg. 17 -->
+    <article xml:id="YOUTOD017BEIPAR">
+        <title>Being a Parent</title>
+        <!-- text removed -->
+        <blockquote xml:id="YOUTOD017BEIPAR_001">
+            <attribution>Caroline, aged 28</attribution>
+            <para>The first year was a challenge, but ......... worthwhile.</para>
+        </blockquote>
+        <!-- text removed -->
+        <section xml:id="YOUTOD017BEIPAR_002">
+            <title>Reflecting on your experiences</title>
+            <!-- text removed -->
+            <para>
+                <quote xml:id="YOUTOD017BEIPAR_003">It’s been perfect. We are so lucky.........
+                    couldn’t have been easier.</quote> ............ mistaken for “bad”
+                behaviour.</para>
+        </section>
+    </article>
+</chapter>

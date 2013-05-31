@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>DK Schema Versioning</title>
+        <author>
+            <personname>Lech Rzedzicki</personname>
+            <email>dk-schema@kode1100.com</email>
+        </author>
+    </info>
+    <section>
+        <title>Introduction</title>
+        <para>
+            In order to minimise maintenance the DK-Schema, Schematron rules, tools and the XML itself should, whenever possible be kept at the current, latest version.
+        </para>
+        <para>Any deviation from that pattern is a big increase on long-term maintenance and resources required, as, effectively, multiple Schema have to be supported.</para>
+        <para>In order to verify that both the Schema itself and the XML content is indeed at the latest version, this document proposes a simple, effective form of release engineering that mimics best practices found in the software industry.</para>
+        <para>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.</para>
+    </section>
+    <section>
+        <title>Version numbering</title>
+        <para>A normal version number MUST take the form X.Y.Z where X, Y, and Z are non-negative integers. X is the major version, Y is the minor version, and Z is the patch version. Each element MUST increase numerically by increments of one. For instance: 1.9.0 -> 1.10.0 -> 1.11.0.</para>
+        <para>When a major version number is incremented, the minor version and patch version MUST be reset to zero. When a minor version number is incremented, the patch version MUST be reset to zero. For instance: 1.1.3 -> 2.0.0 and 2.1.7 -> 2.2.0.</para>
+    </section>
+    <section>
+        <title>Major vs Minor vs Patch</title>
+    <variablelist>
+        <varlistentry>
+            <term>Major</term>
+            <listitem><para>Major revision introduces backwards incompatible changes, for example no longer allowing an element such as <phrase>article</phrase></para>
+                <para>Major version X (X.y.z | X > 0) MUST be incremented if any backwards incompatible changes are introduced. It MAY include minor and patch level changes. Patch and minor version MUST be reset to 0 when major version is incremented.</para>
+                <para><emphasis role="italic">Example:</emphasis> a role attribute value 'bla' is no
+                        longer allowed. A major version number is incremented and all the XML
+                        documents that have used role="bla' are no longer compatible with the
+                        current version of the schema. Steps MUST be followed to bring the XML up to
+                        date.</para>
+            </listitem>
+        
+        </varlistentry>
+        <varlistentry>
+            <term>Minor</term>
+            <listitem><para>Minor revision introduces backwards compatible changes such as new features, new optional XML
+                        elements, new role values etc.</para>
+                <para>Minor version Y (x.Y.z | x > 0) MUST be incremented if new, backwards compatible functionality is introduced.</para>
+                    <para><emphasis role="italic">Example:</emphasis> A new role value 'test' has
+                        been added. A minor version number is incremented. As all the existing XML
+                        is compatible with this change, no further steps need to be taken. </para></listitem>
+        </varlistentry>
+    </variablelist>
+    </section>
+    <section>
+        <title>Communicating the changes</title>
+        <para>If there is a MAJOR release, an email must be sent to everyone, communicating the
+            changes. Additional steps MUST be taken to upgrade existing XML. Depending on the
+            business needs, the XML MAY be updated at the time of schema release, or when it is next
+            worked on.</para>
+    </section>
+    
+</article>

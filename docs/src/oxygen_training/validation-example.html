@@ -1,0 +1,211 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Validation Example - A DocBook Validation Error"/>
+<meta name="abstract" content=""/>
+<meta name="description" content="In the following DocBook 4 document the content of the listitem element does not match the rules of the DocBook 4 schema, that is docbookx.dtd . &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE ..."/>
+<meta name="DC.subject" content="Validating XML documents, against a schema, validation example"/>
+<meta name="keywords" content="Validating XML documents, against a schema, validation example"/>
+<meta name="indexterms" content="Validating XML documents, against a schema, validation example"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/validating-XML-documents-against-schema.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/customizing-assert-error-messages.html"/>
+<meta name="DC.Relation" scheme="URI" content="../topics/caching-schema-for-validation.html"/>
+<meta name="prodname" content=""/>
+<meta name="version" content="13.0"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="validation-example"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css"/>                 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.realperson.css"/>                            <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/comments.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/jquery.cleditor.css"/>     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/admin.css"/>     
+<title>Validation Example - A DocBook Validation Error</title>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="../oxygen-webhelp/resources/js/frames_redirect.js"> </script>       <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/localization/strings.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/init.js"> </script>   <script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/comments-functions.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="init('../')" id="validation-example">
+<script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><table class="nav"><tbody><tr><td colspan="2"><div id="permalink"><a href="#">Link to this page</a></div></td></tr><tr><td><div class="navheader">
+<span class="navparent"><a class="link" href="../topics/validating-XML-documents-against-schema.html" title="Validating XML Documents Against a Schema"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Validating XML Documents Against a Schema</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/customizing-assert-error-messages.html" title="Customising Assert Error Messages"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customising Assert Error Messages</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/caching-schema-for-validation.html" title="Caching the Schema Used for Validation"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Caching the Schema Used for Validation</span></a></span>  </div></td><td width="50%"><a class="navheader_parent_path" href="../topics/../topics/validating-XML-documents.html" title="Validating XML Documents">Validating XML Documents</a> / <a class="navheader_parent_path" href="../topics/validating-XML-documents-against-schema.html" title="Validating XML Documents Against a Schema">Validating XML Documents Against a Schema</a></td></tr></tbody></table>
+
+    <h1 class="title topictitle1">Validation Example - A DocBook Validation Error</h1>
+
+    
+    <div class="body">
+        <p class="p">In the following DocBook 4 document the content of the <samp class="ph codeph">listitem</samp> element
+            does not match the rules of the DocBook 4 schema, that is
+                <span class="ph filepath">docbookx.dtd</span>.</p>
+
+        <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+     "http://www.docbook.org/xml/4.4/docbookx.dtd"&gt;
+&lt;article&gt;
+    &lt;title&gt;Article Title&lt;/title&gt;
+    &lt;sect1&gt;
+      &lt;title&gt;Section1 Title&lt;/title&gt;
+      &lt;itemizedlist&gt;
+        &lt;listitem&gt;
+          &lt;link&gt;a link here&lt;/link&gt;
+        &lt;/listitem&gt;
+      &lt;/itemizedlist&gt;
+    &lt;/sect1&gt;
+&lt;/article&gt;</pre>
+
+        <p class="p">The <span class="ph uicontrol">Validate Document</span> action will return the following error:</p>
+
+        <pre class="pre msgblock">
+Unexpected element "link". The content of the parent element type must match 
+"(calloutlist|glosslist|bibliolist|itemizedlist|orderedlist|segmentedlist|simplelist
+|variablelist|caution|important|note|tip|warning|literallayout|programlisting
+|programlistingco|screen|screenco|screenshot|synopsis|cmdsynopsis|funcsynopsis
+|classsynopsis|fieldsynopsis|constructorsynopsis|destructorsynopsis|methodsynopsis
+|formalpara|para|simpara|address|blockquote|graphic|graphicco|mediaobject|mediaobjectco
+|informalequation|informalexample|informalfigure|informaltable|equation|example|figure
+|table|msgset|procedure|sidebar|qandaset|task|anchor|bridgehead|remark|highlights
+|abstract|authorblurb|epigraph|indexterm|beginpage)+".
+</pre>
+
+        <p class="p">This error message is a little more difficult to understand, so understanding of the
+            syntax or processing rules for the DocBook XML DTD's <samp class="ph codeph">listitem</samp> element
+            is recommended. However, the error message does give us a clue as to the source of the
+            problem, indicating that <span class="q">"The content of element type c<samp class="ph codeph"/> must match"</span>.</p>
+
+        <p class="p">Luckily most standards based DTD's, XML Schema's and Relax NG schemas are supplied with
+            reference documentation. This enables us to lookup the element and read about it. In
+            this case you should learn about the child elements of <samp class="ph codeph">listitem</samp> and
+            their nesting rules. Once you have correctly inserted the required child element and
+            nested it in accordance with the XML rules, the document will become valid on the next
+            validation test.</p>
+
+    </div>
+
+<div class="related-links"/>
+<div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../topics/validating-XML-documents-against-schema.html" title="Validating XML Documents Against a Schema"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Validating XML Documents Against a Schema</span></a></span>  
+<span class="navprev"><a class="link" href="../topics/customizing-assert-error-messages.html" title="Customising Assert Error Messages"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Customising Assert Error Messages</span></a></span>  
+<span class="navnext"><a class="link" href="../topics/caching-schema-for-validation.html" title="Caching the Schema Used for Validation"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Caching the Schema Used for Validation</span></a></span>  </div><div class="footer">WebHelp output generated by<a href="http://www.oxygenxml.com" target="_blank"><span class="oXygenLogo"><img src="../oxygen-webhelp/resources/img/LogoOxygen100x22.png" alt="Oxygen"> </img></span><span class="xmlauthor">XML Author</span></a>.
+    </div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+          <div id="productInfo" style="display:none;">
+        <span id="oxy_productID">editor</span>
+        <span id="oxy_productVersion">14.1</span>
+    </div>
+    <div id="loginData" style="display: none">
+		<span class="bt_close" title="Close"></span>
+		<form action="" target="passwordIframe" method="POST" name="form_login" onsubmit="return loggInUser();" id="loginFormData" autocomplete="on" >
+			<input type="hidden" id="reloadComments" value="yes"/>
+			<table class="login">
+				<thead>
+					<tr>
+						<td colspan="2">
+							<span id="l_login2">
+							<script type="text/javascript">$('#l_login2').html(getLocalization('label.login'));</script>			
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div id="loginResponse"></div>
+						</td>
+					</tr>
+				</thead>
+				
+				<tr>
+					<td>
+						<span id="l_userName">
+							<script type="text/javascript">$('#l_userName').html(getLocalization('label.userName'));</script>			
+						</span>						
+					</td>
+					<td><input name="usernameW" type="text" id="myUserName"  autocomplete="on" required="required" autofocus="autofocus" /></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="l_pswd">
+							<script type="text/javascript">$('#l_pswd').html(getLocalization('label.pswd'));</script>			
+						</span>
+					</td>
+					<td><input name="passwordW" type="password" id="myPassword" autocomplete="on" required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left">									
+					<span id="ll_remember">
+							<script type="text/javascript">
+								$('#ll_remember').html(getLocalization('label.rememberme'));
+							</script>			
+						</span>
+						&nbsp;&nbsp;&nbsp;
+							<input name="myLoginRemember" type="checkbox" class="ck" id="myRemember" value="no"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input id="l_bt_submit_log" type="submit" value="Submit" name="loginFormButton"/>
+					
+					<script type="text/javascript">$('#l_bt_submit_log').attr('value',getLocalization('label.login'));</script>
+					<span class="btnHGlue"></span>
+					<input class="bt_cancel" id="l_cancelLog" type="button" value="Cancel" name="loginFormButton"/>												
+					<script type="text/javascript">$('#l_cancelLog').attr('value',getLocalization('label.cancel'));</script>
+			</td>
+				</tr>
+			</table>
+			<div class="loginAlternative">
+				<span id="link_lostPwd" onclick="showLostPwd()">
+					<script type="text/javascript">$('#link_lostPwd').html(getLocalization('label.lostPswd'));</script>
+				</span> 
+				<span id="link_signUp" onclick="showSignUp()">
+					<script type="text/javascript">$('#link_signUp').html(getLocalization('label.signUp'));</script>
+				</span>
+			</div>
+			
+		</form>
+		<iframe id="passwordIframe" name="passwordIframe" style='display:none'></iframe>
+	</div>
+	<div id="cmts"></div>
+     </body>
+</html>
